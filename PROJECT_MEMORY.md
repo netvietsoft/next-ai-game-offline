@@ -42,21 +42,29 @@
 - **ADR-011 (Hybrid Asset Architecture: 100 Bundled Games & 319 On-Demand via Cloudflare R2):** Nhằm đáp ứng giới hạn khắt khe của Google Play Console (AAB < 150 MB instant download / < 500 MB max): (1) Giữ lại 100 game nhẹ nhất (tổng 173 MB uncompressed) cùng các tài nguyên dùng chung (`fonts`, `iads`, `icons`, `plugins`) tích hợp trực tiếp trong AAB/APK, cho phép chơi offline ngay lập tức; (2) Đóng gói 319 game còn lại thành các file `.zip` độc lập tải từ Cloudflare R2 (`https://pub-r2.nextai.games/games/{game_name}.zip`); (3) Tích hợp `GameDownloadManager` giải nén an toàn chống Zip Slip vào `filesDir/games/`, nạp qua `WebViewAssetLoader.InternalStoragePathHandler("/downloaded_games/")`, kết hợp cơ chế fallback tài nguyên dùng chung trong assets; (4) Giảm kích thước AAB xuất xưởng từ 1.13 GB xuống chỉ **120.64 MB** và APK từ 1.16 GB xuống **122.59 MB**.
 - **ADR-012 (Target SDK 36 - Android 16 Baklava Compliance):** Nâng cấp Target SDK và Compile SDK lên 36 (`compileSdk = 36`, `targetSdk = 36`, `buildToolsVersion = "36.0.0"`), đáp ứng 100% chính sách mới nhất của Google Play Console yêu cầu "must target at least API level 36". Đặt `versionCode = 2` phục vụ phát hành bản cập nhật.
 - **ADR-013 (Removal of Unused FOREGROUND_SERVICE_DATA_SYNC):** Loại bỏ quyền `FOREGROUND_SERVICE_DATA_SYNC` và khai báo `<service>` thừa khỏi `AndroidManifest.xml`. Ứng dụng không chạy background sync ngầm khi đóng app (việc tải 319 game từ R2 dùng Coroutines trực tiếp trong Activity có UI progress), loại bỏ 100% form giải trình và rủi ro bị Google Play Console từ chối. Đặt `versionCode = 3`.
+- **ADR-014 (Production AdMob Credentials & Key Isolation):** Cập nhật App ID chính thức `ca-app-pub-4108090245719282~5370179426` và 5 khối quảng cáo AdMob Production (Banner `7079433640`, Interstitial `5953445428`, Rewarded `4004949254`, Native `2014200410`, App Open `6673530530`) trong `AdConstants.kt` và `AndroidManifest.xml`.
+- **ADR-015 (Brand Identity: Game Gate Offline):** Đổi tên hiển thị thương hiệu chính thức thành **Game Gate Offline** (đồng bộ `strings.xml`, `settings.gradle.kts`, `LegalPolicyHelper.kt`, `AndroidManifest.xml`).
+- **ADR-016 (Deep Firebase Analytics Tracking Architecture):** Tích hợp Firebase SDK (`firebase-bom:33.4.0`, `firebase-analytics`, `google-services.json`). Xây dựng `GameTrackingRepository.kt` và `GameAnalyticsManager.kt` lưu vết và đẩy sự kiện chuyên sâu: (1) Mở game & tiến trình chơi: `game_open`, `game_play_time`, `game_level_start`, `game_level_complete`, `game_level_fail`, `game_level_restart` ghi nhận `open_count`, `play_count`, `session_duration_sec`, `total_play_time_sec`, `highest_level`; (2) Toàn bộ sự kiện hệ thống quảng cáo AdMob: `ad_request`, `ad_loaded`, `ad_failed_to_load`, `ad_impression`, `ad_clicked`, `ad_dismissed`, `ad_failed_to_show`, `ad_reward_earned`; (3) Toàn bộ sự kiện In-App Purchase: `inapp_paywall_viewed`, `inapp_purchase_initiated`, `inapp_purchase_success`, `inapp_purchase_failed`, `inapp_purchase_canceled`, `inapp_restore_initiated`, `inapp_restore_success`, `inapp_restore_none_found`; (4) Khắc phục xung đột `AD_SERVICES_CONFIG` giữa Google AdMob và Firebase Analytics trên Android 14+ / Privacy Sandbox bằng `tools:replace="android:resource"`.
+- **ADR-017 (Anchored Adaptive Banner & Blue Separator Line Policy Compliance):** Nâng cấp Banner AdMob sang `AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize` lấp đầy 100% chiều ngang màn hình. Bổ sung dải phân cách màu xanh `#3B82F6` (3dp) ở mép trên banner phân tách hoàn toàn với các nút bấm gameplay, chống triệt để tình trạng click nhầm vi phạm Google AdMob Policy.
+- **ADR-018 (Dual-Device Hardware Verification & Deployment):** Kiểm thử và nghiệm thu thực tế trực tiếp trên 2 thiết bị vật lý: **SAMSUNG Galaxy A50** (`SM-A507FN`) qua mDNS TLS connect và **SAMSUNG Galaxy A07** (`SM-A075F`) qua Wi-Fi ADB `192.168.1.17:5555`. Chụp ảnh nghiệm thu gameplay, banner, dải xanh và kiểm chứng live analytics logs.
+- **ADR-019 (Git Deployment Architecture & SSH Deploy Key):** Khởi tạo Git repo nhánh `main`, thiết lập SSH Deploy Key `id_ed25519_nextai_game`, cấu hình `~/.ssh/config` và `.gitignore` chuẩn (loại trừ `build/`, `.gradle/`, `node_modules/`, `R2_Upload/`). Push thành công 7.595 file sạch chứa toàn bộ source code Android + 100 game đóng gói sẵn trong APK/AAB build lên `git@github.com:netvietsoft/next-ai-game-offline.git`.
 
 ---
 
-
-
-
 ## 4. BỘ NHỚ VẬN HÀNH & THIẾT BỊ KIỂM THỬ (HARDWARE & RUNTIME MEMORY)
-- **Thiết bị kiểm thử vật lý:** Samsung Galaxy A07 (`SM-A075F`, chip MediaTek Helio G99 / Android 16).
-- **Kết nối kiểm thử:** Wi-Fi ADB (`192.168.1.9:5555`).
-- **Quy trình cài đặt:** APK dung lượng 1.21 GB (chứa 423 game HTML5/WASM) phải dùng phương thức streaming install (`adb install -r -d <apk>`) để tránh timeout socket qua kết nối mạng không dây.
-- **Trạng thái nghiệm thu thực tế:**
-  - [x] Khởi chạy Launcher & nạp danh mục 423 game mượt mà.
-  - [x] Hiển thị banner AdMob đáy màn hình không đè menu gameplay.
+- **Thiết bị kiểm thử vật lý:**
+  1. **Samsung Galaxy A50** (`SM-A507FN` / Android 11+ One UI): Kết nối mDNS TLS (`adb-R58MA581ZZA-n4XnSK._adb-tls-connect._tcp`).
+  2. **Samsung Galaxy A07** (`SM-A075F` / Android 16): Kết nối Wi-Fi ADB (`192.168.1.17:5555`).
+- **Gói cài đặt:** `GameGateOffline-debug.apk` (149.4 MB) và `GameGateOffline-release.aab` (127.0 MB, `versionCode = 8`, `versionName = "1.1"`).
+- **Trạng thái nghiệm thu thực tế 100% PASS:**
+  - [x] Đổi tên thành công **Game Gate Offline** trên toàn bộ hệ thống.
+  - [x] Khởi chạy Launcher & nạp danh mục 423 game mượt mà trên cả 2 máy.
+  - [x] Anchored Adaptive Banner hiển thị full 100% chiều ngang màn hình.
+  - [x] Dải phân cách màu xanh `#3B82F6` (3dp) bảo vệ mép trên banner, ngăn cách nút gameplay chống click nhầm vi phạm AdMob Policy.
+  - [x] Firebase Analytics ghi nhận 100% sự kiện mở game, thời gian chơi, sự kiện ads và in-app billing.
   - [x] Mở Payment Wall VIP Lifetime Pass từ vương miện và từ Cài đặt.
   - [x] Tắt âm thanh game engine hoạt động đồng bộ 100%.
   - [x] Popup hiển thị Chính sách quyền riêng tư & Điều khoản dịch vụ offline + online.
   - [x] Đánh giá 5 sao kích hoạt mở Google Play Store.
   - [x] Cử chỉ vuốt ngang chuyển tab danh mục mượt mà.
+  - [x] Toàn bộ mã nguồn và 100 game đóng gói sẵn trong bản build đã đồng bộ lên GitHub `netvietsoft/next-ai-game-offline`.
