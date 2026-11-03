@@ -44,7 +44,7 @@
         <!-- Google AdMob App ID (Khóa chính thức từ tài khoản AdMob Production) -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-4108090245719282~5370179426" />
+            android:value="ca-app-pub-4108090245719282~4299594158" />
 
         <!-- Màn hình chính (Home Launcher) -->
         <activity

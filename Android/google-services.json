@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "103948572019",
-    "project_id": "game-gate-offline",
-    "storage_bucket": "game-gate-offline.appspot.com"
+    "project_number": "593740416942",
+    "project_id": "nextai-game-offline",
+    "storage_bucket": "nextai-game-offline.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:103948572019:android:a1b2c3d4e5f60718293a4b",
+        "mobilesdk_app_id": "1:593740416942:android:47f8f54c95c4c9b277ea3f",
         "android_client_info": {
           "package_name": "com.nextai.game.offline"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDummyKeyForGoogleServicesInitialization12345"
+          "current_key": "AIzaSyCn5ynU87rmNwErA46IKI3a3P5x4_CMbAs"
         }
       ],
       "services": {
