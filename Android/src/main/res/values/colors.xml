@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_main">#0F172A</color>
+    <color name="bg_surface">#1E293B</color>
+    <color name="bg_card">#1E293B</color>
+    <color name="accent_primary">#3B82F6</color>
+    <color name="accent_secondary">#10B981</color>
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="gold_crown">#F59E0B</color>
+    <color name="heart_red">#EF4444</color>
+    <color name="ic_launcher_background">#1E293B</color>
+    
+    <!-- Legacy & Theme Colors -->
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorBlack">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="gray">#FF808080</color>
+    <color name="light_gray">#FFD3D3D3</color>
+    <color name="colorPrimary">#3B82F6</color>
+    <color name="colorPrimaryDark">#0F172A</color>
+    <color name="colorPrimaryDarkSelected">#1E293B</color>
+    <color name="colorAccent">#3B82F6</color>
+</resources>

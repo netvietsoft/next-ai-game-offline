@@ -1,0 +1,3 @@
+id,packageName,referrer,showTimes,minTimesToOpenMenuBeforeShow,showEachMenuOpen,title,subtitle,iconUrl,buttonText
+1,com.jindoblu.twofourplayergames,offline_games_cross_promo,10,2,1,2 3 4 Player Games,Play with your friends on the same device!,https://cdn.jindoblu.com/icons/234player.png,PLAY NOW
+2,com.media720.pastimes2022,offline_games_cross_promo,10,3,2,Pastimes - 21 Mini Games,Relaxing casual puzzle collection,https://cdn.jindoblu.com/icons/pastimes.png,INSTALL

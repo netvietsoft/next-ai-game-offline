@@ -1,0 +1,80 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Quyền truy cập cơ bản / Basic Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    
+    <!-- Quyền Google Play In-App Purchase & Ad ID -->
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    
+    <!-- Loại bỏ triệt để FOREGROUND_SERVICE bị thư viện thứ 3 (work-runtime / ads) kéo vào -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" tools:node="remove" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" tools:node="remove" />
+
+    <application
+        android:name=".GameApplication"
+        android:allowBackup="false"
+        android:appCategory="game"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NextAIGameOffline"
+        android:usesCleartextTraffic="false">
+
+        <!-- Loại bỏ triệt để SystemForegroundService của androidx.work -->
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            tools:node="remove" />
+
+        <!-- Giải quyết xung đột Privacy Sandbox AdServices giữa AdMob và Firebase Analytics -->
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@xml/gma_ad_services_config"
+            tools:replace="android:resource" />
+
+        <!-- Google AdMob App ID (Khóa chính thức từ tài khoản AdMob Production) -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4108090245719282~5370179426" />
+
+        <!-- Màn hình chính (Home Launcher) -->
+        <activity
+            android:name=".presentation.gamelist.GameListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NextAIGameOffline.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Màn hình chơi Game (WebView Container) -->
+        <activity
+            android:name=".presentation.game.GameActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:exported="true"
+            android:theme="@style/Theme.NextAIGameOffline.Fullscreen" />
+
+        <!-- Màn hình Payment Wall (In-App Purchase) -->
+        <activity
+            android:name=".billing.BillingActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NextAIGameOffline" />
+
+
+    </application>
+
+</manifest>

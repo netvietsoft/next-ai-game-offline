@@ -1,0 +1,13 @@
+var stageW=1280,stageH=768,contentW=1024,contentH=576,viewport={isLandscape:!0},landscapeSize={w:stageW,h:stageH,cW:contentW,cH:contentH},portraitSize={w:768,h:1024,cW:576,cH:900};
+/*!
+ * 
+ * START BUILD GAME - This is the function that runs build game
+ * 
+ */
+function initMain(){$.browser.mobile&&isTablet||$("#canvasHolder").show(),initGameCanvas(stageW,stageH),buildGameCanvas(),buildGameButton(),"function"==typeof buildScoreBoardCanvas&&buildScoreBoardCanvas(),goPage("main"),"function"==typeof initSocket&&multiplayerSettings.enable&&initSocket("tictactoe"),checkMobileOrientation(),resizeCanvas()}var windowW=windowH=0,scalePercent=0,offset={x:0,y:0,left:0,top:0};
+/*!
+ * 
+ * GAME RESIZE - This is the function that runs to resize and centralize the game
+ * 
+ */
+function resizeGameFunc(){setTimeout((function(){$(".mobileRotate").css("left",checkContentWidth($(".mobileRotate"))),$(".mobileRotate").css("top",checkContentHeight($(".mobileRotate"))),windowW=window.innerWidth,windowH=window.innerHeight,contentH*(scalePercent=windowW/contentW)>windowH&&(scalePercent=windowH/contentH),scalePercent=scalePercent>1?1:scalePercent,windowW>stageW&&windowH>stageH&&windowW>stageW&&stageH*(scalePercent=windowW/stageW)>windowH&&(scalePercent=windowH/stageH);var newCanvasW=stageW*scalePercent,newCanvasH=stageH*scalePercent;offset.left=0,offset.top=0,offset.left=newCanvasW>windowW?-(newCanvasW-windowW):windowW-newCanvasW,newCanvasH>windowH?offset.top=-(newCanvasH-windowH):offset.top=windowH-newCanvasH,offset.x=0,offset.y=0,offset.left<0&&(offset.x=Math.abs(offset.left/scalePercent/2)),offset.top<0&&(offset.y=Math.abs(offset.top/scalePercent/2)),$("canvas").css("width",newCanvasW),$("canvas").css("height",newCanvasH),$("canvas").css("left",offset.left/2),$("canvas").css("top",offset.top/2),"function"==typeof initSocket&&multiplayerSettings.enable&&($(".resizeFont").each((function(index,element){$(this).css("font-size",Math.round(Number($(this).attr("data-fontsize"))*scalePercent))})),$("#roomWrapper").css("width",newCanvasW),$("#roomWrapper").css("height",newCanvasH),$("#roomWrapper").css("left",offset.left/2),$("#roomWrapper").css("top",offset.top/2),$("#notificationHolder").css("width",newCanvasW),$("#notificationHolder").css("height",newCanvasH),$("#notificationHolder").css("left",offset.left/2),$("#notificationHolder").css("top",offset.top/2)),$(window).scrollTop(0),resizeCanvas(),"function"==typeof resizeScore&&resizeScore()}),100)}

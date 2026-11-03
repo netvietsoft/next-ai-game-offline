@@ -1,0 +1,4795 @@
+{
+  "lvl_0": [
+    {
+      "name": "Equipment",
+      "items": ["Laptop", "Camera", "Phone"]
+    },
+    {
+      "name": "Cheese",
+      "items": ["Cheddar", "Parmesan", "Gouda"]
+    }
+    
+  ],
+  "lvl_1": [
+    {
+      "name": "Furniture",
+      "items": [
+        "Bed",
+        "Chair",
+        "Sofa",
+        "Wardrobe",
+        "Table"
+      ]
+    },
+    {
+      "name": "Pets",
+      "items": [
+        "Dog",
+        "Hamster",
+        "Cat",
+        "Parrot"
+      ]
+    },
+    {
+      "name": "Food",
+      "items": ["🌭","🍕","🍔","🍟"],
+      "type": "img"
+       
+    },
+    {
+      "name": "Flowers",
+      "items": [
+        "Peony",
+        "Lily",
+        "Rose",
+        "Tulip"
+      ]
+    }
+  ],
+  "lvl_2": [
+    {
+      "name": "Animals",
+      "items": [
+        "🐑",
+        "🐷",
+        "🐐",
+        "🐴",
+        "🐒",
+        "🐻"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Cinema",
+      "items": [
+        "Western",
+        "Drama",
+        "Comedy",
+        "Horror",
+        "Popcorn",
+        "Ticket"
+      ]
+    },
+    {
+      "name": "Calendar",
+      "items": [
+        "Day",
+        "Week",
+        "Month",
+        "Year"
+      ]
+    },
+    {
+      "name": "Burger",
+      "items": [
+        "🥩",
+        "🍞",
+        "🥫",
+        "🧀"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Book",
+      "items": [
+        "Page",
+        "Paper",
+        "Cover"
+      ]
+    },
+    {
+      "name": "Landmass",
+      "items": [
+        "Asia",
+        "Africa",
+        "Europe"
+      ]
+    }
+  ],
+  "lvl_3": [
+    {
+      "name": "Museum",
+      "items": [
+        "Picture",
+        "Exhibit",
+        "Artifact",
+        "Hall",
+        "Display",
+        "Curator",
+        "Art"
+      ]
+    },
+    {
+      "name": "Fabrics",
+      "items": [
+        "Flannel",
+        "Cotton",
+        "Silk",
+        "Satin",
+        "Velvet",
+        "Linen",
+        "Felt"
+      ]
+    },
+    {
+      "name": "Writer",
+      "items": [
+        "Orwell",
+        "Dickens",
+        "Twain",
+        "Wilde",
+        "Shakespeare",
+        "Tolkien",
+        "Dante"
+      ]
+    },
+    {
+      "name": "Pets",
+      "items": [
+        "Hamster",
+        "Cat",
+        "Dog",
+        "Rabbit",
+        "Aquarium Fish",
+        "Turtle"
+      ]
+    },
+    {
+      "name": "Weather",
+      "items": [
+        "Sunny",
+        "Foggy",
+        "Snowy",
+        "Rainy",
+        "Windy",
+        "Stormy"
+      ]
+    },
+    {
+      "name": "Drinks",
+      "items": [
+        "🥤",  
+        "☕",  
+        "🍹",  
+        "🧃" 
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Chess",
+      "items": [
+        "Pawn",
+        "Rook",
+        "Bishop",
+        "Queen"
+      ]
+      
+    },
+    {
+      "name": "Seasons",
+      "items": [
+        "🌸",
+        "🍂",
+        "❄️",
+        "☀️"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Bird",
+      "items": [
+        "Beak",
+        "Wing",
+        "Tail"
+      ]
+    },
+    {
+      "name": "Fishing",
+      "items": [
+        "Rod",
+        "Bobber",
+        "Bait"
+      ]
+    }
+  ],
+  "lvl_4": [
+    {
+      "name": "Islands",
+      "items": [
+        "Jamaica",
+        "Iceland",
+        "Sicily",
+        "Hawaii",
+        "Bali",
+        "Ibiza",
+        "Crete",
+        "Barbados"
+      ]
+    },
+    {
+      "name": "Jewelry",
+      "items": [
+        "Necklace",
+        "Earring",
+        "Diamond ring",
+        "Bracelet",
+        "Anklet",
+        "Locket",
+        "Diadem"
+      ]
+    },
+    {
+      "name": "Flowers",
+      "items": [
+        "🌼",
+        "🌸",
+        "🌷",
+        "🌹",
+        "🌺",
+        "🌻",
+        "💐"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Dances",
+      "items": [
+        "Rumba",
+        "Tango",
+        "Salsa",
+        "Waltz",
+        "Samba",
+        "Flamenco"
+      ]
+    },
+    {
+      "name": "Grandma",
+      "items": [
+        "Rocking chair",
+        "Grandma photos",
+        "Grandma glasses",
+        "Knitting scarf",
+        "Needle case",
+        "Cozy slippers"
+      ]
+    },
+    {
+      "name": "Molluscs",
+      "items": [
+        "Slug",
+        "Oyster",
+        "Snail",
+        "Clam"
+      ]
+    },
+    {
+      "name": "Material",
+      "items": [
+        "Metal",
+        "Glass",
+        "Plastic",
+        "Stone"
+      ]
+    },
+    {
+      "name": "Bedtime",
+      "items": [
+        "👕",
+        "🎵",
+        "💭",
+        "😪"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Airport",
+      "items": [
+        "Terminal",
+        "Runway",
+        "Gate"
+      ]
+    },
+    {
+      "name": "Dairy",
+      "items": [
+        "Cream",
+        "Butter",
+        "Yogurt"
+      ]
+    }
+  ],
+  "lvl_5": [
+    {
+      "name": "Fish",
+      "items": [
+        "Trout",
+        "Tuna",
+        "Marlin",
+        "Sardine",
+        "Eel",
+        "Mackerel",
+        "Grouper",
+        "Perch"
+      ]
+    },
+    {
+      "name": "Map",
+      "items": [
+        "Italy",
+        "India",
+        "Australia",
+        "France",
+        "USA",
+        "UK",
+        "Cyprus",
+        "Japan"
+      ]
+    },
+    {
+      "name": "Emoji",
+      "items": [
+      "😢",
+      "❤️",
+      "🤣",
+      "⬆️",
+      "😭",
+      "🙏",
+      "👀",
+      "💩"
+    ],
+      "type": "img"
+    },
+    {
+      "name": "Knight",
+      "items": [
+        "Armor",
+        "Helmet",
+        "Shield",
+        "Sword",
+        "Destrier",
+        "Banner"
+      ]
+    },
+    {
+      "name": "Fire",
+      "items": [
+        "Ember",
+        "Ash",
+        "Wood",
+        "Flame",
+        "Matches",
+        "Log"
+      ]
+    },
+    {
+      "name": "Gamer",
+      "items": [
+        "Shooter",
+        "Arcade",
+        "Strategy",
+        "Score"
+      ]
+    },
+    {
+      "name": "Winter",
+      "items": [
+        "Cold",
+        "Snow",
+        "Frost",
+        "Snowman"
+      ]
+    },
+    {
+      "name": "Device",
+      "items": [
+        "Dryer",
+        "Printer",
+        "Fax",
+        "Heater"
+      ]
+    },
+    {
+      "name": "Yoga",
+      "items": [
+        "Posture",
+        "Stretch",
+        "Meditate"
+      ]
+    },
+    {
+      "name": "House",
+      "items": [
+        "Mansion",
+        "Palace",
+        "Villa"
+      ]
+    }
+  ],
+  "lvl_6": [
+    {
+      "name": "Trees",
+      "items": [
+        "Cedar",
+        "Elm",
+        "Baobab",
+        "Oak",
+        "Spruce",
+        "Maple",
+        "Pine",
+        "Sequoia"
+      ]
+    },
+    {
+      "name": "Jobs",
+      "items": [
+        "Pilot",
+        "Mailman",
+        "Doctor",
+        "Welder",
+        "Engineer",
+        "Plumber",
+        "Actor",
+        "Nurse"
+      ]
+    },
+    {
+      "name": "Reptiles",
+      "items": [
+        "Lizard",
+        "Snake",
+        "Alligator",
+        "Gecko",
+        "Chameleon",
+        "Iguana",
+        "Turtle"
+      ]
+    },
+    {
+      "name": "Sports",
+      "items": [
+        "Hockey",
+        "Soccer",
+        "Boxing",
+        "Tennis",
+        "Golf",
+        "Rugby",
+        "Curling"
+      ]
+    },
+    {
+      "name": "Horror",
+      "items": [
+        "Zombie",
+        "Vampire",
+        "Monster",
+        "Ghost",
+        "Curse",
+        "Fear"
+      ]
+    },
+    {
+      "name": "Footwear",
+      "items": [
+        "Sandals",
+        "Uggs",
+        "Slippers",
+        "Clogs",
+        "Loafers",
+        "Sneakers"
+      ]
+    },
+    {
+      "name": "Furniture",
+      "items": [
+        "Table",
+        "Sofa",
+        "Chair",
+        "Desk",
+        "Bed"
+      ]
+    },
+    {
+      "name": "Fingers",
+      "items": [
+        "Thumb",
+        "Index",
+        "Middle",
+        "Ring",
+        "Little"
+      ]
+    },
+    {
+      "name": "Driving",
+      "items": [
+      "🚗",
+      "🛣️",
+      "🚦",
+      "🚧"
+    ],
+      "type": "img"
+    },
+    {
+      "name": "Bakery",
+      "items": [
+        "Yeast",
+        "Flour",
+        "Milk",
+        "Eggs"
+      ]
+    },
+    {
+      "name": "Explorer",
+      "items": [
+        "Vespucci",
+        "Magellan",
+        "Columbus"
+      ]
+    },
+    {
+      "name": "Movement",
+      "items": [
+        "Kick",
+        "Walk",
+        "Jump"
+      ]
+    }
+  ],
+  "lvl_7": [
+    {
+      "name": "Deck",
+      "items": [
+        "Ace",
+        "King hearts",
+        "Queen hearts",
+        "Jack hearts",
+        "10 hearts",
+        "9 hearts",
+        "8 hearts",
+        "7 hearts"
+      ]
+    },
+    {
+      "name": "Desserts",
+      "items": [
+        "Tiramisu",
+        "Donut",
+        "Muffin",
+        "Sweets",
+        "Sorbet",
+        "Macaron",
+        "Eclair"
+      ]
+    },
+    {
+      "name": "Shopping",
+      "items": [
+        "Price",
+        "Sale",
+        "Discount",
+        "Coupon"
+      ]
+    },
+    {
+      "name": "Sauces",
+      "items": [
+        "Ketchup",
+        "Mustard",
+        "Tabasco",
+        "Aioli"
+      ]
+    },
+    {
+      "name": "Phase",
+      "items": [
+        "Solid",
+        "Liquid",
+        "Gas"
+      ]
+    },
+    {
+      "name": "Cozy",
+      "items": [
+        "Comfy",
+        "Warm",
+        "Snug"
+      ]
+    }
+  ],
+  "lvl_8": [
+    {
+      "name": "Zodiac",
+      "items": [
+        "Aries",
+        "Taurus",
+        "Gemini",
+        "Leo",
+        "Virgo",
+        "Libra",
+        "Scorpio",
+        "Pisces"
+      ]
+    },
+    {
+      "name": "Bathroom",
+      "items": [
+        "Bathtub",
+        "Lotion",
+        "Shampoo",
+        "Shaver",
+        "Soap",
+        "Shower",
+        "Towel",
+        "Razor"
+      ]
+    },
+    {
+      "name": "Desert",
+      "items": [
+        "Kalahari",
+        "Gobi",
+        "Namib",
+        "Tanami",
+        "Atacama",
+        "Sahara",
+        "Karakum",
+        "Mojave"
+      ]
+    },
+    {
+      "name": "Ship",
+      "items": [
+        "Frigate",
+        "Caravel",
+        "Galleon",
+        "Brig",
+        "Tanker",
+        "Tugboat"
+      ]
+    },
+    {
+      "name": "Mailman",
+      "items": [
+        "Stamp",
+        "Envelope",
+        "Letter",
+        "Mail",
+        "Seal",
+        "Ink"
+      ]
+    },
+    {
+      "name": "Sculpt",
+      "items": [
+        "Bust",
+        "Figurine",
+        "Statue",
+        "Monument"
+      ]
+    },
+    {
+      "name": "Boxing",
+      "items": [
+        "Sparring",
+        "Uppercut",
+        "Knockout",
+        "Referee"
+      ]
+    },
+    {
+      "name": "Measure",
+      "items": [
+        "Inches",
+        "Feet",
+        "Yards",
+        "Miles"
+      ]
+    },
+    {
+      "name": "Tuxedo",
+      "items": [
+        "Lapel",
+        "Bow tie",
+        "Cufflink"
+      ]
+    },
+    {
+      "name": "Wooden",
+      "items": [
+        "✏️",
+        "🎸",
+        "📖"
+      ],
+      "type": "img"
+    }
+  ],
+  "lvl_9": [
+    {
+      "name": "Beverage",
+      "items": [
+        "Coffee",
+        "Tea",
+        "Kombucha",
+        "Milk",
+        "Matcha",
+        "Water",
+        "Smoothie",
+        "Tonic"
+      ]
+    },
+    {
+      "name": "Language",
+      "items": [
+        "English",
+        "Italian",
+        "Hindi",
+        "Japanese",
+        "Hebrew",
+        "Danish",
+        "Latin",
+        "Polish"
+      ]
+    },
+    {
+      "name": "Palette",
+      "items": [
+        "🟥",
+        "⬛",
+        "⬜",
+        "🟩",
+        "🟪",
+        "🟫",
+        "🟨",
+        "🟧"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Bank",
+      "items": [
+        "Deposit",
+        "Credit",
+        "ATM",
+        "Money",
+        "Loan",
+        "Account"
+      ]
+    },
+    {
+      "name": "Camera",
+      "items": [
+        "Lens",
+        "Flash",
+        "Zoom",
+        "Filter",
+        "Shutter",
+        "Exposure"
+      ]
+    },
+    {
+      "name": "Compass",
+      "items": [
+        "East",
+        "North",
+        "West",
+        "South"
+      ]
+    },
+    {
+      "name": "Vehicles",
+      "items": [
+        "Pickup",
+        "Combine",
+        "Trailer",
+        "Truck"
+      ]
+    },
+    {
+      "name": "Fog",
+      "items": [
+        "Mist",
+        "Haze",
+        "Smog",
+        "Vapor"
+      ]
+    },
+    {
+      "name": "Snow",
+      "items": [
+        "Sleet",
+        "Flake",
+        "Iceberg"
+      ]
+    },
+    {
+      "name": "Spiky",
+      "items": [
+      "🦔",
+      "🌵",
+      "🍈"
+    ],
+      "type": "img"
+    }
+  ],
+  "lvl_10": [
+    {
+      "name": "Maths",
+      "items": [
+        "Plus",
+        "Vector",
+        "Minus",
+        "Percent",
+        "Division",
+        "Matrix",
+        "Integral",
+        "Theorem"
+      ]
+    },
+    {
+      "name": "Birds",
+      "items": [
+        "🕊️",
+        "🦅",
+        "🦢",
+        "🦉",
+        "🐦"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Genres",
+      "items": [
+        "Rap",
+        "Rock",
+        "Pop",
+        "Jazz",
+        "Country",
+        "Blues",
+        "Reggae",
+        "Disco"
+      ]
+    },
+    {
+      "name": "Music",
+      "items": [
+        "🎸",
+        "🎹",
+        "🎤",
+        "🎷",
+        "🥁"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Rooms",
+      "items": [
+        "Attic",
+        "Bathroom",
+        "Kitchen",
+        "Bedroom",
+        "Cellar",
+        "Parlor"
+      ]
+    },
+    {
+      "name": "Travel",
+      "items": [
+        "Tour",
+        "Trip",
+        "Voyage",
+        "Cruise"
+      ]
+    },
+    {
+      "name": "Shoe",
+      "items": [
+        "Sole",
+        "Laces",
+        "Insole",
+        "Tongue"
+      ]
+    },
+    {
+      "name": "Hockey",
+      "items": [
+        "Puck",
+        "Penalty",
+        "Goal",
+        "Rink"
+      ]
+    },
+    {
+      "name": "Date",
+      "items": [
+        "Couple",
+        "Tuxedo",
+        "Flowers"
+      ]
+    },
+    {
+      "name": "Saw",
+      "items": [
+        "Teeth",
+        "Blade",
+        "Notch"
+      ]
+    }
+  ],
+  "lvl_11": [
+    {
+      "name": "Actor",
+      "items": [
+        "Oldman",
+        "Pitt",
+        "Eastwood",
+        "Hanks",
+        "Crowe",
+        "Cruise",
+        "DiCaprio",
+        "Wahlberg"
+      ]
+    },
+    {
+      "name": "Planet",
+      "items": [
+        "Mercury",
+        "Jupiter",
+        "Saturn",
+        "Uranus",
+        "Neptune",
+        "Mars",
+        "Earth",
+        "Venus"
+      ]
+    },
+    {
+       "name": "Cards",
+        "items": [
+          "♠️",
+          "♣️",
+          "♥️",
+          "♦️",
+          "🤴",
+          "👸"
+        ],
+      "type": "img"
+    },
+    {
+      "name": "Face",
+      "items": [
+        "Cheeks",
+        "Lips",
+        "Brows",
+        "Nose",
+        "Chin",
+        "Eyes",
+        "Mouth",
+        "Nostrils"
+      ]
+    },
+    {
+      "name": "Brunch",
+      "items": [
+        "Omelet",
+        "Bacon",
+        "Waffles",
+        "Cereal",
+        "Eggs",
+        "Toast"
+      ]
+    },
+    {
+      "name": "Lessons",
+      "items": [
+        "Biology",
+        "Physics",
+        "Geometry",
+        "Algebra",
+        "History",
+        "Calculus"
+      ]
+    },
+    {
+      "name": "Wardrobe",
+      "items": [
+        "Jumper",
+        "Jacket",
+        "Sweater",
+        "Jeans",
+        "Pants"
+      ]
+    },
+    {
+      "name": "Transport",
+      "items": [
+        "🚗",
+        "🚲",
+        "✈️",
+        "🚢",
+        "🚆"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Senses",
+      "items": [
+        "Smell",
+        "Touch",
+        "Taste",
+        "Sight"
+      ]
+    },
+    {
+      "name": "Blue",
+      "items": [
+        "Indigo",
+        "Navy",
+        "Azure",
+        "Cyan"
+      ]
+    },
+    {
+      "name": "Pills",
+      "items": [
+        "Tablets",
+        "Capsules",
+        "Lozenges"
+      ]
+    },
+    {
+      "name": "Rainy",
+      "items": [
+        "Clouds",
+        "Showers",
+        "Puddles"
+      ]
+    }
+  ],
+  "lvl_12": [
+    {
+      "name": "School",
+      "items": [
+        "Lesson",
+        "Student",
+        "Teacher",
+        "Desks",
+        "Exams",
+        "Homework",
+        "Study",
+        "Grade"
+      ]
+    },
+    {
+      "name": "Desserts",
+      "items": [
+        "🍰",
+        "🧁",
+        "🍩",
+        "🍮",
+        "🍫"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Shapes",
+      "items": [
+        "Circle",
+        "Square",
+        "Oval",
+        "Octagon"
+      ]
+    },
+    {
+      "name": "Space",
+      "items": [
+        "🌕",
+        "🌑",
+        "🪐",
+        "🌠",
+        "🚀"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Bag type",
+      "items": [
+        "Satchel",
+        "Clutch",
+        "Pouch"
+      ]
+    },
+    {
+      "name": "Brain",
+      "items": [
+        "Gyrus",
+        "Cortex",
+        "Lobe"
+      ]
+    }
+  ],
+  "lvl_13": [
+    {
+      "name": "Elements",
+      "items": [
+        "Hydrogen",
+        "Nitrogen",
+        "Sulfur",
+        "Carbon",
+        "Sodium",
+        "Silicon",
+        "Iodine",
+        "Oxygen"
+      ]
+    },
+    {
+      "name": "Cheese",
+      "items": [
+        "Brie",
+        "Feta",
+        "Gouda",
+        "Cheddar",
+        "Parmesan",
+        "Ricotta",
+        "Edam",
+        "Dorblu"
+      ]
+    },
+    {
+      "name": "Games",
+      "items": [
+        "Dominoes",
+        "Bingo",
+        "Chess",
+        "Monopoly",
+        "Uno",
+        "Charades",
+        "Cards",
+        "Mahjong"
+      ]
+    },
+    {
+      "name": "Fitness",
+      "items": [
+        "🏋️",
+        "🤸",
+        "🏃",
+        "🧘",
+        "🚴"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Garden",
+      "items": [
+        "🌷",
+        "🌻",
+        "🌳",
+        "🌿",
+        "🌱"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Muscles",
+      "items": [
+        "Biceps",
+        "Deltoids",
+        "Abs",
+        "Triceps"
+      ]
+    },
+    {
+      "name": "Lighting",
+      "items": [
+        "Lamp",
+        "Torch",
+        "Candle",
+        "Lantern"
+      ]
+    },
+    {
+      "name": "Egypt",
+      "items": [
+        "Scarab",
+        "Pharaoh",
+        "Papyrus",
+        "Pyramid"
+      ]
+    },
+    {
+      "name": "Pizza",
+      "items": [
+        "Hawaiian",
+        "Marinara",
+        "Diavola"
+      ]
+    },
+    {
+      "name": "Berry",
+      "items": [
+        "Mulberry",
+        "Bilberry",
+        "Barberry"
+      ]
+    }
+  ],
+  "lvl_14": [
+    {
+      "name": "Cats",
+      "items": [
+        "Sphynx",
+        "Bengal",
+        "Bobtail",
+        "Persian",
+        "Ragdoll",
+        "Siamese",
+        "Ocicat"
+      ]
+    },
+    {
+      "name": "Aquatic",
+      "items": [
+        "🐬",
+        "🐠",
+        "🦀",
+        "🐙",
+        "🦑",
+        "🐋",
+        "🦈",
+        "🦐",
+        "🦞",
+        "🐡",
+        "🐚"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Capitals",
+      "items": [
+        "Athens",
+        "Prague",
+        "Madrid",
+        "Riyadh",
+        "Ottawa",
+        "Rome",
+        "Oslo",
+        "Cairo"
+      ]
+    },
+    {
+      "name": "Makeup",
+      "items": [
+        "Powder",
+        "Sponge",
+        "Palette",
+        "Serum",
+        "Peel",
+        "Blush"
+      ]
+    },
+    {
+      "name": "Combat",
+      "items": [
+        "Savate",
+        "Judo",
+        "Karate",
+        "Kung fu",
+        "Sumo",
+        "Silat"
+      ]
+    },
+    {
+      "name": "Guitar",
+      "items": [
+        "Chords",
+        "Pickups",
+        "Strings",
+        "Riffs"
+      ]
+    },
+    {
+      "name": "Hunting",
+      "items": [
+        "Trap",
+        "License",
+        "Decoy",
+        "Rifle"
+      ]
+    },
+    {
+      "name": "Compete",
+      "items": [
+        "Loser",
+        "Winner",
+        "Award",
+        "Medal"
+      ]
+    },
+    {
+      "name": "Ballet",
+      "items": [
+        "Pointe",
+        "Tutu",
+        "Barre"
+      ]
+    },
+    {
+      "name": "Unite",
+      "items": [
+        "Alliance",
+        "League",
+        "Union"
+      ]
+    }
+  ],
+  "lvl_15": [
+    {
+      "name": "Comedy",
+      "items": [
+        "Humor",
+        "Parody",
+        "Irony",
+        "Satire",
+        "Pun",
+        "Prank",
+        "Stand-up",
+        "Comedian"
+      ]
+    },
+    {
+      "name": "Composer",
+      "items": [
+        "Mozart",
+        "Bach",
+        "Vivaldi",
+        "Chopin",
+        "Wagner",
+        "Schubert",
+        "Strauss",
+        "Brahms"
+      ]
+    },
+    {
+      "name": "Computer",
+      "items": [
+        "🖥️",
+        "⌨️",
+        "🖱️",
+        "💾",
+        "🖥️",
+        "🎮",
+        "💽",
+        "💿"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Days",
+      "items": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ]
+    },
+    {
+      "name": "Bathroom",
+      "items": [
+        "🧴",
+        "🧼",
+        "🚿",
+        "🛁",
+        "🧻",
+        "🪒",
+        "🧽",
+        "🧺"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Position",
+      "items": [
+        "CEO",
+        "Manager",
+        "Intern",
+        "Lead"
+      ]
+    },
+    {
+      "name": "Luxury",
+      "items": [
+        "Jewelry",
+        "Watch",
+        "Caviar",
+        "Yacht"
+      ]
+    },
+    {
+      "name": "Coloring",
+      "items": [
+        "Paint",
+        "Gouache",
+        "Crayon",
+        "Ink"
+      ]
+    },
+    {
+      "name": "Biomes",
+      "items": [
+        "Savanna",
+        "Tundra",
+        "Taiga"
+      ]
+    },
+    {
+      "name": "Spicy",
+      "items": [
+        "Sriracha",
+        "Wasabi",
+        "Habanero"
+      ]
+    }
+  ],
+  "lvl_16": [
+    {
+      "name": "Fruits",
+      "items": [
+        "🍎",
+        "🍌",
+        "🍇",
+        "🍉",
+        "🍓",
+        "🍍",
+        "🥝",
+        "🍑"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Hospital",
+      "items": [
+        "Patient",
+        "Care",
+        "Surgeon",
+        "Syringe",
+        "Inhaler",
+        "Pill",
+        "Ointment",
+        "Vaccine"
+      ]
+    },
+    {
+      "name": "Plane",
+      "items": [
+        "Cockpit",
+        "Seatbelt",
+        "Wings",
+        "Engine",
+        "Rudder",
+        "Fuselage",
+        "Aileron",
+        "Fly"
+      ]
+    },
+    {
+      "name": "Kitchen",
+      "items": [
+        "Blender",
+        "Toaster",
+        "Mixer",
+        "Freezer",
+        "Cook",
+        "Oven",
+        "Kettle",
+        "Sink"
+      ]
+    },
+    {
+      "name": "Rodents",
+      "items": [
+        "Beaver",
+        "Marmot",
+        "Nutria",
+        "Squirrel",
+        "Capybara",
+        "Rat"
+      ]
+    },
+    {
+      "name": "Clocks",
+    "items": [
+      "🕐",
+      "🕒",
+      "🕕",
+      "🕗",
+      "🕙",
+      "🕛",
+      "🕡"
+    ],
+      "type": "img"
+    },
+    {
+      "name": "Cars",
+      "items": [
+        "SUV",
+        "Roadster",
+        "Van",
+        "Wagon",
+        "Coupe"
+      ]
+    },
+    {
+      "name": "Building",
+      "items": [
+        "Door",
+        "Floor",
+        "Window",
+        "Roof",
+        "Wall"
+      ]
+    },
+    {
+      "name": "Energy",
+      "items": [
+        "Solar",
+        "Nuclear",
+        "Kinetic",
+        "Thermal"
+      ]
+    },
+    {
+      "name": "Myths",
+      "items": [
+        "Odin",
+        "Zeus",
+        "Hades",
+        "Thor"
+      ]
+    },
+    {
+      "name": "Articles",
+      "items": [
+        "Essay",
+        "Review",
+        "Opinion"
+      ]
+    },
+    {
+      "name": "Disaster",
+      "items": [
+        "Tsunami",
+        "Tornado",
+        "Flood"
+      ]
+    }
+  ],
+  "lvl_17": [
+    {
+      "name": "Primates",
+      "items": [
+        "Gorilla",
+        "Gibbon",
+        "Baboon",
+        "Lemur",
+        "Macaque",
+        "Simian",
+        "Mandrill",
+        "Tarsier"
+      ]
+    },
+    {
+      "name": "Sports",
+      "items": [
+        "⚽",
+        "🏀",
+        "🏈",
+        "⚾",
+        "🎾",
+        "🏐",
+        "🏓"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Rap",
+      "items": [
+        "Lyrics",
+        "Verse",
+        "Rhyme",
+        "Punch"
+      ]
+    },
+    {
+      "name": "Water",
+      "items": [
+        "Niagara",
+        "Victoria",
+        "Yosemite",
+        "Havasu"
+      ]
+    },
+    {
+      "name": "Sushi",
+      "items": [
+        "Nigiri",
+        "Maki",
+        "Chirashi"
+      ]
+    },
+    {
+      "name": "Toys",
+      "items": [
+        "🪀",
+        "🧸",
+        "🪁",
+        "🎠",
+        "🎯",
+        "🎲"
+      ],
+      "type": "img"
+    }
+  ],
+  "lvl_18": [
+    {
+      "name": "Mountain",
+      "items": [
+        "Etna",
+        "Denali",
+        "Everest",
+        "Fuji",
+        "Andes",
+        "Alps",
+        "Summit",
+        "Climb"
+      ]
+    },
+    {
+      "name": "Music Instruments",
+      "items": [
+        "🎸",
+        "🎹",
+        "🎷",
+        "🥁",
+        "🎺",
+        "🪕",
+        "🪗",
+        "🎻",
+        "🪘",
+        "🎼",
+        "🎤"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Emotions",
+      "items": [
+        "Excited",
+        "Happy",
+        "Elated",
+        "Upset",
+        "Sad",
+        "Angry",
+        "Joyful",
+        "Psyche"
+      ]
+    },
+    {
+      "name": "Dress",
+      "items": [
+        "Bodycon",
+        "Tunic",
+        "Cocktail",
+        "Mini",
+        "Gown",
+        "Sundress"
+      ]
+    },
+    {
+      "name": "Utensils",
+      "items": [
+        "Spoon",
+        "Whisk",
+        "Fork",
+        "Plate",
+        "Peeler",
+        "Ladle"
+      ]
+    },
+    {
+      "name": "Meditate",
+      "items": [
+        "Zen",
+        "Breath",
+        "Peace",
+        "Mantra"
+      ]
+    },
+    {
+      "name": "Fame",
+      "items": [
+        "Famous",
+        "Iconic",
+        "Popular",
+        "Renown"
+      ]
+    },
+    {
+      "name": "Linguist",
+      "items": [
+        "Syntax",
+        "Polyglot",
+        "Grammar",
+        "Scholar"
+      ]
+    },
+    {
+      "name": "Holiday",
+      "items": [
+        "🎄",
+        "🎃",
+        "🎆",
+        "🎉",
+        "🎁"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Gym",
+      "items": [
+        "Dumbbell",
+        "Barbell",
+        "Air bike"
+      ]
+    }
+  ],
+  "lvl_19": [
+    {
+      "name": "Bakery",
+      "items": [
+        "🍞",
+        "🥐",
+        "🥖",
+        "🫓",
+        "🥯",
+        "🧁",
+        "🍰",
+        "🍩",
+        "🍪",
+        "🥧"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "States",
+      "items": [
+        "Alabama",
+        "Florida",
+        "Colorado",
+        "Indiana",
+        "Missouri",
+        "Nevada",
+        "Ohio",
+        "Texas"
+      ]
+    },
+    {
+      "name": "Plants",
+      "items": [
+        "Pothos",
+        "Begonia",
+        "Fern",
+        "Calathea",
+        "Aloe",
+        "Orchid",
+        "Hibiscus",
+        "Dracaena"
+      ]
+    },
+    {
+      "name": "Canines",
+      "items": [
+        "Wolf",
+        "Coyote",
+        "Dingo",
+        "Jackal",
+        "Fox",
+        "Dhole"
+      ]
+    },
+    {
+      "name": "Studies",
+      "items": [
+        "Harvard",
+        "Stanford",
+        "Oxford",
+        "Yale",
+        "Sorbonne",
+        "MIT"
+      ]
+    },
+    {
+      "name": "Group",
+      "items": [
+        "Swarm",
+        "Flock",
+        "Herd",
+        "Gaggle"
+      ]
+    },
+    {
+      "name": "Office",
+      "items": [
+        "📎",
+        "🖊️",
+        "📄",
+        "📁",
+        "🖇️"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Taste",
+      "items": [
+        "Sour",
+        "Sweet",
+        "Spicy",
+        "Bitter"
+      ]
+    },
+    {
+      "name": "Citrus",
+      "items": [
+        "🍊",
+        "🍋",
+        "🍈",
+        "🍐",
+        "🍍"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Aviation",
+      "items": [
+        "Glider",
+        "Jetliner",
+        "Airplane"
+      ]
+    }
+  ],
+  "lvl_20": [
+    {
+      "name": "Hobby",
+      "items": [
+        "🧶",
+        "🎣",
+        "🏃",
+        "📝",
+        "📖",
+        "🍳",
+        "🥾",
+        "🧁"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "90s",
+      "items": [
+        "Cassette",
+        "VHS tape",
+        "Boom box",
+        "Tamagotchi",
+        "Gameboy",
+        "Polaroid",
+        "Pager",
+        "Walkman"
+      ]
+    },
+    {
+      "name": "Veggie",
+      "items": [
+        "🥦",
+        "🥬",
+        "🥔",
+        "🥕",
+        "🫑",
+        "🥒",
+        "🧅",
+        "🍆"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Grape",
+      "items": [
+        "Merlot",
+        "Riesling",
+        "Shiraz",
+        "Grenache",
+        "Muscat",
+        "Malbec"
+      ]
+    },
+    {
+      "name": "Mushroom",
+      "items": [
+        "Amanita",
+        "Porcini",
+        "Russula",
+        "Truffle",
+        "Enoki",
+        "Shiitake"
+      ]
+    },
+    {
+      "name": "Tribes",
+      "items": [
+        "Cherokee",
+        "Sioux",
+        "Navajo",
+        "Apache"
+      ]
+    },
+    {
+      "name": "Arctic",
+      "items": [
+        "Walrus",
+        "Polar bear",
+        "Snowy owl",
+        "Reindeer"
+      ]
+    },
+    {
+      "name": "Babies",
+      "items": [
+        "Diaper",
+        "Stroller",
+        "Crib",
+        "Rattle"
+      ]
+    },
+    {
+      "name": "Racing",
+      "items": [
+        "Pit stop",
+        "Finish",
+        "Speedway"
+      ]
+    },
+    {
+      "name": "Help",
+      "items": [
+        "Assist",
+        "Support",
+        "Donate"
+      ]
+    }
+  ],
+  "lvl_21": [
+    {
+      "name": "Sharp",
+      "items": [
+        "Saw",
+        "Scalpel",
+        "Knife",
+        "Scissors",
+        "Razor",
+        "Needle",
+        "Axe",
+        "Stinger"
+      ]
+    },
+    {
+      "name": "Seafood",
+      "items": ["🐟","🐠","🐡","🦐","🦞","🦀","🦑","🐙","🦪"],
+      "type": "img"
+    },
+    {
+      "name": "Gemstone",
+      "items": [
+        "Opal",
+        "Ruby",
+        "Topaz",
+        "Sapphire",
+        "Garnet",
+        "Diamond",
+        "Onyx",
+        "Agate"
+      ]
+    },
+    {
+      "name": "Books",
+      "items": [
+        "Fiction",
+        "Poetry",
+        "Novel",
+        "Prose",
+        "Memoir",
+        "Thriller",
+        "Fantasy",
+        "Tragedy"
+      ]
+    },
+    {
+      "name": "Pattern",
+      "items": [
+        "Orion",
+        "Perseus",
+        "Draco",
+        "Scorpius",
+        "Cygnus",
+        "Serpens"
+      ]
+    },
+    {
+      "name": "Wedding",
+      "items": [
+        "Ceremony",
+        "Proposal",
+        "Altar",
+        "Bride",
+        "Groom",
+        "Vows"
+      ]
+    },
+    {
+      "name": "Fuels",
+      "items": [
+        "Gasoline",
+        "Diesel",
+        "Coal",
+        "Propane",
+        "Kerosene"
+      ]
+    },
+    {
+      "name": "Bed",
+      "items": [
+        "Blanket",
+        "Sheet",
+        "Pillow",
+        "Plaid",
+        "Mattress"
+      ]
+    },
+    {
+      "name": "Coffee",
+      "items": [
+        "Espresso",
+        "Latte",
+        "Lungo",
+        "Mocha"
+      ]
+    },
+    {
+      "name": "Elect",
+      "items": [
+        "Voter",
+        "Ballot",
+        "Campaign",
+        "Turnout"
+      ]
+    },
+    {
+      "name": "Crown",
+      "items": ["👑","🤴","👸"],
+      "type": "img"
+    },
+    {
+      "name": "Train",
+      "items": [
+        "Rail",
+        "Carriage",
+        "Track"
+      ]
+    }
+  ],
+  "lvl_22": [
+    {
+      "name": "Leader",
+      "items": [
+        "Kennedy",
+        "Clinton",
+        "Lincoln",
+        "Reagan",
+        "Bush",
+        "Obama",
+        "Adams",
+        "Biden"
+      ]
+    },
+    {
+      "name": "Circus",
+      "items": ["🎪","🤹‍♂️","🎭","🐘","🐒","🎩","🎠","🤡"],
+      "type": "img"
+    },
+    {
+      "name": "Files",
+      "items": [
+        "Rename",
+        "Open",
+        "Delete",
+        "Copy"
+      ]
+    },
+    {
+      "name": "Woodwork",
+      "items": [
+        "Hammers",
+        "Squares",
+        "Gauges",
+        "Screws"
+      ]
+    },
+    {
+      "name": "Spy gear",
+      "items": [
+        "Disguise",
+        "Wiretap",
+        "Codebook"
+      ]
+    },
+    {
+      "name": "Hot dog",
+      "items": [
+        "Soft bun",
+        "Sausage",
+        "Ketchup"
+      ]
+    }
+  ],
+  "lvl_23": [
+    {
+      "name": "Fast",
+      "items": [
+        "Quick",
+        "Rapid",
+        "Speedy",
+        "Swift",
+        "Prompt",
+        "Brisk",
+        "Hasty",
+        "Zippy"
+      ]
+    },
+    {
+      "name": "Cuties",
+      "items": ["🐶","🐱","🐰","🐹","🐻","🐼","🦊","🐥","🐣","🧸","💖","🥺"],
+      "type": "img"
+    },
+    {
+      "name": "Rainbow",
+      "items": [
+        "Red",
+        "Orange",
+        "Yellow",
+        "Green",
+        "Blue",
+        "Indigo",
+        "Violet"
+      ]
+    },
+    {
+      "name": "Sentence",
+      "items": [
+        "Period",
+        "Comma",
+        "Colon",
+        "Dash",
+        "Hyphen",
+        "Question"
+      ]
+    },
+    {
+      "name": "Grains",
+      "items": [
+        "Rice",
+        "Wheat",
+        "Oats",
+        "Barley",
+        "Millet",
+        "Rye"
+      ]
+    },
+    {
+      "name": "Sea life",
+      "items": [
+        "Kelp",
+        "Algae",
+        "Seagrass",
+        "Wakame"
+      ]
+    },
+    {
+      "name": "Cipher",
+      "items": [
+        "Decode",
+        "Encode",
+        "Keyword",
+        "Password"
+      ]
+    },
+    {
+      "name": "Events",
+      "items": [
+        "Carnival",
+        "Fair",
+        "Fiesta",
+        "Parade"
+      ]
+    },
+    {
+      "name": "Symphony",
+      "items": [
+        "Harmony",
+        "Overture",
+        "Melody"
+      ]
+    },
+    {
+      "name": "Artworks",
+      "items": [
+        "Photo",
+        "Drawing",
+        "Painting"
+      ]
+    }
+  ],
+  "lvl_24": [
+    {
+      "name": "Creature",
+      "items": [
+        "Elf",
+        "Phoenix",
+        "Pegasus",
+        "Griffin",
+        "Hydra",
+        "Dwarf",
+        "Dragon",
+        "Unicorn"
+      ]
+    },
+    {
+      "name": "Magic",
+      "items": ["✨","🔮","🧙‍♂️","🧝‍♂️","🧛‍♂️","🧞‍♂️","🧚‍♂️","📜"],
+      "type": "img"
+    },
+    {
+      "name": "Dogs",
+      "items": [
+        "Terrier",
+        "Beagle",
+        "Poodle",
+        "Spaniel",
+        "Husky",
+        "Collie",
+        "Bulldog",
+        "Pug"
+      ]
+    },
+    {
+      "name": "Auction",
+      "items": [
+        "Hammer",
+        "Lot",
+        "Bid",
+        "Price",
+        "Catalog",
+        "Bidder"
+      ]
+    },
+    {
+      "name": "Achieve",
+      "items": [
+        "Triumph",
+        "Victory",
+        "Merit",
+        "Success",
+        "Win",
+        "Feat"
+      ]
+    },
+    {
+      "name": "Sour",
+      "items": [
+        "Vinegar",
+        "Pickle",
+        "Tamarind",
+        "Kimchi"
+      ]
+    },
+    {
+      "name": "Arrange",
+      "items": [
+        "Hangers",
+        "Shelves",
+        "Drawers",
+        "Clothes"
+      ]
+    },
+    {
+      "name": "Beans",
+      "items": [
+        "Excelsa",
+        "Robusta",
+        "Liberica",
+        "Arabica"
+      ]
+    },
+    {
+      "name": "Pairs",
+      "items": ["🧦","👫","🥂"],
+      "type": "img"
+    },
+    {
+      "name": "Camping",
+      "items": [
+        "🏕️",
+        "🔥",
+        "⛺",
+        "🌲",
+        "🛶"
+      ],
+      "type": "img"
+    }
+  ],
+  "lvl_25": [
+    {
+      "name": "Bicycle",
+      "items": [
+        "Chain",
+        "Saddle",
+        "Tires",
+        "Pedals",
+        "Wheels",
+        "Spokes",
+        "Grips",
+        "Fork"
+      ]
+    },
+    {
+      "name": "Play",
+      "items": ["🎹","🎻","🥁","🎸","🎶","🎼","🎤","🪕"],
+      "type": "img"
+    },
+    {
+      "name": "Gases",
+      "items": [
+        "Argon",
+        "Helium",
+        "Krypton",
+        "Neon",
+        "Radon",
+        "Xenon",
+        "Methane",
+        "Butane"
+      ]
+    },
+    {
+      "name": "Boat",
+      "items": [
+        "Hull",
+        "Mast",
+        "Keel",
+        "Deck",
+        "Sail",
+        "Stern"
+      ]
+    },
+    {
+      "name": "Biology",
+      "items": ["🧬","🧫","🧪","🔬","🧠","💉","🦠","🧹"],
+      "type": "img"
+    },
+    {
+      "name": "Finance",
+      "items": [
+        "Bank",
+        "Income",
+        "Expense",
+        "Money"
+      ]
+    },
+    {
+      "name": "Medieval",
+      "items": [
+        "Kingdom",
+        "Lord",
+        "Knight",
+        "Castle"
+      ]
+    },
+    {
+      "name": "Optics",
+      "items": [
+        "Glasses",
+        "Lens",
+        "Monocle",
+        "Spyglass"
+      ]
+    },
+    {
+      "name": "Navigate",
+      "items": [
+        "Signpost",
+        "Sextant",
+        "Compass"
+      ]
+    },
+    {
+      "name": "Toddler",
+      "items": [
+        "Playpen",
+        "Nap time",
+        "Pacifier"
+      ]
+    }
+  ],
+  "lvl_26": [
+    {
+      "name": "Operas",
+      "items": [
+        "Aida",
+        "Carmen",
+        "Faust",
+        "Turandot",
+        "Otello",
+        "Wozzeck",
+        "Tosca",
+        "Fidelio"
+      ]
+    },
+    {
+      "name": "Wind",
+      "items": ["💨","🌬️","🍃","🌪️","🌫️"],
+      "type": "img"
+    },
+    {
+      "name": "Families",
+      "items": [
+        "Caprine",
+        "Ovine",
+        "Feline",
+        "Equine",
+        "Canine",
+        "Murine",
+        "Porcine",
+        "Bovine"
+      ]
+    },
+    {
+      "name": "Spa",
+      "items": [
+        "Manicure",
+        "Massage",
+        "Pedicure",
+        "Peeling",
+        "Waxing",
+        "Wellness",
+        "Sauna",
+        "Beauty"
+      ]
+    },
+    {
+      "name": "Stars",
+      "items": [
+        "Altair",
+        "Polaris",
+        "Sirius",
+        "Vega",
+        "Rigel",
+        "Alkaid"
+      ]
+    },
+    {
+      "name": "Parrots",
+      "items": [
+        "Macaw",
+        "Cockatoo",
+        "Budgie",
+        "Eclectus",
+        "Parakeet",
+        "Lorikeet"
+      ]
+    },
+    {
+      "name": "AI",
+      "items": [
+        "Neural",
+        "Dataset",
+        "Chatbot",
+        "Agent",
+        "Matrix",
+        "Cortex"
+      ]
+    },
+    {
+      "name": "Dishes",
+      "items": [
+        "Paella",
+        "Meatloaf",
+        "Goulash",
+        "Curry",
+        "Lasagna"
+      ]
+    },
+    {
+      "name": "Series",
+      "items": [
+        "Actress",
+        "Episode",
+        "Fandom",
+        "Recap",
+        "Season"
+      ]
+    },
+    {
+      "name": "Angles",
+      "items": [
+        "Right",
+        "Straight",
+        "Acute",
+        "Obtuse"
+      ]
+    },
+    {
+      "name": "Division",
+      "items": [
+        "Region",
+        "Country",
+        "State",
+        "City"
+      ]
+    },
+    {
+      "name": "Read",
+      "items": ["📖","📰","📚","📃","🗞️","📑"],
+      "type": "img"
+    },
+    {
+      "name": "Speak",
+      "items": ["🗣️","💬","🗨️","🎤","📢","🗯️"],
+      "type": "img"
+    },
+    {
+      "name": "Hair",
+      "items": [
+        "Wavy",
+        "Curly",
+        "Coily"
+      ]
+    }
+  ],
+  "lvl_27": [
+    {
+      "name": "BBQ",
+      "items": [
+        "Pork",
+        "Skewers",
+        "Chicken",
+        "Steak",
+        "Ribs",
+        "Marinade",
+        "Brisket",
+        "Charcoal"
+      ]
+    },
+    {
+      "name": "File",
+      "items": [
+        "TXT",
+        "PDF",
+        "CSV",
+        "HTML",
+        "JPEG",
+        "PNG",
+        "GIF",
+        "DOCX"
+      ]
+    },
+    {
+      "name": "Seats",
+      "items": [
+        "Chair",
+        "Sofa",
+        "Bench",
+        "Stool"
+      ]
+    },
+    {
+      "name": "Injuries",
+      "items": [
+        "Sprain",
+        "Fracture",
+        "Bruise",
+        "Wound"
+      ]
+    },
+    {
+      "name": "Magician",
+      "items": ["🧙‍♂️","🧙‍♀️","🪄","✨","🔮","🧝‍♂️","🧝‍♀️","🧛‍♂️"],
+      "type": "img"
+    },
+    {
+      "name": "Flu",
+      "items": ["🤒","🤧","💊","🩺","🛌"],
+      "type": "img"
+    }
+  ],
+  "lvl_28": [
+    {
+      "name": "Zombies",
+      "items": ["🧟‍♂️","🧟‍♀️","🧟","🩸","🧠","⚰️","🪦","🏃‍♂️"],
+      "type": "img"
+    },
+    {
+      "name": "Minerals",
+      "items": [
+        "Gypsum",
+        "Calcite",
+        "Azurite",
+        "Mica",
+        "Marble",
+        "Quartz",
+        "Lime",
+        "Beryl"
+      ]
+    },
+    {
+      "name": "Japan",
+      "items": [
+        "Mochi",
+        "Miso",
+        "Gyoza",
+        "Ikebana",
+        "Ramen",
+        "Tempura",
+        "Kimono",
+        "Origami"
+      ]
+    },
+    {
+      "name": "Umbrella",
+      "items": [
+        "Rain",
+        "Drizzle",
+        "Downpour",
+        "Rainfall",
+        "Shower",
+        "Raindrop"
+      ]
+    },
+    {
+      "name": "Titles",
+      "items": ["💰","🏦","💳","💵","📈","📉","🪙"],
+      "type": "img"
+    },
+    {
+      "name": "Radiate",
+      "items": ["☢️","🩻","⚡","💡"],
+      "type": "img"
+    },
+    {
+      "name": "Warning",
+      "items": [
+        "Alarm",
+        "Siren",
+        "Whistle",
+        "Klaxon"
+      ]
+    },
+    {
+      "name": "Hormones",
+      "items": [
+        "Glucagon",
+        "Cortisol",
+        "Insulin",
+        "Gastrin"
+      ]
+    },
+    {
+      "name": "Eye",
+      "items": [
+        "Iris",
+        "Pupil",
+        "Retina"
+      ]
+    },
+    {
+      "name": "Shovel",
+      "items": [
+        "Dig",
+        "Excavate",
+        "Unearth"
+      ]
+    }
+  ],
+  "lvl_29": [
+    {
+      "name": "Calls",
+      "items": ["🐱","🐖","🦅","🐑","🦆","🐸","🐺","🐶"],
+      "type": "img"
+    },
+    {
+      "name": "Flooring",
+      "items": [
+        "Linoleum",
+        "Bamboo",
+        "Hardwood",
+        "Laminate",
+        "Tile",
+        "Parquet",
+        "Cork",
+        "Vinyl"
+      ]
+    },
+    {
+      "name": "Alloy",
+      "items": [
+        "Alnico",
+        "Amalgam",
+        "Brass",
+        "Bronze",
+        "Nichrome",
+        "Tungsten",
+        "Nitinol",
+        "Stellite"
+      ]
+    },
+    {
+      "name": "Herbs",
+      "items": [
+        "Thyme",
+        "Rosemary",
+        "Chives",
+        "Dill",
+        "Parsley",
+        "Sage"
+      ]
+    },
+    {
+      "name": "Roadwork",
+      "items": [
+        "Rake",
+        "Bitumen",
+        "Sand",
+        "Concrete",
+        "Sidewalk",
+        "Grinder"
+      ]
+    },
+    {
+      "name": "Lungs",
+      "items": [
+        "Inhale",
+        "Bronchi",
+        "Trachea",
+        "Exhale"
+      ]
+    },
+    {
+      "name": "Mammoth",
+      "items": [
+        "Tail",
+        "Fur",
+        "Trunk",
+        "Tusks"
+      ]
+    },
+    {
+      "name": "Finger",
+      "items": ["☝️","🖐️","✌️","🤌","🫱","🫲","🖖","🤏"],
+      "type": "img"
+    },
+    {
+      "name": "Festival",
+      "items": [
+        "Diwali",
+        "Holi",
+        "Songkran"
+      ]
+    },
+    {
+      "name": "Meteo",
+      "items": [
+        "Thunder",
+        "Heatwave",
+        "Blizzard"
+      ]
+    }
+  ],
+  "lvl_30": [
+    {
+      "name": "Metal",
+      "items": ["🛠️","⚙️","🔩","⛓️","🪙","🪛","🧰","💠"],
+      "type": "img"
+    },
+    {
+      "name": "Hoof",
+      "items": ["🦌","🦒","🦓","🦙","🦬"],
+      "type": "img"
+    },
+    {
+      "name": "Relax",
+      "items": [
+        "Spa",
+        "Bath",
+        "Hammam",
+        "Jacuzzi",
+        "Unwind",
+        "Breathe",
+        "Stretch",
+        "Recline"
+      ]
+    },
+    {
+      "name": "Relation",
+      "items": [
+        "Neighbor",
+        "Spouse",
+        "Family",
+        "Partner",
+        "Friend",
+        "Relative"
+      ]
+    },
+    {
+      "name": "Artifact",
+      "items": [
+        "Insignia",
+        "Relic",
+        "Sigil",
+        "Totem",
+        "Amulet",
+        "Vase"
+      ]
+    },
+    {
+      "name": "Defense",
+      "items": [
+        "Guard",
+        "CCTV",
+        "Security",
+        "Patrol"
+      ]
+    },
+    {
+      "name": "ENT",
+      "items": [
+        "Throat",
+        "Sinuses",
+        "Tonsils",
+        "Adenoids"
+      ]
+    },
+    {
+      "name": "New",
+      "items": [
+        "York",
+        "Year",
+        "Jersey",
+        "Mexico"
+      ]
+    },
+    {
+      "name": "Alien",
+      "items": [
+        "UFO",
+        "Martian",
+        "Lifeform"
+      ]
+    },
+    {
+      "name": "Particle",
+      "items": [
+        "Atom",
+        "Electron",
+        "Neutron"
+      ]
+    }
+  ],
+  "lvl_31": [
+    {
+      "name": "Swim",
+      "items": ["🏊‍♂️","🌊","🏖️","🩱","🩳","🥽"],
+      "type": "img"
+    },
+    {
+      "name": "Amino",
+      "items": [
+        "Alanine",
+        "Glycine",
+        "Leucine",
+        "Lysine",
+        "Taurine",
+        "Tyrosine",
+        "Cysteine",
+        "Valine"
+      ]
+    },
+    {
+      "name": "Band",
+      "items": [
+        "Producer",
+        "Drummer",
+        "Vocalist",
+        "Bassist",
+        "Composer",
+        "Pianist",
+        "Record",
+        "Album"
+      ]
+    },
+    {
+      "name": "Swords",
+      "items": [
+        "Katana",
+        "Rapier",
+        "Scimitar",
+        "Falcata",
+        "Saber",
+        "Claymore",
+        "Cutlass",
+        "Falchion"
+      ]
+    },
+    {
+      "name": "Worship",
+      "items": [
+        "Mosque",
+        "Temple",
+        "Church",
+        "Abbey",
+        "Chapel",
+        "Shrine"
+      ]
+    },
+    {
+      "name": "New York",
+      "items": ["🗽","🏙️","🚕","🛹","🌆","🗺️"],
+      "type": "img"
+    },
+    {
+      "name": "Odors",
+      "items": [
+        "Fruity",
+        "Musky",
+        "Minty",
+        "Citrusy",
+        "Woody",
+        "Resinous"
+      ]
+    },
+    {
+      "name": "No bones",
+      "items": [
+        "Barnacle",
+        "Snail",
+        "Squid",
+        "Starfish",
+        "Jellyfish"
+      ]
+    },
+    {
+      "name": "Cafe",
+      "items": ["☕","🍰","🥐","🍩","🥪","🍵","🍫","🫖"],
+      "type": "img"
+    },
+    {
+      "name": "Legends",
+      "items": [
+        "Fable",
+        "Saga",
+        "Tale",
+        "Epic",
+        "Myth"
+      ]
+    },
+    {
+      "name": "Pause",
+      "items": [
+        "Stop",
+        "Break",
+        "Hold",
+        "Halt"
+      ]
+    },
+    {
+      "name": "Mouse",
+      "items": [
+        "Drag",
+        "Drop",
+        "Scroll",
+        "Click"
+      ]
+    },
+    {
+      "name": "Mummy",
+      "items": [
+        "Egypt",
+        "Pyramid",
+        "Tomb",
+        "Pharaoh"
+      ]
+    },
+    {
+      "name": "Hello",
+      "items": [
+        "Hi",
+        "Howdy",
+        "Hey"
+      ]
+    },
+    {
+      "name": "PhD",
+      "items": [
+        "Degree",
+        "Thesis",
+        "Research"
+      ]
+    }
+  ],
+  "lvl_32": [
+    {
+      "name": "Eats",
+      "items": ["🍕","🌮","🍟","🍔","🥙","🥪","🌯","🌭"],
+      "type": "img"
+    },
+    {
+      "name": "Signpost",
+      "items": [
+        "Yield",
+        "Distance",
+        "Course",
+        "Path",
+        "Route",
+        "Arrow",
+        "No entry",
+        "Lane"
+      ]
+    },
+    {
+      "name": "Moon",
+      "items": ["🌑","🌒","🌕","🌔"],
+      "type": "img"
+    },
+    {
+      "name": "Fall",
+      "items": [
+        "Leaves",
+        "Pumpkin",
+        "Acorn",
+        "Hayride"
+      ]
+    },
+    {
+      "name": "Medieval",
+      "items": ["🏰","🛡️","⚔️","👑","🗡️","🐴"],
+      "type": "img"
+    },
+    {
+      "name": "Fans",
+      "items": [
+        "Blow",
+        "Whirl",
+        "Rotate"
+      ]
+    }
+  ],
+  "lvl_33": [
+    {
+      "name": "Bouquet",
+      "items": [
+        "Foliage",
+        "Flower",
+        "Wrapper",
+        "Corsage",
+        "Filler",
+        "Florist",
+        "Ribbon",
+        "Petal"
+      ]
+    },
+    {
+      "name": "Music",
+      "items": ["🎼","🎵","🎶","🎹","🎻","🎺","🎷","🥁"],
+      "type": "img"
+    },
+    {
+      "name": "Sizes",
+      "items": [
+        "L",
+        "XXS",
+        "XXXL",
+        "S",
+        "M",
+        "XS",
+        "XL",
+        "One size"
+      ]
+    },
+    {
+      "name": "Lipstick",
+      "items": [
+        "Crimson",
+        "Ruby red",
+        "Scarlet",
+        "Fuchsia",
+        "Nude",
+        "Burgundy"
+      ]
+    },
+    {
+      "name": "Bags",
+      "items": ["👜","🎒","👝","💼","🛍️","👛","🧳"],
+      "type": "img"
+    },
+    {
+      "name": "Checkout",
+      "items": [
+        "Cashier",
+        "Register",
+        "Barcode",
+        "Customer"
+      ]
+    },
+    {
+      "name": "Slang",
+      "items": [
+        "BFF",
+        "OMG",
+        "Flex",
+        "Cringe"
+      ]
+    },
+    {
+      "name": "Justice",
+      "items": [
+        "Scales",
+        "Gavel",
+        "Law",
+        "Court"
+      ]
+    },
+    {
+      "name": "Laptop",
+      "items": [
+        "Portable",
+        "Wireless",
+        "Foldable"
+      ]
+    },
+    {
+      "name": "Prisoner",
+      "items": [
+        "Inmate",
+        "Felon",
+        "Detainee"
+      ]
+    }
+  ],
+  "lvl_34": [
+    {
+      "name": "Sleuth",
+      "items": [
+        "Witness",
+        "Motive",
+        "Victim",
+        "Clue",
+        "Crime",
+        "Mystery",
+        "Suspect",
+        "Alibi"
+      ]
+    },
+    {
+      "name": "Space",
+      "items": ["☄️","🌒","🌌","🌠","🪐","🌟","💫","🛰️"],
+      "type": "img"
+    },
+    {
+      "name": "Religion",
+      "items": ["⛪","🕌","🙏","📿","✝️","🕍"],
+      "type": "img"
+    },
+    {
+      "name": "Soil",
+      "items": [
+        "Clay",
+        "Sandy",
+        "Silty",
+        "Loamy",
+        "Peaty",
+        "Chalky"
+      ]
+    },
+    {
+      "name": "Western",
+      "items": [
+        "Gambler",
+        "Sheriff",
+        "Cowboy",
+        "Lasso",
+        "Saloon",
+        "Rodeo"
+      ]
+    },
+    {
+      "name": "Draw",
+      "items": ["🖌️","🎨","🖼️","🧴","🖍️","🖊️"],
+      "type": "img"
+    },
+    {
+      "name": "Thunder",
+      "items": [
+        "Hum",
+        "Roar",
+        "Rumble",
+        "Boom"
+      ]
+    },
+    {
+      "name": "Toppings",
+      "items": [
+        "Honey",
+        "Caramel",
+        "Jelly",
+        "Syrup"
+      ]
+    },
+    {
+      "name": "Lock",
+      "items": [
+        "Secure",
+        "Sturdy",
+        "Trusty"
+      ]
+    },
+    {
+      "name": "Legs",
+      "items": [
+        "Thigh",
+        "Knee",
+        "Ankle"
+      ]
+    }
+  ],
+  "lvl_35": [
+    {
+      "name": "Teasers",
+      "items": [
+        "Maze",
+        "Puzzle",
+        "Rebus",
+        "Quiz",
+        "Riddle",
+        "Enigma",
+        "Charade",
+        "Anagram"
+      ]
+    },
+    {
+      "name": "Keyboard",
+      "items": [
+        "Control",
+        "Shift",
+        "Alt",
+        "Delete",
+        "Spacebar",
+        "Enter",
+        "Escape",
+        "Tab"
+      ]
+    },
+    {
+      "name": "Soups",
+      "items": [
+        "Gazpacho",
+        "Broth",
+        "Saimin",
+        "Tom yum",
+        "Pho",
+        "Pozole",
+        "Harira",
+        "Sinigang"
+      ]
+    },
+    {
+      "name": "Sweet",
+      "items": ["🍬","🍭","🍯","🧁","🍫","🍩","🍪","🍮"],
+      "type": "img"
+
+    },
+    {
+      "name": "Park",
+      "items": [
+        "Plant",
+        "Tree",
+        "Bench",
+        "Fountain",
+        "Grass",
+        "Pathway"
+      ]
+    },
+    {
+      "name": "Lemon",
+      "items": [
+        "Yellow",
+        "Oval",
+        "Vitamin",
+        "Sour"
+      ]
+    },
+    {
+      "name": "Needle",
+      "items": [
+        "Sharp",
+        "Thin",
+        "Pointed",
+        "Metallic"
+      ]
+    },
+    {
+      "name": "Pyramids",
+      "items": [
+        "Ra",
+        "Osiris",
+        "Anubis",
+        "Ramses"
+      ]
+    },
+    {
+      "name": "Shaft",
+      "items": [
+        "Pickaxe",
+        "Mine",
+        "Cart"
+      ]
+    },
+    {
+      "name": "Shuffle",
+      "items": [
+        "Mix",
+        "Stir",
+        "Blend"
+      ]
+    }
+  ],
+  "lvl_36": [
+    {
+      "name": "Farming",
+      "items": ["🌾","🌱","🌿","🌻","🌽"],
+      "type": "img"
+
+    },
+    {
+      "name": "Science",
+      "items": ["⚡","🧪","🔬","📡","🧬","🔭","🧠","💡"],
+      "type": "img"
+
+    },
+    {
+      "name": "Beauty",
+      "items": [
+        "Skincare",
+        "Mascara",
+        "Blusher",
+        "Cleanser",
+        "Perfume",
+        "Eyeliner",
+        "Primer",
+        "Lipstick"
+      ]
+    },
+    {
+      "name": "Toolbox",
+      "items": [
+        "Pliers",
+        "Wrench",
+        "Drill",
+        "Adhesive tape",
+        "Saw",
+        "Chisel",
+        "Clamp",
+        "Hammer"
+      ]
+    },
+    {
+      "name": "Manager",
+      "items": [
+        "Deadline",
+        "Tasklist",
+        "Schedule",
+        "Delegate",
+        "Priority",
+        "Planning"
+      ]
+    },
+    {
+      "name": "Library",
+      "items": [
+        "Book",
+        "Shelf",
+        "Lamp",
+        "Table",
+        "Author",
+        "Index"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "items": ["⛷️","⛸️","🛷"],
+      "type": "img"
+    },
+    {
+      "name": "Painting",
+      "items": [
+        "Oil",
+        "Acrylic",
+        "Gouache",
+        "Tempera",
+        "Fresco"
+      ]
+    },
+    {
+      "name": "Markets",
+      "items": [
+        "Bazaar",
+        "Stall",
+        "Sales",
+        "Vendor"
+      ]
+    },
+    {
+      "name": "Rice",
+      "items": [
+        "Risotto",
+        "Congee",
+        "Paella",
+        "Sushi"
+      ]
+    },
+    {
+      "name": "Rocks",
+      "items": [
+        "Boulder",
+        "Pebble",
+        "Gravel"
+      ]
+    },
+    {
+      "name": "Heart",
+      "items": [
+        "Romance",
+        "Couple",
+        "Passion"
+      ]
+    }
+  ],
+  "lvl_37": [
+    {
+      "name": "UI",
+      "items": [
+        "Button",
+        "Toggle",
+        "Menu",
+        "Sidebar",
+        "Switch",
+        "Slider",
+        "Icon",
+        "Checkbox"
+      ]
+    },
+    {
+      "name": "Light",
+      "items": ["🔦","💡","🎇","🚨","✨","🌟","☀️","🔆"]
+    },
+    {
+      "name": "Monsters",
+      "items": [
+        "Beast",
+        "Ogre",
+        "Vampire",
+        "Dragon"
+      ]
+    },
+    {
+      "name": "Tennis",
+      "items": [
+        "Grass",
+        "Clay",
+        "Hard",
+        "Carpet"
+      ]
+    },
+    {
+      "name": "Hippie",
+      "items": [
+        "Vans",
+        "Commune",
+        "Freedom"
+      ]
+    },
+    {
+      "name": "Horse",
+      "items": [
+        "Zebra",
+        "Donkey",
+        "Mule"
+      ]
+    }
+  ],
+  "lvl_38": [
+    {
+      "name": "Big",
+      "items": [
+        "Huge",
+        "Enormous",
+        "Gigantic",
+        "Massive",
+        "Colossal",
+        "Vast",
+        "Immense",
+        "Sizable"
+      ]
+    },
+    {
+      "name": "Sticky",
+      "items": [
+        "Glue",
+        "Molasses",
+        "Tar",
+        "Sap",
+        "Wax",
+        "Adhesive",
+        "Mud",
+        "Resin"
+      ]
+    },
+    {
+      "name": "City",
+      "items": ["🏙️","🗼","🗽","🎡","🏯","🕌","🏛️"],
+      "type": "img"
+
+    },
+    {
+      "name": "Robot",
+      "items": ["🤖","🦾","🦿","⚙️"],
+      "type": "img"
+
+    },
+    {
+      "name": "Polygons",
+      "items": [
+        "Hexagon",
+        "Heptagon",
+        "Pentagon",
+        "Decagon",
+        "Triangle",
+        "Octagon"
+      ]
+    },
+    {
+      "name": "Ports",
+      "items": [
+        "USB",
+        "HDMI",
+        "Type-C",
+        "VGA"
+      ]
+    },
+    {
+      "name": "Heels",
+      "items": [
+        "Stiletto",
+        "Kitten",
+        "Cuban",
+        "Spool"
+      ]
+    },
+    {
+      "name": "Hammock",
+      "items": [
+        "Chill",
+        "Relax",
+        "Rest",
+        "Sleep"
+      ]
+    },
+    {
+      "name": "Greece",
+      "items": [
+        "Sigma",
+        "Delta",
+        "Kappa"
+      ]
+    },
+    {
+      "name": "Dynamics",
+      "items": [
+        "Motion",
+        "Inertia",
+        "Velocity"
+      ]
+    }
+  ],
+  "lvl_39": [
+    {
+      "name": "Alpinist",
+      "items": [
+        "Peak",
+        "Climber",
+        "Ice axe",
+        "Altitude",
+        "Trail",
+        "Mountain",
+        "Descent",
+        "Ascent"
+      ]
+    },
+    {
+      "name": "Sounds",
+      "items": [
+        "Whisper",
+        "Bang",
+        "Click",
+        "Buzz",
+        "Roar",
+        "Sigh",
+        "Crash",
+        "Screech"
+      ]
+    },
+    {
+      "name": "Cleaning",
+      "items": ["🧹","🪣","🧽","🧴","🧺","🗑️"],
+      "type": "img"
+    },
+    {
+      "name": "Nuts",
+      "items": [
+        "Pecan",
+        "Peanut",
+        "Almond",
+        "Cashew",
+        "Walnut",
+        "Hazelnut"
+      ]
+    },
+    {
+      "name": "Lakes",
+      "items": [
+        "Ontario",
+        "Superior",
+        "Titicaca",
+        "Baikal",
+        "Michigan",
+        "Huron"
+      ]
+    },
+    {
+      "name": "Nuclear",
+      "items": [
+        "Atom",
+        "Neutron",
+        "Proton",
+        "Electron"
+      ]
+    },
+    {
+      "name": "Beach",
+      "items": ["🏖️","🌊","🏝️","🩱","🩳","🏄‍♂️"],
+      "type": "img"
+
+    },
+    {
+      "name": "Coins",
+      "items": [
+        "Penny",
+        "Dime",
+        "Nickel",
+        "Cent"
+      ]
+    },
+    {
+      "name": "Bandage",
+      "items": [
+        "Bruise",
+        "Hematoma",
+        "Abrasion"
+      ]
+    },
+    {
+      "name": "Razor",
+      "items": [
+        "Blade",
+        "Trimmer",
+        "Shaver"
+      ]
+    }
+  ],
+  "lvl_40": [
+    {
+      "name": "Love",
+      "items": ["💘","💖","❤️","💋","💌","💑","💕"],
+      "type": "img"
+
+    },
+    {
+      "name": "Theater",
+      "items": [
+        "Stage",
+        "Actors",
+        "Curtain",
+        "Playbill",
+        "Scene",
+        "Audience",
+        "Applause",
+        "Show"
+      ]
+    },
+    {
+      "name": "Adventure",
+      "items": ["🗺️","🧭","🏕️","🪂","🧗‍♂️","🚣‍♂️","🏔️","🎒"],
+      "type": "img"
+
+    },
+    {
+      "name": "Police",
+      "items": [
+        "Badge",
+        "Uniform",
+        "Arrest",
+        "Officer",
+        "Handcuff",
+        "Baton"
+      ]
+    },
+    {
+      "name": "Volcano",
+      "items": [
+        "Lava",
+        "Ash",
+        "Eruption",
+        "Crater",
+        "Heat",
+        "Fire"
+      ]
+    },
+    {
+      "name": "Italy",
+      "items": [
+        "Milan",
+        "Rome",
+        "Venice",
+        "Florence"
+      ]
+    },
+    {
+      "name": "Lamp",
+      "items": [
+        "Bulb",
+        "Plug",
+        "Switch",
+        "Cord"
+      ]
+    },
+    {
+      "name": "Night",
+      "items": [
+        "Moon",
+        "Stars",
+        "Darkness",
+        "Owl"
+      ]
+    },
+    {
+      "name": "Pointing",
+      "items": [
+        "This",
+        "That",
+        "Those"
+      ]
+    },
+    {
+      "name": "Sports",
+      "items": ["⚽","🏀","🏈","⚾","🎾","🏐","🏓","🥊"],
+      "type": "img"
+
+    }
+  ],
+  "lvl_41": [
+    {
+      "name": "Antonyms",
+      "items": [
+        "Hot",
+        "Cold",
+        "Tall",
+        "Short",
+        "Light",
+        "Dark",
+        "Fast",
+        "Slow"
+      ]
+    },
+    {
+      "name": "Suit",
+      "items": [
+        "Cribbage",
+        "Rummy",
+        "Bridge",
+        "Snap",
+        "Poker",
+        "Whist",
+        "Go Fish",
+        "Baccarat"
+      ]
+    },
+    {
+      "name": "Tailor",
+      "items": [
+        "Measure",
+        "Thread",
+        "Needle",
+        "Pattern",
+        "Seam",
+        "Fabric",
+        "Button",
+        "Iron"
+      ]
+    },
+    {
+      "name": "Build",
+      "items": [
+        "Library",
+        "Museum",
+        "Hospital",
+        "School building",
+        "Hotel",
+        "Factory",
+        "Stadium",
+        "Mall"
+      ]
+    },
+    {
+      "name": "Internet",
+      "items": [
+        "Browser",
+        "Domain",
+        "Cookie",
+        "Firewall",
+        "Protocol",
+        "Download"
+      ]
+    },
+    {
+      "name": "Magic",
+      "items": ["🪄","✨","🧪","🧙‍♂️","🔮","💎"],
+      "type": "img"
+
+    },
+    {
+      "name": "Tea",
+      "items": [
+        "Green",
+        "Black",
+        "Matcha",
+        "Herbal",
+        "Oolong",
+        "Rooibos"
+      ]
+    },
+    {
+      "name": "Groups",
+      "items": [
+        "Clan",
+        "Team",
+        "Crowd",
+        "Squad",
+        "Crew"
+      ]
+    },
+    {
+      "name": "Movie",
+      "items": [
+        "Camera",
+        "Screen",
+        "Genre",
+        "Director",
+        "Trailer"
+      ]
+    },
+    {
+      "name": "Texture",
+      "items": [
+        "Rough",
+        "Smooth",
+        "Soft",
+        "Silky",
+        "Sticky"
+      ]
+    },
+    {
+      "name": "Decorate",
+      "items": ["🏮","🔔","🎀","🎄"],
+      "type": "img"
+
+    },
+    {
+      "name": "Stripes",
+      "items": [
+        "Okapi",
+        "Chipmunk",
+        "Bongo",
+        "Skunk"
+      ]
+    },
+    {
+      "name": "Gas mask",
+      "items": [
+        "Wear",
+        "Adjust",
+        "Breathe",
+        "Protect"
+      ]
+    },
+    {
+      "name": "Policies",
+      "items": [
+        "Monarchy",
+        "Tyranny",
+        "Anarchy"
+      ]
+    },
+    {
+      "name": "Aura",
+      "items": [
+        "Ambience",
+        "Vibe",
+        "Climate"
+      ]
+    }
+  ],
+  "lvl_42": [
+    {
+      "name": "Vikings",
+      "items": [
+        "Longship",
+        "Saga",
+        "Shield",
+        "Raid",
+        "Runes",
+        "Thrall",
+        "Jarl",
+        "Valhalla"
+      ]
+    },
+    {
+      "name": "Sci-Fi",
+      "items": ["🔫","🛸","🤖","👽"],
+      "type": "img"
+
+    },
+    {
+      "name": "Economy",
+      "items": ["💰","📉","📈","💵"],
+      "type": "img"
+
+    },
+    {
+      "name": "Sweets",
+      "items": ["🍭","🍬","🍡","🍧"],
+      "type": "img"
+
+    },
+    {
+      "name": "Pig",
+      "items": [
+        "Hog",
+        "Sow",
+        "Piglet"
+      ]
+    },
+    {
+      "name": "Strength",
+      "items": [
+        "Power",
+        "Force",
+        "Might"
+      ]
+    }
+  ],
+  "lvl_43": [
+    {
+      "name": "Months",
+      "items": [
+        "May",
+        "April",
+        "July",
+        "June",
+        "August",
+        "December",
+        "January",
+        "October"
+      ]
+    },
+    {
+      "name": "Artists",
+      "items": [
+        "Picasso",
+        "Da Vinci",
+        "Monet",
+        "Van Gogh",
+        "Dali",
+        "Warhol",
+        "Munch",
+        "Vermeer"
+      ]
+    },
+    {
+      "name": "Acids",
+      "items": [
+        "Boric",
+        "Folic",
+        "Oxalic",
+        "Sulfuric",
+        "Lactic",
+        "Acetic",
+        "Malic",
+        "Nitric"
+      ]
+    },
+    {
+      "name": "Clouds",
+      "items": [
+        "Cumulus",
+        "Stratus",
+        "Cirrus",
+        "Nimbus",
+        "Opacus",
+        "Radiatus"
+      ]
+    },
+    {
+      "name": "Music",
+      "items": ["🎵","🎶","🎷","🎸","🥁","🎹","🎺","🎻"],
+      "type": "img"
+    },
+    {
+      "name": "Message",
+      "items": [
+        "Text",
+        "Email",
+        "Letter",
+        "Fax"
+      ]
+    },
+    {
+      "name": "Armor",
+      "items": [
+        "Helmet",
+        "Gauntlet",
+        "Cuirass",
+        "Security"
+      ]
+    },
+    {
+      "name": "Diving",
+      "items": [
+        "Snorkel",
+        "Fins",
+        "Wetsuit",
+        "Drysuit"
+      ]
+    },
+    {
+      "name": "Views",
+      "items": [
+        "Dualism",
+        "Stoicism",
+        "Nihilism"
+      ]
+    },
+    {
+      "name": "Rat",
+      "items": [
+        "Nimble",
+        "Quick",
+        "Sneaky"
+      ]
+    }
+  ],
+  "lvl_44": [
+    {
+      "name": "Spices",
+      "items": [
+        "Saffron",
+        "Turmeric",
+        "Cardamom",
+        "Clove",
+        "Nutmeg",
+        "Anise",
+        "Fennel",
+        "Cumin"
+      ]
+    },
+    {
+      "name": "Aquatic",
+      "items": [
+        "🐬",
+        "🐠",
+        "🦀",
+        "🐙",
+        "🦑",
+        "🐋",
+        "🦈",
+        "🦐",
+        "🦞",
+        "🐡",
+        "🐚"
+      ],
+      "type": "img"
+    },
+    {
+      "name": "Concert",
+      "items": [
+        "Fans",
+        "Singer",
+        "Tickets",
+        "Encore",
+        "Ovation",
+        "Sound",
+        "Band",
+        "Dances"
+      ]
+    },
+    {
+      "name": "Insects",
+      "items": [
+        "Ant",
+        "Bee",
+        "Beetle",
+        "Wasp",
+        "Moth"
+      ]
+    },
+    {
+      "name": "Teaching",
+      "items": [
+        "Homework",
+        "Exercise",
+        "Tutorial",
+        "Seminar",
+        "Lecture",
+        "Webinar"
+      ]
+    },
+    {
+      "name": "Tarot",
+      "items": [
+        "Fool",
+        "Moon taro",
+        "Magician",
+        "Empress"
+      ]
+    },
+    {
+      "name": "Chips",
+      "items": [
+        "Crispy",
+        "Crunchy",
+        "Greasy",
+        "Zesty"
+      ]
+    },
+    {
+      "name": "Email",
+      "items": ["📧","📥","✉️","📬","📮"],
+      "type": "img"
+
+    },
+    {
+      "name": "Career",
+      "items": ["💼","📈","👔","🗂️","🏢","👩‍💼","📝"],
+      "type": "img"
+    },
+    {
+      "name": "First",
+      "items": [
+        "Steps",
+        "Kiss",
+        "Love"
+      ]
+    }
+  ],
+  "lvl_45": [
+    {
+      "name": "Moving",
+      "items": [
+        "Riding",
+        "Hiking",
+        "Flying",
+        "Swimming",
+        "Running",
+        "Going",
+        "Jogging",
+        "Sailing"
+      ]
+    },
+    {
+      "name": "Heraldry",
+      "items": [
+        "Blazon",
+        "Emblem",
+        "Bezant",
+        "Crest",
+        "Annulet",
+        "Bordure",
+        "Cadency",
+        "Chevron"
+      ]
+    },
+    {
+      "name": "Fashion",
+      "items": ["👗","👠","🕶️","🧥","👜","💃","👒"],
+      "type": "img"
+    },
+    {
+      "name": "Gestures",
+      "items": [
+        "Wave",
+        "Nod",
+        "Bow",
+        "Salute",
+        "Facepalm",
+        "Clap"
+      ]
+    },
+    {
+      "name": "Friends",
+      "items": [
+        "Mate",
+        "Buddy",
+        "Friend",
+        "Soulmate",
+        "Bestie",
+        "Chum"
+      ]
+    },
+    {
+      "name": "Meat",
+      "items": ["🌭","🥓","🍖","🍗"],
+      "type": "img"
+    },
+    {
+      "name": "Subway",
+      "items": [
+        "Train",
+        "Station",
+        "Tunnel",
+        "Platform"
+      ]
+    },
+    {
+      "name": "Novel",
+      "items": [
+        "Narrator",
+        "Subplot",
+        "Climax",
+        "Conflict"
+      ]
+    },
+    {
+      "name": "Blades",
+      "items": [
+        "Sabre",
+        "Rapier",
+        "Katana"
+      ]
+    },
+    {
+      "name": "Kettle",
+      "items": [
+        "Lid",
+        "Spout",
+        "Handle"
+      ]
+    }
+  ],
+  "lvl_46": [
+    {
+      "name": "Shop",
+      "items": [
+        "Bargain",
+        "Checkout",
+        "Basket",
+        "Product",
+        "Price",
+        "Receipt",
+        "Sale",
+        "Deal"
+      ]
+    },
+    {
+      "name": "Traffic",
+      "items": ["🚦","🛣️","🚗","⛔","🚙","🚧"],
+      "type": "img"
+    },
+    {
+      "name": "Shoes",
+      "items": [
+        "Boots",
+        "Heels",
+        "Flats",
+        "Oxfords",
+        "Wedges",
+        "Monks",
+        "Brogues",
+        "Derbies"
+      ]
+    },
+    {
+      "name": "Homes",
+      "items": [
+        "Nest",
+        "Den",
+        "Burrow",
+        "Lair",
+        "Stable",
+        "Kennel",
+        "Lodge",
+        "Warren"
+      ]
+    },
+    {
+      "name": "Eclipse",
+      "items": [
+        "Umbra",
+        "Penumbra",
+        "Antumbra",
+        "Shadow",
+        "Total",
+        "Partial"
+      ]
+    },
+    {
+      "name": "Geometry",
+      "items": ["📍","📏","📐","🔺","⭕"],
+      "type": "img"
+    },
+    {
+      "name": "Boats",
+      "items": [
+        "Canoe",
+        "Raft",
+        "Kayak",
+        "Sloop",
+        "Skiff",
+        "Rowboat"
+      ]
+    },
+    {
+      "name": "Voices",
+      "items": [
+        "Soprano",
+        "Tenor",
+        "Baritone",
+        "Bass",
+        "Alto"
+      ]
+    },
+    {
+      "name": "Poetry",
+      "items": [
+        "Sonnet",
+        "Haiku",
+        "Ode",
+        "Ballad",
+        "Acrostic"
+      ]
+    },
+    {
+      "name": "Diet",
+      "items": [
+        "Fats",
+        "Carbs",
+        "Proteins",
+        "Vitamins"
+      ]
+    },
+    {
+      "name": "Dragon",
+      "items": [
+        "Claws",
+        "Fire",
+        "Scales",
+        "Tail"
+      ]
+    },
+    {
+      "name": "Treats",
+      "items": [
+        "Brownie",
+        "Cupcake",
+        "Churro",
+        "Lollipop"
+      ]
+    },
+    {
+      "name": "Meals",
+      "items": [
+        "Supper",
+        "Lunch",
+        "Dinner"
+      ]
+    },
+    {
+      "name": "Alchemy",
+      "items": [
+        "Cauldron",
+        "Elixir",
+        "Potion"
+      ]
+    }
+  ],
+  "lvl_47": [
+    {
+      "name": "Card",
+      "items": [
+        "Debit",
+        "Transfer",
+        "Pay",
+        "Withdraw",
+        "CVV",
+        "Chip",
+        "PIN",
+        "Credit"
+      ]
+    },
+    {
+      "name": "Sky",
+      "items": [
+        "Clouds",
+        "Stars",
+        "Sun",
+        "Moon",
+        "Eclipse",
+        "Birds",
+        "Planes",
+        "Rainbow"
+      ]
+    },
+    {
+      "name": "Siren",
+      "items": [
+        "Alert",
+        "Warning",
+        "Alarm",
+        "Signal"
+      ]
+    },
+    {
+      "name": "Palm",
+      "items": [
+        "Tendons",
+        "Muscles",
+        "Joints",
+        "Carpals"
+      ]
+    },
+    {
+      "name": "Slow",
+      "items": ["🦥","🐌","🐢"],
+      "type": "img"
+    },
+    {
+      "name": "Soap",
+      "items": ["🧼","🧴","🫧"],
+      "type": "img"
+    }
+  ],
+  "lvl_48": [
+    {
+      "name": "Door",
+      "items": [
+        "Lock",
+        "Knob",
+        "Hinges",
+        "Keys",
+        "Handle",
+        "Peephole",
+        "Doorbell",
+        "Latch"
+      ]
+    },
+    {
+      "name": "Sewing",
+      "items": ["🧵","🪡","🧶","✂️","🧷","📐"],
+      "type": "img"
+    },
+    {
+      "name": "Salad",
+      "items": ["🥗","🍅","🥒","🧀","🥬","🥕","🫒"],
+      "type": "img"
+    },
+    {
+      "name": "Bottle",
+      "items": [
+        "Drink",
+        "Sip",
+        "Gulp",
+        "Swallow",
+        "Slurp",
+        "Guzzle"
+      ]
+    },
+    {
+      "name": "Outlaws",
+      "items": [
+        "Bandit",
+        "Gangster",
+        "Hacker",
+        "Smuggler",
+        "Robber",
+        "Pirate"
+      ]
+    },
+    {
+      "name": "Cough",
+      "items": [
+        "Virus",
+        "Bacteria",
+        "Microbe",
+        "Germ"
+      ]
+    },
+    {
+      "name": "Pasta",
+      "items": [
+        "Ravioli",
+        "Macaroni",
+        "Rigatoni",
+        "Penne"
+      ]
+    },
+    {
+      "name": "Fastener",
+      "items": [
+        "Bolt",
+        "Nail",
+        "Screw",
+        "Rivet"
+      ]
+    },
+    {
+      "name": "Support",
+      "items": [
+        "Hug",
+        "Empathy",
+        "Comfort"
+      ]
+    },
+    {
+      "name": "Survey",
+      "items": [
+        "Poll",
+        "Review",
+        "Feedback"
+      ]
+    }
+  ],
+  "lvl_49": [
+    {
+      "name": "Grass",
+      "items": [
+        "Lawn",
+        "Meadow",
+        "Field",
+        "Garden",
+        "Pasture",
+        "Turf",
+        "Prairie",
+        "Steppe"
+      ]
+    },
+    {
+      "name": "Gun",
+      "items": [
+        "Rifle",
+        "Pistol",
+        "Shotgun",
+        "Revolver",
+        "Glock",
+        "Mauser",
+        "Walther",
+        "Barrel"
+      ]
+    },
+    {
+      "name": "Fears",
+      "items": [
+        "Height",
+        "Clowns",
+        "Darkness",
+        "Snakes",
+        "Horror",
+        "Fright",
+        "Anxiety",
+        "Dread"
+      ]
+    },
+    {
+      "name": "Rope",
+      "items": [
+        "Rayon",
+        "Nylon",
+        "Jute",
+        "Cotton",
+        "Kevlar",
+        "Silk"
+      ]
+    },
+    {
+      "name": "Loader",
+      "items": [
+        "Picker",
+        "Packer",
+        "Sorter",
+        "Box",
+        "Pallet",
+        "Crate"
+      ]
+    },
+    {
+      "name": "Weather",
+      "items": ["☀️","☁️","🌧️","❄️","🌩️","🌫️"],
+      "type": "img"
+    },
+    {
+      "name": "Masonry",
+      "items": [
+        "Granite",
+        "Rebar",
+        "Scaffold",
+        "Mortar"
+      ]
+    },
+    {
+      "name": "Paganism",
+      "items": [
+        "Ritual",
+        "Totem",
+        "Idol",
+        "Altar"
+      ]
+    },
+    {
+      "name": "Present",
+      "items": [
+        "Current",
+        "Now",
+        "Today"
+      ]
+    },
+    {
+      "name": "Secret",
+      "items": ["🕵️‍♂️","🔐","💬"],
+      "type": "img"
+    }
+  ],
+  "lvl_50": [
+    {
+      "name": "Repair",
+      "items": [
+        "Fix",
+        "Restore",
+        "Reset",
+        "Mend",
+        "Renovate",
+        "Remake",
+        "Remedy",
+        "Rebuild"
+      ]
+    },
+    {
+      "name": "Snake",
+      "items": [
+        "Viper",
+        "Python",
+        "Cobra",
+        "Anaconda",
+        "Boa",
+        "Keelback",
+        "Taipan",
+        "Reptile"
+      ]
+    },
+    {
+      "name": "Spices",
+      "items": [
+        "Pepper",
+        "Ginger",
+        "Saffron",
+        "Paprika",
+        "Oregano",
+        "Cumin",
+        "Basil",
+        "Cloves"
+      ]
+    },
+    {
+      "name": "Equidae",
+      "items": [
+        "Donkey",
+        "Mule",
+        "Mustang",
+        "Horse",
+        "Zebra",
+        "Pony"
+      ]
+    },
+    {
+      "name": "Pants",
+      "items": [
+        "Jeans",
+        "Leggings",
+        "Joggers",
+        "Chinos",
+        "Culottes",
+        "Slacks"
+      ]
+    },
+    {
+      "name": "Vehicles",
+      "items": ["🚗","🚕","🚙","🚌","🏎️","🚓","🚚","🚜"],
+      "type": "img"
+    },
+    {
+      "name": "Climate",
+      "items": [
+        "Arid",
+        "Humid",
+        "Oceanic",
+        "Tropical"
+      ]
+    },
+    {
+      "name": "Clocks",
+      "items": ["⏰","🕰️","⌚","⏳"],
+      "type": "img"
+    },
+    {
+      "name": "Leather",
+      "items": [
+        "Cowhide",
+        "Nubuck",
+        "Suede"
+      ]
+    },
+    {
+      "name": "Oil",
+      "items": ["🫒","🌴","🥥"],
+      "type": "img"
+    }
+  ]
+}

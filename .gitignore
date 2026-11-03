@@ -1,0 +1,61 @@
+# ==========================================
+# Game Gate Offline (.gitignore)
+# ==========================================
+
+# Gradle & Android Build Outputs
+.gradle/
+build/
+**/build/
+**/.gradle/
+**/intermediates/
+**/generated/
+**/outputs/apk/
+**/outputs/bundle/
+local.properties
+*.apk
+*.aab
+
+# Node.js & Backend
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE & Editor
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# JVM Crash & Replay Logs
+hs_err_pid*.log
+replay_pid*.log
+*.log
+
+# Decompiled raw folders & Temporary extraction
+apktool_out/
+decompiled_src/
+_dex_files/
+CONVERT/
+GAME HTML/
+null/
+*.xapk
+*.tmp
+
+# Root temporary screenshot dumps
+admob_test_screen.png
+current_screen.png
+game_foreground.png
+installed_admob_test.png
+launcher_screen.png
+rebuild_home.png
+rebuild_success.png
+screenshot_*.png
+screen_*.png
+sc_*.png
+ui.xml
+
+# Large packages and unpacked games for Cloudflare R2
+R2_Upload/

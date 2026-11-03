@@ -1,0 +1,12 @@
+﻿{
+	"name": "Checkers",
+	"short_name": "Checkers",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"icons": [{
+		"src": "icon-256.webp",
+		"sizes": "256x256",
+		"type": "image/png"
+	}]
+}

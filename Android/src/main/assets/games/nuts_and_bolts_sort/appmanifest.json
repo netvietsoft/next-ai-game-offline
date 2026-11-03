@@ -1,0 +1,42 @@
+{
+	"name": "NutsAndBoltsSort",
+	"short_name": "NutsAndBoltsSort",
+	"description": "11001 - Add JSevents\n11201 - fixed a bug with adding two levels\n11301 - Fixed bug in level 88\n11401 - replace music\n11501 - Fix 94 lvl, add reward, add tutorials 0 lvl\n11505 - Add 50 level to 150, data levels in one file, drop multiple nuts\n11601 - Fix 122 - 150 levels\n11602 - Fix Bug reward nuts position, 143-150 level add empty bolt, correct animation move\n11611 - Fix loading, resize logo\n11612 - New variant levels\n11613 - Fix 91 95 96 97 99 100 lvl",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-64.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-128.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "icons/icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

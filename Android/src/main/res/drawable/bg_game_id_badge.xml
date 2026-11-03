@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Khung nền badge mã số thứ tự game hiển thị đè trên thumbnail.
+    Game ID badge background displayed on top of the game thumbnail.
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#D90F172A" />
+    <corners android:radius="6dp" />
+    <stroke
+        android:width="1dp"
+        android:color="#4D3B82F6" />
+    <padding
+        android:left="6dp"
+        android:top="2dp"
+        android:right="6dp"
+        android:bottom="2dp" />
+</shape>

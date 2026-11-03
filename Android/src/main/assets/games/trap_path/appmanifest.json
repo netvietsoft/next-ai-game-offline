@@ -1,0 +1,11 @@
+{
+	"name": "trap_path",
+	"short_name": "trap_path",
+	"description": "10000 - add js event\n10101 - new 60 levels, fix propetis",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

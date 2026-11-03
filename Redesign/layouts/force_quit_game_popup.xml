@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/popup_quit_game" android:layout_width="320.0sp" android:layout_height="wrap_content" android:elevation="0.0dip" app:cardBackgroundColor="#ffffffff" app:cardCornerRadius="0.0dip" app:cardPreventCornerOverlap="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.2">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/title_popup_force_quit_game" android:textAlignment="center" android:textFontWeight="600" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                <TextView android:textColor="@color/colorBlack" android:id="@id/iap_bottom_terms_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/text_popup_force_quit_game" android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/linear_layout_button_allow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="90.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                <Button android:textColor="#ff277a7a" android:id="@id/button_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CLOSE" android:backgroundTint="#00000000" style="@style/MyButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

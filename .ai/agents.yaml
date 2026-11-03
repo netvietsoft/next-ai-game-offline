@@ -1,0 +1,61 @@
+agents:
+  orchestrator:
+    role: coordinator
+    can_code: false
+  architect:
+    role: architecture
+    can_code: false
+  backend:
+    role: backend
+    writable:
+      - Backend/**
+      - tests/backend/**
+  frontend:
+    role: frontend
+    writable:
+      - Android/**
+      - tests/android/**
+      - Backend/src/cms/**
+  payment:
+    role: payment
+    writable:
+      - Android/src/main/java/com/nextai/gameoffline/billing/**
+      - Backend/src/api/payment/**
+  tester:
+    role: testing
+    writable:
+      - tests/**
+      - .ai/bugs/**
+    forbidden:
+      - Android/src/**
+      - Backend/src/**
+  fixer:
+    role: bugfix
+    writable:
+      - Android/src/**
+      - Backend/src/**
+  reviewer:
+    role: review
+    can_code: false
+  security:
+    role: security
+    can_code: false
+  devops:
+    role: devops
+    writable:
+      - infra/**
+      - scripts/**
+  designer:
+    role: design
+    can_code: false
+    can_create_prototype: true
+    writable:
+      - design/**
+      - .ai/design/**
+      - Docs/Design/**
+  documentation:
+    role: documentation
+    writable:
+      - Docs/**
+      - Report/**
+      - README.md

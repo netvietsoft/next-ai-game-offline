@@ -1,0 +1,354 @@
+{
+  "frames": {
+    "button_green.png": {
+      "frame": {
+        "x": 1,
+        "y": 1,
+        "w": 544,
+        "h": 162
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 544,
+        "h": 162
+      },
+      "sourceSize": {
+        "w": 544,
+        "h": 162
+      }
+    },
+    "button_red.png": {
+      "frame": {
+        "x": 1,
+        "y": 165,
+        "w": 544,
+        "h": 162
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 544,
+        "h": 162
+      },
+      "sourceSize": {
+        "w": 544,
+        "h": 162
+      }
+    },
+    "card_base.png": {
+      "frame": {
+        "x": 547,
+        "y": 1,
+        "w": 209,
+        "h": 314
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 209,
+        "h": 314
+      },
+      "sourceSize": {
+        "w": 209,
+        "h": 314
+      }
+    },
+    "card_empty.png": {
+      "frame": {
+        "x": 547,
+        "y": 317,
+        "w": 209,
+        "h": 314
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 209,
+        "h": 314
+      },
+      "sourceSize": {
+        "w": 209,
+        "h": 314
+      }
+    },
+    "card_restart.png": {
+      "frame": {
+        "x": 758,
+        "y": 1,
+        "w": 209,
+        "h": 314
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 209,
+        "h": 314
+      },
+      "sourceSize": {
+        "w": 209,
+        "h": 314
+      }
+    },
+    "close.png": {
+      "frame": {
+        "x": 758,
+        "y": 317,
+        "w": 228,
+        "h": 339
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 228,
+        "h": 339
+      },
+      "sourceSize": {
+        "w": 228,
+        "h": 339
+      }
+    },
+    "ic_hint.png": {
+      "frame": {
+        "x": 1,
+        "y": 658,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      }
+    },
+    "ic_play.png": {
+      "frame": {
+        "x": 99,
+        "y": 658,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      }
+    },
+    "ic_undo.png": {
+      "frame": {
+        "x": 197,
+        "y": 658,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      }
+    },
+    "ic_undo_disable.png": {
+      "frame": {
+        "x": 295,
+        "y": 658,
+        "w": 96,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 96
+      }
+    },
+    "icon_clubs.png": {
+      "frame": {
+        "x": 969,
+        "y": 1,
+        "w": 84,
+        "h": 89
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 84,
+        "h": 89
+      },
+      "sourceSize": {
+        "w": 84,
+        "h": 89
+      }
+    },
+    "icon_diamonds.png": {
+      "frame": {
+        "x": 969,
+        "y": 92,
+        "w": 82,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 88
+      }
+    },
+    "icon_heart.png": {
+      "frame": {
+        "x": 969,
+        "y": 182,
+        "w": 83,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 83,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 83,
+        "h": 88
+      }
+    },
+    "icon_spades.png": {
+      "frame": {
+        "x": 393,
+        "y": 658,
+        "w": 82,
+        "h": 88
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 82,
+        "h": 88
+      },
+      "sourceSize": {
+        "w": 82,
+        "h": 88
+      }
+    },
+    "light.png": {
+      "frame": {
+        "x": 477,
+        "y": 658,
+        "w": 250,
+        "h": 354
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 250,
+        "h": 354
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 354
+      }
+    },
+    "light_restart.png": {
+      "frame": {
+        "x": 729,
+        "y": 658,
+        "w": 249,
+        "h": 354
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 249,
+        "h": 354
+      },
+      "sourceSize": {
+        "w": 249,
+        "h": 354
+      }
+    },
+    "star.png": {
+      "frame": {
+        "x": 1,
+        "y": 1014,
+        "w": 125,
+        "h": 125
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 125,
+        "h": 125
+      },
+      "sourceSize": {
+        "w": 125,
+        "h": 125
+      }
+    }
+  },
+  "meta": {
+    "version": "1.0",
+    "image": "ui.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1054,
+      "h": 1140
+    },
+    "scale": "1"
+  }
+}

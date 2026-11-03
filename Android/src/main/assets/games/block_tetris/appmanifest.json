@@ -1,0 +1,11 @@
+{
+	"name": "block_tetris",
+	"short_name": "block_tetris",
+	"description": "10000 - Start\n12001 - Add js events\n12001 - Add Ads PopUp events\n12001 - deleted 2/3 of the music, made the sounds quieter\n12001 - Add Rewarded\n12201 - add js events lose,restart\n12301 - Fix loading number, optimize images\n12401 - Fix position JS Popup\n12503 - fixed a bug with lines not being counted\n12504 - Added tutorials, added a check of 1000 points scored to open the advanced mode.\n\n12601 - Added new block mechanics. The circular bar has been replaced when losing.\n\n12602 - Set up a dynamic table of weights, replace effect parts with sprites, set up menu transitions\n\n20001 - The figures for the placement have been increased, the accumulation of combos has been changed for the classic mode, with the possibility of 2 passes between the lines\n\n20002 - add global sound\n20003 - new musik",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

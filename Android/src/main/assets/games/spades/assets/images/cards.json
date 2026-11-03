@@ -1,0 +1,114 @@
+{
+  "frames": {
+    "card_back.png": {
+      "frame": {
+        "x": 1,
+        "y": 1,
+        "w": 220,
+        "h": 332
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 220,
+        "h": 332
+      },
+      "sourceSize": {
+        "w": 220,
+        "h": 332
+      }
+    },
+    "card_black.png": {
+      "frame": {
+        "x": 223,
+        "y": 1,
+        "w": 220,
+        "h": 332
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 220,
+        "h": 332
+      },
+      "sourceSize": {
+        "w": 220,
+        "h": 332
+      }
+    },
+    "card_light.png": {
+      "frame": {
+        "x": 445,
+        "y": 1,
+        "w": 260,
+        "h": 372
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 260,
+        "h": 372
+      },
+      "sourceSize": {
+        "w": 260,
+        "h": 372
+      }
+    },
+    "card_shadow.png": {
+      "frame": {
+        "x": 1,
+        "y": 375,
+        "w": 240,
+        "h": 359
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 240,
+        "h": 359
+      },
+      "sourceSize": {
+        "w": 240,
+        "h": 359
+      }
+    },
+    "close.png": {
+      "frame": {
+        "x": 243,
+        "y": 375,
+        "w": 239,
+        "h": 352
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 239,
+        "h": 352
+      },
+      "sourceSize": {
+        "w": 239,
+        "h": 352
+      }
+    }
+  },
+  "meta": {
+    "version": "1.0",
+    "image": "cards.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 706,
+      "h": 735
+    },
+    "scale": "1"
+  }
+}

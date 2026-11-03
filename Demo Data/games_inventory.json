@@ -1,0 +1,834 @@
+[
+  {
+    "folder": "among_us",
+    "title": "Among Us online",
+    "orientation": "landscape",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 3433.6
+  },
+  {
+    "folder": "apple_worm",
+    "title": "apple_worm",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 2320.7
+  },
+  {
+    "folder": "archers_random",
+    "title": "archers_random",
+    "orientation": "landscape",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 9381.1
+  },
+  {
+    "folder": "balloons_creator",
+    "title": "Balloons Creator",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 1837.7
+  },
+  {
+    "folder": "block_blast",
+    "title": "block_blast",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 550.9
+  },
+  {
+    "folder": "block_merge",
+    "title": "BlockBlast",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 2644.2
+  },
+  {
+    "folder": "block_tetris",
+    "title": "block_tetris",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 2353.8
+  },
+  {
+    "folder": "brainrot_merge",
+    "title": "brainrot_merge",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 2746.3
+  },
+  {
+    "folder": "brick_breaker_retro",
+    "title": "brick_breaker_retro",
+    "orientation": "landscape",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 2321.1
+  },
+  {
+    "folder": "bubble_shooter",
+    "title": "TinglyBubbleShooter",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 3203.9
+  },
+  {
+    "folder": "cap_sort",
+    "title": "cap_sort",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 2801.9
+  },
+  {
+    "folder": "checkers",
+    "title": "checkers",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 221.7
+  },
+  {
+    "folder": "chess",
+    "title": "chess",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 313.8
+  },
+  {
+    "folder": "city_builder",
+    "title": "city_builder",
+    "orientation": "unknown",
+    "engine": "Phaser",
+    "has_wasm": false,
+    "size_kb": 2715.4
+  },
+  {
+    "folder": "coin_sort",
+    "title": "coin_sort",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 3782.0
+  },
+  {
+    "folder": "collect_em_all",
+    "title": "CollectEmAll",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 3256.2
+  },
+  {
+    "folder": "color_by_number",
+    "title": "color_by_number",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 5300.9
+  },
+  {
+    "folder": "color_cannon",
+    "title": "color_cannon",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 2407.9
+  },
+  {
+    "folder": "color_maze",
+    "title": "ColorMaze",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 4592.5
+  },
+  {
+    "folder": "coloring_book",
+    "title": "coloring_book",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 9141.5
+  },
+  {
+    "folder": "crazy_fishing",
+    "title": "crazy_fishing",
+    "orientation": "any",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 5205.8
+  },
+  {
+    "folder": "cryptogram",
+    "title": "cryptogram",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 1174.6
+  },
+  {
+    "folder": "dice_merge",
+    "title": "DiceMerge",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 1815.6
+  },
+  {
+    "folder": "dominoes",
+    "title": "dominoes",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 492.8
+  },
+  {
+    "folder": "draw_parking",
+    "title": "Draw Parking",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 2095.3
+  },
+  {
+    "folder": "drop_it",
+    "title": "drop_it",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 544.8
+  },
+  {
+    "folder": "drop_n_merge",
+    "title": "drop_n_merge",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 254.8
+  },
+  {
+    "folder": "find_number",
+    "title": "FindTheNumber",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 1527.4
+  },
+  {
+    "folder": "find_pair",
+    "title": "find_pair",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 301.3
+  },
+  {
+    "folder": "fonts",
+    "title": "fonts",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 133.4
+  },
+  {
+    "folder": "fruit_king",
+    "title": "FruitKing",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 2362.8
+  },
+  {
+    "folder": "fruits_match_2",
+    "title": "fruits_match_2",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 2851.6
+  },
+  {
+    "folder": "geometry_rash",
+    "title": "roblo_dash",
+    "orientation": "any",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 2606.5
+  },
+  {
+    "folder": "golf_day",
+    "title": "Golf Day",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 3347.6
+  },
+  {
+    "folder": "happy_filled_glass",
+    "title": "Happy Filled Glass",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 2962.4
+  },
+  {
+    "folder": "happy_filled_glass_2",
+    "title": "Happy Filled Glass 2",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 2646.4
+  },
+  {
+    "folder": "happy_filled_glass_4",
+    "title": "Happy Filled Glass 4",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 3374.8
+  },
+  {
+    "folder": "head_soccer",
+    "title": "head_soccer",
+    "orientation": "any",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 4769.4
+  },
+  {
+    "folder": "hexadice",
+    "title": "Hexadice",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 2839.9
+  },
+  {
+    "folder": "house_painter",
+    "title": "house_painter",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 2420.9
+  },
+  {
+    "folder": "how_to_loot",
+    "title": "How to loot",
+    "orientation": "any",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 7707.4
+  },
+  {
+    "folder": "iads",
+    "title": "iads",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 1460.6
+  },
+  {
+    "folder": "indiara",
+    "title": "indiara",
+    "orientation": "unknown",
+    "engine": "Construct 2",
+    "has_wasm": false,
+    "size_kb": 1539.1
+  },
+  {
+    "folder": "jigsaw_puzzle",
+    "title": "jigsaw_puzzle",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 7832.1
+  },
+  {
+    "folder": "knife_hit",
+    "title": "KnifeHit",
+    "orientation": "any",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 1932.9
+  },
+  {
+    "folder": "link_2248",
+    "title": "Link2248",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 1859.0
+  },
+  {
+    "folder": "loading-html",
+    "title": "loading-html",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 1.0
+  },
+  {
+    "folder": "ludo",
+    "title": "ludo",
+    "orientation": "unknown",
+    "engine": "Phaser",
+    "has_wasm": false,
+    "size_kb": 1326.3
+  },
+  {
+    "folder": "mahjong_classic",
+    "title": "mahjong_classic",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 2579.3
+  },
+  {
+    "folder": "mahjong_deluxe",
+    "title": "mahjong_deluxe",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 1503.0
+  },
+  {
+    "folder": "master_fall_down",
+    "title": "MasterFallDown",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 1969.7
+  },
+  {
+    "folder": "math",
+    "title": "Math",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 1871.6
+  },
+  {
+    "folder": "merge_bubble",
+    "title": "MergeBubbleNumber",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 1493.8
+  },
+  {
+    "folder": "merge_cards",
+    "title": "MergeCard",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 1586.4
+  },
+  {
+    "folder": "merge_dice",
+    "title": "merge_dice",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 790.2
+  },
+  {
+    "folder": "merge_fruits",
+    "title": "merge_fruits",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 2625.2
+  },
+  {
+    "folder": "merge_numbers",
+    "title": "NumberMergePlus",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 2084.9
+  },
+  {
+    "folder": "merge_shooter",
+    "title": "merge_shooter",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 3356.3
+  },
+  {
+    "folder": "move_the_pin_2",
+    "title": "Move The Pin 2",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 2971.7
+  },
+  {
+    "folder": "mr_bullet",
+    "title": "mr_bullet",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 5340.2
+  },
+  {
+    "folder": "nonogram",
+    "title": "nonogram",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 791.1
+  },
+  {
+    "folder": "number_tiles",
+    "title": "NumberTiles",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 1821.3
+  },
+  {
+    "folder": "nuts_and_bolts",
+    "title": "NutsAndBolts",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 11488.0
+  },
+  {
+    "folder": "nuts_and_bolts_sort",
+    "title": "NutsAndBoltsSort",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 1956.8
+  },
+  {
+    "folder": "onet_fish",
+    "title": "OnetFish",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 2967.1
+  },
+  {
+    "folder": "pao_pao",
+    "title": "pao_pao",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 230.2
+  },
+  {
+    "folder": "pinball_rush",
+    "title": "Pinball Rush",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 2567.6
+  },
+  {
+    "folder": "pipe_way",
+    "title": "Pipe Way",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 2438.7
+  },
+  {
+    "folder": "plugins",
+    "title": "plugins",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 77.3
+  },
+  {
+    "folder": "pool_8_pro",
+    "title": "pool_8_pro",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 2002.2
+  },
+  {
+    "folder": "pool_shoot",
+    "title": "pool_shoot",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 3858.6
+  },
+  {
+    "folder": "rope_bowling",
+    "title": "Rope Bawling",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 3337.2
+  },
+  {
+    "folder": "route_digger",
+    "title": "Route Digger",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 8906.6
+  },
+  {
+    "folder": "royal_blast",
+    "title": "royal_blast",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 3528.5
+  },
+  {
+    "folder": "save_the_doge",
+    "title": "save_the_doge",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 3864.0
+  },
+  {
+    "folder": "screw_pin",
+    "title": "screw_pin",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 5472.2
+  },
+  {
+    "folder": "sheep_and_sheep",
+    "title": "sheep_and_sheep",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 3427.3
+  },
+  {
+    "folder": "shooting_balls",
+    "title": "Shooting Balls",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 1696.3
+  },
+  {
+    "folder": "skip_card",
+    "title": "skip_card",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 679.9
+  },
+  {
+    "folder": "slider_puzzle",
+    "title": "slider_puzzle",
+    "orientation": "unknown",
+    "engine": "Phaser",
+    "has_wasm": false,
+    "size_kb": 2730.6
+  },
+  {
+    "folder": "solitaire",
+    "title": "solitaire",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 324.4
+  },
+  {
+    "folder": "solitaire_associations",
+    "title": "solitaire_associations",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 1842.4
+  },
+  {
+    "folder": "solitaire_classic",
+    "title": "solitaire_classic",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 1223.9
+  },
+  {
+    "folder": "solitaire_spider",
+    "title": "solitaire_spider",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 1163.6
+  },
+  {
+    "folder": "spades",
+    "title": "spades",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 1466.9
+  },
+  {
+    "folder": "spill_wine",
+    "title": "Spill Wine",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 3621.3
+  },
+  {
+    "folder": "sudoku",
+    "title": "sudoku",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 458.6
+  },
+  {
+    "folder": "tanks_battle",
+    "title": "tanksBattle",
+    "orientation": "landscape",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 2797.6
+  },
+  {
+    "folder": "thread_match",
+    "title": "thread_match",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 14033.8
+  },
+  {
+    "folder": "tic_tac_toe",
+    "title": "tic_tac_toe",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 288.6
+  },
+  {
+    "folder": "tile_master_match",
+    "title": "Tile Master Match",
+    "orientation": "any",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 3097.6
+  },
+  {
+    "folder": "tiny_crash_fighters",
+    "title": "tiny_crash_fighters",
+    "orientation": "landscape",
+    "engine": "Construct 3",
+    "has_wasm": true,
+    "size_kb": 4196.4
+  },
+  {
+    "folder": "tower_boom",
+    "title": "tower_boom",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 600.5
+  },
+  {
+    "folder": "trap_path",
+    "title": "trap_path",
+    "orientation": "landscape",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 2202.9
+  },
+  {
+    "folder": "turn_light",
+    "title": "turn_light",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 289.5
+  },
+  {
+    "folder": "twenty48",
+    "title": "twenty48",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 58.6
+  },
+  {
+    "folder": "uno",
+    "title": "uno",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 1816.5
+  },
+  {
+    "folder": "uno_vertical",
+    "title": "uno_vertical",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 1383.9
+  },
+  {
+    "folder": "water_sort",
+    "title": "Water Sort",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 1193.6
+  },
+  {
+    "folder": "word_connect",
+    "title": "word_connect",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 4852.9
+  },
+  {
+    "folder": "word_search_hidden_2",
+    "title": "WordSearchHidden2",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 5134.5
+  },
+  {
+    "folder": "wordly",
+    "title": "wordly",
+    "orientation": "unknown",
+    "engine": "Custom HTML5",
+    "has_wasm": false,
+    "size_kb": 2085.7
+  },
+  {
+    "folder": "zombie_tower_defence",
+    "title": "ZombieTowerDefense",
+    "orientation": "portrait",
+    "engine": "Construct 3",
+    "has_wasm": false,
+    "size_kb": 6463.9
+  },
+  {
+    "folder": "zumba",
+    "title": "zumba",
+    "orientation": "unknown",
+    "engine": "Phaser",
+    "has_wasm": false,
+    "size_kb": 4548.6
+  }
+]

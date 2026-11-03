@@ -1,0 +1,44 @@
+project:
+  name: nextai-game-offline
+  version: 2.1.0
+  status: development
+  framework_standard: Development Workspace Standard V2.1 Design-Gated
+
+stack:
+  android:
+    language: kotlin
+    min_sdk: 24
+    target_sdk: 34
+    ui: compose-and-viewbinding
+    database: room-sqlite
+    webview_engine: webkit-wasm
+    package_name: com.nextai.gameoffline
+    publisher: NextAI Technology
+  backend:
+    runtime: nodejs-typescript
+    framework: express
+    port: 6033
+    database: sqlite-and-postgres
+    documentation: swagger-openapi-3.0
+    storage: cloudflare-r2-s3
+
+commands:
+  android_build: ./gradlew assembleDebug
+  backend_install: cd Backend && npm install
+  backend_start: cd Backend && npm run dev
+  backend_test: cd Backend && npm test
+  playwright_test: cd Backend && npx playwright test
+
+ai:
+  max_fix_cycles: 5
+  require_task_id: true
+  require_review: true
+  require_security_review: true
+  bilingual_comments: true
+
+design:
+  require_gate_for_ui_changes: true
+  require_human_approval: true
+  require_visual_qa: true
+  theme_support: light-and-dark
+  responsive: mobile-tablet-desktop

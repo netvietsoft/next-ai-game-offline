@@ -1,0 +1,11 @@
+{
+	"name": "pushout_mahjong",
+	"short_name": "pushout_mahjong",
+	"description": "10001 - add jsevent",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

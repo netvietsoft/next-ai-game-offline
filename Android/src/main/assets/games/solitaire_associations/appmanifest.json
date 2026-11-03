@@ -1,0 +1,11 @@
+{
+	"name": "solitaire_associations",
+	"short_name": "solitaire_associations",
+	"description": "10000 - new game\n10100 - fix bugs\n10201 - add img / Emoji\n10301 - add rus translate\n10311 - fix words\n10321 - update logo\n10331 - fix js event \n10341 - add compere 0 from text card, add restart",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

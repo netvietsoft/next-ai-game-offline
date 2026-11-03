@@ -1,0 +1,4 @@
+order_id,product_id,purchase_time,purchase_state,is_acknowledged,price_currency,price_amount
+GPA.3341-8821-9912-10491,disable_ads_forever,2026-08-15 14:20:10,PURCHASED,1,USD,2.99
+GPA.3399-1102-4412-88214,disable-ads-1-month,2026-09-01 09:12:44,PURCHASED,1,USD,0.99
+GPA.3312-5501-3312-77182,disable-ads-1-year,2026-07-20 18:40:02,PURCHASED,1,USD,7.99

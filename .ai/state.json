@@ -1,0 +1,26 @@
+{
+  "project_name": "nextai-game-offline",
+  "project_status": "production-ready",
+  "active_tasks": 0,
+  "blocked_tasks": 0,
+  "completed_tasks": 29,
+  "last_deployed_device": "Samsung Galaxy A07 (SM-A075F, Android 16 @ 192.168.1.9:5555)",
+  "agents": {
+    "orchestrator": "idle",
+    "architect": "idle",
+    "backend": "ready",
+    "frontend": "ready",
+    "payment": "ready",
+    "tester": "ready",
+    "security": "ready",
+    "designer": "ready",
+    "documentation": "completed"
+  },
+  "current_release": "v1.0-api35-billing9-aab-release",
+  "health": {
+    "android_source": "pass",
+    "backend_server": "pass",
+    "database_schema": "pass",
+    "assets_ready": "pass"
+  }
+}

@@ -1,0 +1,38 @@
+{
+    "ru":{
+        "new":      "НАЧАТЬ",
+        "cont":     "Продолжить",
+        "lvl":      "Уровень",
+        "turn":     "Ходы",
+        "win":      "Победа!",
+        "done":     "ПРОЙДЕН!",
+       "tutorial":   "Обучение",
+        "t_1": "Ваша цель — переместить все карты на ячейки, сортируя их по категориям. Каждая стопка начинается с карты категории. Просто потяните карту, чтобы переместить её!",
+        "t_2": "Отлично! Карты также можно перемещать между столбиками. Складывайте их стопкой, если слова относятся к одной категории.",
+        "t_3": "Переместите карты на категорию, перемещать можно по одной или сразу всю стопку.",
+        "t_4": "Когда вы соберёте все карты в одну категорию, стопка исчезнет. После этого можно начать собирать новую категорию на этой ячейке.",
+        "t_5": "Закончились карты? Тяните новые из колоды! Для этого нажмите на колоду в правом верхнем углу.",
+        "t_6": "Соберите все категории, чтобы пройти уровень!"
+    
+    
+    },
+
+    "en":{
+        "new":      "START",
+        "cont":     "Continue",
+        "lvl":      "Level",
+        "turn":     "Turn",
+        "win":      "Victory!",
+        "done":     "COMPLETED!",
+        "tutorial":   "Tutorial",
+        "t_1": "Your goal is to move all cards to the foundation piles, sorting them by category. Each pile starts with a category card. Simply drag a card to move it!",
+    "t_2": "Great! You can also move cards between columns. Stack them if the words belong to the same category.",
+    "t_3": "Move cards to their category. You can move them one at a time or as an entire stack.",
+    "t_4": "When you collect all cards of one category, the pile will disappear. After that, you can start collecting a new category on that foundation.",
+    "t_5": "Ran out of cards? Draw new ones from the deck! To do this, tap the deck in the upper right corner.",
+    "t_6": "Complete all categories to finish the level!"  
+    
+    
+    }
+	
+}

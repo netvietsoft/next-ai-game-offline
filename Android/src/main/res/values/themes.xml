@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NextAIGameOffline" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent_primary</item>
+        <item name="android:windowBackground">@color/bg_main</item>
+    </style>
+
+    <style name="Theme.NextAIGameOffline.Splash" parent="Theme.NextAIGameOffline">
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="Theme.NextAIGameOffline.Fullscreen" parent="Theme.NextAIGameOffline">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.NextAIGameOffline.Dialog" parent="Theme.MaterialComponents.DayNight.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+</resources>

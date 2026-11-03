@@ -1,0 +1,11 @@
+{
+	"name": "domino_merge",
+	"short_name": "domino_merge",
+	"description": "10000 - add js event\n10100 - patch js event, disable logs, webGPU on",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#1d232f",
+	"icons": [],
+	"screenshots": []
+}

@@ -1,0 +1,11 @@
+{
+	"name": "piperush",
+	"short_name": "piperush",
+	"description": "10001 fix Compression for Export",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

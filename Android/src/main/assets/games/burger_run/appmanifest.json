@@ -1,0 +1,11 @@
+{
+	"name": "burger_run",
+	"short_name": "burger_run",
+	"description": "10001 - fix JS Events\n10011 - sound app",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

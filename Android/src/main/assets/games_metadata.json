@@ -1,0 +1,17 @@
+{
+  "version": "2.1.0",
+  "total_games": 423,
+  "bundle_path": "games/",
+  "default_orientation": "portrait",
+  "categories": [
+    "puzzle",
+    "arcade",
+    "board",
+    "action",
+    "casual",
+    "racing",
+    "sports",
+    "cards"
+  ],
+  "note": "423 HTML5 mini-games are bundled under Android/src/main/assets/games/"
+}

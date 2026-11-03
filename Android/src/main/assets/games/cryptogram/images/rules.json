@@ -1,0 +1,74 @@
+{
+  "frames": {
+    "howToPlay0.png": {
+      "frame": {
+        "x": 1,
+        "y": 1,
+        "w": 900,
+        "h": 900
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 900,
+        "h": 900
+      },
+      "sourceSize": {
+        "w": 900,
+        "h": 900
+      }
+    },
+    "howToPlay1.png": {
+      "frame": {
+        "x": 903,
+        "y": 1,
+        "w": 900,
+        "h": 900
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 900,
+        "h": 900
+      },
+      "sourceSize": {
+        "w": 900,
+        "h": 900
+      }
+    },
+    "howToPlay2.png": {
+      "frame": {
+        "x": 1,
+        "y": 903,
+        "w": 900,
+        "h": 900
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 900,
+        "h": 900
+      },
+      "sourceSize": {
+        "w": 900,
+        "h": 900
+      }
+    }
+  },
+  "meta": {
+    "version": "1.0",
+    "image": "rules.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1804,
+      "h": 1804
+    },
+    "scale": "1"
+  }
+}

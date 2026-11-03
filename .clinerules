@@ -1,0 +1,8 @@
+# Cline & Roo Code Project Rules
+- Mandatory reading: AGENTS.md, Docs/rules.md, PROJECT_MEMORY.md.
+- Maintain bilingual comments (Vietnamese + English) on all functions, classes, and components.
+- Android Package Name: com.nextai.gameoffline (Publisher: NextAI Technology).
+- Backend runs on Port 6033 with Swagger documentation at /api-docs.
+- All 423 HTML5 games must be integrated smoothly into the Kotlin WebView shell.
+- File locks are governed by .ai/locks.json.
+- Always log activities into TASK_LOG.md.

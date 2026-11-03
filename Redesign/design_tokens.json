@@ -1,0 +1,28 @@
+{
+  "palette": {
+    "colorPrimary": "#3F2B44",
+    "colorPrimaryDark": "#280A30",
+    "colorAccent": "#00AEEC",
+    "colorGreen": "#31A30C",
+    "colorBlueButtonBg": "#3F96BB",
+    "colorBlack": "#000000",
+    "colorWhite": "#FFFFFF",
+    "before_ad_background": "#A0FFC400",
+    "no_ads_gray_subtitle": "#6B6B6B"
+  },
+  "typography": {
+    "font_family": "Sans-serif-condensed / Bold",
+    "header_title": "24sp Bold",
+    "game_title": "16sp Semi-Bold",
+    "tab_label": "14sp Medium",
+    "button_text": "16sp Bold uppercase"
+  },
+  "layout_grid": {
+    "columns_portrait": 3,
+    "columns_landscape": 5,
+    "item_aspect_ratio": "1:1.2",
+    "corner_radius": "16dp",
+    "card_elevation": "4dp",
+    "item_padding": "8dp"
+  }
+}

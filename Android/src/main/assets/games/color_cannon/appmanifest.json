@@ -1,0 +1,11 @@
+{
+	"name": "color_cannon",
+	"short_name": "color_cannon",
+	"description": "10101 - fix 39,41,45 levels",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

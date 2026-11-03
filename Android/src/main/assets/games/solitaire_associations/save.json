@@ -1,0 +1,47 @@
+{
+    "lang":             "ru",
+    "sound":            1,
+    "lvl":              1,
+    "tut":              "on",
+    "game_over":        "off",
+
+    "save":             "off",
+
+    "count_move":       1,
+
+    "differents":       1,
+    "rowns_start":      [0,0,0,0,0],
+
+    "open_coloda":      [],
+
+    "all_card_raund":   [1,2,3],
+
+    "row_top":    {
+        "column_1_name":        "",
+        "column_count_now_1":   0,
+        "column_count_max_1":   0,
+        "column_1":             [1,2,3],
+
+        "column_2_name":        "",
+        "column_count_now_2":   0,
+        "column_count_max_2":   0,
+        "column_2":             [1,2,3],
+
+        "column_3_name":        "",
+        "column_count_now_3":   0,
+        "column_count_max_3":   0,
+        "column_3":             [1,2,3],
+
+        "column_4_name":        "",
+        "column_count_now_4":   0,
+        "column_count_max_4":   0,
+        "column_4":             [1,2,3]
+    },
+    "row_bot":    {
+        "column_1":             [1,2,3],
+        "column_2":             [1,2,3],
+        "column_3":             [1,2,3],
+        "column_4":             [1,2,3]
+    }
+	
+}

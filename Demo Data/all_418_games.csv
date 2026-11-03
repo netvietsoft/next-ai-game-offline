@@ -1,0 +1,419 @@
+name,position,soundToggleType,configType,useWideViewPortAndOverviewMode,leaderboardId,section,has_rewarded_video,each_n_seconds,each_n_levels,each_n_scores,minimum_level,minimum_time_played_in_game_sec,gameFinishedAd,js_popup_each_n_seconds,remote_image_url,remote_url_version,remote_url,size_mb,title,category,isHorizontal
+geometry_rash,0,0,,,,,0,,,10,0,0,20000,,,,,,,,
+happy_filled_glass,1,0,,,,,0,,1,,0,0,20000,,,,,,,,
+apple_worm,2,1,,,,,0,,1,,0,0,20000,,,,,,,,
+among_us,3,0,,,,,0,,1,,0,0,20000,,,,,,,,
+mr_bullet,4,0,,,,,1,,1,,0,0,20000,,,,,,,,
+save_the_doge,5,1,,,,,1,,1,,0,0,20000,,,,,,,,
+trap_path,6,1,,,,,0,,1,,0,0,20000,,,,,,,,
+archers_random,7,0,,,,,1,,1,,0,0,20000,,,,,,,,
+brainrot_merge,8,0,,,,,0,,,,0,0,20000,90,,,,,,,
+fruits_match_2,9,1,,,,,1,,1,,0,0,20000,,,,,,,,
+head_soccer,10,0,,,,,0,,1,,0,0,20000,,,,,,,,
+sheep_and_sheep,11,0,,,,,1,,1,,0,0,20000,,,,,,,,
+tic_tac_toe,12,0,,,,,0,90000,,,0,0,20000,,,,,,,,
+knife_hit,13,0,,,,,0,,1,,0,0,20000,,,,,,,,
+color_maze,14,0,,,,,0,,1,,4,0,20000,,,,,,,,
+pipe_way,15,0,,,,,0,,1,,0,0,20000,,,,,,,,
+ludo,16,0,,,,,,,,,,,,,,,,,,,
+coloring_book,17,0,,,,,1,,1,,0,0,20000,,,,,,,,
+master_fall_down,18,0,,,,,0,,1,,0,0,20000,,,,,,,,
+route_digger,19,0,,,,,0,,1,,0,0,20000,,,,,,,,
+cap_sort,20,0,,,,,0,,,,0,0,20000,90,,,,,,,
+tanks_battle,21,0,,,,,0,,1,,0,0,20000,,,,,,,,
+color_by_number,22,0,,,,,1,,,,0,0,20000,,,,,,,,
+draw_parking,23,0,,,,,0,,1,,0,0,20000,,,,,,,,
+turn_light,24,0,,,,,0,,1,,0,0,20000,,,,,,,,
+block_tetris,25,0,,,,,1,,1,,0,0,20000,,,,,,,,
+solitaire_associations,26,0,,,,,1,,1,,0,0,20000,,,,,,,,
+skip_card,27,0,,,,,,,,,,,,,,,,,,,
+crazy_fishing,28,0,,,,,0,,,,0,0,20000,90,,,,,,,
+word_search_hidden_2,29,0,,,,,0,,1,,0,0,20000,,,,,,,,
+house_painter,30,0,,,,,0,,1,,0,0,20000,,,,,,,,
+zombie_tower_defence,31,0,,,,,0,,1,,0,0,20000,,,,,,,,
+tower_boom,32,0,,,,,0,,1,,0,0,20000,,,,,,,,
+find_number,33,0,,,,,0,,,,0,0,20000,90,,,,,,,
+uno_vertical,34,0,,,,,,,,,,,,,,,,,,,
+golf_day,35,0,,,,,0,,1,,0,0,20000,,,,,,,,
+jigsaw_puzzle,36,0,,,,,1,,1,,0,0,20000,,,,,,,,
+pool_8_pro,37,0,,,,,0,90000,,,0,0,20000,,,,,,,,
+nuts_and_bolts,38,0,,,,,1,,1,,0,0,20000,,,,,,,,
+indiara,39,0,,,,,0,90000,,,0,0,20000,,,,,,,,
+merge_fruits,40,1,,,,,1,,,,0,0,20000,90,,,,,,,
+city_builder,41,0,,,,,,,,,,,,,,,,,,,
+tiny_crash_fighters,42,0,,,,,0,,1,,0,0,20000,,,,,,,,
+spill_wine,43,0,,,,,0,,1,,0,0,20000,,,,,,,,
+pool_shoot,44,0,,,,,0,,,,0,0,20000,90,,,,,,,
+sudoku,45,0,,,,,0,90000,,,0,0,20000,,,,,,,,
+merge_shooter,46,0,,,,,0,,1,,0,0,20000,,,,,,,,
+math,47,0,,,,,0,,1,,0,0,20000,,,,,,,,
+slider_puzzle,48,0,,,,,,,,,,,,,,,,,,,
+zumba,49,0,,,,,0,,1,,0,0,20000,,,,,,,,
+solitaire_spider,50,0,,,,,0,90000,,,0,0,20000,,,,,,,,
+collect_em_all,51,0,,,,,0,,1,,0,0,20000,,,,,,,,
+shooting_balls,52,0,,,,,1,,,,0,0,20000,90,,,,,,,
+chess,53,0,,,,,0,90000,,,0,0,20000,,,,,,,,
+how_to_loot,54,0,,,,,0,,1,,0,0,20000,,,,,,,,
+water_sort,55,0,,,,,0,,1,,0,0,20000,,,,,,,,
+pinball_rush,56,0,,,,,0,,1,,0,0,20000,,,,,,,,
+solitaire_classic,57,0,,,,,0,90000,,,0,0,20000,,,,,,,,
+brick_breaker_retro,58,0,,,,,,,,,,,,,,,,,,,
+word_connect,59,0,,,,,,,,,,,,,,,,,,,
+rope_bowling,60,0,,,,,0,,1,,0,0,20000,,,,,,,,
+find_pair,61,0,,,,,0,,1,,0,0,20000,,,,,,,,
+thread_match,62,0,,,,,0,,1,,0,0,20000,,,,,,,,
+happy_filled_glass_2,63,0,,,,,0,,1,,0,0,20000,,,,,,,,
+checkers,64,0,,,,,0,90000,,,0,0,20000,,,,,,,,
+screw_pin,65,1,,,,,0,,1,,0,0,20000,,,,,,,,
+happy_filled_glass_4,66,0,,,,,0,,1,,0,0,20000,,,,,,,,
+twenty48,67,0,,,,,,,,,,,,,,,,,,,
+move_the_pin_2,68,0,,,,,0,,1,,0,0,20000,,,,,,,,
+pao_pao,69,0,,,,,1,,1,,0,0,20000,,,,,,,,
+block_merge,70,0,,,,,0,,,,0,0,20000,90,,,,,"BLOCK MERGE",Puzzle,0
+cryptogram,71,0,,,,,0,,1,,0,0,20000,,,,,,,,
+dominoes,72,0,,,,,,,,,,,,,,,,,,,
+onet_fish,73,0,,,,,0,,1,,2,0,20000,,,,,,,,
+merge_dice,74,0,,,,,0,,,1000,0,0,20000,,,,,,,,
+bubble_shooter,75,0,,,,,0,,,,0,0,20000,90,,,,,,,
+coin_sort,76,0,,,,,0,,,,0,0,20000,90,,,,,,,
+color_cannon,77,0,,,,,0,,1,,0,0,20000,,,,,,,,
+balloons_creator,78,0,,,,,0,,1,,0,0,20000,,,,,,,,
+uno,79,0,,,,,0,90000,,,0,0,20000,,,,,,,,
+block_blast,80,0,,,,,,,,,,,,,,,,,,,
+fruit_king,81,0,,,,,0,,1,,0,0,20000,,,,,,,,
+tile_master_match,82,0,,,,,1,,1,,0,0,20000,,,,,,,,
+number_tiles,83,0,,,,,0,,,,0,0,20000,90,,,,,,,
+spades,84,0,,,,,,,,,,,,,,,,,,,
+solitaire,85,0,,,,,,,,,,,,,,,,,,,
+wordly,86,0,,,,,,,,,,,,,,,,,,,
+mahjong_deluxe,87,0,,,,,,,,,,,,,,,,,,,
+merge_bubble,88,0,,,,,0,,,,0,0,20000,90,,,,,,,
+drop_it,89,0,,,,,,,,,,,,,,,,,,,
+royal_blast,90,0,,,,,0,,1,,0,0,20000,,,,,,,,
+merge_numbers,91,0,,,,,0,,1,,0,0,20000,,,,,,,,
+merge_cards,92,1,1,,,,0,,,,0,0,20000,90,,,,,,,
+link_2248,93,0,,,,,0,,,,0,0,20000,90,,,,,,,
+mahjong_classic,94,0,,,,,0,,1,,0,0,20000,,,,,,,,
+nonogram,95,0,,,,,,,,,,,,,,,,,,,
+drop_n_merge,96,0,,,,,,,,,,,,,,,,,,,
+hexadice,97,0,,,,,0,,,,0,0,20000,90,,,,,,,
+dice_merge,98,0,,,,,0,,1,,0,0,20000,,,,,,,,
+juice_merge,99,1,,,,,1,,,,0,0,20000,90,https://offline-games.site/icons/juice_merge.png,10011,https://offline-games.site/games/juice_merge/juice_merge_10011.zip,5.0,"juice merge",ARCADE,0
+farm_tiled,100,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/farm_tiled.png,10000,https://offline-games.site/games/farm_tiled/farm_tiled_10000.zip,5.0,"farm tiled",PUZZLE,0
+theos_time_puzzle,101,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/theos_time_puzzle.png,10001,https://offline-games.site/games/theos_time_puzzle/theos_time_puzzle_10001.zip,5.0,"theos time puzzle",PUZZLE,0
+playtime_maze,102,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/playtime_maze.png,10000,https://offline-games.site/games/playtime_maze/playtime_maze_10000.zip,2.44,"playtime maze",ARCADE,1
+tractor_mania,103,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/tractor_mania.png,10003,https://offline-games.site/games/tractor_mania/tractor_mania_10003.zip,11.65,"tractor mania",ACTION,1
+tic_toc_challenge,104,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/tic_toc_challenge.png,10000,https://offline-games.site/games/tic_toc_challenge/tic_toc_challenge_10000.zip,7.04,"tic toc challenge",ARCADE,0
+merge_animals,105,0,,,,,0,,,,0,0,20000,9000,https://offline-games.site/icons/merge_animals.png,10000,https://offline-games.site/games/merge_animals/merge_animals_10000.zip,2.29,"merge animals",PUZZLE,0
+sort_flowers,106,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/sort_flowers.jpg,10000,https://offline-games.site/games/sort_flowers/sort_flowers_10000.zip,5.04,"sort flowers",PUZZLE,0
+hero_match,107,0,,,,,1,,,,0,0,20000,,https://offline-games.site/icons/hero_match.png,11001,https://offline-games.site/games/hero_match/hero_match_11001.zip,5.0,"HERO MATCH",PUZZLE,0
+cap_sort_merge,108,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/cap_sort_merge.png,15000,https://offline-games.site/games/cap_sort_merge/cap_sort_merge_15000.zip,5.0,"cap sort merge",PUZZLE,0
+chicken_war,109,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/chicken_war.png,10000,https://offline-games.site/games/chicken_war/chicken_war_10000.zip,3.18,"chicken war",PUZZLE,1
+card_shuffle,110,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/card_shuffle.png,10000,https://offline-games.site/games/card_shuffle/card_shuffle_10000.zip,2.1,"card shuffle",PUZZLE,0
+merge_cash_puzzle,111,0,,,,,0,,,,0,0,20000,9000,https://offline-games.site/icons/merge_cash_puzzle.png,10000,https://offline-games.site/games/merge_cash_puzzle/merge_cash_puzzle_10000.zip,4.04,"merge cash puzzle",PUZZLE,0
+woody_hexa,112,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/woody_hexa.png,10000,https://offline-games.site/games/woody_hexa/woody_hexa_10000.zip,5.0,"woody hexa",PUZZLE,0
+sleeping_animal,113,1,,,,,1,,,,0,0,20000,60,https://offline-games.site/icons/sleeping_animal.png,10011,https://offline-games.site/games/sleeping_animal/sleeping_animal_10011.zip,5.0,"sleeping animal",PUZZLE,0
+match_emoji,114,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/match_emoji.png,10001,https://offline-games.site/games/match_emoji/match_emoji_10001.zip,5.0,"match emoji",PUZZLE,0
+meow_merge,115,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/meow_merge.png,10001,https://offline-games.site/games/meow_merge/meow_merge_10001.zip,5.0,"meow merge",PUZZLE,0
+zig_zag_warp,116,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/zig_zag_warp.png,10001,https://offline-games.site/games/zig_zag_warp/zig_zag_warp_10001.zip,5.0,"zig zag warp",ARCADE,1
+ball_escape,117,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/ball_escape.png,10011,https://offline-games.site/games/ball_escape/ball_escape_10011.zip,5.0,"ball escape",ARCADE,0
+summer_maze,118,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/summer_maze.png,10001,https://offline-games.site/games/summer_maze/summer_maze_10001.zip,5.0,"summer maze",PUZZLE,0
+button_strikers,119,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/button_strikers.png,10001,https://offline-games.site/games/button_strikers/button_strikers_10001.zip,5.0,"button strikers",ARCADE,1
+car_traffic_puzzle,120,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/car_traffic_puzzle.png,10001,https://offline-games.site/games/car_traffic_puzzle/car_traffic_puzzle_10001.zip,5.0,"car traffic puzzle",PUZZLE,0
+chroma_lane,121,1,,,,,0,,,,0,0,20000,60,https://offline-games.site/icons/chroma_lane.png,10001,https://offline-games.site/games/chroma_lane/chroma_lane_10001.zip,5.0,"chroma lane",ARCADE,0
+fly_low,122,1,,,,,0,,,,0,0,20000,60,https://offline-games.site/icons/fly_low.png,10001,https://offline-games.site/games/fly_low/fly_low_10001.zip,5.0,"fly low",ARCADE,0
+minimal_foul,123,1,,,,,0,,,,0,0,20000,60,https://offline-games.site/icons/minimal_foul.png,10001,https://offline-games.site/games/minimal_foul/minimal_foul_10001.zip,5.0,"minimal foul",ARCADE,0
+pushout_mahjong,124,1,,,,,0,,,,0,0,20000,60,https://offline-games.site/icons/pushout_mahjong.png,10001,https://offline-games.site/games/pushout_mahjong/pushout_mahjong_10001.zip,5.0,"pushout mahjong",ARCADE,1
+solitaire_tripeaks,125,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/solitaire_tripeaks.png,12000,https://offline-games.site/games/solitaire_tripeaks/Archive.zip,5.65,"Solitaire Tripeaks",Puzzle,1
+kitty_katcher,126,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/kitty_katcher.webp,10100,https://offline-games.site/games/kitty_katcher/kitty_katcher_10100.zip,5.0,"kitty katcher",PUZZLE,1
+backgammon,127,0,,,,,0,,,,0,0,20000,,https://offline-games.site/icons/backgammon.webp,10000,https://offline-games.site/games/backgammon/Archive.zip,5.0,Backgammon,Board,1
+mountain_rider,128,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/mountain_rider.png,10000,https://offline-games.site/games/mountain_rider/mountain_rider_10000.zip,1.8,"mountain rider",ARCADE,1
+horror_spranky_beats,129,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/horror_spranky_beats.png,10000,https://offline-games.site/games/horror_spranky_beats/horror_spranky_beats_10000.zip,14.43,"horror spranky beats",ARCADE,0
+skibidi_toilet,130,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/skibidi_toilet.png,10000,https://offline-games.site/games/skibidi_toilet/skibidi_toilet_10000.zip,4.67,"skibidi toilet",ARCADE,1
+farm_mahjong,131,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/farm_mahjong.png,10000,https://offline-games.site/games/farm_mahjong/farm_mahjong_10000.zip,4.21,"farm mahjong",PUZZLE,0
+block_puzzle_blast,132,0,,,,,0,,,,0,0,20000,9000,https://offline-games.site/icons/block_puzzle_blast.png,10000,https://offline-games.site/games/block_puzzle_blast/block_puzzle_blast_10000.zip,5.64,"block puzzle blast",PUZZLE,0
+impostor_red,133,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/impostor_red.png,13019,https://offline-games.site/games/impostor_red/impostor_red_13019.zip,5.0,"impostor red",ARCADE,0
+merge_flowers,134,1,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/merge_flowers.jpg,10000,https://offline-games.site/games/merge_flowers/merge_flowers_10000.zip,3.29,"merge flowers",PUZZLE,0
+butterfly_tripple,135,0,,,,,0,,,,0,0,20000,9000,https://offline-games.site/icons/butterfly_tripple.png,10001,https://offline-games.site/games/butterfly_tripple/butterfly_tripple_10001.zip,3.03,"butterfly tripple",PUZZLE,0
+hexa_sort,136,1,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/hexa_sort.jpg,10000,https://offline-games.site/games/hexa_sort/hexa_sort_10000.zip,2.11,"hexa sort",PUZZLE,0
+break_brick,137,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/break_brick.png,10000,https://offline-games.site/games/break_brick/break_brick_10000.zip,2.5,"break brick",PUZZLE,0
+fashion_merge,138,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/fashion_merge.png,10000,https://offline-games.site/games/fashion_merge/fashion_merge_10000.zip,3.78,"fashion merge",PUZZLE,0
+labubu_merge,139,1,,,,,1,,,,0,0,20000,90,https://offline-games.site/icons/labubu_merge.png,10010,https://offline-games.site/games/labubu_merge/labubu_merge_10010.zip,5.0,"labu merge",PUZZLE,0
+fireside_solitaire,140,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/fireside_solitaire.png,10001,https://offline-games.site/games/fireside_solitaire/fireside_solitaire_10001.zip,2.31,"fireside solitaire",PUZZLE,0
+block_pictures,141,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/block_pictures.png,10000,https://offline-games.site/games/block_pictures/block_pictures_10000.zip,5.1,"block pictures",PUZZLE,0
+bloons_survivor,142,1,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/bloons_survivor.png,10011,https://offline-games.site/games/bloons_survivor/bloons_survivor_10011.zip,5.0,"bloons survivor",ARCADE,0
+flower_merge,143,0,,,,,1,,,,0,0,20000,90,https://offline-games.site/icons/flower_merge.webp,10100,https://offline-games.site/games/flower_merge/flower_merge_10100.zip,5.0,"flower merge",PUZZLE,0
+pirate_21_blackjack,144,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/pirate_21_blackjack.jpg,10000,https://offline-games.site/games/pirate_21_blackjack/pirate_21_blackjack_10000.zip,7.71,"pirate 21 blackjack",PUZZLE,0
+square_game,145,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/square_game.png,10000,https://offline-games.site/games/square_game/Archive.zip,3.98,"Square Game",Puzzle,0
+goods_puzzle,146,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/goods_puzzle.jpg,10000,https://offline-games.site/games/goods_puzzle/goods_puzzle_10000.zip,0.91,"goods puzzle",PUZZLE,0
+build_land,147,0,,,,,0,,,,0,0,20000,,https://offline-games.site/icons/build_land.webp,10006,https://offline-games.site/games/build_land/build_land_10006.zip,5.0,"build land",ARCADE,0
+grab_pack_playtime,148,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/grab_pack_playtime.png,10000,https://offline-games.site/games/grab_pack_playtime/grab_pack_playtime_10000.zip,7.98,"grab pack playtime",PUZZLE,0
+gladiators,149,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/gladiators.png,12501,https://offline-games.site/games/gladiators/gladiators_12501.zip,5.0,Gladiators,Puzzle,0
+grab_pack_playtime_2,150,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/grab_pack_playtime_2.png,10000,https://offline-games.site/games/grab_pack_playtime_2/grab_pack_playtime_2_10000.zip,6.55,"grab pack playtime 2",PUZZLE,0
+sandy_balls,151,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/sandy_balls.png,10000,https://offline-games.site/games/sandy_balls/sandy_balls_10000.zip,4.82,"sandy balls",ARCADE,0
+kingdom_survivor,152,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/kingdom_survivor.png,10001,https://offline-games.site/games/kingdom_survivor/kingdom_survivorss_10000.zip,1.91,"lord of survivor",ARCADE,0
+space_knife,153,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/space_knife.png,10000,https://offline-games.site/games/space_knife/space_knife_10000.zip,0.98,"space knife",ARCADE,0
+spot_the_difference,154,0,,,,,,,,,,,,,https://offline-games.site/icons/spot_the_difference.png,10003,https://offline-games.site/games/spot_the_difference/spot_the_difference_10003.zip,7.76,"spot the difference",PUZZLE,0
+jewel_treasure,155,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/jewel_treasure.png,10000,https://offline-games.site/games/jewel_treasure/jewel_treasure_10000.zip,1.05,"jewel treasure",PUZZLE,0
+block_puzzle_3d,156,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/block_puzzle_3d.png,10001,https://offline-games.site/games/block_puzzle_3d/block_puzzle_3d_10001.zip,2.13,"block puzzle 3d",PUZZLE,0
+dreamy_rooms,157,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/dreamy_rooms.jpg,10000,https://offline-games.site/games/dreamy_rooms/dreamy_rooms_10000.zip,5.0,"dreamy rooms",PUZZLE,0
+sort_puzzle,158,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/sort_puzzle.png,10001,https://offline-games.site/games/sort_puzzle/sort_puzzle_10001.zip,2.69,"sort puzzle",PUZZLE,0
+mad_fish,159,0,,,,,0,,,,0,0,20000,,https://offline-games.site/icons/mad_fish.webp,10000,https://offline-games.site/games/mad_fish/Archive.zip,5.0,"Mad Fish",Action,1
+tangram_puzzle,160,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/tangram_puzzle.png,10000,https://offline-games.site/games/tangram_puzzle/tangram_puzzle_10000.zip,2.44,"tangram puzzle",PUZZLE,0
+tower_war,161,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/tower_war.webp,10100,https://offline-games.site/games/tower_war/tower_war_10100.zip,5.0,"tower war",PUZZLE,1
+jigsaw_valentine,162,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/jigsaw_valentine.png,11000,https://offline-games.site/games/jigsaw_valentine/jigsaw_valentine_11000.zip,8.83,"Jigsaw Valentine",Puzzle,0
+shooter_2048_hexa,163,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/shooter_2048_hexa.png,10001,https://offline-games.site/games/shooter_2048_hexa/shooter_2048_hexa_10001.zip,2.91,"shooter 2048 hexa",PUZZLE,0
+jigsaw_blocks,164,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/jigsaw_blocks.png,10000,https://offline-games.site/games/jigsaw_blocks/jigsaw_blocks_10000.zip,2.41,"jigsaw blocks",PUZZLE,0
+candy_match_saga_2,165,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/candy_match_saga_2.png,10003,https://offline-games.site/games/candy_match_saga_2/candy_match_saga_2_10003.zip,5.15,"candy match saga 2",PUZZLE,0
+number_match,166,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/number_match.png,10000,https://offline-games.site/games/number_match/number_match_10000.zip,2.33,"number match",PUZZLE,0
+angry_heroes,167,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/angry_heroes.webp,10000,https://offline-games.site/games/angry_heroes/Archive.zip,6.04,"Angry Heroes",Action,1
+blocks_target,168,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/blocks_target.png,10000,https://offline-games.site/games/blocks_target/blocks_target_10000.zip,3.93,"blocks target",PUZZLE,0
+slide_block_puzzle,169,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/slide_block_puzzle.png,10011,https://offline-games.site/games/slide_block_puzzle/slide_block_puzzle_10011.zip,5.0,"slide block puzzle",PUZZLE,0
+jigsaw_sort,170,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/jigsaw_sort.png,10000,https://offline-games.site/games/jigsaw_sort/jigsaw_sort_10000.zip,7.48,"jigsaw sort",PUZZLE,0
+marble_legends,171,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/marble_legends.png,10000,https://offline-games.site/games/marble_legends/marble_legends_10000.zip,5.0,"marble legends",PUZZLE,0
+bounce_collect,172,0,,,,,0,,3,,0,0,20000,,https://offline-games.site/icons/bounce_collect.png,10001,https://offline-games.site/games/bounce_collect/bounce_collect_10001.zip,5.0,"bounce collect",PUZZLE,0
+yoga_run,173,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/yoga_run.png,10000,https://offline-games.site/games/yoga_run/yoga_run_10000.zip,2.64,"yoga run",ARCADE,0
+memory_master,174,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/memory_master.png,11001,https://offline-games.site/games/memory_master/memory_master_11001.zip,5.0,"Memory Master",Puzzle,1
+draw_to_pee,175,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/draw_to_pee.png,10000,https://offline-games.site/games/draw_to_pee/draw_to_pee_10000.zip,4.44,"draw to pee",PUZZLE,0
+jigsaw_cute_cats,176,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/jigsaw_cute_cats.png,11001,https://offline-games.site/games/jigsaw_cute_cats/jigsaw_cute_cats_11001.zip,9.74,"Jigsaw Cute Cats",Puzzle,0
+pop_the_balloons,177,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/pop_the_balloons.png,10000,https://offline-games.site/games/pop_the_balloons/pop_the_balloons_10000.zip,1.5,"pop the balloons",PUZZLE,1
+tavern_survivors,178,0,,,,,1,,,,0,0,20000,90,https://offline-games.site/icons/tavern_survivors.webp,10100,https://offline-games.site/games/tavern_survivors/tavern_survivors_10100.zip,5.0,"tavern survivors",ARCADE,0
+block_builder,179,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/block_builder.png,10000,https://offline-games.site/games/block_builder/block_builder_10000.zip,5.0,"block builder",PUZZLE,0
+traffic_parking,180,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/traffic_parking.png,10000,https://offline-games.site/games/traffic_parking/traffic_parking_10000.zip,5.0,"traffic parking",PUZZLE,0
+santa_thief,181,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/santa_thief.png,10000,https://offline-games.site/games/santa_thief/santa_thief_10000.zip,3.4,"santa thief",ARCADE,0
+catches_aliens,182,1,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/catches_aliens.png,10001,https://offline-games.site/games/catches_aliens/catches_aliens_10001.zip,5.0,"catches aliens",PUZZLE,1
+unpuzzle_master,183,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/unpuzzle_master.png,10002,https://offline-games.site/games/unpuzzle_master/unpuzzle_master_10002.zip,2.43,"unpuzzle master",PUZZLE,0
+mega_truck,184,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/mega_truck.png,10000,https://offline-games.site/games/mega_truck/mega_truck_10000_1.zip,10.92,"mega truck",ARCADE,1
+tile_match_wizarding,185,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/tile_match_wizarding.jpg,10001,https://offline-games.site/games/tile_match_wizarding/tile_match_wizarding_10001.zip,5.16,"tile match wizarding",PUZZLE,0
+wigglio_puzzle,186,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/wigglio_puzzle.png,10001,https://offline-games.site/games/wigglio_puzzle/wigglio_puzzle_10001.zip,5.0,"wigglio puzzle",PUZZLE,1
+ball_8_pool,187,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/ball_8_pool.png,10004,https://offline-games.site/games/ball_8_pool/ball_8_pool_10004.zip,2.68,"8 ball pool",ARCADE,1
+knit_rescue,188,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/knit_rescue.webp,10100,https://offline-games.site/games/knit_rescue/knit_rescue_10100.zip,5.0,"knit rescue",PUZZLE,0
+arrow_direction,189,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/arrow_direction.webp,10100,https://offline-games.site/games/arrow_direction/arrow_direction_10100.zip,5.0,"arrow direction",PUZZLE,0
+warship,190,0,,,,,,,,,,,,,https://offline-games.site/icons/warship.png,10003,https://offline-games.site/games/warship/warship_10003.zip,3.35,warship,ARCADE,0
+mahjong_solitaire,191,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/mahjong_solitaire.png,11201,https://offline-games.site/games/mahjong_solitaire/mahjong_solitaire_11201.zip,5.01,"Mahjong Solitaire",Puzzle,0
+word_cake,192,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/test2/word_cake.png,10000,https://offline-games.site/games/test_3/word_cake/Archive.zip,4.28,"Word Cake",Puzzle,0
+finish_the_drawing,193,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/finish_the_drawing.png,10003,https://offline-games.site/games/finish_the_drawing/finish_the_drawing_10003.zip,4.49,"finish the drawing",PUZZLE,0
+card_master,194,0,,,,,0,,,,0,0,20000,9000,https://offline-games.site/icons/card_master.png,10000,https://offline-games.site/games/card_master/card_master_10000.zip,1.69,"card master",PUZZLE,0
+cats_puzzle,195,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/cats_puzzle.png,10000,https://offline-games.site/games/cats_puzzle/cats_puzzle_10000.zip,1.91,"cats puzzle",PUZZLE,0
+math_riddles_puzzle,196,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/math_riddles_puzzle.png,10002,https://offline-games.site/games/math_riddles_puzzle/Archive.zip,5.76,"Math Puzzle",Action,0
+pirates_battle,197,0,,,,,0,,1,,2,0,20000,,https://offline-games.site/icons/pirates_battle.png,10001,https://offline-games.site/games/pirates_battle/Archive.zip,2.06,"Pirates Battle",Action,1
+slice_it_up,198,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/slice_it_up.jpg,10000,https://offline-games.site/games/slice_it_up/slice_it_up_10000.zip,5.0,"slice it up",ARCADE,0
+parking_jem,199,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/parking_jem.jpg,10000,https://offline-games.site/games/parking_jem/parking_jem_10000.zip,1.0,"parking jem",PUZZLE,0
+screaming_chicken,200,0,,,,,,,,,,,,,https://offline-games.site/icons/screaming_chicken.png,10003,https://offline-games.site/games/screaming_chicken/screaming_chicken_10003.zip,1.17,"screaming chicken",ARCADE,0
+rope_dude,201,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/rope_dude.webp,10000,https://offline-games.site/games/rope_dude/Archive.zip,0.84,"Rope Dude",Puzzle,0
+fruit_king_merge,202,0,,,,,0,,,,0,0,20000,9000,https://offline-games.site/icons/fruit_king_merge.png,10000,https://offline-games.site/games/fruit_king_merge/fruit_king_merge_10000.zip,3.46,"fruit king merge",PUZZLE,0
+word_pictures,203,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/word_pictures.jpg,10000,https://offline-games.site/games/word_pictures/word_pictures_10000.zip,16.13,"word pictures",PUZZLE,0
+bee,204,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/bee.webp,10000,https://offline-games.site/games/bee/Archive.zip,0.88,Bee,Puzzle,0
+bitcoin_millionaire,205,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/bitcoin_millionaire.png,10002,https://offline-games.site/games/bitcoin_millionaire/bitcoin_millionaire_10002.zip,1.65,"bitcoin millionaire",CLICKER,0
+word_farm,206,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/word_farm.jpg,10000,https://offline-games.site/games/word_farm/word_farm_10000.zip,5.82,"word farm",PUZZLE,0
+draw_to_smash,207,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/draw_to_smash.png,10000,https://offline-games.site/games/draw_to_smash/draw_to_smash_10000.zip,2.28,"draw to smash",PUZZLE,0
+arcane_blocks,208,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/arcane_blocks.png,10001,https://offline-games.site/games/arcane_blocks/arcane_blocks_10001.zip,5.0,"arcane blocks",PUZZLE,0
+word_search_puzzle,209,0,,,,,0,,3,,0,0,20000,,https://offline-games.site/icons/test2/word_search_puzzle.png,10000,https://offline-games.site/games/test_3/word_search_puzzle/Archive.zip,5.0,"Word Search Puzzle",Puzzle,0
+plane_shooter,210,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/plane_shooter.webp,10000,https://offline-games.site/games/plane_shooter/Archive.zip,2.75,"Plane Shooter",Shooting,0
+math_matchsticks,211,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/math_matchsticks.png,10002,https://offline-games.site/games/math_matchsticks/Archive.zip,1.02,"Math Sticks",Action,1
+rail_maze_puzzle,212,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/rail_maze_puzzle.png,10002,https://offline-games.site/games/rail_maze_puzzle/rail_maze_puzzle_10002_.zip,4.46,"rail maze puzzle",ARCADE,0
+solitaire_holiday,213,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/solitaire_holiday.png,10000,https://offline-games.site/games/solitaire_holiday/solitaire_holiday_10000.zip,2.85,"solitaire holiday",PUZZLE,0
+number_bubble_shooter,214,1,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/number_bubble_shooter.png,10000,https://offline-games.site/games/number_bubble_shooter/number_bubble_shooter_10000.zip,5.0,"number bubble shooter",PUZZLE,0
+hexa_buttons,215,0,,,,,0,,,,0,0,20000,9000,https://offline-games.site/icons/hexa_buttons.png,10000,https://offline-games.site/games/hexa_buttons/hexa_buttons_10000.zip,2.64,"hexa buttons",PUZZLE,0
+sushi_master,216,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/sushi_master.webp,10100,https://offline-games.site/games/sushi_master/sushi_master_10100.zip,5.0,"sushi master",PUZZLE,0
+cats_rotate,217,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/cats_rotate.png,10000,https://offline-games.site/games/cats_rotate/cats_rotate_10000_2.zip,8.9,"cats rotate",PUZZLE,1
+block_puzzle,218,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/block_puzzle.webp,10000,https://offline-games.site/games/block_puzzle/Archive.zip,4.29,"Block Puzzle",Puzzle,0
+pixel_painter,219,0,,,,,0,90000,,,0,0,20000,,https://offline-games.site/icons/pixel_painter.webp,10000,https://offline-games.site/games/pixel_painter/Archive.zip,1.95,"Pixel Painter",Puzzle,1
+doge_love,220,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/doge_love.png,10000,https://offline-games.site/games/doge_love/doge_love_10000.zip,1.79,"doge love",PUZZLE,0
+enemy_strike,221,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/enemy_strike.webp,10000,https://offline-games.site/games/enemy_strike/Archive.zip,1.06,"Enemy Strike",Shooting,0
+gold_coast,222,0,,,,,0,90000,,,0,0,20000,,https://offline-games.site/icons/gold_coast.webp,10000,https://offline-games.site/games/gold_coast/Archive.zip,3.79,"Gold Coast",Action,0
+animal_clicker,223,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/animal_clicker.png,11201,https://offline-games.site/games/animal_clicker/animal_clicker_11201.zip,3.69,"Animal Clicker",Action,1
+merge_cards_vintage,224,1,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/merge_cards_vintage.webp,11001,https://offline-games.site/games/merge_cards_vintage/Archive2.zip,0.93,"Merge Cards Vintage",Puzzle,0
+"сubic_lands",225,0,,,,,0,,1,,0,0,20000,,"https://offline-games.site/icons/сubic_lands.png",10000,"https://offline-games.site/games/сubic_lands/сubic_lands_10000.zip",1.63,"сubic lands",PUZZLE,0
+popcorn_eater,226,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/popcorn_eater.webp,10000,https://offline-games.site/games/popcorn_eater/Archive.zip,1.39,"Popcorn Eater",Puzzle,0
+filled_glass_4,227,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/filled_glass_4.webp,10000,https://offline-games.site/games/filled_glass_4/Archive.zip,0.71,"Filled Glass 4",Puzzle,0
+two_pics_one_word,228,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/two_pics_one_word.png,10000,https://offline-games.site/games/two_pics_one_word/two_pics_one_word_10000.zip,3.82,"two pics one word",PUZZLE,0
+woody_tap_block,229,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/woody_tap_block.jpg,10000,https://offline-games.site/games/woody_tap_block/woody_tap_block_10000-1.zip,2.1,"woody tap block",PUZZLE,0
+geometry_world,230,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/geometry_world.png,10000,https://offline-games.site/games/geometry_world/geometry_world_10000.zip,0.94,"geometry world",ARCADE,1
+cube_merge_2248,231,1,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/cube_merge_2248.png,12002,https://offline-games.site/games/cube_merge_2248/cube_merge_12002.zip,1.61,"Cube Merge 2248",Puzzle,0
+jacko_gunner,232,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/jacko_gunner.webp,10000,https://offline-games.site/games/jacko_gunner/Archive.zip,4.3,"Jack'o Gunner",Puzzle,0
+charge_everything,233,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/charge_everything.webp,10001,https://offline-games.site/games/charge_everything/Archive.zip,0.94,"Charge It",Puzzle,0
+bus_jam_escape,234,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/bus_jam_escape.png,10000,https://offline-games.site/games/bus_jam_escape/bus_jam_escape_10000.zip,5.0,"bus jam escape",PUZZLE,0
+puzzle_legends,235,1,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/puzzle_legends.jpg,10000,https://offline-games.site/games/puzzle_legends/puzzle_legends_10000.zip,11.19,"puzzle legends",PUZZLE,0
+jigsaw_master,236,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/jigsaw_master.png,10000,https://offline-games.site/games/jigsaw_master/jigsaw_master_10000.zip,5.0,"jigsaw master",PUZZLE,1
+arrow_shift,237,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/arrow_shift.png,10011,https://offline-games.site/games/arrow_shift/arrow_shift_10011.zip,5.0,"arrow shift",PUZZLE,0
+doge_blocks,238,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/doge_blocks.png,11001,https://offline-games.site/games/doge_blocks/doge_blocks_11001.zip,2.34,"Doge Blocks",Puzzle,0
+colored_water_pin,239,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/colored_water_pin.webp,10000,https://offline-games.site/games/colored_water_pin/Archive.zip,0.74,"Colored Water & Pin",Puzzle,0
+skater_boys_journey,240,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/skater_boys_journey.png,10000,https://offline-games.site/games/skater_boys_journey/skater_boys_journey_10000.zip,5.0,"skater boys journey",ARCADE,1
+fill_the_tile,241,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/fill_the_tile.png,10000,https://offline-games.site/games/fill_the_tile/fill_the_tile_10000.zip,0.71,"fill the tile",PUZZLE,0
+yummy_slices,242,1,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/yummy_slices.png,10001,https://offline-games.site/games/yummy_slices/yummy_slices_10001.zip,5.0,"yummy slices",PUZZLE,0
+milk_for_cat,243,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/milk_for_cat.webp,10000,https://offline-games.site/games/milk_for_cat/Archive.zip,1.01,"Milk For Cat",Puzzle,0
+amaze_ball_quest,244,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/amaze_ball_quest.png,10000,https://offline-games.site/games/amaze_ball_quest/amaze_ball_quest_10000.zip,5.0,"amaze ball quest",PUZZLE,0
+"сrossy_сhicken",245,0,,,,,0,,1,,0,0,20000,,"https://offline-games.site/icons/сrossy_сhicken.png",10002,"https://offline-games.site/games/сrossy_сhicken/сrossy_сhicken_10002.zip",3.25,"сrossy сhicken",ARCADE,0
+color_block,246,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/color_block.png,10000,https://offline-games.site/games/color_block/color_block_10000.zip,5.0,"color block",PUZZLE,0
+color_connect_2,247,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/color_connect_2.png,10000,https://offline-games.site/games/color_connect_2/color_connect_2_10000.zip,5.0,"color connect 2",PUZZLE,0
+hidden_dragon,248,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/hidden_dragon.png,11000,https://offline-games.site/games/hidden_dragon/hidden_dragon_11000.zip,11.21,"Hidden Dragon",Puzzle,1
+tower_boom_2,249,0,,,,,,,,,,,,,https://offline-games.site/icons/tower_boom_2.webp,10000,https://offline-games.site/games/tower_boom_2/Archive.zip,1.36,"Tower Boom 2",Puzzle,0
+the_wanderer,250,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/the_wanderer.png,10001,https://offline-games.site/games/the_wanderer/the_wanderer_10001.zip,5.0,"the wanderer",PUZZLE,0
+food_jam,251,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/food_jam.png,10001,https://offline-games.site/games/food_jam/food_jam_10001.zip,5.0,"food jam",PUZZLE,0
+block_colors_sort,252,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/block_colors_sort.png,10000,https://offline-games.site/games/block_colors_sort/block_colors_sort_10000.zip,1.81,"block colors sort",PUZZLE,0
+sea_battle,253,0,,,,,,,,,,,,,https://offline-games.site/icons/sea_battle.webp,10000,https://offline-games.site/games/sea_battle/Archive.zip,1.13,"Sea Battle",Board,0
+merge_2048_cake,254,0,,,,,0,,,,0,0,20000,9000,https://offline-games.site/icons/merge_2048_cake.png,10000,https://offline-games.site/games/merge_2048_cake/merge_2048_cake_10000.zip,4.44,"merge 2048 cake",PUZZLE,0
+hexa_merge_gravity,255,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/hexa_merge_gravity.webp,10100,https://offline-games.site/games/hexa_merge_gravity/hexa_merge_gravity_10100.zip,5.0,"hexa merge gravity",PUZZLE,0
+logical_cells,256,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/logical_cells.png,10000,https://offline-games.site/games/logical_cells/logical_cells_10000.zip,3.41,"logical cells",PUZZLE,1
+knit_colors,257,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/knit_colors.png,10000,https://offline-games.site/games/knit_colors/knit_colors_10000.zip,5.0,"knit colors",PUZZLE,0
+pop_sicle,258,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/pop_sicle.png,10000,https://offline-games.site/games/pop_sicle/pop_sicle_10000.zip,5.0,"pop sicle",PUZZLE,0
+garden_match_saga,259,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/garden_match_saga.webp,10000,https://offline-games.site/games/garden_match_saga/Archive.zip,4.57,"Garden Match Saga",Puzzle,0
+space,260,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/space.png,10000,https://offline-games.site/games/space/Archive.zip,0.92,Space,Puzzle,0
+balloon_pop,261,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/balloon_pop.png,10000,https://offline-games.site/games/balloon_pop/balloon_pop_10000.zip,5.95,"balloon pop",ARCADE,1
+liquid_orange,262,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/liquid_orange.webp,10000,https://offline-games.site/games/liquid_orange/Archive.zip,0.75,"Liquid Orange",Puzzle,0
+rabbit_and_carrot,263,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/rabbit_and_carrot.png,10000,https://offline-games.site/games/rabbit_and_carrot/rabbit_and_carrot_10000.zip,1.11,"rabbit and carrot",ARCADE,0
+move_the_pin,264,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/move_the_pin.webp,10000,https://offline-games.site/games/move_the_pin/Archive.zip,0.75,"Move The Pin",Puzzle,0
+cooking_connect,265,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/cooking_connect.png,10000,https://offline-games.site/games/cooking_connect/cooking_connect_10000.zip,1.66,"cooking connect",PUZZLE,0
+pipe_connect,266,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/pipe_connect.png,10000,https://offline-games.site/games/pipe_connect/pipe_connect_10000.zip,5.0,"pipe connect",PUZZLE,0
+paper_fold,267,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/paper_fold.webp,10000,https://offline-games.site/games/paper_fold/Archive.zip,4.35,"Paper Fold",Puzzle,0
+block_matcher,268,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/block_matcher.png,10001,https://offline-games.site/games/block_matcher/block_matcher_10001.zip,5.0,"block matcher",PUZZLE,0
+dungeon_crawler,269,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/dungeon_crawler.webp,10100,https://offline-games.site/games/dungeon_crawler/dungeon_crawler_10100.zip,5.0,"dungeon crawler",ARCADE,0
+secret_agent,270,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/secret_agent.png,10000,https://offline-games.site/games/secret_agent/Archive.zip,1.18,"Secret Agent",Puzzle,0
+tidy_shelf,271,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/tidy_shelf.png,10001,https://offline-games.site/games/tidy_shelf/tidy_shelf_10001.zip,5.0,"tidy shelf",PUZZLE,0
+block_fit_puzzle,272,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/block_fit_puzzle.png,11003,https://offline-games.site/games/block_fit_puzzle/block_fit_puzzle_11003.zip,0.82,"Block Fit Puzzle",Puzzle,0
+route_digger_2,273,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/route_digger_2.webp,10000,https://offline-games.site/games/route_digger_2/Archive.zip,1.75,"Route Digger 2",Puzzle,0
+knit_bear,274,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/knit_bear.webp,10100,https://offline-games.site/games/knit_bear/knit_bear_10100.zip,5.0,"knit bear",PUZZLE,0
+fruits_galaxy,275,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/fruits_galaxy.webp,10000,https://offline-games.site/games/fruits_galaxy/Archive.zip,0.86,"Fruits Galaxy",Puzzle,0
+mr_toni,276,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/mr_toni.png,10000,https://offline-games.site/games/mr_toni/mr_toni_10000.zip,1.83,"mr toni",ARCADE,1
+tap_arrow_away,277,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/tap_arrow_away.png,10001,https://offline-games.site/games/tap_arrow_away/tap_arrow_away_10001.zip,5.0,"tap arrow away",PUZZLE,0
+fruit_slice,278,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/fruit_slice.png,10000,https://offline-games.site/games/fruit_slice/fruit_slice_10000.zip,2.81,"fruit slice",ARCADE,1
+word_search,279,0,,,,,,,,,,,,,https://offline-games.site/icons/word_search.png,10005,https://offline-games.site/games/word_search/word_search_10005.zip,1.96,"word search","WORD PUZZLE",0
+arkanoid_blocks,280,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/arkanoid_blocks.webp,10000,https://offline-games.site/games/arkanoid_blocks/Archive.zip,1.07,"Arkanoid Blocks",Puzzle,0
+arrow_shooter,281,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/arrow_shooter.webp,10000,https://offline-games.site/games/arrow_shooter/Archive.zip,1.79,"Arrow Shooter",Puzzle,0
+color_me,282,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/color_me.png,11000,https://offline-games.site/games/color_me/Archive.zip,3.09,"Color Me",Puzzle,0
+white_dot,283,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/white_dot.png,10000,https://offline-games.site/games/white_dot/Archive.zip,0.57,"White Dot",Puzzle,0
+cube_rotate,284,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/cube_rotate.png,10011,https://offline-games.site/games/cube_rotate/cube_rotate_10011.zip,5.0,"cube rotate",PUZZLE,0
+christmas,285,0,,,,,0,90000,,,0,0,20000,,https://offline-games.site/icons/christmas.webp,10000,https://offline-games.site/games/christmas/Archive.zip,1.01,Christmas,Action,0
+filled_glass_2,286,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/filled_glass_2.webp,10000,https://offline-games.site/games/filled_glass_2/Archive.zip,0.73,"Filled Glass 2",Puzzle,0
+cut_for_cat,287,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/cut_for_cat.webp,10000,https://offline-games.site/games/cut_for_cat/Archive.zip,0.86,"Cut For Cat",Puzzle,0
+dungeon_knight,288,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/dungeon_knight.png,10000,https://offline-games.site/games/dungeon_knight/dungeon_knight_10000.zip,1.41,"dungeon knight",PUZZLE,1
+filled_glass_5,289,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/filled_glass_5.webp,10000,https://offline-games.site/games/filled_glass_5/Archive.zip,0.75,"Filled Glass 5",Puzzle,0
+rich_run,290,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/rich_run.png,10000,https://offline-games.site/games/rich_run/rich_run_10000.zip,5.0,"rich run",ARCADE,0
+cut_for_cat_2,291,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/cut_for_cat_2.webp,10000,https://offline-games.site/games/cut_for_cat_2/Archive.zip,1.04,"Cut For Cat 2",Puzzle,0
+inspector_cat,292,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/inspector_cat.png,10000,https://offline-games.site/games/inspector_cat/inspector_cat_10000.zip,5.0,"inspector cat",ARCADE,0
+master_insane_damage,293,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/master_insane_damage.webp,10000,https://offline-games.site/games/master_insane_damage/Archive.zip,1.04,"Master Insane Damage",Puzzle,0
+card_attack,294,0,,,,,,,,,,,,,https://offline-games.site/icons/card_attack.jpg,10001,https://offline-games.site/games/card_attack/card_attack_10001.zip,1.29,"Card Attack",Action,0
+pumpkin_dig,295,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/pumpkin_dig.png,10000,https://offline-games.site/games/pumpkin_dig/pumpkin_dig_10000.zip,4.84,"pumpkin dig",ARCADE,0
+racer_traning,296,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/racer_traning.png,10100,https://offline-games.site/games/racer_traning/racer_traning_10100.zip,5.0,"racer traning",ARCADE,0
+piggy_bank,297,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/piggy_bank.png,10003,https://offline-games.site/games/piggy_bank/Archive3.zip,1.19,"Piggy Bank",Puzzle,0
+shoot_up,298,0,,,,,,,,,,,,,https://offline-games.site/icons/shoot_up.webp,10000,https://offline-games.site/games/shoot_up/Archive.zip,1.66,"Shoot Up",Action,0
+monster_destroyer,299,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/monster_destroyer.webp,10000,https://offline-games.site/games/monster_destroyer/Archive.zip,0.77,"Monster Destroyer",Puzzle,0
+hoop_hit,300,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/hoop_hit.png,10001,https://offline-games.site/games/hoop_hit/hoop_hit_10001.zip,5.0,"hoop hit",PUZZLE,0
+match_4_hexa,301,0,,,,,0,,,,0,0,20000,9000,https://offline-games.site/icons/match_4_hexa.png,10000,https://offline-games.site/games/match_4_hexa/match_4_hexa_10000.zip,2.47,"match 4 hexa",PUZZLE,0
+goldblade,302,0,,,,,0,90000,,,0,0,20000,,https://offline-games.site/icons/goldblade.webp,10000,https://offline-games.site/games/goldblade/Archive.zip,0.98,Goldblade,Action,0
+color_grid,303,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/color_grid.png,10000,https://offline-games.site/games/color_grid/color_grid_10000.zip,5.0,"color grid",PUZZLE,0
+triple_cups,304,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/triple_cups.png,10000,https://offline-games.site/games/triple_cups/triple_cups_10000.zip,5.0,"triple cups",ARCADE,0
+route_digger_3,305,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/route_digger_3.png,10000,https://offline-games.site/games/route_digger_3/route_digger_3_10000.zip,1.35,"route digger 3",PUZZLE,0
+tap_away,306,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/tap_away.png,10003,https://offline-games.site/games/tap_away/tap_away_10003.zip,1.32,"tap away",PUZZLE,0
+filled_glass_3,307,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/filled_glass_3.webp,10000,https://offline-games.site/games/filled_glass_3/Archive.zip,0.75,"Filled Glass 3",Puzzle,0
+merge_number_woody,308,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/merge_number_woody.png,10001,https://offline-games.site/games/merge_number_woody/merge_number_woody_10001.zip,2.66,"merge number woody",PUZZLE,0
+filled_glass,309,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/filled_glass.webp,10000,https://offline-games.site/games/filled_glass/Archive.zip,0.72,"Filled Glass",Puzzle,0
+seek_and_find,310,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/seek_and_find.png,10000,https://offline-games.site/games/seek_and_find/seek_and_find_10000.zip,5.0,"seek and find",PUZZLE,0
+golf_pin,311,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/golf_pin.webp,10000,https://offline-games.site/games/golf_pin/Archive.zip,0.74,"Golf Pin",Puzzle,0
+happy_filled_glass_3,312,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/happy_filled_glass_3.webp,10000,https://offline-games.site/games/happy_filled_glass_3/Archive.zip,0.87,"Happy Filled Glass 3",Puzzle,0
+color_nuts,313,0,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/color_nuts.webp,10100,https://offline-games.site/games/color_nuts/color_nuts_10100.zip,5.0,"color nuts",PUZZLE,0
+stone_merge,314,0,,,,,,,,,,,,,https://offline-games.site/icons/stone_merge.webp,10000,https://offline-games.site/games/stone_merge/Archive.zip,2.25,"Stone Merge",Puzzle,0
+truck_flow,315,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/truck_flow.jpg,10000,https://offline-games.site/games/truck_flow/truck_flow_10000.zip,5.0,"truck flow",PUZZLE,1
+burger_run,316,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/burger_run.png,10011,https://offline-games.site/games/burger_run/burger_run_10011.zip,5.0,"burger run",ARCADE,0
+woman_roller,317,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/woman_roller.png,10000,https://offline-games.site/games/woman_roller/woman_roller_10000.zip,5.0,"woman roller",ARCADE,0
+abalone,318,0,,,,,,,,,,,,,https://offline-games.site/icons/abalone.png,10003,https://offline-games.site/games/abalone/abalone_10003.zip,2.34,abalone,BOARD,0
+tap_away_3D,319,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/tap_away_3D.webp,11000,https://offline-games.site/games/tap_away_3D/11000.zip,0.61,"Tap Away 3D",Puzzle,0
+building_blast,320,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/building_blast.jpg,10000,https://offline-games.site/games/building_blast/building_blast_10000.zip,1.4,"building blast",PUZZLE,0
+fruits_splash,321,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/fruits_splash.webp,10000,https://offline-games.site/games/fruits_splash/Archive.zip,0.72,"Fruits Splash",Puzzle,0
+happy_snake_2,322,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/happy_snake_2.png,11001,https://offline-games.site/games/happy_snake_2/happy_snake_2_11001.zip,1.36,"Happy Snake 2",Puzzle,0
+yellow_dot,323,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/yellow_dot.webp,10000,https://offline-games.site/games/yellow_dot/Archive.zip,0.63,"Yellow Dot",Puzzle,0
+chain_puzzle,324,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/chain_puzzle.png,10000,https://offline-games.site/games/chain_puzzle/chain_puzzle_10000.zip,2.87,"chain puzzle",PUZZLE,0
+full_cup,325,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/full_cup.png,10002,https://offline-games.site/games/full_cup/Archive3.zip,0.91,"Full Cup",Puzzle,0
+golf_field,326,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/golf_field.webp,10000,https://offline-games.site/games/golf_field/Archive.zip,0.84,"Golf Field",Puzzle,0
+basket_goal,327,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/basket_goal.png,11000,https://offline-games.site/games/basket_goal/Archive.zip,1.93,"Basket Goal",Puzzle,0
+sponge_splash,328,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/sponge_splash.png,10000,https://offline-games.site/games/sponge_splash/sponge_splash_10000.zip,5.0,"sponge splash",PUZZLE,1
+jigsaw,329,0,,,,,0,90000,,,0,0,20000,,https://offline-games.site/icons/jigsaw.webp,10000,https://offline-games.site/games/jigsaw/Archive.zip,6.05,Jigsaw,Puzzle,0
+guess_word,330,0,,,,,,,,,,,,,https://offline-games.site/icons/guess_word.png,10003,https://offline-games.site/games/guess_word/guess_word_10003.zip,1.81,"guess word","WORD PUZZLE",0
+maze_control,331,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/maze_control.webp,10000,https://offline-games.site/games/maze_control/Archive.zip,0.65,"Maze Control",Puzzle,0
+slime_quest,332,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/slime_quest.png,10000,https://offline-games.site/games/slime_quest/slime_quest_10000.zip,5.0,"slime quest",ARCADE,1
+small_archer_2,333,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/small_archer_2.png,10000,https://offline-games.site/games/small_archer_2/Archive.zip,0.84,"Small Archer 2",Puzzle,0
+nuts_and_bolts_2,334,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/nuts_and_bolts_2.jpg,10000,https://offline-games.site/games/nuts_and_bolts_2/nuts_and_bolts_2_10000.zip,1.35,"nuts and bolts 2",PUZZLE,0
+connec_the_dots,335,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/connec_the_dots.png,10000,https://offline-games.site/games/connec_the_dots/connec_the_dots_10000.zip,5.0,"connec the dots",PUZZLE,0
+reversi_2,336,0,,,,,0,90000,,,0,0,20000,,https://offline-games.site/icons/reversi_2.webp,10000,https://offline-games.site/games/reversi_2/Archive.zip,0.95,Reversi,Board,0
+knife_hit_2,337,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/knife_hit_2.png,11401,https://offline-games.site/games/knife_hit_2/knife_hit_2_11401.zip,5.0,"knife hit 2",ARCADE,0
+luminova,338,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/luminova.png,11012,https://offline-games.site/games/luminova/luminova_11012.zip,0.92,Luminova,Puzzle,1
+cowboy_shoot,339,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/cowboy_shoot.webp,10000,https://offline-games.site/games/cowboy_shoot/Archive.zip,1.07,"Cowboy Shoot",Puzzle,0
+warship_royale,340,0,,,,,,,,,,,,,https://offline-games.site/icons/warship_royale.png,10003,https://offline-games.site/games/warship_royale/warship_royale_10003.zip,3.88,"warship royale",ARCADE,0
+merge_2048,341,0,,,,,,,,,,,,,https://offline-games.site/icons/merge_2048.jpg,10001,https://offline-games.site/games/merge_2048/merge_2048_10001.zip,1.08,"Merge 2048",Merge,0
+ball_wall,342,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/ball_wall.png,10000,https://offline-games.site/games/ball_wall/ball_wall_10000.zip,1.98,"ball wall",ARCADE,0
+pipe_rush,343,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/pipe_rush.png,10001,https://offline-games.site/games/pipe_rush/pipe_rush_10001.zip,5.0,"pipe rush",ARCADE,0
+collect_baubles,344,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/collect_baubles.png,10000,https://offline-games.site/games/collect_baubles/collect_baubles_10000.zip,4.52,"collect baubles",PUZZLE,0
+parking_jam,345,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/parking_jam.webp,10000,https://offline-games.site/games/parking_jam/Archive.zip,3.82,"Parking Jam",Puzzle,0
+golf_field_2,346,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/golf_field_2.webp,10000,https://offline-games.site/games/golf_field_2/Archive.zip,0.98,"Golf Field 2",Puzzle,0
+pipe_mania,347,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/pipe_mania.png,11001,https://offline-games.site/games/pipe_mania/pipe_mania_11001.zip,2.62,"Pipe Mania",Puzzle,0
+turtle_lines,348,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/turtle_lines.png,11001,https://offline-games.site/games/turtle_lines/turtle_lines_11001.zip,3.52,"TURTLE LINES",Puzzle,0
+snowball,349,0,,,,,,,,,,,,,https://offline-games.site/icons/snowball.webp,10000,https://offline-games.site/games/snowball/Archive.zip,0.29,Snowball,Action,0
+lines98,350,0,,,,,,,,,,,,,https://offline-games.site/icons/lines98.webp,10000,https://offline-games.site/games/lines98/Archive.zip,0.34,"Lines 98",Puzzle,0
+mouse_path,351,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/mouse_path.webp,10000,https://offline-games.site/games/mouse_path/Archive.zip,0.97,"Mouse Path",Puzzle,0
+memory_match,352,0,,,,,,,,,,,,,https://offline-games.site/icons/memory_match.webp,10000,https://offline-games.site/games/memory_match/Archive.zip,1.02,"Memory Match",Puzzle,0
+red_rope,353,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/test/red_rope.png,10000,https://offline-games.site/games/red_rope/Archive.zip,0.88,"Red Rope",Puzzle,0
+path_control,354,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/path_control.webp,10000,https://offline-games.site/games/path_control/Archive.zip,0.72,"Path Control",Puzzle,0
+red_golf,355,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/red_golf.png,11000,https://offline-games.site/games/red_golf/red_golf_11000.zip,1.56,"Red Golf",Puzzle,0
+cut_the_buttons,356,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/test2/cut_the_buttons.png,10000,https://offline-games.site/games/test_3/cut_the_buttons/Archive.zip,5.27,"Cut The Buttons",Puzzle,0
+worms,357,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/worms.png,10000,https://offline-games.site/games/worms/worms_10000.zip,5.0,worms,PUZZLE,0
+amaze_number,358,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/amaze_number.png,10200,https://offline-games.site/games/amaze_number/amaze_number_10200.zip,5.0,"amaze number",PUZZLE,0
+basket_ball,359,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/basket_ball.png,11001,https://offline-games.site/games/basket_ball/basket_ball_11001.zip,1.29,"Basket Ball",Puzzle,0
+green_prickle,360,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/green_prickle.webp,10000,https://offline-games.site/games/green_prickle/Archive.zip,0.57,"Green Prickle",Puzzle,0
+physics_box_2,361,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/physics_box_2.png,10000,https://offline-games.site/games/physics_box_2/physics_box_2_10000.zip,0.85,"physics box 2",ARCADE,0
+candy_blocks,362,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/candy_blocks.webp,10000,https://offline-games.site/games/candy_blocks/Archive.zip,1.33,"Candy Blocks",Puzzle,0
+block_connect,363,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/block_connect.png,10001,https://offline-games.site/games/block_connect/block_connect_10001.zip,5.0,"block connect",PUZZLE,0
+three_tiles,364,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/three_tiles.png,10000,https://offline-games.site/games/three_tiles/three_tiles_10000.zip,5.0,"three tiles",PUZZLE,0
+mathic_realm,365,1,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/mathic_realm.png,10001,https://offline-games.site/games/mathic_realm/mathic_realm_10001.zip,5.0,"mathic realm",PUZZLE,1
+snake_3000,366,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/snake_3000.png,10000,https://offline-games.site/games/snake_3000/snake_3000_10000.zip,1.91,"snake 3000",PUZZLE,0
+micro_golf_ball,367,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/micro_golf_ball.webp,10000,https://offline-games.site/games/micro_golf_ball/Archive.zip,0.71,"Micro Golf Ball",Puzzle,0
+earth_attack,368,0,,,,,0,90000,,,0,0,20000,,https://offline-games.site/icons/earth_attack.webp,10000,https://offline-games.site/games/earth_attack/Archive.zip,1.8,"Earth Attack",Action,0
+dot_puzzle,369,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/dot_puzzle.png,11002,https://offline-games.site/games/dot_puzzle/dot_puzzle_11002.zip,2.96,"DOT PUZZLE",Puzzle,0
+hexa_blocks,370,0,,,,,,,,,,,,,https://offline-games.site/icons/hexa_blocks.webp,10000,https://offline-games.site/games/hexa_blocks/Archive.zip,2.48,"Hexa Blocks",Puzzle,0
+figure_out,371,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/figure_out.png,10011,https://offline-games.site/games/figure_out/figure_out_10011.zip,5.0,"figure out",PUZZLE,0
+cake_tile,372,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/cake_tile.png,10000,https://offline-games.site/games/cake_tile/cake_tile_10000.zip,1.74,"cake tile",PUZZLE,1
+switch_off,373,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/switch_off.png,10001,https://offline-games.site/games/switch_off/switch_off_10001.zip,5.0,"switch off",PUZZLE,0
+magic_candy,374,0,,,,,,,,,,,,,https://offline-games.site/icons/magic_candy.webp,10000,https://offline-games.site/games/magic_candy/Archive.zip,0.82,"Magic Candy",Puzzle,0
+golf_world,375,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/golf_world.png,10000,https://offline-games.site/games/golf_world/golf_world_10000.zip,0.82,"golf world",ARCADE,0
+get_10,376,0,,,,,0,,,,0,0,20000,,https://offline-games.site/icons/get_10.jpg,10000,https://offline-games.site/games/get_10/get_10_10000.zip,5.0,"get 10",ARCADE,0
+puppy_match,377,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/puppy_match.webp,10100,https://offline-games.site/games/puppy_match/puppy_match_10100.zip,5.0,"puppy match",PUZZLE,0
+rabbits_saga,378,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/rabbits_saga.png,10000,https://offline-games.site/games/rabbits_saga/rabbits_saga_10000.zip,5.0,"rabbits saga",ARCADE,1
+mini_golf,379,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/mini_golf.png,10000,https://offline-games.site/games/mini_golf/mini_golf_10000.zip,8.74,"mini golf",ARCADE,0
+slip_blocks,380,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/slip_blocks.png,10000,https://offline-games.site/games/slip_blocks/Archive.zip,0.65,"Slip Blocks",Puzzle,0
+knife_shoot,381,0,,,,,,,,,,,,,https://offline-games.site/icons/knife_shoot.png,10001,https://offline-games.site/games/knife_shoot/knife_shoot_10001.zip,1.32,"Knife Shoot",Action,0
+gems_shot,382,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/gems_shot.webp,10000,https://offline-games.site/games/gems_shot/Archive.zip,0.53,"Gems Shot",Puzzle,0
+happy_snake,383,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/happy_snake.png,10003,https://offline-games.site/games/happy_snake/Archive4.zip,1.02,"Happy Snake",Puzzle,0
+dot_blast,384,0,,,,,,,,,,,,,https://offline-games.site/icons/dot_blast.png,10001,https://offline-games.site/games/dot_blast/dot_blast_10001.zip,1.42,"Dot Blast",Merge,0
+numbers_connect,385,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/numbers_connect.png,10002,https://offline-games.site/games/numbers_connect/Archive.zip,1.17,"Numbers Connect",Action,0
+physics_box,386,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/physics_box.webp,10000,https://offline-games.site/games/physics_box/Archive.zip,0.61,"Physics Box",Puzzle,0
+micro_golf_ball_2,387,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/micro_golf_ball_2.webp,10000,https://offline-games.site/games/micro_golf_ball_2/Archive.zip,0.73,"Micro Golf Ball 2",Puzzle,0
+stack_2048,388,1,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/stack_2048.png,10100,https://offline-games.site/games/stack_2048/stack_2048_10100.zip,5.0,"stack 2048",PUZZLE,0
+circle_word,389,0,,,,,,,,,,,,,https://offline-games.site/icons/circle_word.png,10003,https://offline-games.site/games/circle_word/circle_word_10003.zip,1.31,"circle word","WORD PUZZLE",0
+drop_animals,390,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/drop_animals.png,10003,https://offline-games.site/games/drop_animals/Archive3.zip,1.67,"Drop Animals",Action,0
+sphere_shift,391,1,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/sphere_shift.png,10000,https://offline-games.site/games/sphere_shift/sphere_shift_10000.zip,5.0,"sphere shift",PUZZLE,0
+figures_fall,392,0,,,,,,,,,,,,,https://offline-games.site/icons/figures_fall.webp,10000,https://offline-games.site/games/figures_fall/Archive.zip,0.61,"Figures Fall",Puzzle,0
+ten_master,393,1,,,,,1,,,,0,0,20000,90,https://offline-games.site/icons/ten_master.png,10001,https://offline-games.site/games/ten_master/ten_master_10001.zip,5.0,"ten master",PUZZLE,0
+dot_shot,394,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/dot_shot.webp,10000,https://offline-games.site/games/dot_shot/Archive.zip,0.62,"Dot Shot",Puzzle,0
+domino_merge,395,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/domino_merge.webp,10100,https://offline-games.site/games/domino_merge/domino_merge_10100.zip,5.0,"domino merge",PUZZLE,0
+disk_throw,396,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/disk_throw.webp,10000,https://offline-games.site/games/disk_throw/Archive.zip,0.73,"Disk Throw",Puzzle,0
+hexa_merge,397,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/hexa_merge.webp,10000,https://offline-games.site/games/hexa_merge/Archive.zip,0.98,"Hexa Merge",Puzzle,0
+rainbow_bead,398,0,,,,,,,,,,,,,https://offline-games.site/icons/rainbow_bead.png,10007,https://offline-games.site/games/rainbow_bead/rainbow_bead_10007.zip,1.84,"rainbow bead",BOARD,0
+impulse_ball_2,399,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/impulse_ball_2.webp,10000,https://offline-games.site/games/impulse_ball_2/Archive.zip,0.79,"Impulse Ball 2",Puzzle,0
+flapcat,400,0,,,,,0,90000,,,0,0,20000,,https://offline-games.site/icons/flapcat.webp,10000,https://offline-games.site/games/flapcat/Archive.zip,0.42,Flapcat,Action,0
+way_dawn,401,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/way_dawn.png,10000,https://offline-games.site/games/way_dawn/Archive.zip,0.76,"Way Dawn",Puzzle,0
+impulse_ball,402,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/impulse_ball.webp,10000,https://offline-games.site/games/impulse_ball/Archive.zip,0.74,"Impulse Ball",Puzzle,0
+merge_hexa,403,0,,,,,0,,1,,0,0,20000,,https://offline-games.site/icons/merge_hexa.png,11000,https://offline-games.site/games/merge_hexa/Archive.zip,1.96,"Merge Hexa",Puzzle,0
+hexa_word,404,0,,,,,,,,,,,,,https://offline-games.site/icons/hexa_word.png,10003,https://offline-games.site/games/hexa_word/hexa_word_10003.zip,1.45,"hexa word","WORD PUZZLE",0
+speed_racer,405,0,,,,,0,,,,0,0,20000,,https://offline-games.site/icons/speed_racer.jpg,10000,https://offline-games.site/games/speed_racer/speed_racer_10000.zip,5.0,"speed racer",ARCADE,0
+dig_dig_clicker,406,0,,,,,0,,,,0,0,20000,,https://offline-games.site/icons/dig_dig_clicker.jpg,10000,https://offline-games.site/games/dig_dig_clicker/dig_dig_clicker_10000.zip,5.0,"dig dig clicker",ARCADE,0
+slide_roll,407,0,,,,,0,,,,0,0,20000,,https://offline-games.site/icons/slide_roll.jpg,10000,https://offline-games.site/games/slide_roll/slide_roll_10000.zip,5.0,"slide roll",ARCADE,0
+one_stroke,408,0,,,,,0,,,,0,0,20000,,https://offline-games.site/icons/one_stroke.jpg,10000,https://offline-games.site/games/one_stroke/one_stroke_10000.zip,5.0,"one stroke",ARCADE,0
+color_link,409,0,,,,,0,,,,0,0,20000,,https://offline-games.site/icons/color_link.jpg,10000,https://offline-games.site/games/color_link/color_link_10000.zip,5.0,"color link",ARCADE,0
+memory_chess,410,0,,,,,0,,,,0,0,20000,,https://offline-games.site/icons/memory_chess.jpg,10000,https://offline-games.site/games/memory_chess/memory_chess_10000.zip,5.0,"memory chess",ARCADE,0
+cannon_paint,411,0,,,,,0,,,,0,0,20000,,https://offline-games.site/icons/cannon_paint.jpg,10000,https://offline-games.site/games/cannon_paint/cannon_paint_10000.zip,5.0,"cannon paint",ARCADE,0
+bubble_shooter_cosmo,412,0,,,,,0,,,,0,0,20000,,https://offline-games.site/icons/bubble_shooter_cosmo.jpg,10000,https://offline-games.site/games/bubble_shooter_cosmo/bubble_shooter_cosmo_10000.zip,5.0,"bubble shooter cosmo",ARCADE,0
+visual_puzzle,413,0,,,,,0,,,,0,0,20000,,https://offline-games.site/icons/visual_puzzle.jpg,10000,https://offline-games.site/games/visual_puzzle/visual_puzzle_10000.zip,5.0,"visual puzzle",ARCADE,0
+block_puzzle_solve,414,0,,,,,0,,,,0,0,20000,,https://offline-games.site/icons/block_puzzle_solve.jpg,10000,https://offline-games.site/games/block_puzzle_solve/block_puzzle_solve_10000.zip,5.0,"block puzzle solve",ARCADE,0
+change_word,415,0,,,,,,,,,,,,,https://offline-games.site/icons/change_word.png,10003,https://offline-games.site/games/change_word/change_word_10003.zip,1.38,"change word","WORD PUZZLE",0
+rotate_and_flip,416,0,,,,,0,,,,0,0,20000,90,https://offline-games.site/icons/rotate_and_flip.png,10002,https://offline-games.site/games/rotate_and_flip/rotate_and_flip_10002.zip,3.85,"rotate and flip",PUZZLE,1
+onet_fish_2,417,1,,,,,1,,1,,0,0,20000,,https://offline-games.site/icons/onet_fish_2.png,11405,https://offline-games.site/games/onet_fish_2/onet_fish_2_11405.zip,5.0,"onet fish 2",PUZZLE,0

@@ -1,0 +1,11 @@
+{
+	"name": "ball_escape",
+	"short_name": "ball_escape",
+	"description": "10001 - add js event, add reward revive",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

@@ -1,0 +1,11 @@
+{
+	"name": "house_painter",
+	"short_name": "house_painter",
+	"description": "11000 - add JSevent\n11011 - update js, sound app, dell icon, add compres img\n11101 - add tutorials",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

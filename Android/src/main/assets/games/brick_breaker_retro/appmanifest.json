@@ -1,0 +1,11 @@
+{
+	"name": "brick_breaker_retro",
+	"short_name": "brick_breaker_retro",
+	"description": "10001 - Add JS Event\n10002 - Fix event is on IOS\n10003 - Update Sound",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

@@ -1,0 +1,11 @@
+{
+	"name": "KnifeHit",
+	"short_name": "KnifeHit",
+	"description": "11000 - add JSevent\n11000 - Replace the old function\n11001 - Fix audio size\n11201 - delete behaviour ig_shake\n11301 - compressed audio \n11401 - Added new targets regular and bosses\nAdded lives and reverts \nAdjusted the UI\nFixed errors in the wheel of fortune \nThe sprites of the parts were replaced with canvas",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

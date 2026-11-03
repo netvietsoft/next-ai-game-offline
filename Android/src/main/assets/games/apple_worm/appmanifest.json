@@ -1,0 +1,11 @@
+{
+	"name": "apple_worm",
+	"short_name": "apple_worm",
+	"description": "10000 - new project, add jsevent\n10002 - compress images\n10003 - fix size\n10004 - fix level 11,15,25\n10005 - add buttons skip\n10011 - fix level 3,4,6,10,20, soundapp\n15001 - fix worm segmet angel, add 70 level to 100, add arrow to portal\n15011 - fix go to level 100",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

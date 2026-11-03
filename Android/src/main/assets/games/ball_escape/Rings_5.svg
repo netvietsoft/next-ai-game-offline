@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="900"
+     height="1600"
+     viewBox="0 0 900 1600">
+
+    <g fill="none"
+       stroke="#ff3366"
+       stroke-width="26">
+
+        <circle cx="450" cy="800" r="100"/>
+        <circle cx="450" cy="800" r="140"/>
+        <circle cx="450" cy="800" r="180"/>
+        <circle cx="450" cy="800" r="220"/>
+        <circle cx="450" cy="800" r="260"/>
+        <circle cx="450" cy="800" r="300"/>
+        <circle cx="450" cy="800" r="340"/>
+        <circle cx="450" cy="800" r="380"/>
+        <circle cx="450" cy="800" r="420"/>
+
+    </g>
+
+</svg>

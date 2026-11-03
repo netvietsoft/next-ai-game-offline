@@ -1,0 +1,11 @@
+{
+	"name": "minimal_foul",
+	"short_name": "minimal_foul",
+	"description": "10001 - add js event",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}
