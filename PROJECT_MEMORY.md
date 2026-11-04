@@ -57,10 +57,16 @@
 - **Thiết bị kiểm thử vật lý:**
   1. **Samsung Galaxy A50** (`SM-A507FN` / Android 11+ One UI): Kết nối mDNS TLS (`adb-R58MA581ZZA-n4XnSK._adb-tls-connect._tcp`).
   2. **Samsung Galaxy A07** (`SM-A075F` / Android 16): Kết nối Wi-Fi ADB (`192.168.1.17:5555`).
-- **Gói cài đặt:** `GameGateOffline-debug.apk` (149.4 MB) và `GameGateOffline-release.aab` (127.0 MB, `versionCode = 8`, `versionName = "1.1"`).
+- **Gói phát hành chính thức (Google Play Store Release):**
+  - **AAB:** `Release_APK/GameGateOffline-v9-release.aab` (**121.12 MB**, `versionCode = 9`, `versionName = "1.2"`, Target SDK 36, SHA256: `68E2A28CCC53724A717CF493D4D160E66EFA7F175F5130CF821AEC0A18C1B660`).
+  - **APK:** `Release_APK/GameGateOffline-v9-release.apk` (**122.88 MB**, SHA256: `562C1F1CEC6B00E31CF6201CFC7FD302308A18F98503A23511B0F9050799DC55`).
+  - **Debug APK:** `Android/build/outputs/apk/debug/GameGateOffline-debug.apk` (149.4 MB).
 - **Trạng thái nghiệm thu thực tế 100% PASS:**
   - [x] Đổi tên thành công **Game Gate Offline** trên toàn bộ hệ thống.
-  - [x] Khởi chạy Launcher & nạp danh mục 423 game mượt mà trên cả 2 máy.
+  - [x] Nâng cấp thành công **VersionCode 9 (1.2)** và ký số release keystore chuẩn Google Play.
+  - [x] Tích hợp và đồng bộ 100% Firebase Analytics (Project `nextai-game-offline`, xác thực HTTP 204 từ máy chủ Google).
+  - [x] Tích hợp và đồng bộ 100% AdMob Production Keys mới nhất (App ID `~4299594158`, Banner `4579664323`).
+  - [x] Khởi chạy Launcher & nạp danh mục 423 game mượt mà trên cả 2 máy test.
   - [x] Anchored Adaptive Banner hiển thị full 100% chiều ngang màn hình.
   - [x] Dải phân cách màu xanh `#3B82F6` (3dp) bảo vệ mép trên banner, ngăn cách nút gameplay chống click nhầm vi phạm AdMob Policy.
   - [x] Firebase Analytics ghi nhận 100% sự kiện mở game, thời gian chơi, sự kiện ads và in-app billing.
@@ -70,3 +76,4 @@
   - [x] Đánh giá 5 sao kích hoạt mở Google Play Store.
   - [x] Cử chỉ vuốt ngang chuyển tab danh mục mượt mà.
   - [x] Toàn bộ mã nguồn và 100 game đóng gói sẵn trong bản build đã đồng bộ lên GitHub `netvietsoft/next-ai-game-offline`.
+
