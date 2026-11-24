@@ -2,339 +2,247 @@ package com.nextai.gameoffline.ads
 
 import android.app.Activity
 import android.content.Context
-import android.graphics.Color
-import android.os.Build
-import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
-import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.FullScreenContentCallback
-import com.google.android.gms.ads.LoadAdError
-import com.google.android.gms.ads.interstitial.InterstitialAd
-import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
-import com.google.android.gms.ads.rewarded.RewardedAd
-import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
-import com.nextai.gameoffline.analytics.GameAnalyticsManager
+import com.google.android.gms.ads.nativead.NativeAd
+import com.nextai.gameoffline.billing.BillingEntitlements
+import java.util.concurrent.atomic.AtomicInteger
 
 /**
- * Singleton quản lý toàn bộ vòng đời tải và hiển thị quảng cáo AdMob trong ứng dụng.
- * Tích hợp Anchored Adaptive Banner full chiều ngang, vạch ngăn cách màu xanh chống click nhầm,
- * và theo dõi chi tiết toàn bộ sự kiện qua Firebase Analytics.
+ * Facade mỏng điều phối hệ thống Google Mobile Ads (AdMob + Meta Audience Network Mediation).
+ * Toàn bộ nghiệp vụ đã được tách thành các thành phần đơn trách nhiệm (SRP):
+ * - [MobileAdsInitializer]: khởi tạo SDK an toàn đồng thời.
+ * - [BannerAdController]: banner thích ứng thu gọn đáy (`collapsible = "bottom"`).
+ * - [InterstitialAdCoordinator], [RewardedAdCoordinator], [AppOpenAdCoordinator]: dùng chung [FullScreenAdSlot].
+ * - [NativeAdCoordinator]: pool cache có TTL cho Native Ad tại Trang chủ, hộp thoại tải R2 và thoát app.
  *
- * Singleton managing Google AdMob ad lifecycles.
- * Implements full-width Anchored Adaptive Banner, protective blue divider line against accidental clicks,
- * and comprehensive Firebase Analytics tracking.
+ * Thin facade preserving backward-compatible APIs while delegating to SRP coordinators.
  */
 object AdManager {
 
-    private var interstitialAd: InterstitialAd? = null
-    private var rewardedAd: RewardedAd? = null
-    private var appOpenAd: com.google.android.gms.ads.appopen.AppOpenAd? = null
-    private var isAppOpenAdLoading = false
+    private val initializer = MobileAdsInitializer()
+    private val fullScreenGate = FullScreenAdGate()
+    private val bannerController = BannerAdController(initializer)
+    private val interstitialCoordinator = InterstitialAdCoordinator(initializer, fullScreenGate)
+    private val rewardedCoordinator = RewardedAdCoordinator(initializer, fullScreenGate)
+    private val appOpenCoordinator = AppOpenAdCoordinator(initializer, fullScreenGate)
+    private val nativeCoordinator = NativeAdCoordinator(initializer)
 
-    /**
-     * Tính toán kích thước Adaptive Banner tự động lấp đầy 100% chiều ngang màn hình.
-     * Computes Anchored Adaptive Banner size dynamically filling 100% screen width.
-     */
-    fun getAdaptiveBannerAdSize(context: Context): AdSize {
-        val displayMetrics = context.resources.displayMetrics
-        val adWidthPixels = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R && context is Activity) {
-            val windowMetrics = context.windowManager.currentWindowMetrics
-            windowMetrics.bounds.width()
-        } else {
-            @Suppress("DEPRECATION")
-            displayMetrics.widthPixels
+    /** Ghi nhận thao tác người dùng thực để mở khóa ngưỡng tần suất Interstitial. */
+    fun recordInterstitialUserAction() {
+        fullScreenGate.recordUserAction()
+    }
+
+    /** Khởi tạo Google Mobile Ads SDK một lần sau khi đã có consent. */
+    fun initialize(context: Context, onReady: (() -> Unit)? = null) {
+        initializer.initialize(context) { _ ->
+            onReady?.invoke()
         }
-        val density = displayMetrics.density
-        val adWidth = (adWidthPixels / density).toInt()
-        return AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(context, adWidth)
     }
 
     /**
-     * Khởi tạo và gắn Adaptive Banner vào container ở đáy màn hình.
-     * Tự động thêm đường kẻ ngang màu xanh (#3B82F6) phía trên banner để ngăn cách hoàn toàn
-     * với các nút bấm của game, chống click nhầm theo chính sách Google AdMob.
-     *
-     * Initializes and attaches Anchored Adaptive Banner to container ViewGroup.
-     * Automatically adds a top blue divider line to separate ads from game controls (Google policy compliant).
+     * Nạp trước quảng cáo sau consent cho màn khởi động theo cơ chế lazy-preload:
+     * - Không nạp `reward_load` tại Splash (chỉ nạp khi mở game thuộc 71 game có Rewarded).
+     * - Chỉ nạp `app_open_load` khi [preloadAppOpen] = true (từ lần mở thứ 3 trở đi).
+     * Warms launch ad caches lazily: never preloads Rewarded on Splash and skips App Open
+     * when [preloadAppOpen] is false (first 2 launches).
      */
+    fun preloadForLaunch(
+        context: Context,
+        preloadAppOpen: Boolean,
+        onFinished: () -> Unit
+    ) {
+        val appContext = context.applicationContext
+        if (BillingEntitlements.shouldSuppressAutomaticAds(appContext)) {
+            onFinished()
+            return
+        }
+        initializer.initialize(appContext) { initialized ->
+            if (!initialized) {
+                onFinished()
+                return@initialize
+            }
+            clearExpiredAds()
+            val expectedLoads = if (preloadAppOpen) 2 else 1
+            val remaining = AtomicInteger(expectedLoads)
+            val onSingleCompleted: (Boolean) -> Unit = {
+                if (remaining.decrementAndGet() == 0) {
+                    onFinished()
+                }
+            }
+            interstitialCoordinator.load(appContext, onSingleCompleted)
+            if (preloadAppOpen) {
+                appOpenCoordinator.load(appContext, onSingleCompleted)
+            }
+            nativeCoordinator.preload(appContext)
+        }
+    }
+
+    /**
+     * Làm ấm cache toàn màn hình theo ngữ cảnh thực tế để tối ưu AdMob Show Rate:
+     * - `App Open` chỉ nạp khi vượt qua 2 lần mở đầu ([LaunchAdEligibility.canPreloadAppOpenInSession]).
+     * - `Rewarded` chỉ nạp khi [preloadRewarded] = true (người chơi đang mở 1 trong 71 game có Rewarded).
+     * Context-aware lazy preload preserving AdMob Show Rate for App Open and Rewarded formats.
+     */
+    fun preloadFullScreenAds(context: Context, preloadRewarded: Boolean = false) {
+        val appContext = context.applicationContext
+        if (!AdsConsentManager.canRequestAds(appContext)) {
+            return
+        }
+        val suppressAutomaticAds = BillingEntitlements.shouldSuppressAutomaticAds(appContext)
+        if (suppressAutomaticAds && !preloadRewarded) {
+            return
+        }
+        initializer.initialize(appContext) { initialized ->
+            if (!initialized) {
+                return@initialize
+            }
+            clearExpiredAds()
+            if (!suppressAutomaticAds) {
+                interstitialCoordinator.load(appContext)
+                if (LaunchAdEligibility.canPreloadAppOpenInSession(appContext)) {
+                    appOpenCoordinator.load(appContext)
+                }
+                nativeCoordinator.preload(appContext)
+            }
+            if (preloadRewarded) {
+                rewardedCoordinator.load(appContext)
+            }
+        }
+    }
+
+    /** Tạo AdRequest chuẩn Anchored Adaptive Banner (mặc định tắt `collapsible = "bottom"`). */
+    internal fun buildBannerAdRequest(collapsibleBottom: Boolean = false): AdRequest {
+        return bannerController.buildBannerAdRequest(collapsibleBottom)
+    }
+
+    /** Tính kích thước Anchored Adaptive Banner theo chiều rộng hiện tại. */
+    fun getAdaptiveBannerAdSize(context: Context): AdSize {
+        return bannerController.getAdaptiveBannerAdSize(context)
+    }
+
+    /** Khởi tạo và nạp Anchored Adaptive Banner kèm dải phân cách chống click nhầm và retry backoff. */
     fun initBannerAd(
         context: Context,
         container: ViewGroup,
         gameName: String? = null,
+        collapsibleBottom: Boolean = false,
         onLoaded: (() -> Unit)? = null,
-        onFailed: ((String) -> Unit)? = null
+        onFailed: ((String) -> Unit)? = null,
+        onAdViewUpdated: ((AdView?) -> Unit)? = null
     ): AdView {
-        container.removeAllViews()
-
-        // Đường kẻ ngang màu xanh nổi bật ngăn banner và nút game / Protective blue separator line
-        val density = context.resources.displayMetrics.density
-        val dividerHeightPx = (3 * density).toInt()
-        val blueDivider = View(context).apply {
-            layoutParams = ViewGroup.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                dividerHeightPx
-            )
-            setBackgroundColor(Color.parseColor("#3B82F6")) // Màu xanh công nghệ chuẩn Material Blue
-            visibility = View.GONE
-        }
-
-        val adView = AdView(context).apply {
-            setAdSize(getAdaptiveBannerAdSize(context))
-            adUnitId = AdConstants.BANNER_AD_UNIT_ID
-            layoutParams = ViewGroup.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT
-            )
-        }
-
-        // Wrapper dạng dọc bảo đảm đường kẻ xanh luôn nằm ngay mép trên của Banner trên mọi loại Container
-        // Vertical wrapper ensuring blue divider line is strictly placed directly above the Banner view
-        val bannerWrapper = LinearLayout(context).apply {
-            orientation = LinearLayout.VERTICAL
-            layoutParams = ViewGroup.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT
-            )
-            setBackgroundColor(Color.TRANSPARENT)
-        }
-
-        bannerWrapper.addView(blueDivider)
-        bannerWrapper.addView(adView)
-        container.addView(bannerWrapper)
-
-        val startTime = System.currentTimeMillis()
-        GameAnalyticsManager.logAdRequest("BANNER", AdConstants.BANNER_AD_UNIT_ID)
-
-        adView.adListener = object : com.google.android.gms.ads.AdListener() {
-            override fun onAdLoaded() {
-                val durationMs = System.currentTimeMillis() - startTime
-                blueDivider.visibility = View.VISIBLE
-                bannerWrapper.visibility = View.VISIBLE
-                container.visibility = View.VISIBLE
-                GameAnalyticsManager.logAdLoaded("BANNER", AdConstants.BANNER_AD_UNIT_ID, durationMs)
-                GameAnalyticsManager.logAdImpression("BANNER", AdConstants.BANNER_AD_UNIT_ID, context.javaClass.simpleName, gameName)
-                onLoaded?.invoke()
-            }
-
-            override fun onAdFailedToLoad(error: LoadAdError) {
-                blueDivider.visibility = View.GONE
-                bannerWrapper.visibility = View.GONE
-                container.visibility = View.GONE
-                GameAnalyticsManager.logAdFailedToLoad("BANNER", AdConstants.BANNER_AD_UNIT_ID, error.code, error.message)
-                onFailed?.invoke(error.message)
-            }
-
-            override fun onAdClicked() {
-                GameAnalyticsManager.logAdClicked("BANNER", AdConstants.BANNER_AD_UNIT_ID, gameName)
-            }
-
-            override fun onAdImpression() {
-                GameAnalyticsManager.logAdImpression("BANNER", AdConstants.BANNER_AD_UNIT_ID, context.javaClass.simpleName, gameName)
-            }
-        }
-
-        val adRequest = AdRequest.Builder().build()
-        adView.loadAd(adRequest)
-        return adView
-    }
-
-    /**
-     * Tải trước quảng cáo Interstitial chuyển cảnh.
-     * Pre-load interstitial ad.
-     */
-    fun loadInterstitialAd(context: Context) {
-        val startTime = System.currentTimeMillis()
-        GameAnalyticsManager.logAdRequest("INTERSTITIAL", AdConstants.INTERSTITIAL_AD_UNIT_ID)
-
-        val adRequest = AdRequest.Builder().build()
-        InterstitialAd.load(
-            context,
-            AdConstants.INTERSTITIAL_AD_UNIT_ID,
-            adRequest,
-            object : InterstitialAdLoadCallback() {
-                override fun onAdLoaded(ad: InterstitialAd) {
-                    interstitialAd = ad
-                    val durationMs = System.currentTimeMillis() - startTime
-                    GameAnalyticsManager.logAdLoaded("INTERSTITIAL", AdConstants.INTERSTITIAL_AD_UNIT_ID, durationMs)
-                }
-
-                override fun onAdFailedToLoad(loadAdError: LoadAdError) {
-                    interstitialAd = null
-                    GameAnalyticsManager.logAdFailedToLoad("INTERSTITIAL", AdConstants.INTERSTITIAL_AD_UNIT_ID, loadAdError.code, loadAdError.message)
-                }
-            }
+        return bannerController.initBannerAd(
+            context = context,
+            container = container,
+            gameName = gameName,
+            collapsibleBottom = collapsibleBottom,
+            onLoaded = onLoaded,
+            onFailed = onFailed,
+            onAdViewUpdated = onAdViewUpdated
         )
     }
 
+    /** Hủy mọi retry Banner đang chờ và giải phóng hoàn toàn `AdView` trong [container]. */
+    fun destroyBannerAd(container: ViewGroup) {
+        bannerController.destroyBanner(container)
+    }
+
+    /** Nạp trước quảng cáo Interstitial. */
+    fun loadInterstitialAd(context: Context, onResult: ((Boolean) -> Unit)? = null) {
+        interstitialCoordinator.load(context, onResult)
+    }
+
     /**
-     * Hiển thị quảng cáo xen kẽ nếu đã sẵn sàng.
-     * Show interstitial ad if available.
+     * Hiển thị màn hình đệm 700ms chặn chạm rồi bật Interstitial; tự preload sau 3s khi đóng.
+     * Callback [onFinished] trả về `true` CHỈ KHI quảng cáo thực sự hiển thị toàn màn hình.
      */
-    fun showInterstitialAd(activity: Activity, gameName: String? = null) {
-        interstitialAd?.let { ad ->
-            ad.fullScreenContentCallback = object : FullScreenContentCallback() {
-                override fun onAdShowedFullScreenContent() {
-                    GameAnalyticsManager.logAdImpression("INTERSTITIAL", AdConstants.INTERSTITIAL_AD_UNIT_ID, activity.javaClass.simpleName, gameName)
-                }
+    fun showInterstitialAd(
+        activity: Activity,
+        gameName: String? = null,
+        onFinished: ((shown: Boolean) -> Unit)? = null
+    ) {
+        interstitialCoordinator.show(activity, gameName, onFinished)
+    }
 
-                override fun onAdClicked() {
-                    GameAnalyticsManager.logAdClicked("INTERSTITIAL", AdConstants.INTERSTITIAL_AD_UNIT_ID, gameName)
-                }
+    /** Nạp trước quảng cáo Rewarded Video. */
+    fun loadRewardedAd(context: Context, onResult: ((Boolean) -> Unit)? = null) {
+        rewardedCoordinator.load(context, onResult)
+    }
 
-                override fun onAdDismissedFullScreenContent() {
-                    GameAnalyticsManager.logAdDismissed("INTERSTITIAL", AdConstants.INTERSTITIAL_AD_UNIT_ID)
-                    interstitialAd = null
-                    loadInterstitialAd(activity)
-                }
+    /** Hiển thị quảng cáo Rewarded Video đã cache và trao thưởng qua callback chính thức. */
+    fun showRewardedAd(
+        activity: Activity,
+        gameName: String? = null,
+        onNotEarned: () -> Unit = {},
+        onRewardGranted: () -> Unit
+    ) {
+        rewardedCoordinator.show(activity, gameName, onNotEarned, onRewardGranted)
+    }
 
-                override fun onAdFailedToShowFullScreenContent(adError: AdError) {
-                    GameAnalyticsManager.logAdFailedToShow("INTERSTITIAL", AdConstants.INTERSTITIAL_AD_UNIT_ID, adError.code, adError.message)
-                    interstitialAd = null
-                    loadInterstitialAd(activity)
-                }
-            }
-            ad.show(activity)
-        } ?: run {
-            // Nạp lại nếu chưa có sẵn / Pre-fetch for next time
-            loadInterstitialAd(activity)
+    /** Nạp trước App Open Ad. */
+    fun loadAppOpenAd(context: Context, onResult: ((Boolean) -> Unit)? = null) {
+        appOpenCoordinator.load(context, onResult)
+    }
+
+    /** Hiển thị App Open Ad đã sẵn sàng mà không chặn điều hướng khi cache rỗng. */
+    fun showAppOpenAd(
+        activity: Activity,
+        respectCooldown: Boolean = false,
+        onDismissed: (() -> Unit)? = null
+    ) {
+        appOpenCoordinator.show(activity, respectCooldown, onDismissed)
+    }
+
+    /** Chủ động nạp trước Native Ad vào pool để cuộn lưới hoặc mở hộp thoại hiển thị tức thì. */
+    fun preloadNativeAds(context: Context) {
+        nativeCoordinator.preload(context)
+    }
+
+    /** Lấy một Native Ad từ pool hoặc nạp mới; caller cần gọi [releaseNativeAd] khi hủy view. */
+    fun acquireNativeAd(context: Context, onReady: (NativeAd?) -> Unit) {
+        nativeCoordinator.acquire(context, onReady)
+    }
+
+    /** Giải phóng bộ nhớ của một [NativeAd] khi ViewHolder hoặc hộp thoại bị đóng. */
+    fun releaseNativeAd(nativeAd: NativeAd?) {
+        nativeCoordinator.release(nativeAd)
+    }
+
+    /** Hủy toàn bộ retry và tác vụ preload hẹn giờ đang chờ. */
+    fun cancelScheduledRetries() {
+        interstitialCoordinator.cancelScheduledWork()
+        rewardedCoordinator.cancelScheduledWork()
+        appOpenCoordinator.cancelScheduledWork()
+        nativeCoordinator.cancelScheduledWork()
+    }
+
+    /** Xóa sạch cache và retry ngay lập tức khi người dùng rút consent. */
+    fun onConsentChanged(context: Context) {
+        if (AdsConsentManager.canRequestAds(context)) {
+            return
         }
+        interstitialCoordinator.clearCacheAndWork()
+        rewardedCoordinator.clearCacheAndWork()
+        appOpenCoordinator.clearCacheAndWork()
+        nativeCoordinator.clearCacheAndWork()
     }
 
-    /**
-     * Tải trước quảng cáo video nhận thưởng.
-     * Pre-load rewarded video ad.
-     */
-    fun loadRewardedAd(context: Context) {
-        val startTime = System.currentTimeMillis()
-        GameAnalyticsManager.logAdRequest("REWARDED", AdConstants.REWARDED_AD_UNIT_ID)
-
-        val adRequest = AdRequest.Builder().build()
-        RewardedAd.load(
-            context,
-            AdConstants.REWARDED_AD_UNIT_ID,
-            adRequest,
-            object : RewardedAdLoadCallback() {
-                override fun onAdLoaded(ad: RewardedAd) {
-                    rewardedAd = ad
-                    val durationMs = System.currentTimeMillis() - startTime
-                    GameAnalyticsManager.logAdLoaded("REWARDED", AdConstants.REWARDED_AD_UNIT_ID, durationMs)
-                }
-
-                override fun onAdFailedToLoad(loadAdError: LoadAdError) {
-                    rewardedAd = null
-                    GameAnalyticsManager.logAdFailedToLoad("REWARDED", AdConstants.REWARDED_AD_UNIT_ID, loadAdError.code, loadAdError.message)
-                }
-            }
-        )
-    }
-
-    /**
-     * Hiển thị quảng cáo video nhận thưởng và kích hoạt callback khi hoàn thành.
-     * Show rewarded ad and trigger onRewardGranted callback upon completion.
-     */
-    fun showRewardedAd(activity: Activity, gameName: String? = null, onRewardGranted: () -> Unit) {
-        rewardedAd?.let { ad ->
-            ad.fullScreenContentCallback = object : FullScreenContentCallback() {
-                override fun onAdShowedFullScreenContent() {
-                    GameAnalyticsManager.logAdImpression("REWARDED", AdConstants.REWARDED_AD_UNIT_ID, activity.javaClass.simpleName, gameName)
-                }
-
-                override fun onAdClicked() {
-                    GameAnalyticsManager.logAdClicked("REWARDED", AdConstants.REWARDED_AD_UNIT_ID, gameName)
-                }
-
-                override fun onAdDismissedFullScreenContent() {
-                    GameAnalyticsManager.logAdDismissed("REWARDED", AdConstants.REWARDED_AD_UNIT_ID)
-                    rewardedAd = null
-                    loadRewardedAd(activity)
-                }
-
-                override fun onAdFailedToShowFullScreenContent(adError: AdError) {
-                    GameAnalyticsManager.logAdFailedToShow("REWARDED", AdConstants.REWARDED_AD_UNIT_ID, adError.code, adError.message)
-                    rewardedAd = null
-                    loadRewardedAd(activity)
-                }
-            }
-
-            ad.show(activity) { rewardItem ->
-                GameAnalyticsManager.logAdRewardEarned(gameName, rewardItem.type, rewardItem.amount)
-                onRewardGranted()
-            }
-        } ?: run {
-            loadRewardedAd(activity)
+    /** Xóa quảng cáo tự động khi kích hoạt VIP hoặc Vé Sạch Quảng Cáo; vẫn giữ Rewarded tự nguyện. */
+    fun onEntitlementChanged(context: Context) {
+        if (!BillingEntitlements.shouldSuppressAutomaticAds(context)) {
+            return
         }
+        interstitialCoordinator.clearCacheAndWork()
+        appOpenCoordinator.clearCacheAndWork()
+        nativeCoordinator.clearCacheAndWork()
     }
 
-    /**
-     * Tải trước quảng cáo mở màn hình ứng dụng (App Open Ad).
-     * Pre-load App Open Ad.
-     */
-    fun loadAppOpenAd(context: Context, onLoaded: (() -> Unit)? = null) {
-        if (appOpenAd != null || isAppOpenAdLoading) return
-        isAppOpenAdLoading = true
-        val startTime = System.currentTimeMillis()
-        GameAnalyticsManager.logAdRequest("APP_OPEN", AdConstants.APP_OPEN_AD_UNIT_ID)
-
-        val adRequest = AdRequest.Builder().build()
-        com.google.android.gms.ads.appopen.AppOpenAd.load(
-            context,
-            AdConstants.APP_OPEN_AD_UNIT_ID,
-            adRequest,
-            object : com.google.android.gms.ads.appopen.AppOpenAd.AppOpenAdLoadCallback() {
-                override fun onAdLoaded(ad: com.google.android.gms.ads.appopen.AppOpenAd) {
-                    appOpenAd = ad
-                    isAppOpenAdLoading = false
-                    val durationMs = System.currentTimeMillis() - startTime
-                    GameAnalyticsManager.logAdLoaded("APP_OPEN", AdConstants.APP_OPEN_AD_UNIT_ID, durationMs)
-                    onLoaded?.invoke()
-                }
-
-                override fun onAdFailedToLoad(loadAdError: LoadAdError) {
-                    appOpenAd = null
-                    isAppOpenAdLoading = false
-                    GameAnalyticsManager.logAdFailedToLoad("APP_OPEN", AdConstants.APP_OPEN_AD_UNIT_ID, loadAdError.code, loadAdError.message)
-                }
-            }
-        )
-    }
-
-    /**
-     * Hiển thị quảng cáo mở màn hình ứng dụng nếu đã sẵn sàng.
-     * Show App Open Ad if available.
-     */
-    fun showAppOpenAd(activity: Activity, onDismissed: (() -> Unit)? = null) {
-        appOpenAd?.let { ad ->
-            ad.fullScreenContentCallback = object : FullScreenContentCallback() {
-                override fun onAdShowedFullScreenContent() {
-                    GameAnalyticsManager.logAdImpression("APP_OPEN", AdConstants.APP_OPEN_AD_UNIT_ID, activity.javaClass.simpleName)
-                }
-
-                override fun onAdClicked() {
-                    GameAnalyticsManager.logAdClicked("APP_OPEN", AdConstants.APP_OPEN_AD_UNIT_ID)
-                }
-
-                override fun onAdDismissedFullScreenContent() {
-                    GameAnalyticsManager.logAdDismissed("APP_OPEN", AdConstants.APP_OPEN_AD_UNIT_ID)
-                    appOpenAd = null
-                    loadAppOpenAd(activity)
-                    onDismissed?.invoke()
-                }
-
-                override fun onAdFailedToShowFullScreenContent(adError: AdError) {
-                    GameAnalyticsManager.logAdFailedToShow("APP_OPEN", AdConstants.APP_OPEN_AD_UNIT_ID, adError.code, adError.message)
-                    appOpenAd = null
-                    loadAppOpenAd(activity)
-                    onDismissed?.invoke()
-                }
-            }
-            ad.show(activity)
-        } ?: run {
-            onDismissed?.invoke()
-            loadAppOpenAd(activity)
-        }
+    private fun clearExpiredAds() {
+        interstitialCoordinator.clearExpired()
+        rewardedCoordinator.clearExpired()
+        appOpenCoordinator.clearExpired()
+        nativeCoordinator.clearExpired()
     }
 }

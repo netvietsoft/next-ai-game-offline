@@ -1,0 +1,209 @@
+{
+  "key": "notifications_cohort",
+  "title": "Hiệu quả Notification 5 lần/ngày / Daily Notification Cohorts",
+  "dimensions": [
+    "eventName",
+    "customEvent:notification_slot",
+    "customEvent:scheduled_hour",
+    "customEvent:delivery_status",
+    "customUser:notification_cohort_hour"
+  ],
+  "metrics": [
+    "eventCount",
+    "totalUsers"
+  ],
+  "skipped_optional_fields": [],
+  "row_count": 21,
+  "total_available_rows": 21,
+  "rows": [
+    {
+      "eventName": "notification_scheduled",
+      "customEvent:notification_slot": "0",
+      "customEvent:scheduled_hour": "8",
+      "customEvent:delivery_status": "(not set)",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 15200,
+      "totalUsers": 5320
+    },
+    {
+      "eventName": "notification_delivery",
+      "customEvent:notification_slot": "0",
+      "customEvent:scheduled_hour": "8",
+      "customEvent:delivery_status": "displayed",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 13224,
+      "totalUsers": 4628
+    },
+    {
+      "eventName": "notification_delivery",
+      "customEvent:notification_slot": "0",
+      "customEvent:scheduled_hour": "8",
+      "customEvent:delivery_status": "permission_denied",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 1976,
+      "totalUsers": 691
+    },
+    {
+      "eventName": "notification_opened",
+      "customEvent:notification_slot": "0",
+      "customEvent:scheduled_hour": "8",
+      "customEvent:delivery_status": "(not set)",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 1084,
+      "totalUsers": 379
+    },
+    {
+      "eventName": "notification_scheduled",
+      "customEvent:notification_slot": "1",
+      "customEvent:scheduled_hour": "12",
+      "customEvent:delivery_status": "(not set)",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 14780,
+      "totalUsers": 5173
+    },
+    {
+      "eventName": "notification_delivery",
+      "customEvent:notification_slot": "1",
+      "customEvent:scheduled_hour": "12",
+      "customEvent:delivery_status": "displayed",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 12858,
+      "totalUsers": 4500
+    },
+    {
+      "eventName": "notification_delivery",
+      "customEvent:notification_slot": "1",
+      "customEvent:scheduled_hour": "12",
+      "customEvent:delivery_status": "permission_denied",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 1922,
+      "totalUsers": 672
+    },
+    {
+      "eventName": "notification_opened",
+      "customEvent:notification_slot": "1",
+      "customEvent:scheduled_hour": "12",
+      "customEvent:delivery_status": "(not set)",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 1877,
+      "totalUsers": 656
+    },
+    {
+      "eventName": "notification_scheduled",
+      "customEvent:notification_slot": "2",
+      "customEvent:scheduled_hour": "16",
+      "customEvent:delivery_status": "(not set)",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 14360,
+      "totalUsers": 5026
+    },
+    {
+      "eventName": "notification_delivery",
+      "customEvent:notification_slot": "2",
+      "customEvent:scheduled_hour": "16",
+      "customEvent:delivery_status": "displayed",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 12493,
+      "totalUsers": 4372
+    },
+    {
+      "eventName": "notification_delivery",
+      "customEvent:notification_slot": "2",
+      "customEvent:scheduled_hour": "16",
+      "customEvent:delivery_status": "permission_denied",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 1867,
+      "totalUsers": 653
+    },
+    {
+      "eventName": "notification_opened",
+      "customEvent:notification_slot": "2",
+      "customEvent:scheduled_hour": "16",
+      "customEvent:delivery_status": "(not set)",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 1311,
+      "totalUsers": 458
+    },
+    {
+      "eventName": "notification_scheduled",
+      "customEvent:notification_slot": "3",
+      "customEvent:scheduled_hour": "20",
+      "customEvent:delivery_status": "(not set)",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 13940,
+      "totalUsers": 4879
+    },
+    {
+      "eventName": "notification_delivery",
+      "customEvent:notification_slot": "3",
+      "customEvent:scheduled_hour": "20",
+      "customEvent:delivery_status": "displayed",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 12127,
+      "totalUsers": 4244
+    },
+    {
+      "eventName": "notification_delivery",
+      "customEvent:notification_slot": "3",
+      "customEvent:scheduled_hour": "20",
+      "customEvent:delivery_status": "permission_denied",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 1813,
+      "totalUsers": 634
+    },
+    {
+      "eventName": "notification_opened",
+      "customEvent:notification_slot": "3",
+      "customEvent:scheduled_hour": "20",
+      "customEvent:delivery_status": "(not set)",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 2231,
+      "totalUsers": 780
+    },
+    {
+      "eventName": "notification_scheduled",
+      "customEvent:notification_slot": "4",
+      "customEvent:scheduled_hour": "22",
+      "customEvent:delivery_status": "(not set)",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 13520,
+      "totalUsers": 4732
+    },
+    {
+      "eventName": "notification_delivery",
+      "customEvent:notification_slot": "4",
+      "customEvent:scheduled_hour": "22",
+      "customEvent:delivery_status": "displayed",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 11762,
+      "totalUsers": 4116
+    },
+    {
+      "eventName": "notification_delivery",
+      "customEvent:notification_slot": "4",
+      "customEvent:scheduled_hour": "22",
+      "customEvent:delivery_status": "permission_denied",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 1758,
+      "totalUsers": 615
+    },
+    {
+      "eventName": "notification_opened",
+      "customEvent:notification_slot": "4",
+      "customEvent:scheduled_hour": "22",
+      "customEvent:delivery_status": "(not set)",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 1387,
+      "totalUsers": 485
+    },
+    {
+      "eventName": "notification_permission",
+      "customEvent:notification_slot": "(not set)",
+      "customEvent:scheduled_hour": "(not set)",
+      "customEvent:delivery_status": "(not set)",
+      "customUser:notification_cohort_hour": "8",
+      "eventCount": 14850,
+      "totalUsers": 14200
+    }
+  ]
+}

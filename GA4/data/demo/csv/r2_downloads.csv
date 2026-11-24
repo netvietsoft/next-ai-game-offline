@@ -1,0 +1,19 @@
+﻿eventName,customEvent:game_name,customEvent:status,customEvent:error_message,eventCount,totalUsers
+game_download,abalone,started,(not set),1595,1371
+game_download,abalone,completed,(not set),1532,1317
+game_download,abalone,failed,SocketTimeoutException: read timed out,63,54
+game_download,amaze_number,started,(not set),1392,1197
+game_download,amaze_number,completed,(not set),1337,1149
+game_download,amaze_number,failed,SocketTimeoutException: read timed out,55,47
+game_download,among_us,started,(not set),1189,1022
+game_download,among_us,completed,(not set),975,838
+game_download,among_us,failed,ERR_NAME_NOT_RESOLVED: pub-r2.nextai.games,214,184
+game_download,angry_heroes,started,(not set),986,847
+game_download,angry_heroes,completed,(not set),947,814
+game_download,angry_heroes,failed,SocketTimeoutException: read timed out,39,33
+game_download,animal_clicker,started,(not set),783,673
+game_download,animal_clicker,completed,(not set),752,646
+game_download,animal_clicker,failed,SocketTimeoutException: read timed out,31,26
+game_download,arcane_blocks,started,(not set),580,498
+game_download,arcane_blocks,completed,(not set),557,479
+game_download,arcane_blocks,failed,SocketTimeoutException: read timed out,23,19

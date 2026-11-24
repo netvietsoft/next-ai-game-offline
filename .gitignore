@@ -4,20 +4,28 @@
 
 # Gradle & Android Build Outputs
 .gradle/
+.kotlin/
 build/
 **/build/
 **/.gradle/
+**/.kotlin/
 **/intermediates/
 **/generated/
 **/outputs/apk/
 **/outputs/bundle/
 local.properties
+keystore.properties
+*.jks
+Release_APK/KEYSTORE_INFO.txt
 *.apk
 *.aab
 
 # Node.js & Backend
 node_modules/
 **/node_modules/
+Backend/dist/
+Backend/playwright-report/
+Backend/test-results/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -44,7 +52,8 @@ null/
 *.xapk
 *.tmp
 
-# Root temporary screenshot dumps
+# Root temporary screenshot dumps & QA screenshots
+Report/screenshots/
 admob_test_screen.png
 current_screen.png
 game_foreground.png
@@ -59,3 +68,25 @@ ui.xml
 
 # Large packages and unpacked games for Cloudflare R2
 R2_Upload/
+
+# GA4 Analytics & Credentials
+.ai/r2.local.json
+info/r2.txt
+info/Fb.zip
+info/Fb/
+info/hash key.txt
+Next ai game offline/
+Next ai game offline.rar
+.ai/facebook.local.json
+.ai/tools/
+.ai/r2-tools/
+.ai/task057-capture-intermediates/
+GA4/.venv/
+GA4/.env
+GA4/*.json
+GA4/credentials/*.json
+!GA4/credentials/service-account.example.json
+GA4/data/raw/
+GA4/data/csv/
+**/__pycache__/
+.pytest_cache/

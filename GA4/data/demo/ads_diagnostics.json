@@ -1,0 +1,67 @@
+{
+  "key": "ads_diagnostics",
+  "title": "Chẩn đoán lỗi & Chặn quảng cáo / Ads Error Diagnostics",
+  "dimensions": [
+    "eventName",
+    "customEvent:ad_type",
+    "customEvent:error_code",
+    "customEvent:error_message",
+    "customEvent:reason"
+  ],
+  "metrics": [
+    "eventCount"
+  ],
+  "skipped_optional_fields": [],
+  "row_count": 6,
+  "total_available_rows": 6,
+  "rows": [
+    {
+      "eventName": "ad_failed_to_load",
+      "customEvent:ad_type": "INTERSTITIAL",
+      "customEvent:error_code": "3",
+      "customEvent:error_message": "No fill.",
+      "customEvent:reason": "(not set)",
+      "eventCount": 8940
+    },
+    {
+      "eventName": "ad_failed_to_load",
+      "customEvent:ad_type": "BANNER",
+      "customEvent:error_code": "3",
+      "customEvent:error_message": "No fill.",
+      "customEvent:reason": "(not set)",
+      "eventCount": 10250
+    },
+    {
+      "eventName": "ad_failed_to_load",
+      "customEvent:ad_type": "REWARDED",
+      "customEvent:error_code": "2",
+      "customEvent:error_message": "Network Error",
+      "customEvent:reason": "(not set)",
+      "eventCount": 3180
+    },
+    {
+      "eventName": "ad_mediation_failed",
+      "customEvent:ad_type": "INTERSTITIAL",
+      "customEvent:error_code": "101",
+      "customEvent:error_message": "Meta placement mapping not configured",
+      "customEvent:reason": "(not set)",
+      "eventCount": 4120
+    },
+    {
+      "eventName": "ad_load_suppressed",
+      "customEvent:ad_type": "INTERSTITIAL",
+      "customEvent:error_code": "(not set)",
+      "customEvent:error_message": "(not set)",
+      "customEvent:reason": "frequency_cap_90s",
+      "eventCount": 6340
+    },
+    {
+      "eventName": "ad_load_suppressed",
+      "customEvent:ad_type": "APP_OPEN",
+      "customEvent:error_code": "(not set)",
+      "customEvent:error_message": "(not set)",
+      "customEvent:reason": "cache_ttl_valid",
+      "eventCount": 2190
+    }
+  ]
+}

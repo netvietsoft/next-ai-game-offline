@@ -2688,7 +2688,10 @@ function toggleRoundScore(con, win){
 function endGame(){
 	gameData.paused = true;
 	TweenMax.to(gameContainer, 1, {overwrite:true, onComplete:function(){
-		goPage('result')
+		goPage('result');
+		if (window.Android && typeof window.Android.showInterstitialInGame === "function") {
+			window.Android.showInterstitialInGame("dominoes_end_game");
+		}
 	}});
 }
 

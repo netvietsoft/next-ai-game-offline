@@ -187,7 +187,7 @@ function CMenu(){
 
     
     this._onChangeLang = function(iLang){
-        s_iCurLang = iLang;
+        s_iCurLang = LANG_EN;
 
         if(s_iCurLang == LANG_RU){
             s_szCurFont = FONT_CYRILLIC;

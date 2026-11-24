@@ -1,0 +1,979 @@
+{
+  "key": "games_performance",
+  "title": "Hiệu suất từng Mini-Game / Mini-Game Performance",
+  "dimensions": [
+    "eventName",
+    "customEvent:game_name",
+    "customEvent:game_category"
+  ],
+  "metrics": [
+    "eventCount",
+    "totalUsers",
+    "customEvent:session_duration_sec"
+  ],
+  "skipped_optional_fields": [],
+  "row_count": 120,
+  "total_available_rows": 120,
+  "rows": [
+    {
+      "eventName": "game_open",
+      "customEvent:game_name": "amaze_ball_quest",
+      "customEvent:game_category": "Casual",
+      "eventCount": 11899,
+      "totalUsers": 4528,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_start",
+      "customEvent:game_name": "amaze_ball_quest",
+      "customEvent:game_category": "Casual",
+      "eventCount": 10961,
+      "totalUsers": 4165,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_start",
+      "customEvent:game_name": "amaze_ball_quest",
+      "customEvent:game_category": "Casual",
+      "eventCount": 38039,
+      "totalUsers": 3984,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_complete",
+      "customEvent:game_name": "amaze_ball_quest",
+      "customEvent:game_category": "Casual",
+      "eventCount": 16142,
+      "totalUsers": 3396,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_failed",
+      "customEvent:game_name": "amaze_ball_quest",
+      "customEvent:game_category": "Casual",
+      "eventCount": 14857,
+      "totalUsers": 3079,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_restart",
+      "customEvent:game_name": "amaze_ball_quest",
+      "customEvent:game_category": "Casual",
+      "eventCount": 8361,
+      "totalUsers": 2354,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_play_time",
+      "customEvent:game_name": "amaze_ball_quest",
+      "customEvent:game_category": "Casual",
+      "eventCount": 9403,
+      "totalUsers": 3894,
+      "customEvent:session_duration_sec": 3409677
+    },
+    {
+      "eventName": "game_score_submitted",
+      "customEvent:game_name": "amaze_ball_quest",
+      "customEvent:game_category": "Casual",
+      "eventCount": 12913,
+      "totalUsers": 2943,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_open",
+      "customEvent:game_name": "apple_worm",
+      "customEvent:game_category": "Casual",
+      "eventCount": 11445,
+      "totalUsers": 3867,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_start",
+      "customEvent:game_name": "apple_worm",
+      "customEvent:game_category": "Casual",
+      "eventCount": 9955,
+      "totalUsers": 3557,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_start",
+      "customEvent:game_name": "apple_worm",
+      "customEvent:game_category": "Casual",
+      "eventCount": 23274,
+      "totalUsers": 3402,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_complete",
+      "customEvent:game_name": "apple_worm",
+      "customEvent:game_category": "Casual",
+      "eventCount": 12799,
+      "totalUsers": 2900,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_failed",
+      "customEvent:game_name": "apple_worm",
+      "customEvent:game_category": "Casual",
+      "eventCount": 6408,
+      "totalUsers": 2629,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_restart",
+      "customEvent:game_name": "apple_worm",
+      "customEvent:game_category": "Casual",
+      "eventCount": 4157,
+      "totalUsers": 2010,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_play_time",
+      "customEvent:game_name": "apple_worm",
+      "customEvent:game_category": "Casual",
+      "eventCount": 8751,
+      "totalUsers": 3325,
+      "customEvent:session_duration_sec": 2344922
+    },
+    {
+      "eventName": "game_score_submitted",
+      "customEvent:game_name": "apple_worm",
+      "customEvent:game_category": "Casual",
+      "eventCount": 10239,
+      "totalUsers": 2513,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_open",
+      "customEvent:game_name": "backgammon",
+      "customEvent:game_category": "Casual",
+      "eventCount": 10592,
+      "totalUsers": 4937,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_start",
+      "customEvent:game_name": "backgammon",
+      "customEvent:game_category": "Casual",
+      "eventCount": 8750,
+      "totalUsers": 4542,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_start",
+      "customEvent:game_name": "backgammon",
+      "customEvent:game_category": "Casual",
+      "eventCount": 22259,
+      "totalUsers": 4344,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_complete",
+      "customEvent:game_name": "backgammon",
+      "customEvent:game_category": "Casual",
+      "eventCount": 11490,
+      "totalUsers": 3702,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_failed",
+      "customEvent:game_name": "backgammon",
+      "customEvent:game_category": "Casual",
+      "eventCount": 6817,
+      "totalUsers": 3357,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_restart",
+      "customEvent:game_name": "backgammon",
+      "customEvent:game_category": "Casual",
+      "eventCount": 3118,
+      "totalUsers": 2567,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_play_time",
+      "customEvent:game_name": "backgammon",
+      "customEvent:game_category": "Casual",
+      "eventCount": 8219,
+      "totalUsers": 4245,
+      "customEvent:session_duration_sec": 1717214
+    },
+    {
+      "eventName": "game_score_submitted",
+      "customEvent:game_name": "backgammon",
+      "customEvent:game_category": "Casual",
+      "eventCount": 9192,
+      "totalUsers": 3209,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_open",
+      "customEvent:game_name": "balloons_creator",
+      "customEvent:game_category": "Casual",
+      "eventCount": 9961,
+      "totalUsers": 3336,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_start",
+      "customEvent:game_name": "balloons_creator",
+      "customEvent:game_category": "Casual",
+      "eventCount": 9105,
+      "totalUsers": 3069,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_start",
+      "customEvent:game_name": "balloons_creator",
+      "customEvent:game_category": "Casual",
+      "eventCount": 27465,
+      "totalUsers": 2935,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_complete",
+      "customEvent:game_name": "balloons_creator",
+      "customEvent:game_category": "Casual",
+      "eventCount": 11741,
+      "totalUsers": 2502,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_failed",
+      "customEvent:game_name": "balloons_creator",
+      "customEvent:game_category": "Casual",
+      "eventCount": 10648,
+      "totalUsers": 2268,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_restart",
+      "customEvent:game_name": "balloons_creator",
+      "customEvent:game_category": "Casual",
+      "eventCount": 4992,
+      "totalUsers": 1734,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_play_time",
+      "customEvent:game_name": "balloons_creator",
+      "customEvent:game_category": "Casual",
+      "eventCount": 8705,
+      "totalUsers": 2868,
+      "customEvent:session_duration_sec": 1545519
+    },
+    {
+      "eventName": "game_score_submitted",
+      "customEvent:game_name": "balloons_creator",
+      "customEvent:game_category": "Casual",
+      "eventCount": 9392,
+      "totalUsers": 2168,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_open",
+      "customEvent:game_name": "ball_escape",
+      "customEvent:game_category": "Casual",
+      "eventCount": 8933,
+      "totalUsers": 3476,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_start",
+      "customEvent:game_name": "ball_escape",
+      "customEvent:game_category": "Casual",
+      "eventCount": 8058,
+      "totalUsers": 3197,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_start",
+      "customEvent:game_name": "ball_escape",
+      "customEvent:game_category": "Casual",
+      "eventCount": 24923,
+      "totalUsers": 3058,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_complete",
+      "customEvent:game_name": "ball_escape",
+      "customEvent:game_category": "Casual",
+      "eventCount": 8643,
+      "totalUsers": 2607,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_failed",
+      "customEvent:game_name": "ball_escape",
+      "customEvent:game_category": "Casual",
+      "eventCount": 11508,
+      "totalUsers": 2363,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_restart",
+      "customEvent:game_name": "ball_escape",
+      "customEvent:game_category": "Casual",
+      "eventCount": 5272,
+      "totalUsers": 1807,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_play_time",
+      "customEvent:game_name": "ball_escape",
+      "customEvent:game_category": "Casual",
+      "eventCount": 6772,
+      "totalUsers": 2989,
+      "customEvent:session_duration_sec": 1307103
+    },
+    {
+      "eventName": "game_score_submitted",
+      "customEvent:game_name": "ball_escape",
+      "customEvent:game_category": "Casual",
+      "eventCount": 6914,
+      "totalUsers": 2259,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_open",
+      "customEvent:game_name": "bee",
+      "customEvent:game_category": "Casual",
+      "eventCount": 8382,
+      "totalUsers": 3193,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_start",
+      "customEvent:game_name": "bee",
+      "customEvent:game_category": "Casual",
+      "eventCount": 7513,
+      "totalUsers": 2937,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_start",
+      "customEvent:game_name": "bee",
+      "customEvent:game_category": "Casual",
+      "eventCount": 17810,
+      "totalUsers": 2809,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_complete",
+      "customEvent:game_name": "bee",
+      "customEvent:game_category": "Casual",
+      "eventCount": 8429,
+      "totalUsers": 2394,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_failed",
+      "customEvent:game_name": "bee",
+      "customEvent:game_category": "Casual",
+      "eventCount": 6156,
+      "totalUsers": 2171,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_restart",
+      "customEvent:game_name": "bee",
+      "customEvent:game_category": "Casual",
+      "eventCount": 3131,
+      "totalUsers": 1660,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_play_time",
+      "customEvent:game_name": "bee",
+      "customEvent:game_category": "Casual",
+      "eventCount": 6329,
+      "totalUsers": 2745,
+      "customEvent:session_duration_sec": 2282723
+    },
+    {
+      "eventName": "game_score_submitted",
+      "customEvent:game_name": "bee",
+      "customEvent:game_category": "Casual",
+      "eventCount": 6743,
+      "totalUsers": 2075,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_open",
+      "customEvent:game_name": "block_blast",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 7601,
+      "totalUsers": 2654,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_start",
+      "customEvent:game_name": "block_blast",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 7026,
+      "totalUsers": 2441,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_start",
+      "customEvent:game_name": "block_blast",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 23211,
+      "totalUsers": 2335,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_complete",
+      "customEvent:game_name": "block_blast",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 10677,
+      "totalUsers": 1990,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_failed",
+      "customEvent:game_name": "block_blast",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 8306,
+      "totalUsers": 1804,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_restart",
+      "customEvent:game_name": "block_blast",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 4596,
+      "totalUsers": 1380,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_play_time",
+      "customEvent:game_name": "block_blast",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 6645,
+      "totalUsers": 2282,
+      "customEvent:session_duration_sec": 1088530
+    },
+    {
+      "eventName": "game_score_submitted",
+      "customEvent:game_name": "block_blast",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 8541,
+      "totalUsers": 1725,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_open",
+      "customEvent:game_name": "block_connect",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 7329,
+      "totalUsers": 2787,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_start",
+      "customEvent:game_name": "block_connect",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 6356,
+      "totalUsers": 2564,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_start",
+      "customEvent:game_name": "block_connect",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 16162,
+      "totalUsers": 2452,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_complete",
+      "customEvent:game_name": "block_connect",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 5811,
+      "totalUsers": 2090,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_failed",
+      "customEvent:game_name": "block_connect",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 7273,
+      "totalUsers": 1895,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_restart",
+      "customEvent:game_name": "block_connect",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 4254,
+      "totalUsers": 1449,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_play_time",
+      "customEvent:game_name": "block_connect",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 6219,
+      "totalUsers": 2396,
+      "customEvent:session_duration_sec": 1995747
+    },
+    {
+      "eventName": "game_score_submitted",
+      "customEvent:game_name": "block_connect",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 4648,
+      "totalUsers": 1811,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_open",
+      "customEvent:game_name": "block_fit_puzzle",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 6878,
+      "totalUsers": 3128,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_start",
+      "customEvent:game_name": "block_fit_puzzle",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 5745,
+      "totalUsers": 2877,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_start",
+      "customEvent:game_name": "block_fit_puzzle",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 15181,
+      "totalUsers": 2752,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_complete",
+      "customEvent:game_name": "block_fit_puzzle",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 7006,
+      "totalUsers": 2346,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_failed",
+      "customEvent:game_name": "block_fit_puzzle",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 5411,
+      "totalUsers": 2127,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_restart",
+      "customEvent:game_name": "block_fit_puzzle",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 2544,
+      "totalUsers": 1626,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_play_time",
+      "customEvent:game_name": "block_fit_puzzle",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 6055,
+      "totalUsers": 2690,
+      "customEvent:session_duration_sec": 1159497
+    },
+    {
+      "eventName": "game_score_submitted",
+      "customEvent:game_name": "block_fit_puzzle",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 5604,
+      "totalUsers": 2033,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_open",
+      "customEvent:game_name": "block_tetris",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 6211,
+      "totalUsers": 2811,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_start",
+      "customEvent:game_name": "block_tetris",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 5217,
+      "totalUsers": 2586,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_start",
+      "customEvent:game_name": "block_tetris",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 12676,
+      "totalUsers": 2473,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_complete",
+      "customEvent:game_name": "block_tetris",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 6731,
+      "totalUsers": 2108,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_failed",
+      "customEvent:game_name": "block_tetris",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 3710,
+      "totalUsers": 1911,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_restart",
+      "customEvent:game_name": "block_tetris",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 1797,
+      "totalUsers": 1461,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_play_time",
+      "customEvent:game_name": "block_tetris",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 4983,
+      "totalUsers": 2417,
+      "customEvent:session_duration_sec": 1027940
+    },
+    {
+      "eventName": "game_score_submitted",
+      "customEvent:game_name": "block_tetris",
+      "customEvent:game_category": "Puzzle",
+      "eventCount": 5384,
+      "totalUsers": 1827,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_open",
+      "customEvent:game_name": "abalone",
+      "customEvent:game_category": "Casual",
+      "eventCount": 5312,
+      "totalUsers": 2261,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_start",
+      "customEvent:game_name": "abalone",
+      "customEvent:game_category": "Casual",
+      "eventCount": 4990,
+      "totalUsers": 2080,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_start",
+      "customEvent:game_name": "abalone",
+      "customEvent:game_category": "Casual",
+      "eventCount": 14137,
+      "totalUsers": 1989,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_complete",
+      "customEvent:game_name": "abalone",
+      "customEvent:game_category": "Casual",
+      "eventCount": 6096,
+      "totalUsers": 1695,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_failed",
+      "customEvent:game_name": "abalone",
+      "customEvent:game_category": "Casual",
+      "eventCount": 5432,
+      "totalUsers": 1537,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_restart",
+      "customEvent:game_name": "abalone",
+      "customEvent:game_category": "Casual",
+      "eventCount": 2460,
+      "totalUsers": 1175,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_play_time",
+      "customEvent:game_name": "abalone",
+      "customEvent:game_category": "Casual",
+      "eventCount": 4217,
+      "totalUsers": 1944,
+      "customEvent:session_duration_sec": 1104138
+    },
+    {
+      "eventName": "game_score_submitted",
+      "customEvent:game_name": "abalone",
+      "customEvent:game_category": "Casual",
+      "eventCount": 4876,
+      "totalUsers": 1469,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_open",
+      "customEvent:game_name": "amaze_number",
+      "customEvent:game_category": "Casual",
+      "eventCount": 4509,
+      "totalUsers": 1943,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_start",
+      "customEvent:game_name": "amaze_number",
+      "customEvent:game_category": "Casual",
+      "eventCount": 3769,
+      "totalUsers": 1787,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_start",
+      "customEvent:game_name": "amaze_number",
+      "customEvent:game_category": "Casual",
+      "eventCount": 12031,
+      "totalUsers": 1709,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_complete",
+      "customEvent:game_name": "amaze_number",
+      "customEvent:game_category": "Casual",
+      "eventCount": 8210,
+      "totalUsers": 1457,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_failed",
+      "customEvent:game_name": "amaze_number",
+      "customEvent:game_category": "Casual",
+      "eventCount": 1849,
+      "totalUsers": 1321,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_restart",
+      "customEvent:game_name": "amaze_number",
+      "customEvent:game_category": "Casual",
+      "eventCount": 1241,
+      "totalUsers": 1010,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_play_time",
+      "customEvent:game_name": "amaze_number",
+      "customEvent:game_category": "Casual",
+      "eventCount": 3819,
+      "totalUsers": 1670,
+      "customEvent:session_duration_sec": 1102918
+    },
+    {
+      "eventName": "game_score_submitted",
+      "customEvent:game_name": "amaze_number",
+      "customEvent:game_category": "Casual",
+      "eventCount": 6568,
+      "totalUsers": 1262,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_open",
+      "customEvent:game_name": "among_us",
+      "customEvent:game_category": "Casual",
+      "eventCount": 4028,
+      "totalUsers": 1539,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_start",
+      "customEvent:game_name": "among_us",
+      "customEvent:game_category": "Casual",
+      "eventCount": 3661,
+      "totalUsers": 1415,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_start",
+      "customEvent:game_name": "among_us",
+      "customEvent:game_category": "Casual",
+      "eventCount": 11031,
+      "totalUsers": 1354,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_complete",
+      "customEvent:game_name": "among_us",
+      "customEvent:game_category": "Casual",
+      "eventCount": 6131,
+      "totalUsers": 1154,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_failed",
+      "customEvent:game_name": "among_us",
+      "customEvent:game_category": "Casual",
+      "eventCount": 2977,
+      "totalUsers": 1046,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_restart",
+      "customEvent:game_name": "among_us",
+      "customEvent:game_category": "Casual",
+      "eventCount": 1701,
+      "totalUsers": 800,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_play_time",
+      "customEvent:game_name": "among_us",
+      "customEvent:game_category": "Casual",
+      "eventCount": 3248,
+      "totalUsers": 1323,
+      "customEvent:session_duration_sec": 1220558
+    },
+    {
+      "eventName": "game_score_submitted",
+      "customEvent:game_name": "among_us",
+      "customEvent:game_category": "Casual",
+      "eventCount": 4904,
+      "totalUsers": 1000,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_open",
+      "customEvent:game_name": "angry_heroes",
+      "customEvent:game_category": "Casual",
+      "eventCount": 2869,
+      "totalUsers": 1140,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_start",
+      "customEvent:game_name": "angry_heroes",
+      "customEvent:game_category": "Casual",
+      "eventCount": 2410,
+      "totalUsers": 1048,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_start",
+      "customEvent:game_name": "angry_heroes",
+      "customEvent:game_category": "Casual",
+      "eventCount": 7092,
+      "totalUsers": 1003,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_complete",
+      "customEvent:game_name": "angry_heroes",
+      "customEvent:game_category": "Casual",
+      "eventCount": 4723,
+      "totalUsers": 855,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_failed",
+      "customEvent:game_name": "angry_heroes",
+      "customEvent:game_category": "Casual",
+      "eventCount": 1197,
+      "totalUsers": 775,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_restart",
+      "customEvent:game_name": "angry_heroes",
+      "customEvent:game_category": "Casual",
+      "eventCount": 714,
+      "totalUsers": 592,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_play_time",
+      "customEvent:game_name": "angry_heroes",
+      "customEvent:game_category": "Casual",
+      "eventCount": 2250,
+      "totalUsers": 980,
+      "customEvent:session_duration_sec": 674908
+    },
+    {
+      "eventName": "game_score_submitted",
+      "customEvent:game_name": "angry_heroes",
+      "customEvent:game_category": "Casual",
+      "eventCount": 3778,
+      "totalUsers": 741,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_open",
+      "customEvent:game_name": "animal_clicker",
+      "customEvent:game_category": "Casual",
+      "eventCount": 2877,
+      "totalUsers": 1273,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_start",
+      "customEvent:game_name": "animal_clicker",
+      "customEvent:game_category": "Casual",
+      "eventCount": 2378,
+      "totalUsers": 1171,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_start",
+      "customEvent:game_name": "animal_clicker",
+      "customEvent:game_category": "Casual",
+      "eventCount": 5129,
+      "totalUsers": 1120,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_complete",
+      "customEvent:game_name": "animal_clicker",
+      "customEvent:game_category": "Casual",
+      "eventCount": 1690,
+      "totalUsers": 954,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_failed",
+      "customEvent:game_name": "animal_clicker",
+      "customEvent:game_category": "Casual",
+      "eventCount": 2449,
+      "totalUsers": 865,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_level_restart",
+      "customEvent:game_name": "animal_clicker",
+      "customEvent:game_category": "Casual",
+      "eventCount": 1236,
+      "totalUsers": 661,
+      "customEvent:session_duration_sec": 0
+    },
+    {
+      "eventName": "game_play_time",
+      "customEvent:game_name": "animal_clicker",
+      "customEvent:game_category": "Casual",
+      "eventCount": 2494,
+      "totalUsers": 1094,
+      "customEvent:session_duration_sec": 830424
+    },
+    {
+      "eventName": "game_score_submitted",
+      "customEvent:game_name": "animal_clicker",
+      "customEvent:game_category": "Casual",
+      "eventCount": 1352,
+      "totalUsers": 827,
+      "customEvent:session_duration_sec": 0
+    }
+  ]
+}

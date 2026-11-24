@@ -1,0 +1,2239 @@
+{
+  "schemaVersion": 1,
+  "gameCount": 319,
+  "games": [
+    {
+      "name": "amaze_number",
+      "sizeBytes": 740613,
+      "sha256": "e66ac20684cf890f9ddaf8d8726edeeab965e7dc86050d981a8f15db3209f7e8",
+      "extractedSizeBytes": 2780943,
+      "fileCount": 28
+    },
+    {
+      "name": "arcane_blocks",
+      "sizeBytes": 3457349,
+      "sha256": "ebb7b4bd59f44b66e242af2c12622ff2c1929dd3d84d1724b22c496a6f30da13",
+      "extractedSizeBytes": 5188693,
+      "fileCount": 35
+    },
+    {
+      "name": "arkanoid_blocks",
+      "sizeBytes": 1170186,
+      "sha256": "4169d0e487dfc365e36860bcbfb2b04d148121c8ed96d7dd2ab57087d274c693",
+      "extractedSizeBytes": 3046609,
+      "fileCount": 56
+    },
+    {
+      "name": "arrow_direction",
+      "sizeBytes": 2473224,
+      "sha256": "9e1bd413e18f4c48c53375b41c53d584e8aac0971955063ff009ff8cab3cbce9",
+      "extractedSizeBytes": 7874130,
+      "fileCount": 43
+    },
+    {
+      "name": "arrow_shift",
+      "sizeBytes": 1153688,
+      "sha256": "45bcfac600c964b9b9e3decfc7d1f1cf0352a01efc1fb6057fc9752050fe1238",
+      "extractedSizeBytes": 3104618,
+      "fileCount": 40
+    },
+    {
+      "name": "arrow_shooter",
+      "sizeBytes": 1955757,
+      "sha256": "2ab4f89ea20081d7106da5875136e05d1f436e67359b25407b2fd4113f54127e",
+      "extractedSizeBytes": 5217607,
+      "fileCount": 76
+    },
+    {
+      "name": "ball_wall",
+      "sizeBytes": 2129474,
+      "sha256": "ac37890ffc977f8186d85c3ab678382a150e138047ee37823f6c3c6c4272db8e",
+      "extractedSizeBytes": 4390594,
+      "fileCount": 36
+    },
+    {
+      "name": "balloon_pop",
+      "sizeBytes": 6315928,
+      "sha256": "a969eb971ac9733c1acf3c59a4b4747edd48694f435c197f5a76c2cd628276d0",
+      "extractedSizeBytes": 8018284,
+      "fileCount": 42
+    },
+    {
+      "name": "basket_ball",
+      "sizeBytes": 1440488,
+      "sha256": "135f05bbfefe9dedd8519389c2e010d78aed44c1ebdc09b6269cc565bd13401a",
+      "extractedSizeBytes": 3488331,
+      "fileCount": 53
+    },
+    {
+      "name": "basket_goal",
+      "sizeBytes": 2067724,
+      "sha256": "1fc39654372151fdbb060500243ccd92671113b15fa8ecdba03765291add4d23",
+      "extractedSizeBytes": 3773275,
+      "fileCount": 37
+    },
+    {
+      "name": "bitcoin_millionaire",
+      "sizeBytes": 1779397,
+      "sha256": "0c254f782dae02aa1632c8b3a5d826774b0b1382c1e5d2215f0e3e0ca6115f7e",
+      "extractedSizeBytes": 3618883,
+      "fileCount": 108
+    },
+    {
+      "name": "block_builder",
+      "sizeBytes": 1967167,
+      "sha256": "83d971587c50b363670309b3160117209b88edaf123080124f9e0e0222a95aa7",
+      "extractedSizeBytes": 3885780,
+      "fileCount": 45
+    },
+    {
+      "name": "block_colors_sort",
+      "sizeBytes": 1973159,
+      "sha256": "7d6f493dc6564e51d9791067b65374de432e93af8fd47df32aee04164d668293",
+      "extractedSizeBytes": 5082675,
+      "fileCount": 39
+    },
+    {
+      "name": "block_matcher",
+      "sizeBytes": 3693931,
+      "sha256": "fc7524e41ad8b0f413900e94f8837e416a39df44b98914f40c9d5f59276256f4",
+      "extractedSizeBytes": 6303527,
+      "fileCount": 49
+    },
+    {
+      "name": "block_merge",
+      "sizeBytes": 1742750,
+      "sha256": "48459c946832d780b815f97b67b16a42a5cb3258ac7849438651e0f7af746159",
+      "extractedSizeBytes": 2954404,
+      "fileCount": 44
+    },
+    {
+      "name": "block_puzzle",
+      "sizeBytes": 4423462,
+      "sha256": "0afe37cba6d9cd95f9b78346da692f9c9f269f63defe2a0f001f3919dd5dc499",
+      "extractedSizeBytes": 6414931,
+      "fileCount": 240
+    },
+    {
+      "name": "block_puzzle_3d",
+      "sizeBytes": 2321657,
+      "sha256": "cab0540ce5f4f479f31f4cc065840db8befd712787cfa61bd2c2cd2258c91298",
+      "extractedSizeBytes": 4216156,
+      "fileCount": 98
+    },
+    {
+      "name": "block_puzzle_blast",
+      "sizeBytes": 5983688,
+      "sha256": "31766067d7fb540cc1da39c1aa51fda2f3e45b66a779e68744a99d124c08c68e",
+      "extractedSizeBytes": 7875688,
+      "fileCount": 66
+    },
+    {
+      "name": "block_puzzle_solve",
+      "sizeBytes": 2966033,
+      "sha256": "77c90b124677ffde9a05122b026774f495f56868c00658e4bd21f294f4d38fbe",
+      "extractedSizeBytes": 3745846,
+      "fileCount": 91
+    },
+    {
+      "name": "blocks_target",
+      "sizeBytes": 4205797,
+      "sha256": "f70a67c0106939d6ab449642dec0277c53deeda2a4206f1632025ddaf0378b61",
+      "extractedSizeBytes": 8350973,
+      "fileCount": 42
+    },
+    {
+      "name": "bloons_survivor",
+      "sizeBytes": 5963777,
+      "sha256": "d1cf3980f1db0d123303ff993679efd53a0e96864c13b43daecee36ca1112191",
+      "extractedSizeBytes": 7774429,
+      "fileCount": 100
+    },
+    {
+      "name": "bounce_collect",
+      "sizeBytes": 997369,
+      "sha256": "20c6aba51956aadd6e1b41143a7bbcca2d6c9365a0aed0c0bcf3451aedab2d8d",
+      "extractedSizeBytes": 3128710,
+      "fileCount": 62
+    },
+    {
+      "name": "brainrot_merge",
+      "sizeBytes": 1578953,
+      "sha256": "adc57d8c97aadab264289849ae2df6e8646d7b88eb650b6e4bdd7edcd53bfabd",
+      "extractedSizeBytes": 2860017,
+      "fileCount": 52
+    },
+    {
+      "name": "break_brick",
+      "sizeBytes": 2689572,
+      "sha256": "e7cadf21bfc587b5b4d66debe3c2984814ef575e9d4e1f52d6e0829f40a8fabc",
+      "extractedSizeBytes": 5348623,
+      "fileCount": 374
+    },
+    {
+      "name": "bubble_shooter",
+      "sizeBytes": 1654580,
+      "sha256": "cd4750b0814e6b2f8e590fea1ab8ae3e4332c0c680f8a81f7dfb65851bb18672",
+      "extractedSizeBytes": 3493632,
+      "fileCount": 50
+    },
+    {
+      "name": "bubble_shooter_cosmo",
+      "sizeBytes": 4452601,
+      "sha256": "bb0d776e5be95145a72916870c1787cd677c506d41263c49991533b04cfe640d",
+      "extractedSizeBytes": 5479467,
+      "fileCount": 172
+    },
+    {
+      "name": "build_land",
+      "sizeBytes": 23794577,
+      "sha256": "064002464497a053d5aa5d72f4bcc9912dcb60bac0e61e42293cd8050ea28057",
+      "extractedSizeBytes": 43830746,
+      "fileCount": 719
+    },
+    {
+      "name": "building_blast",
+      "sizeBytes": 1521171,
+      "sha256": "8a1a460b284e34982b67020f13fd4aa47add2bea850677e4668306cf4227acb2",
+      "extractedSizeBytes": 3408776,
+      "fileCount": 32
+    },
+    {
+      "name": "bus_jam_escape",
+      "sizeBytes": 2677586,
+      "sha256": "be3041a836a0a8873b73ebdad79042d5d58af4f041f71998211e7f2dc5d31de7",
+      "extractedSizeBytes": 5039051,
+      "fileCount": 154
+    },
+    {
+      "name": "butterfly_tripple",
+      "sizeBytes": 3253543,
+      "sha256": "97d2cc5d0195b7017e69b05b87e550b8a16a8f3098ab07674c541adff0b2f064",
+      "extractedSizeBytes": 4671385,
+      "fileCount": 54
+    },
+    {
+      "name": "button_strikers",
+      "sizeBytes": 1767439,
+      "sha256": "bbadfad7e32e8a41864e405ca12e7472344b169c83bf5e503368c0c9ab2756ff",
+      "extractedSizeBytes": 3576542,
+      "fileCount": 34
+    },
+    {
+      "name": "cake_tile",
+      "sizeBytes": 1896154,
+      "sha256": "5bc3dd971c5a03609a013192c92d03d3af6b03f993a7c34747b53cc6a152e376",
+      "extractedSizeBytes": 3376305,
+      "fileCount": 50
+    },
+    {
+      "name": "candy_match_saga_2",
+      "sizeBytes": 5676158,
+      "sha256": "1363c3e4d5b91492ed48d64c158a2dea976ab336d55283c5457108d3dc79cf77",
+      "extractedSizeBytes": 7323595,
+      "fileCount": 397
+    },
+    {
+      "name": "cannon_paint",
+      "sizeBytes": 3182811,
+      "sha256": "d7e6290b4abb50797a78377b233528157c99909b09e1bc99c58f69e92dfab89f",
+      "extractedSizeBytes": 4215755,
+      "fileCount": 151
+    },
+    {
+      "name": "cap_sort",
+      "sizeBytes": 1635343,
+      "sha256": "e4e920d547a55af586be9f6a1834a179ece59352aa06eee90ca402a7827a01d9",
+      "extractedSizeBytes": 2927792,
+      "fileCount": 44
+    },
+    {
+      "name": "cap_sort_merge",
+      "sizeBytes": 4067584,
+      "sha256": "3aa64325d25a7837435b67480a97aca6f6d5cff3019c75a3ff56feb179a24f1b",
+      "extractedSizeBytes": 5650920,
+      "fileCount": 46
+    },
+    {
+      "name": "car_traffic_puzzle",
+      "sizeBytes": 2758633,
+      "sha256": "ea9e4cbb74edadff9691b27d08fb8edd7810ecbe1676a541af393f3906863317",
+      "extractedSizeBytes": 4271483,
+      "fileCount": 30
+    },
+    {
+      "name": "card_master",
+      "sizeBytes": 1943827,
+      "sha256": "c4f7d29c6a72e748cf899b0b2fd73f1e56e7ba9360f670bda415e5c30eb520d2",
+      "extractedSizeBytes": 3278129,
+      "fileCount": 41
+    },
+    {
+      "name": "card_shuffle",
+      "sizeBytes": 2270228,
+      "sha256": "1e438d906554c01fed7cad6d56a7c1a5fe3f549cd9a07ab5c4f8820af68fadb4",
+      "extractedSizeBytes": 3657461,
+      "fileCount": 48
+    },
+    {
+      "name": "catches_aliens",
+      "sizeBytes": 4391426,
+      "sha256": "eab7e1b8ddc0997a8279da7191303478f6031ac07f1f4e3a60596eb4578c77e2",
+      "extractedSizeBytes": 5865958,
+      "fileCount": 51
+    },
+    {
+      "name": "cats_puzzle",
+      "sizeBytes": 2077580,
+      "sha256": "1e699b6bb5ee446cdc704e26038e407c2b8089c99dc3bbd5960d33c207978529",
+      "extractedSizeBytes": 6110536,
+      "fileCount": 32
+    },
+    {
+      "name": "cats_rotate",
+      "sizeBytes": 9377052,
+      "sha256": "0d33fa32aad4ea8842357d790c6dd66f373618534160684aa3e46a1cf7cf74dd",
+      "extractedSizeBytes": 10695216,
+      "fileCount": 41
+    },
+    {
+      "name": "chain_puzzle",
+      "sizeBytes": 3080763,
+      "sha256": "2fad1b311a57844726f4a9cba82e6f7015871157d2cfd456c837469e06e58354",
+      "extractedSizeBytes": 5230277,
+      "fileCount": 45
+    },
+    {
+      "name": "charge_everything",
+      "sizeBytes": 995598,
+      "sha256": "3bcc00b5c1776c253c7c735824065079973477613a711e81ab33845df4444e48",
+      "extractedSizeBytes": 3137444,
+      "fileCount": 60
+    },
+    {
+      "name": "chicken_war",
+      "sizeBytes": 3434066,
+      "sha256": "ecad74e61e6fcb8975893782fd447e0f84fae3968407ba06c64019f42937ebf9",
+      "extractedSizeBytes": 5165641,
+      "fileCount": 112
+    },
+    {
+      "name": "chroma_lane",
+      "sizeBytes": 4052633,
+      "sha256": "a657f529039c3fb4055b891dcb203d47d58fe675fb9f49a6064df6974486ec0f",
+      "extractedSizeBytes": 5431025,
+      "fileCount": 35
+    },
+    {
+      "name": "city_builder",
+      "sizeBytes": 1544491,
+      "sha256": "5843696f4b4f21a00e6295857d3c7da0c37a54f9b235c1fd6ada4d928538dc09",
+      "extractedSizeBytes": 2822100,
+      "fileCount": 67
+    },
+    {
+      "name": "coin_sort",
+      "sizeBytes": 2924195,
+      "sha256": "101c62f91a65de1b8b21d074361370c0816a1ae7c19072df88e91e8badb2be95",
+      "extractedSizeBytes": 3917700,
+      "fileCount": 59
+    },
+    {
+      "name": "collect_baubles",
+      "sizeBytes": 4845938,
+      "sha256": "f859afb4b33982314a3054c513fb0e03c982291f53dd078c8e6ee99bdde05b5c",
+      "extractedSizeBytes": 6888877,
+      "fileCount": 54
+    },
+    {
+      "name": "collect_em_all",
+      "sizeBytes": 1552853,
+      "sha256": "ba74c620b19ec05ac0eceb513998c34f82edf33ec862e4fe585a7fbb2a577588",
+      "extractedSizeBytes": 3579790,
+      "fileCount": 59
+    },
+    {
+      "name": "color_block",
+      "sizeBytes": 3373212,
+      "sha256": "bdef2d352523528600395942b58d0666f729172a12d29ace0fa5d4f62b2b5424",
+      "extractedSizeBytes": 5238860,
+      "fileCount": 46
+    },
+    {
+      "name": "color_by_number",
+      "sizeBytes": 2609718,
+      "sha256": "a44672099ac7620adeddd0acf02d3cbdb4dd057de88984404dd23ccddfc12b3d",
+      "extractedSizeBytes": 5457888,
+      "fileCount": 180
+    },
+    {
+      "name": "color_connect_2",
+      "sizeBytes": 2976391,
+      "sha256": "c1b135179e09d3001d6fe79c3e8469254fb83954f09fa6e75b2dd17ebbb77cd1",
+      "extractedSizeBytes": 4524538,
+      "fileCount": 50
+    },
+    {
+      "name": "color_grid",
+      "sizeBytes": 2026152,
+      "sha256": "6c0ea9fcc1787ba5bb727718b20674275ec047527ba1de3bf675aa4883111285",
+      "extractedSizeBytes": 4626907,
+      "fileCount": 40
+    },
+    {
+      "name": "color_link",
+      "sizeBytes": 3285635,
+      "sha256": "b9e90322a4b5728869ce0bf6819470690d2f9766af270ef9f9670451a5a8cfdb",
+      "extractedSizeBytes": 4854560,
+      "fileCount": 104
+    },
+    {
+      "name": "color_maze",
+      "sizeBytes": 857206,
+      "sha256": "0d1fe9ade05b356517367ebfa61b74961b963956ae7f2aaca85fba3041ea11aa",
+      "extractedSizeBytes": 4908624,
+      "fileCount": 69
+    },
+    {
+      "name": "color_me",
+      "sizeBytes": 3252133,
+      "sha256": "8394c8959b0c6ccee77c246b3935da9d4accf0bca2efc01bf5d2dda6e3b05874",
+      "extractedSizeBytes": 5162486,
+      "fileCount": 39
+    },
+    {
+      "name": "color_nuts",
+      "sizeBytes": 1816125,
+      "sha256": "5f030620801a265b1de34e63081cf220707a90273881356bf4633f8a55bde0a3",
+      "extractedSizeBytes": 4582900,
+      "fileCount": 40
+    },
+    {
+      "name": "colored_water_pin",
+      "sizeBytes": 834758,
+      "sha256": "0cdba4e0445f926b314c88df5b9eb11b24512d5d02ac1df193c159ac72d359d3",
+      "extractedSizeBytes": 3141238,
+      "fileCount": 42
+    },
+    {
+      "name": "coloring_book",
+      "sizeBytes": 3700104,
+      "sha256": "52008059a79ef5e40161a91a329abecde7b28231474fe46568da031b411365ba",
+      "extractedSizeBytes": 9403722,
+      "fileCount": 34
+    },
+    {
+      "name": "connec_the_dots",
+      "sizeBytes": 2233622,
+      "sha256": "88c90543364b57d95e23b8008a85e054c7690b493c03b5ce3ac93704219335fb",
+      "extractedSizeBytes": 3743528,
+      "fileCount": 47
+    },
+    {
+      "name": "cooking_connect",
+      "sizeBytes": 1806746,
+      "sha256": "6d48901a34de081d457d10e732e4bec926823c23570826269049264b286d85e7",
+      "extractedSizeBytes": 3684707,
+      "fileCount": 83
+    },
+    {
+      "name": "cowboy_shoot",
+      "sizeBytes": 1172997,
+      "sha256": "a1b81f3ae0cfa21a2e6ed25342aa7fbccee92f1b2e7b1ea5306b266d44b4367b",
+      "extractedSizeBytes": 3319739,
+      "fileCount": 50
+    },
+    {
+      "name": "crazy_fishing",
+      "sizeBytes": 3719614,
+      "sha256": "b0e43122bf295e8c0537908ef039dd2717e3332633153d2003165e2f8c1f34f8",
+      "extractedSizeBytes": 5372843,
+      "fileCount": 98
+    },
+    {
+      "name": "crossy_chicken",
+      "sizeBytes": 3478741,
+      "sha256": "493a9f0eb2b53bf06975b67df9b027415937d4890d793f2dd2f74b7f81a404ee",
+      "extractedSizeBytes": 5005231,
+      "fileCount": 47
+    },
+    {
+      "name": "cube_merge_2248",
+      "sizeBytes": 1698426,
+      "sha256": "a91f435dd4b75658d521859e7bbdee8ecbcd4a1bc38711253b46fe7baddeba7d",
+      "extractedSizeBytes": 3173933,
+      "fileCount": 74
+    },
+    {
+      "name": "cubic_lands",
+      "sizeBytes": 1766347,
+      "sha256": "a4d7e4214362de3e6d5a5ec965e4041020d1476a1e071e850406701d573fae81",
+      "extractedSizeBytes": 5820363,
+      "fileCount": 64
+    },
+    {
+      "name": "cut_for_cat_2",
+      "sizeBytes": 1162012,
+      "sha256": "9a05e4d82f17f3a571674ff64b81a7ad3a51b428139cd9c764eeb531871650ba",
+      "extractedSizeBytes": 4738159,
+      "fileCount": 57
+    },
+    {
+      "name": "cut_the_buttons",
+      "sizeBytes": 5583343,
+      "sha256": "7413a9e91a62a938679817aad4bc044104a72491e3ea739a3ceef37761987496",
+      "extractedSizeBytes": 8275191,
+      "fileCount": 52
+    },
+    {
+      "name": "dig_dig_clicker",
+      "sizeBytes": 3021958,
+      "sha256": "86233afa784c28f32eb920e03023fac6c5bb8ef3c6e4c438dcf79e95c9efe89c",
+      "extractedSizeBytes": 3891988,
+      "fileCount": 196
+    },
+    {
+      "name": "doge_blocks",
+      "sizeBytes": 2504823,
+      "sha256": "403dab6b91088192b0c5a1a6931e34b370df25def2a401a512df16bc77543e56",
+      "extractedSizeBytes": 4683849,
+      "fileCount": 53
+    },
+    {
+      "name": "doge_love",
+      "sizeBytes": 1960154,
+      "sha256": "b2dd2381a244124365154b1806cf86af1af5ebbaac65bfb6b4cdf104bdede88b",
+      "extractedSizeBytes": 3915364,
+      "fileCount": 40
+    },
+    {
+      "name": "dot_puzzle",
+      "sizeBytes": 3211759,
+      "sha256": "f0beb5b7f8ef715fc26f0d7a7923a284bd03c9e1bef391ef661faf9978e43327",
+      "extractedSizeBytes": 4687855,
+      "fileCount": 57
+    },
+    {
+      "name": "draw_to_pee",
+      "sizeBytes": 4719737,
+      "sha256": "c43d2af4928573ee0863d7921f0dd3c56b03fd9fc8505a0e1976e560f85d7f1a",
+      "extractedSizeBytes": 6266348,
+      "fileCount": 63
+    },
+    {
+      "name": "draw_to_smash",
+      "sizeBytes": 2470371,
+      "sha256": "e9d18d508287c16e3717bf7a97b45c1669ddbee72cb0b9b87c7db8c96cddd1ef",
+      "extractedSizeBytes": 4758394,
+      "fileCount": 46
+    },
+    {
+      "name": "dreamy_rooms",
+      "sizeBytes": 6031455,
+      "sha256": "63df3c078219023482cccd8ce1d9bef735da7583c3b0541e762c74c255b0db06",
+      "extractedSizeBytes": 8837616,
+      "fileCount": 83
+    },
+    {
+      "name": "drop_animals",
+      "sizeBytes": 1838828,
+      "sha256": "1ca9b4e0d23862dedc5e34498dbab71e95e937f57711c9393f1dc5924b097e05",
+      "extractedSizeBytes": 3568826,
+      "fileCount": 41
+    },
+    {
+      "name": "dungeon_crawler",
+      "sizeBytes": 3364661,
+      "sha256": "e0f827b20c556bdbd90ce928230fcf7679d1533afb2820a101513189ff8f47e7",
+      "extractedSizeBytes": 4768976,
+      "fileCount": 41
+    },
+    {
+      "name": "dungeon_knight",
+      "sizeBytes": 1526098,
+      "sha256": "a9f2b66085a800b0f6d2f88fb91ef3259d63b27aa6ec11041bea7512c8483d91",
+      "extractedSizeBytes": 3081268,
+      "fileCount": 40
+    },
+    {
+      "name": "enemy_strike",
+      "sizeBytes": 1164768,
+      "sha256": "1516afd67786f0f2c8cda7e8c0367abb98794bf561c5e7691268f354f46eced8",
+      "extractedSizeBytes": 3896586,
+      "fileCount": 65
+    },
+    {
+      "name": "farm_mahjong",
+      "sizeBytes": 4519028,
+      "sha256": "4e7448ccc5e92cfc1372be69622f994e8bd35e96f1f51bab32239b3d2cdf397e",
+      "extractedSizeBytes": 7039343,
+      "fileCount": 39
+    },
+    {
+      "name": "farm_tiled",
+      "sizeBytes": 5691807,
+      "sha256": "4c03c4660135bf381c1dc84b9d2af16e2f764198c2ff9c0d6ae9a0693c890f78",
+      "extractedSizeBytes": 11136363,
+      "fileCount": 58
+    },
+    {
+      "name": "fashion_merge",
+      "sizeBytes": 4020368,
+      "sha256": "456552553a0877913de23eea55651d2f932fbfa0bf86db9724733389dfaac538",
+      "extractedSizeBytes": 5408245,
+      "fileCount": 45
+    },
+    {
+      "name": "figure_out",
+      "sizeBytes": 869714,
+      "sha256": "66f08687606d4ece3239b0357cb66cd1384c8ee9d13b6f41d69334e8a9a5590c",
+      "extractedSizeBytes": 2701290,
+      "fileCount": 29
+    },
+    {
+      "name": "fill_the_tile",
+      "sizeBytes": 781654,
+      "sha256": "ebcaae43ceaaa045dfe11256ac1e2b1975e27140fd7b691c8a11977e05223e55",
+      "extractedSizeBytes": 2670908,
+      "fileCount": 29
+    },
+    {
+      "name": "filled_glass",
+      "sizeBytes": 810993,
+      "sha256": "4acbff37221629c332e36006519a779085101eec6616db038398c7989e9153f3",
+      "extractedSizeBytes": 2807568,
+      "fileCount": 36
+    },
+    {
+      "name": "filled_glass_2",
+      "sizeBytes": 819607,
+      "sha256": "089357afbaaebdb428909557632c5a54570b88e09457b1a8343874318c705f5d",
+      "extractedSizeBytes": 2832192,
+      "fileCount": 37
+    },
+    {
+      "name": "filled_glass_3",
+      "sizeBytes": 836276,
+      "sha256": "c19692d0b9cbd95bbc297091e68bcf95e217db81a24a8a10bd236860a64e2df4",
+      "extractedSizeBytes": 2783735,
+      "fileCount": 40
+    },
+    {
+      "name": "filled_glass_4",
+      "sizeBytes": 802900,
+      "sha256": "fb866cab8f038c77905651a9efa730e441d8a46f553ade788fd87f18464befae",
+      "extractedSizeBytes": 2837384,
+      "fileCount": 41
+    },
+    {
+      "name": "filled_glass_5",
+      "sizeBytes": 837882,
+      "sha256": "7922dd33b20055fca0cc95a5603fc244735d29dd27b09d796a44ebb0656e3b3b",
+      "extractedSizeBytes": 2913112,
+      "fileCount": 44
+    },
+    {
+      "name": "finish_the_drawing",
+      "sizeBytes": 4823970,
+      "sha256": "b356e1acd06b891d9766b392d343e8bfe4697557c643149f01beb73d2d944600",
+      "extractedSizeBytes": 6379769,
+      "fileCount": 131
+    },
+    {
+      "name": "fireside_solitaire",
+      "sizeBytes": 2549797,
+      "sha256": "fe73c7f13e5522469e656887931611727ca9f34e95c1b48933c6ff45007c0494",
+      "extractedSizeBytes": 3975594,
+      "fileCount": 40
+    },
+    {
+      "name": "flower_merge",
+      "sizeBytes": 3833092,
+      "sha256": "3794fa8a8fb6f2433914ed988e64a78fdd7664ae89c367628452ede27fc2d92e",
+      "extractedSizeBytes": 5420777,
+      "fileCount": 168
+    },
+    {
+      "name": "fly_low",
+      "sizeBytes": 2885883,
+      "sha256": "9958b0ee229d0590bf248db9e72aae608263c474f0b06f96d8fcefe78c6c2449",
+      "extractedSizeBytes": 4278117,
+      "fileCount": 45
+    },
+    {
+      "name": "food_jam",
+      "sizeBytes": 2329393,
+      "sha256": "017fc95ab6c180e529ef717430c18e2943e9cf1527eb37cd9c695dbbab3ee61d",
+      "extractedSizeBytes": 4033371,
+      "fileCount": 252
+    },
+    {
+      "name": "fruit_king",
+      "sizeBytes": 1351817,
+      "sha256": "9b429e7201cae749d0721bd86dd2ae2aee4a1d87ed2a10f7ca81eb664ca1c984",
+      "extractedSizeBytes": 2641092,
+      "fileCount": 30
+    },
+    {
+      "name": "fruit_king_merge",
+      "sizeBytes": 3690677,
+      "sha256": "3a8a5aea8c93ce1f282e9d6a4f765195af997be84c95d894f04460256194ebf6",
+      "extractedSizeBytes": 5085294,
+      "fileCount": 50
+    },
+    {
+      "name": "fruit_slice",
+      "sizeBytes": 3033427,
+      "sha256": "d1220c3c02d62a8bc8448e3bd42663107a0656f35c2b378e04dcbfdd7be8458a",
+      "extractedSizeBytes": 5156030,
+      "fileCount": 44
+    },
+    {
+      "name": "fruits_galaxy",
+      "sizeBytes": 958634,
+      "sha256": "42a7770776501139e8d12d7043f632a27a8fe18a471eb3d0e08423869f5bcdc3",
+      "extractedSizeBytes": 3082339,
+      "fileCount": 46
+    },
+    {
+      "name": "fruits_match_2",
+      "sizeBytes": 1498075,
+      "sha256": "840b665635f1bb804689b6cbc2f950471423965e4f440a05ca475138f1e3ca2e",
+      "extractedSizeBytes": 2961626,
+      "fileCount": 39
+    },
+    {
+      "name": "fruits_splash",
+      "sizeBytes": 803373,
+      "sha256": "9308604a1c7e1cbab038a20e4db71896657055fd904540a8ebea149bec51cc92",
+      "extractedSizeBytes": 2658059,
+      "fileCount": 40
+    },
+    {
+      "name": "full_cup",
+      "sizeBytes": 999160,
+      "sha256": "a568b0d584e843d020c90c77b90b2c1b81a36bf7ba2cc07292152718f258cc15",
+      "extractedSizeBytes": 2970174,
+      "fileCount": 45
+    },
+    {
+      "name": "garden_match_saga",
+      "sizeBytes": 4801149,
+      "sha256": "050c0418f44c49dd9b5a44797bdf598c21884a6b02cf332934636868730ab4ae",
+      "extractedSizeBytes": 5708491,
+      "fileCount": 114
+    },
+    {
+      "name": "geometry_rash",
+      "sizeBytes": 1386659,
+      "sha256": "011e32fc4c28d2304a7c9db548fb03fd1c0a0fdc228596de1690d351f369e3c4",
+      "extractedSizeBytes": 2697411,
+      "fileCount": 45
+    },
+    {
+      "name": "geometry_world",
+      "sizeBytes": 1039565,
+      "sha256": "1cbccb8aa07285130c0dc09d8fdf2bb2bf0f005ce509f0418af2431e82507b37",
+      "extractedSizeBytes": 2716472,
+      "fileCount": 30
+    },
+    {
+      "name": "get_10",
+      "sizeBytes": 1911745,
+      "sha256": "da2498742bd0c0c28b2fc6a20ec2c4a1455b210e783457ffecf99f791c0ac741",
+      "extractedSizeBytes": 2976607,
+      "fileCount": 51
+    },
+    {
+      "name": "gladiators",
+      "sizeBytes": 3683940,
+      "sha256": "d297c6767e03d024b25a31d0537d105522fa18905d3dc2d1a720bcdce010cab8",
+      "extractedSizeBytes": 5343653,
+      "fileCount": 119
+    },
+    {
+      "name": "gold_coast",
+      "sizeBytes": 3978460,
+      "sha256": "8de90becd0960c58251bde5e450d8952f58a4ef355f443e4c60805cadd6c3abe",
+      "extractedSizeBytes": 4539456,
+      "fileCount": 203
+    },
+    {
+      "name": "golf_day",
+      "sizeBytes": 1503119,
+      "sha256": "ef551024f23f64535b9ebceb336fddd2922edd528184cbef120271e46da3c103",
+      "extractedSizeBytes": 3653857,
+      "fileCount": 49
+    },
+    {
+      "name": "golf_field",
+      "sizeBytes": 932073,
+      "sha256": "0751af72a7d6cd8d3a3bdb0a41faa17a3b7286bccaa29163a6eefb5c4930c3ac",
+      "extractedSizeBytes": 3085249,
+      "fileCount": 46
+    },
+    {
+      "name": "golf_field_2",
+      "sizeBytes": 1080782,
+      "sha256": "84327ebbe3c4ed772380b4d41a7f5f113b26bf2eb415601747da04b545a36eee",
+      "extractedSizeBytes": 3253508,
+      "fileCount": 55
+    },
+    {
+      "name": "golf_pin",
+      "sizeBytes": 828182,
+      "sha256": "2cfb87ee2f313d9b32c1f294fcb7aa84064eff7908c10d719448fa9933120a52",
+      "extractedSizeBytes": 2897868,
+      "fileCount": 43
+    },
+    {
+      "name": "golf_world",
+      "sizeBytes": 918932,
+      "sha256": "1833e8abab21780ca78867264c9ffaacca997c75a7e04acab3dcd38d8b5eb97d",
+      "extractedSizeBytes": 2706361,
+      "fileCount": 46
+    },
+    {
+      "name": "grab_pack_playtime",
+      "sizeBytes": 8452269,
+      "sha256": "f26a0f4e1ca119dcf66174b7c99f248da4308c3308f8853ce30ed2c74f3c5ee1",
+      "extractedSizeBytes": 10376408,
+      "fileCount": 56
+    },
+    {
+      "name": "grab_pack_playtime_2",
+      "sizeBytes": 6951356,
+      "sha256": "a26dac1306d4b1e1ed0a141427d70520139dbf1dde2605a65ed53538d3123371",
+      "extractedSizeBytes": 8945108,
+      "fileCount": 54
+    },
+    {
+      "name": "guess_word",
+      "sizeBytes": 1947976,
+      "sha256": "c7029483c1b5ced627d26417210b7e111b15087a3be8606442ffc9c5a22842a9",
+      "extractedSizeBytes": 3130592,
+      "fileCount": 69
+    },
+    {
+      "name": "happy_filled_glass",
+      "sizeBytes": 895307,
+      "sha256": "50d1e5ea54437e7ec11a078ec5640586ec490723520e611ef8fd1742c2f2f41a",
+      "extractedSizeBytes": 3254219,
+      "fileCount": 45
+    },
+    {
+      "name": "happy_filled_glass_2",
+      "sizeBytes": 881900,
+      "sha256": "be0c78e12b37dc36b6cc51071c319223b04d7703ac2645a6a56e04e6e34b11ac",
+      "extractedSizeBytes": 2930552,
+      "fileCount": 44
+    },
+    {
+      "name": "happy_filled_glass_3",
+      "sizeBytes": 971289,
+      "sha256": "278be67581862757d09c8d333514337083b784ff199c6b7362f2c17fbd0539c6",
+      "extractedSizeBytes": 2935313,
+      "fileCount": 46
+    },
+    {
+      "name": "happy_filled_glass_4",
+      "sizeBytes": 1076421,
+      "sha256": "fdcbbc23948fe3470cb2ceb183e6b6d79c259d7b8e7e7eada29328c306d4f982",
+      "extractedSizeBytes": 3680172,
+      "fileCount": 58
+    },
+    {
+      "name": "happy_snake",
+      "sizeBytes": 1169307,
+      "sha256": "37e5162543719e0971c6d4eae80599eaadac24e6bc9f3df523e7b4db1004818f",
+      "extractedSizeBytes": 2754786,
+      "fileCount": 47
+    },
+    {
+      "name": "happy_snake_2",
+      "sizeBytes": 1461027,
+      "sha256": "e92ecee99bcb93858ac9714df6547252b0247a8a557cfe71c79aebdd791a376f",
+      "extractedSizeBytes": 3874559,
+      "fileCount": 66
+    },
+    {
+      "name": "head_soccer",
+      "sizeBytes": 3441768,
+      "sha256": "e4c21aaa4aea372ebba0abf030631b5614f33a40dd59cd37d16fcedbdf03e2d0",
+      "extractedSizeBytes": 4918783,
+      "fileCount": 79
+    },
+    {
+      "name": "hero_match",
+      "sizeBytes": 15760404,
+      "sha256": "532693a478b87dee0c9505554ef787ca6ca1b97e1b1e6f3d8b63d43f6ae42606",
+      "extractedSizeBytes": 22716399,
+      "fileCount": 322
+    },
+    {
+      "name": "hexa_blocks",
+      "sizeBytes": 2617051,
+      "sha256": "c1ce75d7be5320afa564668bd07e344b06a5334681e89b9230188af6523664cf",
+      "extractedSizeBytes": 3295917,
+      "fileCount": 44
+    },
+    {
+      "name": "hexa_buttons",
+      "sizeBytes": 2880827,
+      "sha256": "60196fa76280d82bf90b201daeac258558dc7c745e13442479fdbe4912f880e5",
+      "extractedSizeBytes": 4259705,
+      "fileCount": 47
+    },
+    {
+      "name": "hexa_merge_gravity",
+      "sizeBytes": 1156754,
+      "sha256": "f2cc053d6212ffcf6597a11dee651c6bc0ba60853cecc54a41f5f637d1ec6beb",
+      "extractedSizeBytes": 3066187,
+      "fileCount": 102
+    },
+    {
+      "name": "hexa_sort",
+      "sizeBytes": 2258712,
+      "sha256": "9cd44ff447d79c912c0c1a59e9a6d522f709d1e0813ee6c71f5b170ee6760406",
+      "extractedSizeBytes": 3963245,
+      "fileCount": 54
+    },
+    {
+      "name": "hexa_word",
+      "sizeBytes": 1574489,
+      "sha256": "16dbf73edb4cbaf41e23a07d83c6f4e60d38cb8ed3ed58afd5706920d8fe0fb8",
+      "extractedSizeBytes": 2515384,
+      "fileCount": 88
+    },
+    {
+      "name": "hexadice",
+      "sizeBytes": 2259221,
+      "sha256": "207f2ada31c1d40810bd828911ed4ffba513e5436f8e55986d9f294c9541fd10",
+      "extractedSizeBytes": 3125250,
+      "fileCount": 63
+    },
+    {
+      "name": "hidden_dragon",
+      "sizeBytes": 11941068,
+      "sha256": "ccc0c511b4ff095fe959b4d24cc699552196bf61daf7429d35402b832f1874f9",
+      "extractedSizeBytes": 13555098,
+      "fileCount": 43
+    },
+    {
+      "name": "hoop_hit",
+      "sizeBytes": 1606859,
+      "sha256": "b2151f1c28cb2a491ce1d319db403198608ee85b3e85d1829d5964773c38f179",
+      "extractedSizeBytes": 3444857,
+      "fileCount": 31
+    },
+    {
+      "name": "horror_spranky_beats",
+      "sizeBytes": 15233161,
+      "sha256": "79552f40c3b0b22fe3746cf78cb1221e4eb5563ffc7eea70dcb4b457ee77193f",
+      "extractedSizeBytes": 16554416,
+      "fileCount": 126
+    },
+    {
+      "name": "how_to_loot",
+      "sizeBytes": 3231202,
+      "sha256": "1c2bef6e6a292225b5a65a88c118cf554ea191609f90cbbc2e3a433f6df4a4fc",
+      "extractedSizeBytes": 8100935,
+      "fileCount": 435
+    },
+    {
+      "name": "impostor_red",
+      "sizeBytes": 4881744,
+      "sha256": "6ba95cf7dece4e2bce8fe12f80ea30a81334a848f4debac0793c0f40d62105cb",
+      "extractedSizeBytes": 7098816,
+      "fileCount": 63
+    },
+    {
+      "name": "impulse_ball",
+      "sizeBytes": 825294,
+      "sha256": "081843e5175f9edc71aab1fe594949fa55a24da9345def856da973b28f82494f",
+      "extractedSizeBytes": 2988113,
+      "fileCount": 48
+    },
+    {
+      "name": "impulse_ball_2",
+      "sizeBytes": 879656,
+      "sha256": "f46616f8c9014ca8303b2a5af86471969ca0535bf06ce3d35c8c4571929cd846",
+      "extractedSizeBytes": 3141611,
+      "fileCount": 51
+    },
+    {
+      "name": "inspector_cat",
+      "sizeBytes": 3710856,
+      "sha256": "d5ca160ad4fb31060ec794c140ed2e15a8a6a7abeaf50e32016b2e2647058a3a",
+      "extractedSizeBytes": 5090039,
+      "fileCount": 49
+    },
+    {
+      "name": "jacko_gunner",
+      "sizeBytes": 4571033,
+      "sha256": "8d6874fbc143d58474cc5331da9be0dc2a7c83ffd6988777ded61d5f64357f0a",
+      "extractedSizeBytes": 7679552,
+      "fileCount": 73
+    },
+    {
+      "name": "jigsaw",
+      "sizeBytes": 6363018,
+      "sha256": "2428940d08ecf43c9cf89accec20c9eb69239ca1e4a307761ea9dc7cb8294aa9",
+      "extractedSizeBytes": 7411522,
+      "fileCount": 38
+    },
+    {
+      "name": "jigsaw_blocks",
+      "sizeBytes": 2659188,
+      "sha256": "b624e11128be1d0fc132dc6e0606df8ba8a8905e22bd366d16894564328e74d7",
+      "extractedSizeBytes": 4945018,
+      "fileCount": 44
+    },
+    {
+      "name": "jigsaw_cute_cats",
+      "sizeBytes": 10320742,
+      "sha256": "f6a52d8cbde4faa39a4bdcd390d8ab99b83dda5b438e3d82697b1f8030d30228",
+      "extractedSizeBytes": 13388175,
+      "fileCount": 109
+    },
+    {
+      "name": "jigsaw_master",
+      "sizeBytes": 16258058,
+      "sha256": "28767c395a7f3330493ca5bc5925764a11ed210674d9d36c4da6d763610bbbd5",
+      "extractedSizeBytes": 18902454,
+      "fileCount": 148
+    },
+    {
+      "name": "jigsaw_puzzle",
+      "sizeBytes": 7544225,
+      "sha256": "884e41d1b9c8e7becfa3025f86aa1879edd30b9eccffd0f733d0631de09000c4",
+      "extractedSizeBytes": 8081236,
+      "fileCount": 70
+    },
+    {
+      "name": "jigsaw_sort",
+      "sizeBytes": 7951940,
+      "sha256": "dabc0af69bd34085c754b2e31d5e526927d07eb50934d33c7b6b145959afc2b3",
+      "extractedSizeBytes": 11305231,
+      "fileCount": 152
+    },
+    {
+      "name": "jigsaw_valentine",
+      "sizeBytes": 9358336,
+      "sha256": "59a8e1a970481284a0c9f7c0cb9667831cdd5bfc951e98836749b1089288dea0",
+      "extractedSizeBytes": 12336994,
+      "fileCount": 95
+    },
+    {
+      "name": "juice_merge",
+      "sizeBytes": 2982653,
+      "sha256": "b10526c977d9ec96d2749ffa40c8294fa4f1b4d26688d62bd2c3c9dcc4728357",
+      "extractedSizeBytes": 4898917,
+      "fileCount": 80
+    },
+    {
+      "name": "kingdom_survivor",
+      "sizeBytes": 2052864,
+      "sha256": "7e87eea086ff1adb714ac8e78e399406c4ef6adc82908fde115d8cbf23e3c7d4",
+      "extractedSizeBytes": 3612793,
+      "fileCount": 50
+    },
+    {
+      "name": "kitty_katcher",
+      "sizeBytes": 7755328,
+      "sha256": "1ac255ea003cfd3496e15d31bef533b122a3805969aeb25b777ea720154652b6",
+      "extractedSizeBytes": 9271591,
+      "fileCount": 51
+    },
+    {
+      "name": "knit_bear",
+      "sizeBytes": 1685257,
+      "sha256": "99afb2c63195904c45dec723a5fa745b71be9475e54c9f65833666617e883514",
+      "extractedSizeBytes": 4552842,
+      "fileCount": 57
+    },
+    {
+      "name": "knit_colors",
+      "sizeBytes": 1904955,
+      "sha256": "7b34464aae1f4af3d1f3524f9fc6c063e48446628dca1b128bc272ec31e18cc2",
+      "extractedSizeBytes": 4335022,
+      "fileCount": 46
+    },
+    {
+      "name": "knit_rescue",
+      "sizeBytes": 2158851,
+      "sha256": "65a9cfac1fd91b2535f1cfb9f01d63fa182a7d286c3399d3fb2a2aaa309602e6",
+      "extractedSizeBytes": 4937548,
+      "fileCount": 56
+    },
+    {
+      "name": "labubu_merge",
+      "sizeBytes": 1274139,
+      "sha256": "37235f6cd3280969c3c18c05fe38009018998e1c89225fd0b96e49b625b79c7c",
+      "extractedSizeBytes": 3061682,
+      "fileCount": 41
+    },
+    {
+      "name": "liquid_orange",
+      "sizeBytes": 840693,
+      "sha256": "21c2ead96084c638b8106fd826e733776462afe2a0c3ac4092b74ca4d1a6be5f",
+      "extractedSizeBytes": 2729503,
+      "fileCount": 41
+    },
+    {
+      "name": "logical_cells",
+      "sizeBytes": 3630331,
+      "sha256": "c5d82a6e15d263614c2cef2d1dcedd345bedfd7fc999c1aa5ae6de1fecb50429",
+      "extractedSizeBytes": 4991618,
+      "fileCount": 27
+    },
+    {
+      "name": "mad_fish",
+      "sizeBytes": 2781621,
+      "sha256": "f0e6e94167cee26134a3e1061e9d41dc588dc8c44745f69b649a3704680ee8e4",
+      "extractedSizeBytes": 3897038,
+      "fileCount": 70
+    },
+    {
+      "name": "mahjong_classic",
+      "sizeBytes": 1265334,
+      "sha256": "1378479bac1b0c06b7660787a6606f6a41aa6090a10f95068f0cebf4a81a09a6",
+      "extractedSizeBytes": 2698554,
+      "fileCount": 260
+    },
+    {
+      "name": "mahjong_solitaire",
+      "sizeBytes": 5307873,
+      "sha256": "5fe24a2cdbf352c9293f9040a4bfc2708b16263b54bce30d93ba20ca01e2d0cc",
+      "extractedSizeBytes": 7251505,
+      "fileCount": 153
+    },
+    {
+      "name": "marble_legends",
+      "sizeBytes": 3291793,
+      "sha256": "44c4c0cb97ff54e5f3138f3f6b1c02e82a6404c5bd54596042f9077057a3a7c2",
+      "extractedSizeBytes": 7710151,
+      "fileCount": 48
+    },
+    {
+      "name": "master_insane_damage",
+      "sizeBytes": 1139097,
+      "sha256": "24def3bdd35abb881be1f6f8766d21fe3e92d8cde4f86d042a29be0cbcf26711",
+      "extractedSizeBytes": 3320053,
+      "fileCount": 49
+    },
+    {
+      "name": "match_4_hexa",
+      "sizeBytes": 2656202,
+      "sha256": "d823694fe335cac4d7a3146557d5b66e6b8984a04b7b211f5b69b6b21c77de46",
+      "extractedSizeBytes": 4501853,
+      "fileCount": 60
+    },
+    {
+      "name": "match_emoji",
+      "sizeBytes": 5595342,
+      "sha256": "86991e73217a6d8b9d361240e6463f1a4ec37d1e65547ef2c6a98be45e198615",
+      "extractedSizeBytes": 7942392,
+      "fileCount": 60
+    },
+    {
+      "name": "math_matchsticks",
+      "sizeBytes": 1203138,
+      "sha256": "2b425157d2b8cf6b44cbf0829726b3d6851e84aa621de383a0148e880151b36d",
+      "extractedSizeBytes": 3724195,
+      "fileCount": 30
+    },
+    {
+      "name": "math_riddles_puzzle",
+      "sizeBytes": 6102921,
+      "sha256": "16009960d0951400e2793eba013649ca2551e1f47c85ffa045d5692471d42a6f",
+      "extractedSizeBytes": 10387961,
+      "fileCount": 54
+    },
+    {
+      "name": "mathic_realm",
+      "sizeBytes": 2643974,
+      "sha256": "3302e97f5cf4ed7fe64d03e930346f18bf840130e562d847a177190047e96e90",
+      "extractedSizeBytes": 3947577,
+      "fileCount": 38
+    },
+    {
+      "name": "mega_truck",
+      "sizeBytes": 11458134,
+      "sha256": "9d03b5d82f4ec7702208f34027c3779c523846ee3f7dfcc580ee0b8b332ee377",
+      "extractedSizeBytes": 14554608,
+      "fileCount": 95
+    },
+    {
+      "name": "memory_chess",
+      "sizeBytes": 3527960,
+      "sha256": "c98abe558889f7f4d3aa36ed1df0fb42b0a05cb46ea805e4c1d257c7e258e768",
+      "extractedSizeBytes": 4558233,
+      "fileCount": 193
+    },
+    {
+      "name": "memory_master",
+      "sizeBytes": 2520030,
+      "sha256": "2afd3a61679894f6cd9d3ca3d1d72585fc2d6fe11d646442f0a232c3250090f2",
+      "extractedSizeBytes": 4055361,
+      "fileCount": 39
+    },
+    {
+      "name": "meow_merge",
+      "sizeBytes": 4442697,
+      "sha256": "30d89f604a5f698a328f9c6fc0e04d00318d81d6f5ebc333a64ceec461c3b8d4",
+      "extractedSizeBytes": 6713227,
+      "fileCount": 61
+    },
+    {
+      "name": "merge_2048",
+      "sizeBytes": 1197258,
+      "sha256": "52f0465e67d612ec8271cadb7204d8140979e5203f1b457e2c31cafc92c02038",
+      "extractedSizeBytes": 1998204,
+      "fileCount": 40
+    },
+    {
+      "name": "merge_2048_cake",
+      "sizeBytes": 4744183,
+      "sha256": "8869826c2781c138c11fc79abb61d70b7df27407b066dc129f518da6c39724e3",
+      "extractedSizeBytes": 6526727,
+      "fileCount": 63
+    },
+    {
+      "name": "merge_animals",
+      "sizeBytes": 2507090,
+      "sha256": "c3e49531c803f6f2785d993d5d64a04b208271f640713efbfa447f63396b75ea",
+      "extractedSizeBytes": 4286576,
+      "fileCount": 70
+    },
+    {
+      "name": "merge_cards",
+      "sizeBytes": 1112545,
+      "sha256": "0caeac95b482b39424f95ae5194ba65cd80daa7d54129e625aac53f1d0eba490",
+      "extractedSizeBytes": 1840183,
+      "fileCount": 38
+    },
+    {
+      "name": "merge_cards_vintage",
+      "sizeBytes": 1058905,
+      "sha256": "4f8213f70bbf3991f5dbcdd2f66cdd1917b0b8c1afff57b9017251ed46f0f736",
+      "extractedSizeBytes": 2350646,
+      "fileCount": 37
+    },
+    {
+      "name": "merge_cash_puzzle",
+      "sizeBytes": 4314331,
+      "sha256": "93dcc812f2e1d8d1bddaa3a6c78865bf393d9c1580a09e09e4872600ff912960",
+      "extractedSizeBytes": 6391966,
+      "fileCount": 60
+    },
+    {
+      "name": "merge_flowers",
+      "sizeBytes": 3542819,
+      "sha256": "07779a301e069ad3af430fdf256b13a8af0cba3d9f87ce5f54cadac8492d8b15",
+      "extractedSizeBytes": 5376317,
+      "fileCount": 56
+    },
+    {
+      "name": "merge_fruits",
+      "sizeBytes": 1430409,
+      "sha256": "93a8329cebe43eeb080bd627fcb8ddf3ea3c8b92f8b9d1f7c1093db3aa80721a",
+      "extractedSizeBytes": 2713705,
+      "fileCount": 46
+    },
+    {
+      "name": "merge_hexa",
+      "sizeBytes": 2099062,
+      "sha256": "9ee2fe714f63eb57ce12eb5fc73ce742bcadf05c9ea0f1911df6be5b6acfd84b",
+      "extractedSizeBytes": 3457230,
+      "fileCount": 31
+    },
+    {
+      "name": "merge_number_woody",
+      "sizeBytes": 2865179,
+      "sha256": "a6281e11e4da5d0b1a6649083b42edc0239b6287e39ebeb10ce8db8bcff2dec5",
+      "extractedSizeBytes": 4652924,
+      "fileCount": 40
+    },
+    {
+      "name": "merge_shooter",
+      "sizeBytes": 2343884,
+      "sha256": "5581eb3d4d05ea5d55d3f833bd52684ce116ee79352951f58c6fbbaf0ce40aa9",
+      "extractedSizeBytes": 3493657,
+      "fileCount": 79
+    },
+    {
+      "name": "micro_golf_ball",
+      "sizeBytes": 793993,
+      "sha256": "514407875b21af8b2f80e244d0b6f6c664ea7cba3bf51a8a33120f042ba78a9d",
+      "extractedSizeBytes": 2759320,
+      "fileCount": 44
+    },
+    {
+      "name": "micro_golf_ball_2",
+      "sizeBytes": 815401,
+      "sha256": "a447452101ec5e05fcc50025c418556f358c8caa6e5c1813d07781518b1c8b4e",
+      "extractedSizeBytes": 2855805,
+      "fileCount": 46
+    },
+    {
+      "name": "milk_for_cat",
+      "sizeBytes": 1075882,
+      "sha256": "7c93d4c52bf1d8f07fbc37dddd667975a60991f18b81bdf09431bda7c8a93e0c",
+      "extractedSizeBytes": 2731597,
+      "fileCount": 53
+    },
+    {
+      "name": "mini_golf",
+      "sizeBytes": 9227137,
+      "sha256": "6c027eae6c1d6648bdfc235df605a5f888373e0899a6f7e76384e824459a8f29",
+      "extractedSizeBytes": 15669006,
+      "fileCount": 108
+    },
+    {
+      "name": "monster_destroyer",
+      "sizeBytes": 852710,
+      "sha256": "d97d25412f99cb47d4f4e4908deed323d9dbdf4fc5550e918f69cc7702d2d619",
+      "extractedSizeBytes": 2835106,
+      "fileCount": 43
+    },
+    {
+      "name": "mountain_rider",
+      "sizeBytes": 1926922,
+      "sha256": "4a0dd984cd49ec1fcec204fe69443d05c81b9b89a08dc7adac60d6992908ae66",
+      "extractedSizeBytes": 3919562,
+      "fileCount": 39
+    },
+    {
+      "name": "move_the_pin",
+      "sizeBytes": 843484,
+      "sha256": "b0b13c02262c72c4810b15c52810d89ae3c1f0d57a1e3570089667e43f12241f",
+      "extractedSizeBytes": 3198568,
+      "fileCount": 44
+    },
+    {
+      "name": "move_the_pin_2",
+      "sizeBytes": 959414,
+      "sha256": "e5ca05d0a7daadcc8d088f4b4aae73b65b479da82069ba0bc92fa62a8df343a2",
+      "extractedSizeBytes": 3266002,
+      "fileCount": 58
+    },
+    {
+      "name": "mr_bullet",
+      "sizeBytes": 1772131,
+      "sha256": "fc630b85578170049c8bdf2b4c3fd022f8359fbde9641b461b12526eac7ad648",
+      "extractedSizeBytes": 5498190,
+      "fileCount": 59
+    },
+    {
+      "name": "mr_toni",
+      "sizeBytes": 1975849,
+      "sha256": "5030adbf8a6bb3545ebadebd94b5c48c17aea5c454af0e666f6a81ed822ebf3e",
+      "extractedSizeBytes": 3982182,
+      "fileCount": 46
+    },
+    {
+      "name": "nonogram",
+      "sizeBytes": 453799,
+      "sha256": "7cc2fc428d488b0217df7baf9e712421a1ab9d3d011b0d038d007cd0848b1a5f",
+      "extractedSizeBytes": 854374,
+      "fileCount": 59
+    },
+    {
+      "name": "number_bubble_shooter",
+      "sizeBytes": 5586429,
+      "sha256": "ae5235c78bf6908c8dfa9cf0fd7fc70bbadd0b5ddf58abb327240808d371bb80",
+      "extractedSizeBytes": 7481935,
+      "fileCount": 68
+    },
+    {
+      "name": "number_match",
+      "sizeBytes": 2486014,
+      "sha256": "0dd33c37abe507f0f51665c3cbf0fd55fa8e5c68b0134f4dc07fe4edf24e4a96",
+      "extractedSizeBytes": 3853871,
+      "fileCount": 42
+    },
+    {
+      "name": "number_tiles",
+      "sizeBytes": 944727,
+      "sha256": "6133f4ed4a5dfabaca972d816708dd23cd23c0775528cc906e8a1f55e191986e",
+      "extractedSizeBytes": 2081414,
+      "fileCount": 45
+    },
+    {
+      "name": "numbers_connect",
+      "sizeBytes": 1316771,
+      "sha256": "77d4cef734cbe46d5d728ade5fedbe36300ea0ae465dfaf32f8d678995d2c79d",
+      "extractedSizeBytes": 2940975,
+      "fileCount": 38
+    },
+    {
+      "name": "nuts_and_bolts",
+      "sizeBytes": 4825797,
+      "sha256": "a0e703b1e214409ae403ebad10ef8ef8807baace4e8312104862a40db3329361",
+      "extractedSizeBytes": 11784532,
+      "fileCount": 178
+    },
+    {
+      "name": "nuts_and_bolts_2",
+      "sizeBytes": 1453030,
+      "sha256": "77e69a404528d4178414b8946035ef358c5dba048c36d977455faaf0328a3827",
+      "extractedSizeBytes": 3705116,
+      "fileCount": 35
+    },
+    {
+      "name": "one_stroke",
+      "sizeBytes": 1849565,
+      "sha256": "08488f2363bb1557f88e7ad64df94c7a9f25e8d9806f3ab299ca05de315dc0c1",
+      "extractedSizeBytes": 2814818,
+      "fileCount": 92
+    },
+    {
+      "name": "onet_fish",
+      "sizeBytes": 1539694,
+      "sha256": "490d9f8c6403574cc3ba3596ebe10b0d92f6dedde5c0c2f35413c365ec16271a",
+      "extractedSizeBytes": 3293537,
+      "fileCount": 46
+    },
+    {
+      "name": "onet_fish_2",
+      "sizeBytes": 1168185,
+      "sha256": "4aa73cdf96c3aad7457daacc61490226c40bfeb8662142b46c5747e99195b897",
+      "extractedSizeBytes": 3487964,
+      "fileCount": 43
+    },
+    {
+      "name": "paper_fold",
+      "sizeBytes": 4571583,
+      "sha256": "384e300164411e29d7e6d5eaa5586610953e389a5e2b63e285771590a462ddca",
+      "extractedSizeBytes": 5748990,
+      "fileCount": 38
+    },
+    {
+      "name": "parking_jam",
+      "sizeBytes": 4013359,
+      "sha256": "4be1f42215375a0ee5eed8cfcf99fb03621a20ea216f547b9d9d1f7696d2d91e",
+      "extractedSizeBytes": 5664816,
+      "fileCount": 81
+    },
+    {
+      "name": "parking_jem",
+      "sizeBytes": 1121407,
+      "sha256": "e9358eb22c273bcc43247f4f206aee50670910a25f83d4c9f5f63e8db4406d63",
+      "extractedSizeBytes": 2975897,
+      "fileCount": 36
+    },
+    {
+      "name": "path_control",
+      "sizeBytes": 807718,
+      "sha256": "e72afb8d0a3e823d906e019fa511bd2b7f35e3bad1db39c9ea2484f7b3adbb58",
+      "extractedSizeBytes": 2779869,
+      "fileCount": 39
+    },
+    {
+      "name": "physics_box",
+      "sizeBytes": 682170,
+      "sha256": "e79a7711247518eadec6f38d5878a180c72e3a1a911741f1f23ffb0b9a55083e",
+      "extractedSizeBytes": 2527731,
+      "fileCount": 34
+    },
+    {
+      "name": "physics_box_2",
+      "sizeBytes": 929389,
+      "sha256": "995b81c6d667364f7960053eeebdfb06a2f9a4f8dbee6c69416df801c0a341b6",
+      "extractedSizeBytes": 3118927,
+      "fileCount": 43
+    },
+    {
+      "name": "piggy_bank",
+      "sizeBytes": 1297190,
+      "sha256": "7fb577cbbc072b97f3fc956c9cda0fbd4885e10d4ea899749c03f9b068efcce0",
+      "extractedSizeBytes": 3342198,
+      "fileCount": 47
+    },
+    {
+      "name": "pinball_rush",
+      "sizeBytes": 1118069,
+      "sha256": "b8e8afe471cd6e90c9bb42ba0289278075c4c30a00beb1d7278ca70e50585ccd",
+      "extractedSizeBytes": 2849785,
+      "fileCount": 57
+    },
+    {
+      "name": "pipe_connect",
+      "sizeBytes": 669519,
+      "sha256": "7cb0ec588f211d7e4cb81db2341aee8c052831889b715b3094016cd64aecc732",
+      "extractedSizeBytes": 2708354,
+      "fileCount": 22
+    },
+    {
+      "name": "pipe_mania",
+      "sizeBytes": 2802661,
+      "sha256": "64156b572285555c0780ee7a84d769ef66af85cdc8ab52df3622ca4fa28b8ee5",
+      "extractedSizeBytes": 4165196,
+      "fileCount": 104
+    },
+    {
+      "name": "pipe_way",
+      "sizeBytes": 949616,
+      "sha256": "84c7042be4239802ae84ec8e1d016fc30e28f1cfb933e0b42cb7605b98586535",
+      "extractedSizeBytes": 2711577,
+      "fileCount": 41
+    },
+    {
+      "name": "pirate_21_blackjack",
+      "sizeBytes": 8189311,
+      "sha256": "5d9aedc5d232251a7e0174dd6c0b933905e1cac74f33955ec62dd682a7bf10d6",
+      "extractedSizeBytes": 10053720,
+      "fileCount": 98
+    },
+    {
+      "name": "pirates_battle",
+      "sizeBytes": 2260665,
+      "sha256": "ae7077bf3cf79554ed5255a7549f48fc458c0ad4f8ae2cc078f12d272f55d71f",
+      "extractedSizeBytes": 5683005,
+      "fileCount": 71
+    },
+    {
+      "name": "pixel_painter",
+      "sizeBytes": 2074690,
+      "sha256": "3624e501713472d69348b54800eb3d643d77c29f8248fb53b465888f75e02924",
+      "extractedSizeBytes": 4604151,
+      "fileCount": 20
+    },
+    {
+      "name": "plane_shooter",
+      "sizeBytes": 2932931,
+      "sha256": "49054c561baf9c7e81dcc61ffedf0853d145c9bb21bdf6e4f6919ae9d0020608",
+      "extractedSizeBytes": 5231818,
+      "fileCount": 74
+    },
+    {
+      "name": "playtime_maze",
+      "sizeBytes": 2625670,
+      "sha256": "31d947e1b2c607ccbdcbe62765b02f6bffdb0b4f7309a40bdb4a4f547178b169",
+      "extractedSizeBytes": 4836900,
+      "fileCount": 55
+    },
+    {
+      "name": "pool_shoot",
+      "sizeBytes": 1830341,
+      "sha256": "5433ba7c7681a04a95a5b6eea32dd888c2130e968a9714de824c32130bfa80f7",
+      "extractedSizeBytes": 3994330,
+      "fileCount": 78
+    },
+    {
+      "name": "pop_sicle",
+      "sizeBytes": 1499667,
+      "sha256": "60115d88d18959e66b7675aa5ce30bb6d2e7ee062226c571bc29826e3b26dfca",
+      "extractedSizeBytes": 3004305,
+      "fileCount": 37
+    },
+    {
+      "name": "pop_the_balloons",
+      "sizeBytes": 1643994,
+      "sha256": "f27d6b2dd824048dac998fa48f726810e0f90f70ecdce379808064279c3e5edc",
+      "extractedSizeBytes": 3757099,
+      "fileCount": 43
+    },
+    {
+      "name": "popcorn_eater",
+      "sizeBytes": 1472852,
+      "sha256": "38bc25daa9530365e1e21833a7464a8ddbbb815a6e4df921cf302e6ea9339fcb",
+      "extractedSizeBytes": 2997490,
+      "fileCount": 56
+    },
+    {
+      "name": "pumpkin_dig",
+      "sizeBytes": 5131661,
+      "sha256": "9c5d4b6ea35ded6438d7a9f086a4c2156750eb6b53551b3b1b0d8db9c14681dc",
+      "extractedSizeBytes": 7298582,
+      "fileCount": 51
+    },
+    {
+      "name": "puppy_match",
+      "sizeBytes": 1695485,
+      "sha256": "9289a6dde42c326499eb1cc0deebe439d53dde6446cdd4505604c32edf541285",
+      "extractedSizeBytes": 3283777,
+      "fileCount": 34
+    },
+    {
+      "name": "puzzle_legends",
+      "sizeBytes": 11856385,
+      "sha256": "6ff63e43b9acca108a5dd41331eda77a9c470dad82b7a4c34ae5aba99c076d11",
+      "extractedSizeBytes": 13724697,
+      "fileCount": 116
+    },
+    {
+      "name": "rabbit_and_carrot",
+      "sizeBytes": 1209672,
+      "sha256": "a266b2387b0130c1aa32f7fb3a1e39dafd010481e3aa5ea9b163aaaa85f28670",
+      "extractedSizeBytes": 3553432,
+      "fileCount": 53
+    },
+    {
+      "name": "rabbits_saga",
+      "sizeBytes": 1223867,
+      "sha256": "013699087a2074a6e5d9e3291d022e1c38b30a09449545b01315a182206da7d4",
+      "extractedSizeBytes": 2733080,
+      "fileCount": 34
+    },
+    {
+      "name": "racer_traning",
+      "sizeBytes": 2807651,
+      "sha256": "b68711ff77e53afbf61f2dad4bbd1104045300ee9936106a3fd475a2b10cc1f4",
+      "extractedSizeBytes": 4421701,
+      "fileCount": 41
+    },
+    {
+      "name": "rail_maze_puzzle",
+      "sizeBytes": 5046591,
+      "sha256": "acabf1646d49b404f14e218c08dd00c8a29f528ce0abda7db2678d185a8aec00",
+      "extractedSizeBytes": 7336598,
+      "fileCount": 47
+    },
+    {
+      "name": "rainbow_bead",
+      "sizeBytes": 1989509,
+      "sha256": "f748a7be9761c3b11c0f8a3b90a3f3fb48dd0a71e41c697b3f1709ef15b3952e",
+      "extractedSizeBytes": 3112000,
+      "fileCount": 132
+    },
+    {
+      "name": "red_golf",
+      "sizeBytes": 1690585,
+      "sha256": "903039d26160263f2b88323ca1a08bff4ab7acdb937cb4c21bd81f78eaad8890",
+      "extractedSizeBytes": 4386834,
+      "fileCount": 66
+    },
+    {
+      "name": "red_rope",
+      "sizeBytes": 1012790,
+      "sha256": "adda564b4116bb20e07ec1747af767192689086265c79d0b35bb5d4b168e17b2",
+      "extractedSizeBytes": 3122747,
+      "fileCount": 43
+    },
+    {
+      "name": "rich_run",
+      "sizeBytes": 1735456,
+      "sha256": "886a6f710524d3825282788c17b0be543e36859148f4791f274f299cbb8f9606",
+      "extractedSizeBytes": 3618240,
+      "fileCount": 69
+    },
+    {
+      "name": "rope_bowling",
+      "sizeBytes": 1099778,
+      "sha256": "4a34a2443b09c5101502e7c1eec613033b3de3b6126ab9cbbf75fcb59b3d3760",
+      "extractedSizeBytes": 3635897,
+      "fileCount": 50
+    },
+    {
+      "name": "rope_dude",
+      "sizeBytes": 939030,
+      "sha256": "47a8d9dce7d7bcf81c91921ebea375370030458d9e771566861c682aeab27061",
+      "extractedSizeBytes": 3153602,
+      "fileCount": 50
+    },
+    {
+      "name": "rotate_and_flip",
+      "sizeBytes": 4094518,
+      "sha256": "dd1a2d48fa9bcb3941c7d35401c7c29d6704cd79c6ca44b61da70cc83758e4d7",
+      "extractedSizeBytes": 5608097,
+      "fileCount": 50
+    },
+    {
+      "name": "route_digger",
+      "sizeBytes": 1045890,
+      "sha256": "a03694306150015f5b660a1669b1711b7e74dc54cac0b89a0396daca39c4b17d",
+      "extractedSizeBytes": 9339827,
+      "fileCount": 42
+    },
+    {
+      "name": "route_digger_2",
+      "sizeBytes": 2456585,
+      "sha256": "ede1207b408535f2c822cb0bab937441e0d663653ca3e92009e366559128fb2f",
+      "extractedSizeBytes": 6459436,
+      "fileCount": 46
+    },
+    {
+      "name": "route_digger_3",
+      "sizeBytes": 1469439,
+      "sha256": "bea3784ba4af63de6238a38076e699a005e446069f76a343d108a9c1c0331d71",
+      "extractedSizeBytes": 3780465,
+      "fileCount": 65
+    },
+    {
+      "name": "royal_blast",
+      "sizeBytes": 1881629,
+      "sha256": "40452151061156c904f7bd16f9280ef6a5e19ea61c66f8a538a3de0d43920df1",
+      "extractedSizeBytes": 3650040,
+      "fileCount": 168
+    },
+    {
+      "name": "sandy_balls",
+      "sizeBytes": 5102325,
+      "sha256": "380e6731c6e99e1eb7d57a0b3e584abff477bcc3f18a8f0de1f6a55609f6d3a5",
+      "extractedSizeBytes": 7852994,
+      "fileCount": 82
+    },
+    {
+      "name": "santa_thief",
+      "sizeBytes": 3642982,
+      "sha256": "33b677c91b4ec9ba54b0bedddd0ba4cba76fcebb6a67b367cf9329bb00a796e4",
+      "extractedSizeBytes": 5568867,
+      "fileCount": 34
+    },
+    {
+      "name": "save_the_doge",
+      "sizeBytes": 1689949,
+      "sha256": "36069d5a82aebe4a1edc7d01582234911fcfe3e1933b35d935a39da80f64c7cd",
+      "extractedSizeBytes": 3993553,
+      "fileCount": 63
+    },
+    {
+      "name": "screw_pin",
+      "sizeBytes": 2123118,
+      "sha256": "a85c854c6303c9b4b4742036eb1c870b649cc0ae91e21c94fc8cbb9b0452d69d",
+      "extractedSizeBytes": 5636577,
+      "fileCount": 54
+    },
+    {
+      "name": "secret_agent",
+      "sizeBytes": 1303949,
+      "sha256": "c9c6d36873d03bc911575967b7ee650b84a26ff44111021c24e38900311cb489",
+      "extractedSizeBytes": 3735009,
+      "fileCount": 51
+    },
+    {
+      "name": "seek_and_find",
+      "sizeBytes": 3515477,
+      "sha256": "f1f187e56e941d38d8fa69dd361f6746cb19eae3c6756d8f7d50facb2be4c5e7",
+      "extractedSizeBytes": 4856238,
+      "fileCount": 39
+    },
+    {
+      "name": "sheep_and_sheep",
+      "sizeBytes": 1254709,
+      "sha256": "be6fb58bd8efded1d8f7a603cf0b0b83ec2c31a0daaabaa31732f63282b30afc",
+      "extractedSizeBytes": 3559282,
+      "fileCount": 36
+    },
+    {
+      "name": "shoot_up",
+      "sizeBytes": 1823075,
+      "sha256": "d0f42c9d8cfdbe4be1fe5368b4c2754096387098ee61e96d6bb3aaad0797af09",
+      "extractedSizeBytes": 3199641,
+      "fileCount": 59
+    },
+    {
+      "name": "shooter_2048_hexa",
+      "sizeBytes": 3125755,
+      "sha256": "88aabd9ec671bdde62b00cfef1fca810f09d117b701a65d8587ecd6750f69c57",
+      "extractedSizeBytes": 4975951,
+      "fileCount": 52
+    },
+    {
+      "name": "skater_boys_journey",
+      "sizeBytes": 1595645,
+      "sha256": "181cea96969aa0789c6679ca3cb8629241298e7f95d5ff16094d8f598ae72a4c",
+      "extractedSizeBytes": 3086826,
+      "fileCount": 52
+    },
+    {
+      "name": "skibidi_toilet",
+      "sizeBytes": 4990710,
+      "sha256": "67236bce396d0bcd9672a51b813b98bcdb80e2bb0b67c0c3816e10c4ed3fe016",
+      "extractedSizeBytes": 8478137,
+      "fileCount": 105
+    },
+    {
+      "name": "skip_card",
+      "sizeBytes": 665661,
+      "sha256": "3838a6b521969666e62725d072ad315c224f524ccf5ab29b8107470c09735563",
+      "extractedSizeBytes": 858151,
+      "fileCount": 170
+    },
+    {
+      "name": "sleeping_animal",
+      "sizeBytes": 3055339,
+      "sha256": "a82f975f1e1cc5ddab3371738d95e1fa61a9006e3d33bfc9f50668c1a75c7aad",
+      "extractedSizeBytes": 4995536,
+      "fileCount": 76
+    },
+    {
+      "name": "slice_it_up",
+      "sizeBytes": 5174881,
+      "sha256": "b24bd723dfb74b29a2661c40ef22dcadda70c5cf156fcc07f28695444d508b45",
+      "extractedSizeBytes": 6673301,
+      "fileCount": 36
+    },
+    {
+      "name": "slide_block_puzzle",
+      "sizeBytes": 1332456,
+      "sha256": "42f37cda2e9af32c20414fff91693f65f32c7f805b8d8687e313f32c20bebbb8",
+      "extractedSizeBytes": 3186514,
+      "fileCount": 94
+    },
+    {
+      "name": "slide_roll",
+      "sizeBytes": 2994796,
+      "sha256": "2ba4cec993f2ec7888f269bfbd2710f7748ff7a25e2bb1bf46b80d71c5347f74",
+      "extractedSizeBytes": 4176976,
+      "fileCount": 113
+    },
+    {
+      "name": "slider_puzzle",
+      "sizeBytes": 2005628,
+      "sha256": "c6e3facb1d573508bc078b6c9116b6e17fd4d045ec7009c0e32cf10beea8d836",
+      "extractedSizeBytes": 2832925,
+      "fileCount": 62
+    },
+    {
+      "name": "slip_blocks",
+      "sizeBytes": 740851,
+      "sha256": "c9ed44db3b11dbd50a4766b10ccdd6ec0aff43ba75dc6e513904e43490a0a302",
+      "extractedSizeBytes": 2774352,
+      "fileCount": 43
+    },
+    {
+      "name": "small_archer_2",
+      "sizeBytes": 942469,
+      "sha256": "25a7ae9edc968a0ad4f3a1ff8db37c6448c2e6b6e96f02105fb82113b42b0ad0",
+      "extractedSizeBytes": 3064171,
+      "fileCount": 47
+    },
+    {
+      "name": "snake_3000",
+      "sizeBytes": 2053995,
+      "sha256": "2605a8cf559f6fdaf3b87ff0336a55e34612d9243256f470cc0f83d0f06bcbc2",
+      "extractedSizeBytes": 3873848,
+      "fileCount": 47
+    },
+    {
+      "name": "solitaire_holiday",
+      "sizeBytes": 3084138,
+      "sha256": "f92f8c4141e2cb1727c9ae40fe91b30d1e0a1495eb10a8a45f2fa517109d2645",
+      "extractedSizeBytes": 5163685,
+      "fileCount": 56
+    },
+    {
+      "name": "solitaire_tripeaks",
+      "sizeBytes": 5932772,
+      "sha256": "dcb372620e0a0034871d001a8ab01074effcd2bd26a907ec7e2078b984a65518",
+      "extractedSizeBytes": 8564366,
+      "fileCount": 70
+    },
+    {
+      "name": "sort_flowers",
+      "sizeBytes": 5332700,
+      "sha256": "e3a6ba33e0c3fa4ca8a663cc221feec23aed7ba703895166495cd77c8ca99eb3",
+      "extractedSizeBytes": 8982857,
+      "fileCount": 40
+    },
+    {
+      "name": "sort_puzzle",
+      "sizeBytes": 2892193,
+      "sha256": "a8ddd05a9d6ea90dbca2430b066033a1a160d5f259149e54cf700acae3fb46b4",
+      "extractedSizeBytes": 4692725,
+      "fileCount": 46
+    },
+    {
+      "name": "space",
+      "sizeBytes": 1031783,
+      "sha256": "ff471544ff52bc8d576ee6d3f621a92b29ae819844f96bc48fb52c985b55e84f",
+      "extractedSizeBytes": 3526725,
+      "fileCount": 52
+    },
+    {
+      "name": "space_knife",
+      "sizeBytes": 1088387,
+      "sha256": "5c3fbe7b91d7ca6d2580362d29a233404688d91e7caf6b51c074ad83862c628c",
+      "extractedSizeBytes": 3390148,
+      "fileCount": 47
+    },
+    {
+      "name": "speed_racer",
+      "sizeBytes": 2133086,
+      "sha256": "5e3dc1823f51a0bd0be6c6699d03d462dc4b8f7f897aff8ba7d7db3625327ec2",
+      "extractedSizeBytes": 2665172,
+      "fileCount": 115
+    },
+    {
+      "name": "sphere_shift",
+      "sizeBytes": 1550263,
+      "sha256": "a17760e0600c6b5bb38758a663bd8c8ca616dca149d228af1cc930b1deb087d7",
+      "extractedSizeBytes": 2927141,
+      "fileCount": 28
+    },
+    {
+      "name": "spill_wine",
+      "sizeBytes": 852558,
+      "sha256": "317a1a27595025d14f8ed2cb6900ad9e173085e7482da99afce4ca0a52be3586",
+      "extractedSizeBytes": 3918738,
+      "fileCount": 46
+    },
+    {
+      "name": "sponge_splash",
+      "sizeBytes": 1463839,
+      "sha256": "2424184505a83acfb21f7e05faa0aa2f281a4d5cb06c79a99fa06ee336e048c8",
+      "extractedSizeBytes": 3054290,
+      "fileCount": 32
+    },
+    {
+      "name": "spot_the_difference",
+      "sizeBytes": 8214088,
+      "sha256": "5fd6090857101fb9246352db0f963e57bd0386f7545f7ea3c791fb040cd80e42",
+      "extractedSizeBytes": 9259128,
+      "fileCount": 220
+    },
+    {
+      "name": "square_game",
+      "sizeBytes": 4264261,
+      "sha256": "b84b9c357ecd848d0b41238e1bce3e37712c41d35b10ad2925aafb35481bde2a",
+      "extractedSizeBytes": 8499649,
+      "fileCount": 98
+    },
+    {
+      "name": "stack_2048",
+      "sizeBytes": 2699162,
+      "sha256": "901f27370e34d809346754c78ce569c8bae019a6e7a0826ed1f4371b0725106a",
+      "extractedSizeBytes": 4207622,
+      "fileCount": 59
+    },
+    {
+      "name": "stone_merge",
+      "sizeBytes": 2375602,
+      "sha256": "d83ce0a7abaf2739afe609dfa94b92037d8f7115f1580a719d84fa484282c059",
+      "extractedSizeBytes": 2977444,
+      "fileCount": 38
+    },
+    {
+      "name": "summer_maze",
+      "sizeBytes": 1776542,
+      "sha256": "2c7bb4ec2e2ac44b3aa21561c8b090132df66b8401572f1372c11c2517515ff0",
+      "extractedSizeBytes": 3910048,
+      "fileCount": 48
+    },
+    {
+      "name": "sushi_master",
+      "sizeBytes": 2356750,
+      "sha256": "e2727d680530b2e9a6d8da81e108249746949a6b1815bb7109e639aaf0dcad44",
+      "extractedSizeBytes": 3747795,
+      "fileCount": 72
+    },
+    {
+      "name": "switch_off",
+      "sizeBytes": 2056795,
+      "sha256": "8127c4a3045f4ab44794538c1b90f8c4dfd38708fa70747cbeabf44521d85069",
+      "extractedSizeBytes": 3447810,
+      "fileCount": 34
+    },
+    {
+      "name": "tangram_puzzle",
+      "sizeBytes": 2607956,
+      "sha256": "ac4dd3fcf930d2ed01045d16c2c09c7eac35337e64852693b2af4b88b163e1ab",
+      "extractedSizeBytes": 5513216,
+      "fileCount": 51
+    },
+    {
+      "name": "tap_arrow_away",
+      "sizeBytes": 880465,
+      "sha256": "5cb0adeeb87b4d641a1fed61403112bf1d781c433c23fb7a38ce7d667381d48b",
+      "extractedSizeBytes": 3806676,
+      "fileCount": 49
+    },
+    {
+      "name": "tap_away",
+      "sizeBytes": 1467205,
+      "sha256": "e6de2c07df529c2380f20543c39a7698a9539b3ff05483e291f697a2435e802d",
+      "extractedSizeBytes": 3387808,
+      "fileCount": 459
+    },
+    {
+      "name": "tavern_survivors",
+      "sizeBytes": 2749221,
+      "sha256": "875dbbb7ee8a67a67d27de8ce5acb1c65927592a8ef89624ec077bede4a87285",
+      "extractedSizeBytes": 4388103,
+      "fileCount": 55
+    },
+    {
+      "name": "ten_master",
+      "sizeBytes": 2091213,
+      "sha256": "8748d4b02914161e5f3fdef023a6b176cf69bf519d85168de735b94dd9be10e9",
+      "extractedSizeBytes": 3522560,
+      "fileCount": 43
+    },
+    {
+      "name": "the_wanderer",
+      "sizeBytes": 1959611,
+      "sha256": "7b0cb7072ff1c78b955b8cd072f9a0180e4b315b3984753715a23046058d0510",
+      "extractedSizeBytes": 3546280,
+      "fileCount": 37
+    },
+    {
+      "name": "theos_time_puzzle",
+      "sizeBytes": 5955566,
+      "sha256": "ed4056fb545228c064bccf67156b1ff22c14814e7b95c00c899cdb68d27277fe",
+      "extractedSizeBytes": 7383770,
+      "fileCount": 42
+    },
+    {
+      "name": "thread_match",
+      "sizeBytes": 2086210,
+      "sha256": "a13a68683e67ca4e19818d926354015116669dceaa8b0c6a960009accf2123ab",
+      "extractedSizeBytes": 14406263,
+      "fileCount": 104
+    },
+    {
+      "name": "three_tiles",
+      "sizeBytes": 2905637,
+      "sha256": "405d655bc386c198c3eb22fd8240d9d3fe0d688f7686fa675f15cab33e65f269",
+      "extractedSizeBytes": 5013377,
+      "fileCount": 34
+    },
+    {
+      "name": "tic_toc_challenge",
+      "sizeBytes": 7436611,
+      "sha256": "dcf1a2a8a52678e9c630f3dc80f1f7f36980110cbc7692bd50c9efa685c248c9",
+      "extractedSizeBytes": 9419676,
+      "fileCount": 88
+    },
+    {
+      "name": "tidy_shelf",
+      "sizeBytes": 1394232,
+      "sha256": "dba0efc87815cfb6ff5a18b06253e9bccf91cb67428fba592e2f0fc4ef45df7b",
+      "extractedSizeBytes": 2834478,
+      "fileCount": 31
+    },
+    {
+      "name": "tile_master_match",
+      "sizeBytes": 1687149,
+      "sha256": "282f65becef0ca93eef39223900ebfa35cb9ece06446fdcc2e85d599c0b2e4d1",
+      "extractedSizeBytes": 3405570,
+      "fileCount": 142
+    },
+    {
+      "name": "tile_match_wizarding",
+      "sizeBytes": 5517984,
+      "sha256": "dab1e0403d0c34c6e9cebb51d1828291182984083d0e325bfbf97ad3ee78af53",
+      "extractedSizeBytes": 8369611,
+      "fileCount": 80
+    },
+    {
+      "name": "tiny_crash_fighters",
+      "sizeBytes": 2844041,
+      "sha256": "a2da19f25756e32fad0f73359add987fa53c2c2161b208dcc3ed3aa77ef31257",
+      "extractedSizeBytes": 4565454,
+      "fileCount": 83
+    },
+    {
+      "name": "tower_boom_2",
+      "sizeBytes": 1530356,
+      "sha256": "9e12980c78b5304eede288b8e0fa9aed7442bb9be9a0fbfd14edc0399b28b22f",
+      "extractedSizeBytes": 2914494,
+      "fileCount": 42
+    },
+    {
+      "name": "tower_war",
+      "sizeBytes": 3572720,
+      "sha256": "644bf6a1b9ae5252e00eeebc1e941d5a76abcc9381977706ea7847d827e17abf",
+      "extractedSizeBytes": 6494863,
+      "fileCount": 61
+    },
+    {
+      "name": "tractor_mania",
+      "sizeBytes": 12351951,
+      "sha256": "8390112e7b4c94c093c5eaa43a1d25057507d1d01f032364495d2306d6a4abff",
+      "extractedSizeBytes": 14688518,
+      "fileCount": 831
+    },
+    {
+      "name": "traffic_parking",
+      "sizeBytes": 2750765,
+      "sha256": "b1e0aa568093086f9a296ba50787759801263bd5c90d08b9e62d5e8717ebb54f",
+      "extractedSizeBytes": 5554210,
+      "fileCount": 102
+    },
+    {
+      "name": "triple_cups",
+      "sizeBytes": 884145,
+      "sha256": "edd5937b403e4e1a3df27b6d0dfad735e71fda1eee88744fc3bc1ee102732cc4",
+      "extractedSizeBytes": 2681595,
+      "fileCount": 35
+    },
+    {
+      "name": "truck_flow",
+      "sizeBytes": 3462631,
+      "sha256": "83cbd786e9fecdb08d0d136adf565fb97f8440c35856d4e9b584adf7e6ffbe62",
+      "extractedSizeBytes": 4950750,
+      "fileCount": 33
+    },
+    {
+      "name": "turtle_lines",
+      "sizeBytes": 3785400,
+      "sha256": "3472003e9bece956b0f1ee303647f2ac575894fbcd30b19c64a5c6a8c0d2a90f",
+      "extractedSizeBytes": 5152550,
+      "fileCount": 42
+    },
+    {
+      "name": "two_pics_one_word",
+      "sizeBytes": 4052877,
+      "sha256": "9da04a991fff2eb57ae39bd97ce767568e1038d65318310b65a510c4fba747fc",
+      "extractedSizeBytes": 5385958,
+      "fileCount": 176
+    },
+    {
+      "name": "unpuzzle_master",
+      "sizeBytes": 2579995,
+      "sha256": "317aed3eb679818ae10c6ee626a4f8bf47dadf53929c890e12e61c36abe86a3f",
+      "extractedSizeBytes": 4689954,
+      "fileCount": 357
+    },
+    {
+      "name": "visual_puzzle",
+      "sizeBytes": 2239135,
+      "sha256": "2fa1f37bb8a8b8322510f71a6a9f09f165f00dcbbdfe9cdab2dda90aada0f671",
+      "extractedSizeBytes": 3375333,
+      "fileCount": 90
+    },
+    {
+      "name": "warship",
+      "sizeBytes": 3635719,
+      "sha256": "340c77d3e1dc55af76edb90481ab004a99d986edada9442a391795488ebbc2cd",
+      "extractedSizeBytes": 4876383,
+      "fileCount": 189
+    },
+    {
+      "name": "warship_royale",
+      "sizeBytes": 4197951,
+      "sha256": "ace31d98bd2b29260bf46301500efc5327bd978060ad9f6b2c49bafa62d5db28",
+      "extractedSizeBytes": 5571923,
+      "fileCount": 296
+    },
+    {
+      "name": "way_dawn",
+      "sizeBytes": 853190,
+      "sha256": "2d49836d34f0a94706a01c499b30a94af76517b4d9774a1e0a23690afb894480",
+      "extractedSizeBytes": 3134148,
+      "fileCount": 38
+    },
+    {
+      "name": "wigglio_puzzle",
+      "sizeBytes": 3109964,
+      "sha256": "a0e50c14025c7b6200c80567ede73516cd54e0165315d7e1830c484faa9b71ed",
+      "extractedSizeBytes": 4518988,
+      "fileCount": 30
+    },
+    {
+      "name": "woman_roller",
+      "sizeBytes": 2909755,
+      "sha256": "b7e9ff2b792cdc5f212bbce6ec0f0bbdcab83224ea8f5b4b87c4ac2b0ba38830",
+      "extractedSizeBytes": 5064949,
+      "fileCount": 37
+    },
+    {
+      "name": "woody_hexa",
+      "sizeBytes": 6720974,
+      "sha256": "8198454efacde01d7ec7d617324fc52704d26221889939bbafa5fde0f6280928",
+      "extractedSizeBytes": 17497049,
+      "fileCount": 345
+    },
+    {
+      "name": "woody_tap_block",
+      "sizeBytes": 2177858,
+      "sha256": "9d0468142e00e700c54699216561dffd2e44d62f72e2eff0505759adf0a21912",
+      "extractedSizeBytes": 5785763,
+      "fileCount": 38
+    },
+    {
+      "name": "word_cake",
+      "sizeBytes": 4509235,
+      "sha256": "31f079c88c3449552aad37d2aa7ed599ad5f3705efb127bfa452a30e932a8db0",
+      "extractedSizeBytes": 6269876,
+      "fileCount": 165
+    },
+    {
+      "name": "word_connect",
+      "sizeBytes": 3110151,
+      "sha256": "10820a23968abb33d26808de84d41175e0827acd5e1fc1d67427e05703b0cb20",
+      "extractedSizeBytes": 4999871,
+      "fileCount": 4087
+    },
+    {
+      "name": "word_farm",
+      "sizeBytes": 6183151,
+      "sha256": "6a685708e25c00186fdf5c2a9ef99ede7668bcee5300fa3aaa7efe10635615a6",
+      "extractedSizeBytes": 11884628,
+      "fileCount": 164
+    },
+    {
+      "name": "word_pictures",
+      "sizeBytes": 16940809,
+      "sha256": "070b8d58051eba3216a7ed28e648866862ecbfc59cfffe50e42c265dc8292668",
+      "extractedSizeBytes": 23534032,
+      "fileCount": 709
+    },
+    {
+      "name": "word_search",
+      "sizeBytes": 2132049,
+      "sha256": "2cca72d9169c863865d9ba28b306c66488b181af861bf98746f42ee8742efa6e",
+      "extractedSizeBytes": 3079157,
+      "fileCount": 101
+    },
+    {
+      "name": "word_search_hidden_2",
+      "sizeBytes": 1697772,
+      "sha256": "6ce1a5748c415f2163df22228fbcb135f08a60e50ce0be5e262fd25467159bc3",
+      "extractedSizeBytes": 5463113,
+      "fileCount": 95
+    },
+    {
+      "name": "word_search_puzzle",
+      "sizeBytes": 5038403,
+      "sha256": "88a44c9b544d02610339c5240980f0980eb0bd1dbd5354dd412ee5bce844dcb5",
+      "extractedSizeBytes": 7519058,
+      "fileCount": 43
+    },
+    {
+      "name": "worms",
+      "sizeBytes": 7858668,
+      "sha256": "9871414347a23b04215819d12d3a3673f8b9db008f0a7895e399fa9369d15c95",
+      "extractedSizeBytes": 10530354,
+      "fileCount": 44
+    },
+    {
+      "name": "yoga_run",
+      "sizeBytes": 2825343,
+      "sha256": "c60c4e0cac64c59b28a4a28985e96c2bde5c58dc6dfa44cc289f7b6b2319d091",
+      "extractedSizeBytes": 4391812,
+      "fileCount": 31
+    },
+    {
+      "name": "yummy_slices",
+      "sizeBytes": 3752085,
+      "sha256": "cccf50c8b6ed39490a39193ec66456716b1fb1c1060230b60135361ed69679c9",
+      "extractedSizeBytes": 5031315,
+      "fileCount": 40
+    },
+    {
+      "name": "zig_zag_warp",
+      "sizeBytes": 3241711,
+      "sha256": "7f0b95058650259a167ae37bc90df1302148f935a50115dce7d4852e43b57f6b",
+      "extractedSizeBytes": 5339098,
+      "fileCount": 35
+    },
+    {
+      "name": "zombie_tower_defence",
+      "sizeBytes": 3951398,
+      "sha256": "5812ca4b7036c67a86618a9663884b62a1ea88aea85528069f0e37792fbd1ee0",
+      "extractedSizeBytes": 6889315,
+      "fileCount": 148
+    },
+    {
+      "name": "zumba",
+      "sizeBytes": 3543084,
+      "sha256": "a0bf8cbfaee16eb70cadd4f73212ced124297d3dd34e108d98e7140eab143df4",
+      "extractedSizeBytes": 4711208,
+      "fileCount": 68
+    }
+  ]
+}

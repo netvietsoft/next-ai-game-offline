@@ -1,0 +1,14 @@
+{
+  "packageName": "com.nextai.game.offline",
+  "productId": "game_premium_yearly",
+  "listings": [
+    {
+      "title": "Game Premium Yearly",
+      "benefits": [
+        "Remove ads",
+        "Open other Game"
+      ],
+      "languageCode": "en-GB"
+    }
+  ]
+}

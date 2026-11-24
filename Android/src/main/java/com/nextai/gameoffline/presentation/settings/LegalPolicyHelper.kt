@@ -29,21 +29,15 @@ object LegalPolicyHelper {
      * Open Google Play Store page to rate the game.
      */
     fun rateGame(context: Context) {
-        val packageName = context.packageName
         try {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=$packageName")).apply {
+            // Luôn trỏ tới ứng dụng phát hành, kể cả khi chạy bản QA riêng.
+            // Always target the published app, including from a separate QA build.
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.nextai.game.offline")).apply {
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             }
             context.startActivity(intent)
         } catch (_: ActivityNotFoundException) {
-            try {
-                val webIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=$packageName")).apply {
-                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                }
-                context.startActivity(webIntent)
-            } catch (_: Exception) {
-                Toast.makeText(context, context.getString(R.string.settings_rate_thank_you), Toast.LENGTH_LONG).show()
-            }
+            Toast.makeText(context, context.getString(R.string.settings_rate_unavailable), Toast.LENGTH_LONG).show()
         }
     }
 
@@ -69,22 +63,29 @@ object LegalPolicyHelper {
         tvTitle.text = context.getString(R.string.settings_privacy_policy)
         tvContent.text = """
             PRIVACY POLICY
-            Application: Game Gate Offline
+            Application: Galaxy Game
             Developer: Game Gate
-            Last Updated: 2026
+            Last Updated: November 22, 2026
             
-            1. DATA COLLECTION & USAGE:
-            - Game Gate Offline respects your privacy. The application DOES NOT collect, store, or share any Personally Identifiable Information (PII) such as your name, email, phone number, contacts, or precise physical location.
-            - All high scores, favorite game lists, and audio settings are stored 100% locally on your device using encrypted Room SQLite database storage.
+            1. LOCAL APP DATA:
+            - High scores, favorites, settings, downloaded game files, daily quests, and local notification counters are stored in the app's Android sandbox using Room, SharedPreferences, and internal storage.
+            - This local database is not advertised as independently encrypted. Android app sandbox and device security protect it at rest.
             
-            2. ADVERTISING & GOOGLE PLAY BILLING:
-            - The free version uses Google AdMob to display banner, interstitial, and rewarded ads to support ongoing development. Google Mobile Ads SDK may collect an anonymous Advertising ID in compliance with Google Play Developer Policies.
-            - In-App Purchase transactions (VIP Lifetime Pass) are securely processed through Google Play Billing. Game Gate does not process or retain any payment card details.
+            2. ANALYTICS & CRASH DIAGNOSTICS:
+            - Firebase Analytics records app/game usage, sanitized search terms, ad lifecycle, purchase status, game download status, and notification delivery/open events. Firebase may process app-instance, device, app-version, approximate region, and interaction data under Google's terms.
+            - Firebase Crashlytics receives production crash, ANR, stack trace, device, OS, and app-version diagnostics. We do not attach names, email addresses, or purchase tokens to crash reports.
             
-            3. CHILDREN & FAMILY PRIVACY (COPPA & GDPR):
-            - Our application strictly adheres to the Children's Online Privacy Protection Act (COPPA) and General Data Protection Regulation (GDPR). 100% of game content is family-friendly and safe for all ages.
+            3. ADVERTISING & CONSENT:
+            - The free version uses Google AdMob with Real-Time Bidding mediation partners: Meta Audience Network, Mintegral, AppLovin, Unity Ads, and Pangle. Depending on consent, region, and account settings, these providers may process Advertising ID, IP address, device information, consent choices, and ad interactions to deliver, measure, secure, and limit ads.
+            - Where required, Google's User Messaging Platform asks for consent before any ad request, propagates GDPR/US-State privacy signals to all mediation partners, and provides privacy choices in Settings. VIP users do not receive ad requests.
+
+            4. GOOGLE PLAY BILLING:
+            - VIP purchases are processed by Google Play. Game Gate does not receive payment-card details. The app records product-level success/failure analytics without sending order IDs or purchase tokens to Firebase Analytics.
+
+            5. YOUR CHOICES:
+            - You can deny notifications, change ad privacy choices when available, purchase the ad-free VIP option, clear local app data, or uninstall the app. Provider policies and the current online policy explain retention and deletion options.
             
-            4. CONTACT US:
+            6. CONTACT US:
             - For inquiries or support, please reach out to: support@gamegate.app
         """.trimIndent()
 
@@ -119,18 +120,18 @@ object LegalPolicyHelper {
         tvTitle.text = context.getString(R.string.settings_terms_of_service)
         tvContent.text = """
             TERMS OF SERVICE
-            Application: Game Gate Offline
+            Application: Galaxy Game
             Copyright: © 2026 Game Gate. All Rights Reserved.
             
             1. ACCEPTANCE OF TERMS:
-            - By downloading, installing, or playing Game Gate Offline, you agree to comply with and be bound by all terms and conditions set forth herein.
+            - By downloading, installing, or playing Galaxy Game, you agree to comply with and be bound by all terms and conditions set forth herein.
             
             2. INTELLECTUAL PROPERTY:
             - All user interfaces, Android Kotlin code architecture, brand identity, and Game Gate assets are the exclusive intellectual property of Game Gate.
             - The integrated HTML5/WASM mini-games library is provided for personal, non-commercial offline entertainment.
             
             3. VIP PASS & IN-APP PURCHASES:
-            - The "VIP Lifetime Pass" (Remove Ads) is a Non-Consumable product (one-time purchase, keep forever). Once unlocked, ads are permanently removed and purchases can be restored across any device signed into your Google account.
+            - Game Premium subscriptions renew automatically until canceled in Google Play. Prices, billing periods and any eligible trial are supplied by Google Play. Premium removes banner, interstitial and app-open ads while active; optional rewarded ads remain available. Existing one-time Remove Ads purchases remain supported and can be restored using the original Google account.
             
             4. DISCLAIMER & WARRANTY:
             - The games are provided on an "as-is" basis. Game Gate strives to deliver optimized 60 FPS performance across all supported Android hardware.

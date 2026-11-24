@@ -1,0 +1,161 @@
+{
+  "key": "hourly_activity",
+  "title": "Lưu lượng theo giờ / Hourly Activity",
+  "dimensions": [
+    "hour"
+  ],
+  "metrics": [
+    "activeUsers",
+    "sessions",
+    "eventCount"
+  ],
+  "skipped_optional_fields": [],
+  "row_count": 24,
+  "total_available_rows": 24,
+  "rows": [
+    {
+      "hour": "00",
+      "activeUsers": 526,
+      "sessions": 710,
+      "eventCount": 7995
+    },
+    {
+      "hour": "01",
+      "activeUsers": 435,
+      "sessions": 587,
+      "eventCount": 6612
+    },
+    {
+      "hour": "02",
+      "activeUsers": 362,
+      "sessions": 488,
+      "eventCount": 5502
+    },
+    {
+      "hour": "03",
+      "activeUsers": 251,
+      "sessions": 338,
+      "eventCount": 3815
+    },
+    {
+      "hour": "04",
+      "activeUsers": 306,
+      "sessions": 413,
+      "eventCount": 4651
+    },
+    {
+      "hour": "05",
+      "activeUsers": 548,
+      "sessions": 739,
+      "eventCount": 8329
+    },
+    {
+      "hour": "06",
+      "activeUsers": 955,
+      "sessions": 1289,
+      "eventCount": 14516
+    },
+    {
+      "hour": "07",
+      "activeUsers": 1345,
+      "sessions": 1815,
+      "eventCount": 20444
+    },
+    {
+      "hour": "08",
+      "activeUsers": 1553,
+      "sessions": 2096,
+      "eventCount": 23605
+    },
+    {
+      "hour": "09",
+      "activeUsers": 1478,
+      "sessions": 1995,
+      "eventCount": 22465
+    },
+    {
+      "hour": "10",
+      "activeUsers": 1431,
+      "sessions": 1931,
+      "eventCount": 21751
+    },
+    {
+      "hour": "11",
+      "activeUsers": 1745,
+      "sessions": 2355,
+      "eventCount": 26524
+    },
+    {
+      "hour": "12",
+      "activeUsers": 1990,
+      "sessions": 2686,
+      "eventCount": 30248
+    },
+    {
+      "hour": "13",
+      "activeUsers": 1790,
+      "sessions": 2416,
+      "eventCount": 27208
+    },
+    {
+      "hour": "14",
+      "activeUsers": 1596,
+      "sessions": 2154,
+      "eventCount": 24259
+    },
+    {
+      "hour": "15",
+      "activeUsers": 1519,
+      "sessions": 2050,
+      "eventCount": 23088
+    },
+    {
+      "hour": "16",
+      "activeUsers": 1829,
+      "sessions": 2469,
+      "eventCount": 27800
+    },
+    {
+      "hour": "17",
+      "activeUsers": 2121,
+      "sessions": 2863,
+      "eventCount": 32239
+    },
+    {
+      "hour": "18",
+      "activeUsers": 2383,
+      "sessions": 3217,
+      "eventCount": 36221
+    },
+    {
+      "hour": "19",
+      "activeUsers": 2584,
+      "sessions": 3488,
+      "eventCount": 39276
+    },
+    {
+      "hour": "20",
+      "activeUsers": 2824,
+      "sessions": 3812,
+      "eventCount": 42924
+    },
+    {
+      "hour": "21",
+      "activeUsers": 2728,
+      "sessions": 3682,
+      "eventCount": 41465
+    },
+    {
+      "hour": "22",
+      "activeUsers": 1960,
+      "sessions": 2646,
+      "eventCount": 29792
+    },
+    {
+      "hour": "23",
+      "activeUsers": 1105,
+      "sessions": 1491,
+      "eventCount": 16796
+    }
+  ]
+}

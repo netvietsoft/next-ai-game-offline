@@ -11,9 +11,9 @@ Dự án tái dựng toàn diện (Full-Stack Reconstruction) nền tảng trò 
 ## 🎯 Mục Tiêu Dự Án
 1. **Ứng Dụng Android Native (Kotlin):**
    - Package Name mới: `com.nextai.gameoffline` (Nhà phát hành: NextAI Technology).
-   - Tích hợp trọn vẹn **423 mini-game HTML5 / WebAssembly** mượt mà 60 FPS.
+   - Catalog kiểm chứng **419 mini-game HTML5 / WebAssembly**: 100 game trong AAB và 319 game tải theo nhu cầu từ R2.
    - Kiến trúc Modern Android: **Kotlin Coroutines, Jetpack Compose / ViewBinding, Room SQLite Database, WebView Two-Way JavascriptBridge**.
-   - Tích hợp hệ thống kiếm tiền: **Google AdMob, AppLovin MAX Mediation & Google Play In-App Billing v8.3.0**.
+   - Tích hợp hệ thống kiếm tiền: **Google AdMob + Meta Audience Network Mediation & Google Play Billing v9.1.0**.
    - Khắc phục triệt để 5 lỗ hổng bảo mật phát hiện từ bản decompile (Cleartext traffic, WebView sandbox, Plain-text DB, Client-side IAP, Unverified download).
 
 2. **Hệ Thống Backend & Admin CMS (`Backend/`):**
@@ -33,9 +33,9 @@ Dự án tái dựng toàn diện (Full-Stack Reconstruction) nền tảng trò 
 │   │   ├── GameApplication.kt
 │   │   ├── data/local/         # Room Database, DAOs & Entities
 │   │   ├── presentation/       # Compose/XML UI, Launcher, WebView Game Container
-│   │   ├── billing/            # Google Play Billing 8.x
+│   │   ├── billing/            # Google Play Billing 9.1
 │   │   └── ads/                # AdMob, MAX Mediation & Offline Video Interstitial
-│   ├── src/main/assets/games/  # 423 mini-game HTML5/WASM
+│   ├── src/main/assets/games/  # 100 game bundled + shared assets
 │   └── AndroidManifest.xml
 │
 ├── Backend/                    # Backend API & Admin CMS Server (Port 6033)

@@ -34,7 +34,7 @@ var TEXT_SHARE_MSG2 = " points</strong>!<br><br>Share your score with your frien
 var TEXT_SHARE_SHARE1 = "My score is ";
 var TEXT_SHARE_SHARE2 = " points! Can you do better";
 
-var userLang = navigator.language || navigator.userLanguage;
+var userLang = "en";
 
 if(userLang=="ru-RU"){
     TEXT_GAMEOVER = "ПОЗДРАВЛЯЕМ! ВЫ ПОБЕДИЛИ!";

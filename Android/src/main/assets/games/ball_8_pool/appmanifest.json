@@ -1,0 +1,11 @@
+{
+	"name": "8_ball_pool",
+	"short_name": "8_ball_pool",
+	"description": "10001 - Add JS Event\n10002 - Fix aim\n10003 - Fix is on IOS",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

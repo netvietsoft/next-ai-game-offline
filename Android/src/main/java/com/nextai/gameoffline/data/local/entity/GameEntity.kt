@@ -83,6 +83,7 @@ data class GameEntity(
     @ColumnInfo(name = "icon")
     val icon: String? = null, // Tên file icon trong assets/icons/ (Icon filename in assets/icons/)
 
+    // 1: Có sẵn cục bộ (Bundled hoặc đã tải), 0: Cần tải từ Cloudflare R2
     @ColumnInfo(name = "is_downloaded", defaultValue = "1")
-    var isDownloaded: Int = 1 // 1: Có sẵn cục bộ (Bundled hoặc đã tải), 0: Cần tải từ Cloudflare R2 (1: Local/Downloaded, 0: Needs R2 download)
+    var isDownloaded: Int = 1
 )

@@ -1,0 +1,59 @@
+[
+  {
+    "product": "game_premium",
+    "name": "Game Premium Weekly",
+    "basePlan": "weekly",
+    "offer": "weekly-premium",
+    "state": "ACTIVE",
+    "trial": "P3D",
+    "US": {
+      "currencyCode": "USD",
+      "units": "9",
+      "nanos": 990000000
+    },
+    "VN": {
+      "currencyCode": "VND",
+      "units": "257000"
+    },
+    "regions": 174,
+    "regional_prices_unchanged": true
+  },
+  {
+    "product": "game_premium_monthly",
+    "name": "Game Premium Monthly",
+    "basePlan": "monthly",
+    "offer": "monthly-premium",
+    "state": "ACTIVE",
+    "trial": "P5D",
+    "US": {
+      "currencyCode": "USD",
+      "units": "29",
+      "nanos": 990000000
+    },
+    "VN": {
+      "currencyCode": "VND",
+      "units": "772000"
+    },
+    "regions": 174,
+    "regional_prices_unchanged": true
+  },
+  {
+    "product": "game_premium_yearly",
+    "name": "Game Premium Yearly",
+    "basePlan": "yearly",
+    "offer": "yearly-premium",
+    "state": "ACTIVE",
+    "trial": "P14D",
+    "US": {
+      "currencyCode": "USD",
+      "units": "99",
+      "nanos": 990000000
+    },
+    "VN": {
+      "currencyCode": "VND",
+      "units": "2550000"
+    },
+    "regions": 174,
+    "regional_prices_unchanged": true
+  }
+]

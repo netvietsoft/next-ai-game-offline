@@ -5,71 +5,59 @@ import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
 import android.os.Build
-import com.google.android.gms.ads.MobileAds
-import com.nextai.gameoffline.data.local.AppDatabase
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.SupervisorJob
-import kotlinx.coroutines.launch
+import com.nextai.gameoffline.analytics.GameAnalyticsManager
+import com.nextai.gameoffline.analytics.MetaAppEventsManager
+import com.nextai.gameoffline.crash.CrashReportingManager
+import com.nextai.gameoffline.di.AppContainer
+import com.nextai.gameoffline.notifications.NotificationFeatureInitializer
 
 /**
- * Lớp khởi tạo toàn cục của ứng dụng Game Gate Offline.
- * Global Application class for Game Gate Offline.
- *
- * Nhiệm vụ / Responsibilities:
- * - Khởi tạo SQLite Room Database với dữ liệu 423 mini-game ban đầu.
- * - Khởi tạo kênh thông báo Notification Channels trên Android 8.0+.
- * - Khởi tạo SDK Quảng cáo Google Mobile Ads (AdMob).
- * - Khởi tạo Firebase Analytics đo lường chuyên sâu (Game, Ads, IAP).
- * - Cung cấp Coroutine Scope cho các tác vụ chạy nền toàn cục.
+ * Lớp khởi tạo ứng dụng Galaxy Game, sở hữu [AppContainer] duy nhất cho toàn tiến trình.
+ * Application entry point owning the process-wide [AppContainer] (no static `instance` locator).
  */
 class GameApplication : Application() {
 
-    // Scope coroutine toàn cục cho ứng dụng / Global application coroutine scope
-    val applicationScope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
-
-    // Khởi tạo lười cơ sở dữ liệu Room / Lazy initialized Room Database
-    val database: AppDatabase by lazy { AppDatabase.getDatabase(this, applicationScope) }
+    lateinit var appContainer: AppContainer
+        private set
 
     override fun onCreate() {
         super.onCreate()
-        instance = this
+        appContainer = AppContainer(this)
 
-        // 1. Khởi tạo Kênh Thông Báo / Initialize Notification Channels
+        // Đồng bộ quyền INAPP/SUBS khi khởi động và quay lại tiền cảnh qua 1 BillingClient duy nhất.
+        // Synchronize INAPP/SUBS entitlements using the single shared BillingClient.
+        appContainer.billingEntitlementMonitor.attach(this)
+
+        // Gắn bộ giám sát tiền cảnh cho App Open Ad khi người chơi quay lại app từ nền.
+        // Attach process-level lifecycle observer for foreground-resume App Open ads.
+        appContainer.appOpenLifecycleObserver.attach(this)
+
+        // Khởi tạo kênh thông báo, phân tích Firebase/Meta, Crashlytics và lịch nhắc nhở cục bộ.
+        // Initialize notification channels, analytics, crash reporting, and local reminder schedules.
         createNotificationChannels()
-
-        // 2. Khởi tạo Firebase Analytics toàn diện / Initialize Firebase Analytics
-        com.nextai.gameoffline.analytics.GameAnalyticsManager.init(this)
-
-        // 3. Khởi tạo SDK Quảng cáo AdMob chạy nền / Initialize Mobile Ads SDK asynchronously
-        applicationScope.launch(Dispatchers.IO) {
-            // Khởi tạo AdMob nạp quảng cáo thật từ tài khoản Production
-            // Initialize AdMob to load real production ads
-            MobileAds.initialize(this@GameApplication) {}
-        }
+        GameAnalyticsManager.init(this)
+        MetaAppEventsManager.initialize(this)
+        CrashReportingManager.initialize(this)
+        NotificationFeatureInitializer.initialize(this)
     }
 
-    /**
-     * Tạo kênh thông báo cho hệ thống thông báo đẩy và dịch vụ nền.
-     * Create notification channels for push notifications and foreground services.
-     */
     private fun createNotificationChannels() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channelName = getString(R.string.notification_channel_name)
             val channelDesc = getString(R.string.notification_channel_description)
-            val importance = NotificationManager.IMPORTANCE_DEFAULT
-            val channel = NotificationChannel(CHANNEL_ID_DEFAULT, channelName, importance).apply {
+            val channel = NotificationChannel(
+                CHANNEL_ID_DEFAULT,
+                channelName,
+                NotificationManager.IMPORTANCE_DEFAULT
+            ).apply {
                 description = channelDesc
             }
-
-            val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-            notificationManager.createNotificationChannel(channel)
+            val manager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            manager.createNotificationChannel(channel)
         }
     }
 
     companion object {
         const val CHANNEL_ID_DEFAULT = "nextai_game_offline_channel"
-        lateinit var instance: GameApplication
-            private set
     }
 }

@@ -1,0 +1,163 @@
+{
+  "key": "r2_downloads",
+  "title": "Tải game On-Demand Cloudflare R2 / R2 On-Demand Downloads",
+  "dimensions": [
+    "eventName",
+    "customEvent:game_name",
+    "customEvent:status",
+    "customEvent:error_message"
+  ],
+  "metrics": [
+    "eventCount",
+    "totalUsers"
+  ],
+  "skipped_optional_fields": [],
+  "row_count": 18,
+  "total_available_rows": 18,
+  "rows": [
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "abalone",
+      "customEvent:status": "started",
+      "customEvent:error_message": "(not set)",
+      "eventCount": 1595,
+      "totalUsers": 1371
+    },
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "abalone",
+      "customEvent:status": "completed",
+      "customEvent:error_message": "(not set)",
+      "eventCount": 1532,
+      "totalUsers": 1317
+    },
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "abalone",
+      "customEvent:status": "failed",
+      "customEvent:error_message": "SocketTimeoutException: read timed out",
+      "eventCount": 63,
+      "totalUsers": 54
+    },
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "amaze_number",
+      "customEvent:status": "started",
+      "customEvent:error_message": "(not set)",
+      "eventCount": 1392,
+      "totalUsers": 1197
+    },
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "amaze_number",
+      "customEvent:status": "completed",
+      "customEvent:error_message": "(not set)",
+      "eventCount": 1337,
+      "totalUsers": 1149
+    },
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "amaze_number",
+      "customEvent:status": "failed",
+      "customEvent:error_message": "SocketTimeoutException: read timed out",
+      "eventCount": 55,
+      "totalUsers": 47
+    },
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "among_us",
+      "customEvent:status": "started",
+      "customEvent:error_message": "(not set)",
+      "eventCount": 1189,
+      "totalUsers": 1022
+    },
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "among_us",
+      "customEvent:status": "completed",
+      "customEvent:error_message": "(not set)",
+      "eventCount": 975,
+      "totalUsers": 838
+    },
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "among_us",
+      "customEvent:status": "failed",
+      "customEvent:error_message": "ERR_NAME_NOT_RESOLVED: pub-r2.nextai.games",
+      "eventCount": 214,
+      "totalUsers": 184
+    },
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "angry_heroes",
+      "customEvent:status": "started",
+      "customEvent:error_message": "(not set)",
+      "eventCount": 986,
+      "totalUsers": 847
+    },
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "angry_heroes",
+      "customEvent:status": "completed",
+      "customEvent:error_message": "(not set)",
+      "eventCount": 947,
+      "totalUsers": 814
+    },
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "angry_heroes",
+      "customEvent:status": "failed",
+      "customEvent:error_message": "SocketTimeoutException: read timed out",
+      "eventCount": 39,
+      "totalUsers": 33
+    },
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "animal_clicker",
+      "customEvent:status": "started",
+      "customEvent:error_message": "(not set)",
+      "eventCount": 783,
+      "totalUsers": 673
+    },
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "animal_clicker",
+      "customEvent:status": "completed",
+      "customEvent:error_message": "(not set)",
+      "eventCount": 752,
+      "totalUsers": 646
+    },
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "animal_clicker",
+      "customEvent:status": "failed",
+      "customEvent:error_message": "SocketTimeoutException: read timed out",
+      "eventCount": 31,
+      "totalUsers": 26
+    },
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "arcane_blocks",
+      "customEvent:status": "started",
+      "customEvent:error_message": "(not set)",
+      "eventCount": 580,
+      "totalUsers": 498
+    },
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "arcane_blocks",
+      "customEvent:status": "completed",
+      "customEvent:error_message": "(not set)",
+      "eventCount": 557,
+      "totalUsers": 479
+    },
+    {
+      "eventName": "game_download",
+      "customEvent:game_name": "arcane_blocks",
+      "customEvent:status": "failed",
+      "customEvent:error_message": "SocketTimeoutException: read timed out",
+      "eventCount": 23,
+      "totalUsers": 19
+    }
+  ]
+}

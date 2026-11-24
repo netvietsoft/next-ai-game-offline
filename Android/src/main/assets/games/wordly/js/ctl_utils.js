@@ -773,7 +773,7 @@ function getItem(szItem){
 
 
 function fullscreenHandler(){
-    if (!ENABLE_FULLSCREEN || !screenfull.isEnabled){
+    if (typeof ENABLE_FULLSCREEN === "undefined" || !ENABLE_FULLSCREEN || typeof screenfull === "undefined" || !screenfull.isEnabled){
        return;
     }
 	

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Màn hình Splash & Ads Loading: nền vũ trụ sắc nét không chữ kết hợp tiêu đề native,
+     vòng xoay loading neon 2 tầng 60fps và thanh tiến trình mượt mà.
+     Clean text-free cosmic artwork paired with crisp native title, dual-ring neon spinner, and progress bar. -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootSplashLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_art_background">
+
+    <!-- Ảnh nền vũ trụ sạch (đã xóa chữ mờ và vòng loading tĩnh) khớp liền nền #080820 không cắt viền quả cầu -->
+    <ImageView
+        android:id="@+id/splashArtwork"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/splash_loading"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Lớp phủ gradient nhẹ ở cạnh trên & cạnh dưới tăng độ tương phản cho chữ native -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:background="@drawable/bg_splash_top_scrim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="240dp"
+        android:background="@drawable/bg_splash_bottom_scrim"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Cụm tiêu đề thương hiệu native siêu nét ở phía trên (chừa khoảng trời sao tách khỏi quả cầu) -->
+    <LinearLayout
+        android:id="@+id/splashHeaderGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvSplashTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:letterSpacing="0.09"
+            android:shadowColor="@color/splash_title_shadow"
+            android:shadowDx="0"
+            android:shadowDy="4"
+            android:shadowRadius="16"
+            android:text="@string/ad_splash_title"
+            android:textAllCaps="true"
+            android:textColor="@color/splash_title_gold_mid"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSplashSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_splash_subtitle_pill"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.22"
+            android:paddingStart="16dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="5dp"
+            android:text="@string/ad_splash_subtitle"
+            android:textAllCaps="true"
+            android:textColor="@color/splash_subtitle_text"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <!-- Cụm vòng xoay loading 2 tầng + thanh tiến trình neon + chữ trạng thái sắc nét ở phía dưới -->
+    <LinearLayout
+        android:id="@+id/splashLoadingGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <FrameLayout
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <View
+                android:id="@+id/splashSpinnerGlow"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_splash_spinner_glow" />
+
+            <ImageView
+                android:id="@+id/ivSplashOuterRing"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_splash_loading_ring" />
+
+            <ImageView
+                android:id="@+id/ivSplashInnerArc"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_splash_loading_inner_arc" />
+
+            <ImageView
+                android:id="@+id/ivSplashCenterStar"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_splash_center_star" />
+        </FrameLayout>
+
+        <!-- Thanh tiến trình mảnh phát sáng giúp cảm nhận rõ quá trình nạp quảng cáo -->
+        <FrameLayout
+            android:id="@+id/splashProgressTrack"
+            android:layout_width="196dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_splash_progress_track"
+            android:clipChildren="true">
+
+            <View
+                android:id="@+id/splashProgressFill"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_splash_progress_fill" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvSplashStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:letterSpacing="0.03"
+            android:shadowColor="#CC000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="6"
+            android:text="@string/ad_splash_loading"
+            android:textColor="@color/splash_status_text"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

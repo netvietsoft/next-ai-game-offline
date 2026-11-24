@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Chơi: {{GAME_TITLE}} - NextAI Game Offline</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/tester/static/player.css">
+</head>
+<body>
+    <div id="topBar">
+        <div class="title-group">
+            <a href="/tester" class="back-btn">⬅ Studio</a>
+            <span class="game-title">{{GAME_TITLE}}</span>
+            <span class="badge {{BADGE_CLASS}}">{{BADGE_LABEL}}</span>
+        </div>
+        <div class="controls">
+            <button class="btn-toggle" id="btnReload" onclick="reloadGame()">🔄 Tải lại</button>
+            <button class="btn-toggle" id="btnBanner" onclick="toggleBanner()">🔥 Banner (50px): TẮT</button>
+        </div>
+    </div>
+
+    <div id="gameWrapper">
+        <iframe id="gameIframe" src="{{IFRAME_SRC}}" allow="autoplay; fullscreen; accelerometer; gyroscope"></iframe>
+        <div id="bannerContainer">
+            <div class="banner-content">
+                <span class="banner-badge">AdMob</span>
+                <span>Google AdMob Test Banner • 320x50</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var isBannerOn = false;
+        var isHorizontal = {{IS_HORIZONTAL_BOOL}};
+
+        function toggleBanner() {
+            if (isHorizontal) {
+                alert(
+                    '⚠️ Game này là Game Ngang (Landscape)!\n' +
+                    'Theo quy tắc UX, Game Ngang KHÔNG BAO GIỜ hiển thị banner để tránh che khuất không gian chơi.'
+                );
+                return;
+            }
+            isBannerOn = !isBannerOn;
+            var banner = document.getElementById('bannerContainer');
+            var btn = document.getElementById('btnBanner');
+            if (isBannerOn) {
+                banner.classList.add('visible');
+                btn.classList.add('active');
+                btn.innerText = '🔥 Banner (50px): BẬT';
+            } else {
+                banner.classList.remove('visible');
+                btn.classList.remove('active');
+                btn.innerText = '🔥 Banner (50px): TẮT';
+            }
+            var iframe = document.getElementById('gameIframe');
+            if (iframe && iframe.contentWindow) {
+                iframe.contentWindow.dispatchEvent(new Event('resize'));
+            }
+        }
+
+        function reloadGame() {
+            var iframe = document.getElementById('gameIframe');
+            iframe.src = iframe.src;
+        }
+    </script>
+</body>
+</html>

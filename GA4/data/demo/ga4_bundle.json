@@ -1,0 +1,2723 @@
+{
+  "meta": {
+    "data_source": "DEMO_PREVIEW",
+    "property_id": "DEMO-PREVIEW (nextai-game-offline)",
+    "start_date": "2026-10-18",
+    "end_date": "2026-11-16",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "extracted_at_utc": "2026-11-16T14:10:30.360415+00:00",
+    "schema_status": {
+      "total_expected_dimensions": 23,
+      "registered_dimensions": [
+        "game_name",
+        "game_title",
+        "game_category",
+        "status",
+        "ad_type",
+        "ad_unit_id",
+        "ad_network",
+        "adapter",
+        "error_code",
+        "error_domain",
+        "error_message",
+        "waterfall",
+        "reason",
+        "screen_name",
+        "reward_type",
+        "source",
+        "product_id",
+        "notification_id",
+        "notification_slot",
+        "scheduled_hour",
+        "delivery_status",
+        "permission_status",
+        "notification_cohort_hour"
+      ],
+      "missing_dimensions": [],
+      "total_expected_metrics": 4,
+      "registered_metrics": [
+        "session_duration_sec",
+        "load_duration_ms",
+        "load_latency_ms",
+        "delivery_delay_sec"
+      ],
+      "missing_metrics": []
+    }
+  },
+  "realtime": {
+    "active_users_last_30m": 148,
+    "countries": [
+      {
+        "country": "Vietnam",
+        "activeUsers": 54
+      },
+      {
+        "country": "Indonesia",
+        "activeUsers": 37
+      },
+      {
+        "country": "India",
+        "activeUsers": 31
+      },
+      {
+        "country": "Philippines",
+        "activeUsers": 26
+      }
+    ]
+  },
+  "reports": {
+    "daily_overview": {
+      "key": "daily_overview",
+      "title": "Tổng quan người dùng theo ngày / Daily Overview",
+      "dimensions": [
+        "date"
+      ],
+      "metrics": [
+        "activeUsers",
+        "newUsers",
+        "totalUsers",
+        "sessions",
+        "engagedSessions",
+        "engagementRate",
+        "userEngagementDuration",
+        "screenPageViews",
+        "eventCount"
+      ],
+      "skipped_optional_fields": [],
+      "row_count": 30,
+      "total_available_rows": 30,
+      "rows": [
+        {
+          "date": "20261018",
+          "activeUsers": 1306,
+          "newUsers": 437,
+          "totalUsers": 1358,
+          "sessions": 2486,
+          "engagedSessions": 1793,
+          "engagementRate": 0.7214,
+          "userEngagementDuration": 715305,
+          "screenPageViews": 13336,
+          "eventCount": 55277
+        },
+        {
+          "date": "20261019",
+          "activeUsers": 1270,
+          "newUsers": 328,
+          "totalUsers": 1320,
+          "sessions": 2098,
+          "engagedSessions": 1422,
+          "engagementRate": 0.6778,
+          "userEngagementDuration": 791614,
+          "screenPageViews": 12555,
+          "eventCount": 45662
+        },
+        {
+          "date": "20261020",
+          "activeUsers": 1146,
+          "newUsers": 339,
+          "totalUsers": 1191,
+          "sessions": 2091,
+          "engagedSessions": 1372,
+          "engagementRate": 0.6564,
+          "userEngagementDuration": 603826,
+          "screenPageViews": 12073,
+          "eventCount": 39181
+        },
+        {
+          "date": "20261021",
+          "activeUsers": 1256,
+          "newUsers": 352,
+          "totalUsers": 1306,
+          "sessions": 2395,
+          "engagedSessions": 1704,
+          "engagementRate": 0.7116,
+          "userEngagementDuration": 871038,
+          "screenPageViews": 10852,
+          "eventCount": 57018
+        },
+        {
+          "date": "20261022",
+          "activeUsers": 1039,
+          "newUsers": 250,
+          "totalUsers": 1080,
+          "sessions": 1802,
+          "engagedSessions": 1213,
+          "engagementRate": 0.6732,
+          "userEngagementDuration": 520559,
+          "screenPageViews": 9919,
+          "eventCount": 36258
+        },
+        {
+          "date": "20261023",
+          "activeUsers": 1332,
+          "newUsers": 392,
+          "totalUsers": 1385,
+          "sessions": 2609,
+          "engagedSessions": 1630,
+          "engagementRate": 0.625,
+          "userEngagementDuration": 817595,
+          "screenPageViews": 11915,
+          "eventCount": 51820
+        },
+        {
+          "date": "20261024",
+          "activeUsers": 1247,
+          "newUsers": 351,
+          "totalUsers": 1296,
+          "sessions": 2117,
+          "engagedSessions": 1343,
+          "engagementRate": 0.6344,
+          "userEngagementDuration": 775796,
+          "screenPageViews": 9998,
+          "eventCount": 44988
+        },
+        {
+          "date": "20261025",
+          "activeUsers": 1412,
+          "newUsers": 393,
+          "totalUsers": 1468,
+          "sessions": 2759,
+          "engagedSessions": 1849,
+          "engagementRate": 0.6703,
+          "userEngagementDuration": 976967,
+          "screenPageViews": 12155,
+          "eventCount": 57953
+        },
+        {
+          "date": "20261026",
+          "activeUsers": 1362,
+          "newUsers": 358,
+          "totalUsers": 1416,
+          "sessions": 2754,
+          "engagedSessions": 2036,
+          "engagementRate": 0.7395,
+          "userEngagementDuration": 647725,
+          "screenPageViews": 11912,
+          "eventCount": 64247
+        },
+        {
+          "date": "20261027",
+          "activeUsers": 1100,
+          "newUsers": 284,
+          "totalUsers": 1144,
+          "sessions": 2080,
+          "engagedSessions": 1334,
+          "engagementRate": 0.6414,
+          "userEngagementDuration": 597634,
+          "screenPageViews": 12252,
+          "eventCount": 41255
+        },
+        {
+          "date": "20261028",
+          "activeUsers": 1123,
+          "newUsers": 343,
+          "totalUsers": 1167,
+          "sessions": 2116,
+          "engagedSessions": 1394,
+          "engagementRate": 0.6589,
+          "userEngagementDuration": 727646,
+          "screenPageViews": 12218,
+          "eventCount": 40856
+        },
+        {
+          "date": "20261029",
+          "activeUsers": 1274,
+          "newUsers": 306,
+          "totalUsers": 1324,
+          "sessions": 2570,
+          "engagedSessions": 1894,
+          "engagementRate": 0.737,
+          "userEngagementDuration": 610269,
+          "screenPageViews": 13192,
+          "eventCount": 58382
+        },
+        {
+          "date": "20261030",
+          "activeUsers": 1397,
+          "newUsers": 388,
+          "totalUsers": 1452,
+          "sessions": 2641,
+          "engagedSessions": 1756,
+          "engagementRate": 0.6651,
+          "userEngagementDuration": 643556,
+          "screenPageViews": 13895,
+          "eventCount": 56039
+        },
+        {
+          "date": "20261031",
+          "activeUsers": 1642,
+          "newUsers": 498,
+          "totalUsers": 1707,
+          "sessions": 3047,
+          "engagedSessions": 2156,
+          "engagementRate": 0.7076,
+          "userEngagementDuration": 891312,
+          "screenPageViews": 13176,
+          "eventCount": 69011
+        },
+        {
+          "date": "20261101",
+          "activeUsers": 1587,
+          "newUsers": 499,
+          "totalUsers": 1650,
+          "sessions": 3008,
+          "engagedSessions": 1914,
+          "engagementRate": 0.6364,
+          "userEngagementDuration": 1093484,
+          "screenPageViews": 13165,
+          "eventCount": 72894
+        },
+        {
+          "date": "20261102",
+          "activeUsers": 1271,
+          "newUsers": 389,
+          "totalUsers": 1321,
+          "sessions": 2562,
+          "engagedSessions": 1578,
+          "engagementRate": 0.616,
+          "userEngagementDuration": 751884,
+          "screenPageViews": 13026,
+          "eventCount": 58873
+        },
+        {
+          "date": "20261103",
+          "activeUsers": 1297,
+          "newUsers": 384,
+          "totalUsers": 1348,
+          "sessions": 2498,
+          "engagedSessions": 1655,
+          "engagementRate": 0.6628,
+          "userEngagementDuration": 899506,
+          "screenPageViews": 13445,
+          "eventCount": 53513
+        },
+        {
+          "date": "20261104",
+          "activeUsers": 1373,
+          "newUsers": 397,
+          "totalUsers": 1427,
+          "sessions": 2300,
+          "engagedSessions": 1502,
+          "engagementRate": 0.6533,
+          "userEngagementDuration": 956076,
+          "screenPageViews": 9690,
+          "eventCount": 51691
+        },
+        {
+          "date": "20261105",
+          "activeUsers": 1261,
+          "newUsers": 396,
+          "totalUsers": 1311,
+          "sessions": 2521,
+          "engagedSessions": 1547,
+          "engagementRate": 0.6139,
+          "userEngagementDuration": 829914,
+          "screenPageViews": 10850,
+          "eventCount": 55040
+        },
+        {
+          "date": "20261106",
+          "activeUsers": 1238,
+          "newUsers": 304,
+          "totalUsers": 1287,
+          "sessions": 2402,
+          "engagedSessions": 1582,
+          "engagementRate": 0.659,
+          "userEngagementDuration": 675957,
+          "screenPageViews": 11060,
+          "eventCount": 46707
+        },
+        {
+          "date": "20261107",
+          "activeUsers": 1520,
+          "newUsers": 516,
+          "totalUsers": 1580,
+          "sessions": 2722,
+          "engagedSessions": 1926,
+          "engagementRate": 0.7076,
+          "userEngagementDuration": 894219,
+          "screenPageViews": 12870,
+          "eventCount": 52840
+        },
+        {
+          "date": "20261108",
+          "activeUsers": 1665,
+          "newUsers": 558,
+          "totalUsers": 1731,
+          "sessions": 2905,
+          "engagedSessions": 1793,
+          "engagementRate": 0.6173,
+          "userEngagementDuration": 919981,
+          "screenPageViews": 15815,
+          "eventCount": 58017
+        },
+        {
+          "date": "20261109",
+          "activeUsers": 1430,
+          "newUsers": 345,
+          "totalUsers": 1487,
+          "sessions": 2493,
+          "engagedSessions": 1693,
+          "engagementRate": 0.6795,
+          "userEngagementDuration": 997953,
+          "screenPageViews": 11467,
+          "eventCount": 46217
+        },
+        {
+          "date": "20261110",
+          "activeUsers": 1400,
+          "newUsers": 422,
+          "totalUsers": 1456,
+          "sessions": 2324,
+          "engagedSessions": 1436,
+          "engagementRate": 0.618,
+          "userEngagementDuration": 795672,
+          "screenPageViews": 11195,
+          "eventCount": 50938
+        },
+        {
+          "date": "20261111",
+          "activeUsers": 1414,
+          "newUsers": 354,
+          "totalUsers": 1470,
+          "sessions": 2867,
+          "engagedSessions": 2030,
+          "engagementRate": 0.7081,
+          "userEngagementDuration": 1006857,
+          "screenPageViews": 12895,
+          "eventCount": 62018
+        },
+        {
+          "date": "20261112",
+          "activeUsers": 1525,
+          "newUsers": 496,
+          "totalUsers": 1586,
+          "sessions": 2554,
+          "engagedSessions": 1824,
+          "engagementRate": 0.7145,
+          "userEngagementDuration": 1073915,
+          "screenPageViews": 10996,
+          "eventCount": 62427
+        },
+        {
+          "date": "20261113",
+          "activeUsers": 1415,
+          "newUsers": 458,
+          "totalUsers": 1471,
+          "sessions": 2577,
+          "engagedSessions": 1707,
+          "engagementRate": 0.6625,
+          "userEngagementDuration": 764700,
+          "screenPageViews": 13020,
+          "eventCount": 60215
+        },
+        {
+          "date": "20261114",
+          "activeUsers": 1592,
+          "newUsers": 437,
+          "totalUsers": 1655,
+          "sessions": 3179,
+          "engagedSessions": 2274,
+          "engagementRate": 0.7155,
+          "userEngagementDuration": 987132,
+          "screenPageViews": 17379,
+          "eventCount": 68681
+        },
+        {
+          "date": "20261115",
+          "activeUsers": 1797,
+          "newUsers": 502,
+          "totalUsers": 1868,
+          "sessions": 3368,
+          "engagedSessions": 2100,
+          "engagementRate": 0.6237,
+          "userEngagementDuration": 924407,
+          "screenPageViews": 15465,
+          "eventCount": 64458
+        },
+        {
+          "date": "20261116",
+          "activeUsers": 1603,
+          "newUsers": 540,
+          "totalUsers": 1667,
+          "sessions": 2850,
+          "engagedSessions": 1941,
+          "engagementRate": 0.6812,
+          "userEngagementDuration": 847435,
+          "screenPageViews": 15407,
+          "eventCount": 65559
+        }
+      ]
+    },
+    "events_summary": {
+      "key": "events_summary",
+      "title": "Tổng hợp sự kiện / Events Summary",
+      "dimensions": [
+        "eventName"
+      ],
+      "metrics": [
+        "eventCount",
+        "totalUsers",
+        "eventCountPerUser"
+      ],
+      "skipped_optional_fields": [],
+      "row_count": 31,
+      "total_available_rows": 31,
+      "rows": [
+        {
+          "eventName": "game_level_start",
+          "eventCount": 270420,
+          "totalUsers": 19500,
+          "eventCountPerUser": 13.87
+        },
+        {
+          "eventName": "ad_request",
+          "eventCount": 218500,
+          "totalUsers": 19500,
+          "eventCountPerUser": 11.21
+        },
+        {
+          "eventName": "ad_loaded",
+          "eventCount": 182760,
+          "totalUsers": 19500,
+          "eventCountPerUser": 9.37
+        },
+        {
+          "eventName": "ad_mediation_loaded",
+          "eventCount": 182760,
+          "totalUsers": 19500,
+          "eventCountPerUser": 9.37
+        },
+        {
+          "eventName": "ad_impression",
+          "eventCount": 163863,
+          "totalUsers": 19500,
+          "eventCountPerUser": 8.4
+        },
+        {
+          "eventName": "game_level_complete",
+          "eventCount": 126319,
+          "totalUsers": 19500,
+          "eventCountPerUser": 6.48
+        },
+        {
+          "eventName": "game_open",
+          "eventCount": 108826,
+          "totalUsers": 19500,
+          "eventCountPerUser": 5.58
+        },
+        {
+          "eventName": "game_score_submitted",
+          "eventCount": 101048,
+          "totalUsers": 19500,
+          "eventCountPerUser": 5.18
+        },
+        {
+          "eventName": "game_start",
+          "eventCount": 95894,
+          "totalUsers": 19500,
+          "eventCountPerUser": 4.92
+        },
+        {
+          "eventName": "game_level_failed",
+          "eventCount": 94998,
+          "totalUsers": 19500,
+          "eventCountPerUser": 4.87
+        },
+        {
+          "eventName": "game_play_time",
+          "eventCount": 88109,
+          "totalUsers": 19500,
+          "eventCountPerUser": 4.52
+        },
+        {
+          "eventName": "notification_scheduled",
+          "eventCount": 71800,
+          "totalUsers": 19500,
+          "eventCountPerUser": 3.68
+        },
+        {
+          "eventName": "notification_delivery",
+          "eventCount": 71800,
+          "totalUsers": 19500,
+          "eventCountPerUser": 3.68
+        },
+        {
+          "eventName": "ad_dismissed",
+          "eventCount": 55314,
+          "totalUsers": 15487,
+          "eventCountPerUser": 3.57
+        },
+        {
+          "eventName": "game_level_restart",
+          "eventCount": 49574,
+          "totalUsers": 13880,
+          "eventCountPerUser": 3.57
+        },
+        {
+          "eventName": "ad_failed_to_load",
+          "eventCount": 35740,
+          "totalUsers": 10007,
+          "eventCountPerUser": 3.57
+        },
+        {
+          "eventName": "notification_permission",
+          "eventCount": 14850,
+          "totalUsers": 4158,
+          "eventCountPerUser": 3.57
+        },
+        {
+          "eventName": "game_download",
+          "eventCount": 13050,
+          "totalUsers": 3654,
+          "eventCountPerUser": 3.57
+        },
+        {
+          "eventName": "ad_reward_earned",
+          "eventCount": 9779,
+          "totalUsers": 2738,
+          "eventCountPerUser": 3.57
+        },
+        {
+          "eventName": "ad_load_suppressed",
+          "eventCount": 8530,
+          "totalUsers": 2388,
+          "eventCountPerUser": 3.57
+        },
+        {
+          "eventName": "inapp_paywall_viewed",
+          "eventCount": 8110,
+          "totalUsers": 2270,
+          "eventCountPerUser": 3.57
+        },
+        {
+          "eventName": "notification_opened",
+          "eventCount": 7890,
+          "totalUsers": 2209,
+          "eventCountPerUser": 3.57
+        },
+        {
+          "eventName": "ad_mediation_failed",
+          "eventCount": 4120,
+          "totalUsers": 1153,
+          "eventCountPerUser": 3.57
+        },
+        {
+          "eventName": "ad_clicked",
+          "eventCount": 3781,
+          "totalUsers": 1058,
+          "eventCountPerUser": 3.57
+        },
+        {
+          "eventName": "inapp_purchase_initiated",
+          "eventCount": 612,
+          "totalUsers": 171,
+          "eventCountPerUser": 3.58
+        },
+        {
+          "eventName": "inapp_purchase_canceled",
+          "eventCount": 376,
+          "totalUsers": 105,
+          "eventCountPerUser": 3.58
+        },
+        {
+          "eventName": "inapp_restore_initiated",
+          "eventCount": 240,
+          "totalUsers": 67,
+          "eventCountPerUser": 3.58
+        },
+        {
+          "eventName": "inapp_restore_none_found",
+          "eventCount": 196,
+          "totalUsers": 54,
+          "eventCountPerUser": 3.63
+        },
+        {
+          "eventName": "inapp_purchase_success",
+          "eventCount": 184,
+          "totalUsers": 51,
+          "eventCountPerUser": 3.61
+        },
+        {
+          "eventName": "inapp_purchase_failed",
+          "eventCount": 52,
+          "totalUsers": 14,
+          "eventCountPerUser": 3.71
+        },
+        {
+          "eventName": "inapp_restore_success",
+          "eventCount": 44,
+          "totalUsers": 12,
+          "eventCountPerUser": 3.67
+        }
+      ]
+    },
+    "app_versions": {
+      "key": "app_versions",
+      "title": "Phiên bản ứng dụng & Hệ điều hành / App Versions & OS",
+      "dimensions": [
+        "appVersion",
+        "operatingSystemVersion"
+      ],
+      "metrics": [
+        "activeUsers",
+        "newUsers",
+        "sessions",
+        "userEngagementDuration"
+      ],
+      "skipped_optional_fields": [],
+      "row_count": 4,
+      "total_available_rows": 4,
+      "rows": [
+        {
+          "appVersion": "1.3",
+          "operatingSystemVersion": "Android 16",
+          "activeUsers": 8420,
+          "newUsers": 2910,
+          "sessions": 19340,
+          "userEngagementDuration": 5420100
+        },
+        {
+          "appVersion": "1.3",
+          "operatingSystemVersion": "Android 15",
+          "activeUsers": 6150,
+          "newUsers": 1820,
+          "sessions": 13920,
+          "userEngagementDuration": 3890400
+        },
+        {
+          "appVersion": "1.2",
+          "operatingSystemVersion": "Android 14",
+          "activeUsers": 3480,
+          "newUsers": 740,
+          "sessions": 7210,
+          "userEngagementDuration": 1920300
+        },
+        {
+          "appVersion": "1.2",
+          "operatingSystemVersion": "Android 13",
+          "activeUsers": 1890,
+          "newUsers": 310,
+          "sessions": 3620,
+          "userEngagementDuration": 910200
+        }
+      ]
+    },
+    "geo_devices": {
+      "key": "geo_devices",
+      "title": "Quốc gia & Thiết bị / Geography & Devices",
+      "dimensions": [
+        "country",
+        "deviceCategory",
+        "mobileDeviceModel"
+      ],
+      "metrics": [
+        "activeUsers",
+        "sessions",
+        "engagedSessions",
+        "userEngagementDuration"
+      ],
+      "skipped_optional_fields": [],
+      "row_count": 6,
+      "total_available_rows": 6,
+      "rows": [
+        {
+          "country": "Vietnam",
+          "deviceCategory": "mobile",
+          "mobileDeviceModel": "SM-A075F",
+          "activeUsers": 5420,
+          "sessions": 13450,
+          "engagedSessions": 9420,
+          "userEngagementDuration": 3620000
+        },
+        {
+          "country": "Indonesia",
+          "deviceCategory": "mobile",
+          "mobileDeviceModel": "Redmi 13C",
+          "activeUsers": 3890,
+          "sessions": 9210,
+          "engagedSessions": 6210,
+          "userEngagementDuration": 2410000
+        },
+        {
+          "country": "India",
+          "deviceCategory": "mobile",
+          "mobileDeviceModel": "SM-A155F",
+          "activeUsers": 3410,
+          "sessions": 7820,
+          "engagedSessions": 5190,
+          "userEngagementDuration": 1980000
+        },
+        {
+          "country": "Philippines",
+          "deviceCategory": "mobile",
+          "mobileDeviceModel": "Infinix Smart 8",
+          "activeUsers": 2240,
+          "sessions": 5140,
+          "engagedSessions": 3420,
+          "userEngagementDuration": 1320000
+        },
+        {
+          "country": "Brazil",
+          "deviceCategory": "mobile",
+          "mobileDeviceModel": "Moto G24",
+          "activeUsers": 1860,
+          "sessions": 4210,
+          "engagedSessions": 2740,
+          "userEngagementDuration": 1090000
+        },
+        {
+          "country": "United States",
+          "deviceCategory": "mobile",
+          "mobileDeviceModel": "Pixel 8a",
+          "activeUsers": 980,
+          "sessions": 2190,
+          "engagedSessions": 1540,
+          "userEngagementDuration": 690000
+        }
+      ]
+    },
+    "hourly_activity": {
+      "key": "hourly_activity",
+      "title": "Lưu lượng theo giờ / Hourly Activity",
+      "dimensions": [
+        "hour"
+      ],
+      "metrics": [
+        "activeUsers",
+        "sessions",
+        "eventCount"
+      ],
+      "skipped_optional_fields": [],
+      "row_count": 24,
+      "total_available_rows": 24,
+      "rows": [
+        {
+          "hour": "00",
+          "activeUsers": 526,
+          "sessions": 710,
+          "eventCount": 7995
+        },
+        {
+          "hour": "01",
+          "activeUsers": 435,
+          "sessions": 587,
+          "eventCount": 6612
+        },
+        {
+          "hour": "02",
+          "activeUsers": 362,
+          "sessions": 488,
+          "eventCount": 5502
+        },
+        {
+          "hour": "03",
+          "activeUsers": 251,
+          "sessions": 338,
+          "eventCount": 3815
+        },
+        {
+          "hour": "04",
+          "activeUsers": 306,
+          "sessions": 413,
+          "eventCount": 4651
+        },
+        {
+          "hour": "05",
+          "activeUsers": 548,
+          "sessions": 739,
+          "eventCount": 8329
+        },
+        {
+          "hour": "06",
+          "activeUsers": 955,
+          "sessions": 1289,
+          "eventCount": 14516
+        },
+        {
+          "hour": "07",
+          "activeUsers": 1345,
+          "sessions": 1815,
+          "eventCount": 20444
+        },
+        {
+          "hour": "08",
+          "activeUsers": 1553,
+          "sessions": 2096,
+          "eventCount": 23605
+        },
+        {
+          "hour": "09",
+          "activeUsers": 1478,
+          "sessions": 1995,
+          "eventCount": 22465
+        },
+        {
+          "hour": "10",
+          "activeUsers": 1431,
+          "sessions": 1931,
+          "eventCount": 21751
+        },
+        {
+          "hour": "11",
+          "activeUsers": 1745,
+          "sessions": 2355,
+          "eventCount": 26524
+        },
+        {
+          "hour": "12",
+          "activeUsers": 1990,
+          "sessions": 2686,
+          "eventCount": 30248
+        },
+        {
+          "hour": "13",
+          "activeUsers": 1790,
+          "sessions": 2416,
+          "eventCount": 27208
+        },
+        {
+          "hour": "14",
+          "activeUsers": 1596,
+          "sessions": 2154,
+          "eventCount": 24259
+        },
+        {
+          "hour": "15",
+          "activeUsers": 1519,
+          "sessions": 2050,
+          "eventCount": 23088
+        },
+        {
+          "hour": "16",
+          "activeUsers": 1829,
+          "sessions": 2469,
+          "eventCount": 27800
+        },
+        {
+          "hour": "17",
+          "activeUsers": 2121,
+          "sessions": 2863,
+          "eventCount": 32239
+        },
+        {
+          "hour": "18",
+          "activeUsers": 2383,
+          "sessions": 3217,
+          "eventCount": 36221
+        },
+        {
+          "hour": "19",
+          "activeUsers": 2584,
+          "sessions": 3488,
+          "eventCount": 39276
+        },
+        {
+          "hour": "20",
+          "activeUsers": 2824,
+          "sessions": 3812,
+          "eventCount": 42924
+        },
+        {
+          "hour": "21",
+          "activeUsers": 2728,
+          "sessions": 3682,
+          "eventCount": 41465
+        },
+        {
+          "hour": "22",
+          "activeUsers": 1960,
+          "sessions": 2646,
+          "eventCount": 29792
+        },
+        {
+          "hour": "23",
+          "activeUsers": 1105,
+          "sessions": 1491,
+          "eventCount": 16796
+        }
+      ]
+    },
+    "games_performance": {
+      "key": "games_performance",
+      "title": "Hiệu suất từng Mini-Game / Mini-Game Performance",
+      "dimensions": [
+        "eventName",
+        "customEvent:game_name",
+        "customEvent:game_category"
+      ],
+      "metrics": [
+        "eventCount",
+        "totalUsers",
+        "customEvent:session_duration_sec"
+      ],
+      "skipped_optional_fields": [],
+      "row_count": 120,
+      "total_available_rows": 120,
+      "rows": [
+        {
+          "eventName": "game_open",
+          "customEvent:game_name": "amaze_ball_quest",
+          "customEvent:game_category": "Casual",
+          "eventCount": 11899,
+          "totalUsers": 4528,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_start",
+          "customEvent:game_name": "amaze_ball_quest",
+          "customEvent:game_category": "Casual",
+          "eventCount": 10961,
+          "totalUsers": 4165,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_start",
+          "customEvent:game_name": "amaze_ball_quest",
+          "customEvent:game_category": "Casual",
+          "eventCount": 38039,
+          "totalUsers": 3984,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_complete",
+          "customEvent:game_name": "amaze_ball_quest",
+          "customEvent:game_category": "Casual",
+          "eventCount": 16142,
+          "totalUsers": 3396,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_failed",
+          "customEvent:game_name": "amaze_ball_quest",
+          "customEvent:game_category": "Casual",
+          "eventCount": 14857,
+          "totalUsers": 3079,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_restart",
+          "customEvent:game_name": "amaze_ball_quest",
+          "customEvent:game_category": "Casual",
+          "eventCount": 8361,
+          "totalUsers": 2354,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_play_time",
+          "customEvent:game_name": "amaze_ball_quest",
+          "customEvent:game_category": "Casual",
+          "eventCount": 9403,
+          "totalUsers": 3894,
+          "customEvent:session_duration_sec": 3409677
+        },
+        {
+          "eventName": "game_score_submitted",
+          "customEvent:game_name": "amaze_ball_quest",
+          "customEvent:game_category": "Casual",
+          "eventCount": 12913,
+          "totalUsers": 2943,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_open",
+          "customEvent:game_name": "apple_worm",
+          "customEvent:game_category": "Casual",
+          "eventCount": 11445,
+          "totalUsers": 3867,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_start",
+          "customEvent:game_name": "apple_worm",
+          "customEvent:game_category": "Casual",
+          "eventCount": 9955,
+          "totalUsers": 3557,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_start",
+          "customEvent:game_name": "apple_worm",
+          "customEvent:game_category": "Casual",
+          "eventCount": 23274,
+          "totalUsers": 3402,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_complete",
+          "customEvent:game_name": "apple_worm",
+          "customEvent:game_category": "Casual",
+          "eventCount": 12799,
+          "totalUsers": 2900,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_failed",
+          "customEvent:game_name": "apple_worm",
+          "customEvent:game_category": "Casual",
+          "eventCount": 6408,
+          "totalUsers": 2629,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_restart",
+          "customEvent:game_name": "apple_worm",
+          "customEvent:game_category": "Casual",
+          "eventCount": 4157,
+          "totalUsers": 2010,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_play_time",
+          "customEvent:game_name": "apple_worm",
+          "customEvent:game_category": "Casual",
+          "eventCount": 8751,
+          "totalUsers": 3325,
+          "customEvent:session_duration_sec": 2344922
+        },
+        {
+          "eventName": "game_score_submitted",
+          "customEvent:game_name": "apple_worm",
+          "customEvent:game_category": "Casual",
+          "eventCount": 10239,
+          "totalUsers": 2513,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_open",
+          "customEvent:game_name": "backgammon",
+          "customEvent:game_category": "Casual",
+          "eventCount": 10592,
+          "totalUsers": 4937,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_start",
+          "customEvent:game_name": "backgammon",
+          "customEvent:game_category": "Casual",
+          "eventCount": 8750,
+          "totalUsers": 4542,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_start",
+          "customEvent:game_name": "backgammon",
+          "customEvent:game_category": "Casual",
+          "eventCount": 22259,
+          "totalUsers": 4344,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_complete",
+          "customEvent:game_name": "backgammon",
+          "customEvent:game_category": "Casual",
+          "eventCount": 11490,
+          "totalUsers": 3702,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_failed",
+          "customEvent:game_name": "backgammon",
+          "customEvent:game_category": "Casual",
+          "eventCount": 6817,
+          "totalUsers": 3357,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_restart",
+          "customEvent:game_name": "backgammon",
+          "customEvent:game_category": "Casual",
+          "eventCount": 3118,
+          "totalUsers": 2567,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_play_time",
+          "customEvent:game_name": "backgammon",
+          "customEvent:game_category": "Casual",
+          "eventCount": 8219,
+          "totalUsers": 4245,
+          "customEvent:session_duration_sec": 1717214
+        },
+        {
+          "eventName": "game_score_submitted",
+          "customEvent:game_name": "backgammon",
+          "customEvent:game_category": "Casual",
+          "eventCount": 9192,
+          "totalUsers": 3209,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_open",
+          "customEvent:game_name": "balloons_creator",
+          "customEvent:game_category": "Casual",
+          "eventCount": 9961,
+          "totalUsers": 3336,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_start",
+          "customEvent:game_name": "balloons_creator",
+          "customEvent:game_category": "Casual",
+          "eventCount": 9105,
+          "totalUsers": 3069,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_start",
+          "customEvent:game_name": "balloons_creator",
+          "customEvent:game_category": "Casual",
+          "eventCount": 27465,
+          "totalUsers": 2935,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_complete",
+          "customEvent:game_name": "balloons_creator",
+          "customEvent:game_category": "Casual",
+          "eventCount": 11741,
+          "totalUsers": 2502,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_failed",
+          "customEvent:game_name": "balloons_creator",
+          "customEvent:game_category": "Casual",
+          "eventCount": 10648,
+          "totalUsers": 2268,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_restart",
+          "customEvent:game_name": "balloons_creator",
+          "customEvent:game_category": "Casual",
+          "eventCount": 4992,
+          "totalUsers": 1734,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_play_time",
+          "customEvent:game_name": "balloons_creator",
+          "customEvent:game_category": "Casual",
+          "eventCount": 8705,
+          "totalUsers": 2868,
+          "customEvent:session_duration_sec": 1545519
+        },
+        {
+          "eventName": "game_score_submitted",
+          "customEvent:game_name": "balloons_creator",
+          "customEvent:game_category": "Casual",
+          "eventCount": 9392,
+          "totalUsers": 2168,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_open",
+          "customEvent:game_name": "ball_escape",
+          "customEvent:game_category": "Casual",
+          "eventCount": 8933,
+          "totalUsers": 3476,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_start",
+          "customEvent:game_name": "ball_escape",
+          "customEvent:game_category": "Casual",
+          "eventCount": 8058,
+          "totalUsers": 3197,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_start",
+          "customEvent:game_name": "ball_escape",
+          "customEvent:game_category": "Casual",
+          "eventCount": 24923,
+          "totalUsers": 3058,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_complete",
+          "customEvent:game_name": "ball_escape",
+          "customEvent:game_category": "Casual",
+          "eventCount": 8643,
+          "totalUsers": 2607,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_failed",
+          "customEvent:game_name": "ball_escape",
+          "customEvent:game_category": "Casual",
+          "eventCount": 11508,
+          "totalUsers": 2363,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_restart",
+          "customEvent:game_name": "ball_escape",
+          "customEvent:game_category": "Casual",
+          "eventCount": 5272,
+          "totalUsers": 1807,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_play_time",
+          "customEvent:game_name": "ball_escape",
+          "customEvent:game_category": "Casual",
+          "eventCount": 6772,
+          "totalUsers": 2989,
+          "customEvent:session_duration_sec": 1307103
+        },
+        {
+          "eventName": "game_score_submitted",
+          "customEvent:game_name": "ball_escape",
+          "customEvent:game_category": "Casual",
+          "eventCount": 6914,
+          "totalUsers": 2259,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_open",
+          "customEvent:game_name": "bee",
+          "customEvent:game_category": "Casual",
+          "eventCount": 8382,
+          "totalUsers": 3193,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_start",
+          "customEvent:game_name": "bee",
+          "customEvent:game_category": "Casual",
+          "eventCount": 7513,
+          "totalUsers": 2937,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_start",
+          "customEvent:game_name": "bee",
+          "customEvent:game_category": "Casual",
+          "eventCount": 17810,
+          "totalUsers": 2809,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_complete",
+          "customEvent:game_name": "bee",
+          "customEvent:game_category": "Casual",
+          "eventCount": 8429,
+          "totalUsers": 2394,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_failed",
+          "customEvent:game_name": "bee",
+          "customEvent:game_category": "Casual",
+          "eventCount": 6156,
+          "totalUsers": 2171,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_restart",
+          "customEvent:game_name": "bee",
+          "customEvent:game_category": "Casual",
+          "eventCount": 3131,
+          "totalUsers": 1660,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_play_time",
+          "customEvent:game_name": "bee",
+          "customEvent:game_category": "Casual",
+          "eventCount": 6329,
+          "totalUsers": 2745,
+          "customEvent:session_duration_sec": 2282723
+        },
+        {
+          "eventName": "game_score_submitted",
+          "customEvent:game_name": "bee",
+          "customEvent:game_category": "Casual",
+          "eventCount": 6743,
+          "totalUsers": 2075,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_open",
+          "customEvent:game_name": "block_blast",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 7601,
+          "totalUsers": 2654,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_start",
+          "customEvent:game_name": "block_blast",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 7026,
+          "totalUsers": 2441,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_start",
+          "customEvent:game_name": "block_blast",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 23211,
+          "totalUsers": 2335,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_complete",
+          "customEvent:game_name": "block_blast",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 10677,
+          "totalUsers": 1990,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_failed",
+          "customEvent:game_name": "block_blast",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 8306,
+          "totalUsers": 1804,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_restart",
+          "customEvent:game_name": "block_blast",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 4596,
+          "totalUsers": 1380,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_play_time",
+          "customEvent:game_name": "block_blast",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 6645,
+          "totalUsers": 2282,
+          "customEvent:session_duration_sec": 1088530
+        },
+        {
+          "eventName": "game_score_submitted",
+          "customEvent:game_name": "block_blast",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 8541,
+          "totalUsers": 1725,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_open",
+          "customEvent:game_name": "block_connect",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 7329,
+          "totalUsers": 2787,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_start",
+          "customEvent:game_name": "block_connect",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 6356,
+          "totalUsers": 2564,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_start",
+          "customEvent:game_name": "block_connect",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 16162,
+          "totalUsers": 2452,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_complete",
+          "customEvent:game_name": "block_connect",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 5811,
+          "totalUsers": 2090,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_failed",
+          "customEvent:game_name": "block_connect",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 7273,
+          "totalUsers": 1895,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_restart",
+          "customEvent:game_name": "block_connect",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 4254,
+          "totalUsers": 1449,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_play_time",
+          "customEvent:game_name": "block_connect",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 6219,
+          "totalUsers": 2396,
+          "customEvent:session_duration_sec": 1995747
+        },
+        {
+          "eventName": "game_score_submitted",
+          "customEvent:game_name": "block_connect",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 4648,
+          "totalUsers": 1811,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_open",
+          "customEvent:game_name": "block_fit_puzzle",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 6878,
+          "totalUsers": 3128,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_start",
+          "customEvent:game_name": "block_fit_puzzle",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 5745,
+          "totalUsers": 2877,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_start",
+          "customEvent:game_name": "block_fit_puzzle",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 15181,
+          "totalUsers": 2752,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_complete",
+          "customEvent:game_name": "block_fit_puzzle",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 7006,
+          "totalUsers": 2346,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_failed",
+          "customEvent:game_name": "block_fit_puzzle",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 5411,
+          "totalUsers": 2127,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_restart",
+          "customEvent:game_name": "block_fit_puzzle",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 2544,
+          "totalUsers": 1626,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_play_time",
+          "customEvent:game_name": "block_fit_puzzle",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 6055,
+          "totalUsers": 2690,
+          "customEvent:session_duration_sec": 1159497
+        },
+        {
+          "eventName": "game_score_submitted",
+          "customEvent:game_name": "block_fit_puzzle",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 5604,
+          "totalUsers": 2033,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_open",
+          "customEvent:game_name": "block_tetris",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 6211,
+          "totalUsers": 2811,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_start",
+          "customEvent:game_name": "block_tetris",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 5217,
+          "totalUsers": 2586,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_start",
+          "customEvent:game_name": "block_tetris",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 12676,
+          "totalUsers": 2473,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_complete",
+          "customEvent:game_name": "block_tetris",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 6731,
+          "totalUsers": 2108,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_failed",
+          "customEvent:game_name": "block_tetris",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 3710,
+          "totalUsers": 1911,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_restart",
+          "customEvent:game_name": "block_tetris",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 1797,
+          "totalUsers": 1461,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_play_time",
+          "customEvent:game_name": "block_tetris",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 4983,
+          "totalUsers": 2417,
+          "customEvent:session_duration_sec": 1027940
+        },
+        {
+          "eventName": "game_score_submitted",
+          "customEvent:game_name": "block_tetris",
+          "customEvent:game_category": "Puzzle",
+          "eventCount": 5384,
+          "totalUsers": 1827,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_open",
+          "customEvent:game_name": "abalone",
+          "customEvent:game_category": "Casual",
+          "eventCount": 5312,
+          "totalUsers": 2261,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_start",
+          "customEvent:game_name": "abalone",
+          "customEvent:game_category": "Casual",
+          "eventCount": 4990,
+          "totalUsers": 2080,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_start",
+          "customEvent:game_name": "abalone",
+          "customEvent:game_category": "Casual",
+          "eventCount": 14137,
+          "totalUsers": 1989,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_complete",
+          "customEvent:game_name": "abalone",
+          "customEvent:game_category": "Casual",
+          "eventCount": 6096,
+          "totalUsers": 1695,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_failed",
+          "customEvent:game_name": "abalone",
+          "customEvent:game_category": "Casual",
+          "eventCount": 5432,
+          "totalUsers": 1537,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_restart",
+          "customEvent:game_name": "abalone",
+          "customEvent:game_category": "Casual",
+          "eventCount": 2460,
+          "totalUsers": 1175,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_play_time",
+          "customEvent:game_name": "abalone",
+          "customEvent:game_category": "Casual",
+          "eventCount": 4217,
+          "totalUsers": 1944,
+          "customEvent:session_duration_sec": 1104138
+        },
+        {
+          "eventName": "game_score_submitted",
+          "customEvent:game_name": "abalone",
+          "customEvent:game_category": "Casual",
+          "eventCount": 4876,
+          "totalUsers": 1469,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_open",
+          "customEvent:game_name": "amaze_number",
+          "customEvent:game_category": "Casual",
+          "eventCount": 4509,
+          "totalUsers": 1943,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_start",
+          "customEvent:game_name": "amaze_number",
+          "customEvent:game_category": "Casual",
+          "eventCount": 3769,
+          "totalUsers": 1787,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_start",
+          "customEvent:game_name": "amaze_number",
+          "customEvent:game_category": "Casual",
+          "eventCount": 12031,
+          "totalUsers": 1709,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_complete",
+          "customEvent:game_name": "amaze_number",
+          "customEvent:game_category": "Casual",
+          "eventCount": 8210,
+          "totalUsers": 1457,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_failed",
+          "customEvent:game_name": "amaze_number",
+          "customEvent:game_category": "Casual",
+          "eventCount": 1849,
+          "totalUsers": 1321,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_restart",
+          "customEvent:game_name": "amaze_number",
+          "customEvent:game_category": "Casual",
+          "eventCount": 1241,
+          "totalUsers": 1010,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_play_time",
+          "customEvent:game_name": "amaze_number",
+          "customEvent:game_category": "Casual",
+          "eventCount": 3819,
+          "totalUsers": 1670,
+          "customEvent:session_duration_sec": 1102918
+        },
+        {
+          "eventName": "game_score_submitted",
+          "customEvent:game_name": "amaze_number",
+          "customEvent:game_category": "Casual",
+          "eventCount": 6568,
+          "totalUsers": 1262,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_open",
+          "customEvent:game_name": "among_us",
+          "customEvent:game_category": "Casual",
+          "eventCount": 4028,
+          "totalUsers": 1539,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_start",
+          "customEvent:game_name": "among_us",
+          "customEvent:game_category": "Casual",
+          "eventCount": 3661,
+          "totalUsers": 1415,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_start",
+          "customEvent:game_name": "among_us",
+          "customEvent:game_category": "Casual",
+          "eventCount": 11031,
+          "totalUsers": 1354,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_complete",
+          "customEvent:game_name": "among_us",
+          "customEvent:game_category": "Casual",
+          "eventCount": 6131,
+          "totalUsers": 1154,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_failed",
+          "customEvent:game_name": "among_us",
+          "customEvent:game_category": "Casual",
+          "eventCount": 2977,
+          "totalUsers": 1046,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_restart",
+          "customEvent:game_name": "among_us",
+          "customEvent:game_category": "Casual",
+          "eventCount": 1701,
+          "totalUsers": 800,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_play_time",
+          "customEvent:game_name": "among_us",
+          "customEvent:game_category": "Casual",
+          "eventCount": 3248,
+          "totalUsers": 1323,
+          "customEvent:session_duration_sec": 1220558
+        },
+        {
+          "eventName": "game_score_submitted",
+          "customEvent:game_name": "among_us",
+          "customEvent:game_category": "Casual",
+          "eventCount": 4904,
+          "totalUsers": 1000,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_open",
+          "customEvent:game_name": "angry_heroes",
+          "customEvent:game_category": "Casual",
+          "eventCount": 2869,
+          "totalUsers": 1140,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_start",
+          "customEvent:game_name": "angry_heroes",
+          "customEvent:game_category": "Casual",
+          "eventCount": 2410,
+          "totalUsers": 1048,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_start",
+          "customEvent:game_name": "angry_heroes",
+          "customEvent:game_category": "Casual",
+          "eventCount": 7092,
+          "totalUsers": 1003,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_complete",
+          "customEvent:game_name": "angry_heroes",
+          "customEvent:game_category": "Casual",
+          "eventCount": 4723,
+          "totalUsers": 855,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_failed",
+          "customEvent:game_name": "angry_heroes",
+          "customEvent:game_category": "Casual",
+          "eventCount": 1197,
+          "totalUsers": 775,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_restart",
+          "customEvent:game_name": "angry_heroes",
+          "customEvent:game_category": "Casual",
+          "eventCount": 714,
+          "totalUsers": 592,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_play_time",
+          "customEvent:game_name": "angry_heroes",
+          "customEvent:game_category": "Casual",
+          "eventCount": 2250,
+          "totalUsers": 980,
+          "customEvent:session_duration_sec": 674908
+        },
+        {
+          "eventName": "game_score_submitted",
+          "customEvent:game_name": "angry_heroes",
+          "customEvent:game_category": "Casual",
+          "eventCount": 3778,
+          "totalUsers": 741,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_open",
+          "customEvent:game_name": "animal_clicker",
+          "customEvent:game_category": "Casual",
+          "eventCount": 2877,
+          "totalUsers": 1273,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_start",
+          "customEvent:game_name": "animal_clicker",
+          "customEvent:game_category": "Casual",
+          "eventCount": 2378,
+          "totalUsers": 1171,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_start",
+          "customEvent:game_name": "animal_clicker",
+          "customEvent:game_category": "Casual",
+          "eventCount": 5129,
+          "totalUsers": 1120,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_complete",
+          "customEvent:game_name": "animal_clicker",
+          "customEvent:game_category": "Casual",
+          "eventCount": 1690,
+          "totalUsers": 954,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_failed",
+          "customEvent:game_name": "animal_clicker",
+          "customEvent:game_category": "Casual",
+          "eventCount": 2449,
+          "totalUsers": 865,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_level_restart",
+          "customEvent:game_name": "animal_clicker",
+          "customEvent:game_category": "Casual",
+          "eventCount": 1236,
+          "totalUsers": 661,
+          "customEvent:session_duration_sec": 0
+        },
+        {
+          "eventName": "game_play_time",
+          "customEvent:game_name": "animal_clicker",
+          "customEvent:game_category": "Casual",
+          "eventCount": 2494,
+          "totalUsers": 1094,
+          "customEvent:session_duration_sec": 830424
+        },
+        {
+          "eventName": "game_score_submitted",
+          "customEvent:game_name": "animal_clicker",
+          "customEvent:game_category": "Casual",
+          "eventCount": 1352,
+          "totalUsers": 827,
+          "customEvent:session_duration_sec": 0
+        }
+      ]
+    },
+    "r2_downloads": {
+      "key": "r2_downloads",
+      "title": "Tải game On-Demand Cloudflare R2 / R2 On-Demand Downloads",
+      "dimensions": [
+        "eventName",
+        "customEvent:game_name",
+        "customEvent:status",
+        "customEvent:error_message"
+      ],
+      "metrics": [
+        "eventCount",
+        "totalUsers"
+      ],
+      "skipped_optional_fields": [],
+      "row_count": 18,
+      "total_available_rows": 18,
+      "rows": [
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "abalone",
+          "customEvent:status": "started",
+          "customEvent:error_message": "(not set)",
+          "eventCount": 1595,
+          "totalUsers": 1371
+        },
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "abalone",
+          "customEvent:status": "completed",
+          "customEvent:error_message": "(not set)",
+          "eventCount": 1532,
+          "totalUsers": 1317
+        },
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "abalone",
+          "customEvent:status": "failed",
+          "customEvent:error_message": "SocketTimeoutException: read timed out",
+          "eventCount": 63,
+          "totalUsers": 54
+        },
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "amaze_number",
+          "customEvent:status": "started",
+          "customEvent:error_message": "(not set)",
+          "eventCount": 1392,
+          "totalUsers": 1197
+        },
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "amaze_number",
+          "customEvent:status": "completed",
+          "customEvent:error_message": "(not set)",
+          "eventCount": 1337,
+          "totalUsers": 1149
+        },
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "amaze_number",
+          "customEvent:status": "failed",
+          "customEvent:error_message": "SocketTimeoutException: read timed out",
+          "eventCount": 55,
+          "totalUsers": 47
+        },
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "among_us",
+          "customEvent:status": "started",
+          "customEvent:error_message": "(not set)",
+          "eventCount": 1189,
+          "totalUsers": 1022
+        },
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "among_us",
+          "customEvent:status": "completed",
+          "customEvent:error_message": "(not set)",
+          "eventCount": 975,
+          "totalUsers": 838
+        },
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "among_us",
+          "customEvent:status": "failed",
+          "customEvent:error_message": "ERR_NAME_NOT_RESOLVED: pub-r2.nextai.games",
+          "eventCount": 214,
+          "totalUsers": 184
+        },
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "angry_heroes",
+          "customEvent:status": "started",
+          "customEvent:error_message": "(not set)",
+          "eventCount": 986,
+          "totalUsers": 847
+        },
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "angry_heroes",
+          "customEvent:status": "completed",
+          "customEvent:error_message": "(not set)",
+          "eventCount": 947,
+          "totalUsers": 814
+        },
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "angry_heroes",
+          "customEvent:status": "failed",
+          "customEvent:error_message": "SocketTimeoutException: read timed out",
+          "eventCount": 39,
+          "totalUsers": 33
+        },
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "animal_clicker",
+          "customEvent:status": "started",
+          "customEvent:error_message": "(not set)",
+          "eventCount": 783,
+          "totalUsers": 673
+        },
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "animal_clicker",
+          "customEvent:status": "completed",
+          "customEvent:error_message": "(not set)",
+          "eventCount": 752,
+          "totalUsers": 646
+        },
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "animal_clicker",
+          "customEvent:status": "failed",
+          "customEvent:error_message": "SocketTimeoutException: read timed out",
+          "eventCount": 31,
+          "totalUsers": 26
+        },
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "arcane_blocks",
+          "customEvent:status": "started",
+          "customEvent:error_message": "(not set)",
+          "eventCount": 580,
+          "totalUsers": 498
+        },
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "arcane_blocks",
+          "customEvent:status": "completed",
+          "customEvent:error_message": "(not set)",
+          "eventCount": 557,
+          "totalUsers": 479
+        },
+        {
+          "eventName": "game_download",
+          "customEvent:game_name": "arcane_blocks",
+          "customEvent:status": "failed",
+          "customEvent:error_message": "SocketTimeoutException: read timed out",
+          "eventCount": 23,
+          "totalUsers": 19
+        }
+      ]
+    },
+    "ads_funnel": {
+      "key": "ads_funnel",
+      "title": "Phễu quảng cáo & Mediation / Ads & Mediation Funnel",
+      "dimensions": [
+        "eventName",
+        "customEvent:ad_type",
+        "customEvent:ad_unit_id",
+        "customEvent:ad_network"
+      ],
+      "metrics": [
+        "eventCount",
+        "totalUsers"
+      ],
+      "skipped_optional_fields": [],
+      "row_count": 32,
+      "total_available_rows": 32,
+      "rows": [
+        {
+          "eventName": "ad_request",
+          "customEvent:ad_type": "BANNER",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/4579664323",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 124000,
+          "totalUsers": 18500
+        },
+        {
+          "eventName": "ad_loaded",
+          "customEvent:ad_type": "BANNER",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/4579664323",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 110360,
+          "totalUsers": 18500
+        },
+        {
+          "eventName": "ad_failed_to_load",
+          "customEvent:ad_type": "BANNER",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/4579664323",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 13640,
+          "totalUsers": 3000
+        },
+        {
+          "eventName": "ad_impression",
+          "customEvent:ad_type": "BANNER",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/4579664323",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 103738,
+          "totalUsers": 18500
+        },
+        {
+          "eventName": "ad_clicked",
+          "customEvent:ad_type": "BANNER",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/4579664323",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 1452,
+          "totalUsers": 319
+        },
+        {
+          "eventName": "ad_mediation_loaded",
+          "customEvent:ad_type": "BANNER",
+          "customEvent:ad_unit_id": "(not set)",
+          "customEvent:ad_network": "google",
+          "eventCount": 90496,
+          "totalUsers": 18500
+        },
+        {
+          "eventName": "ad_mediation_loaded",
+          "customEvent:ad_type": "BANNER",
+          "customEvent:ad_unit_id": "(not set)",
+          "customEvent:ad_network": "meta",
+          "eventCount": 19864,
+          "totalUsers": 4370
+        },
+        {
+          "eventName": "ad_request",
+          "customEvent:ad_type": "INTERSTITIAL",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3500572281",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 46500,
+          "totalUsers": 10230
+        },
+        {
+          "eventName": "ad_loaded",
+          "customEvent:ad_type": "INTERSTITIAL",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3500572281",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 35340,
+          "totalUsers": 7774
+        },
+        {
+          "eventName": "ad_failed_to_load",
+          "customEvent:ad_type": "INTERSTITIAL",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3500572281",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 11160,
+          "totalUsers": 2455
+        },
+        {
+          "eventName": "ad_impression",
+          "customEvent:ad_type": "INTERSTITIAL",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3500572281",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 29685,
+          "totalUsers": 6530
+        },
+        {
+          "eventName": "ad_clicked",
+          "customEvent:ad_type": "INTERSTITIAL",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3500572281",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 1217,
+          "totalUsers": 267
+        },
+        {
+          "eventName": "ad_mediation_loaded",
+          "customEvent:ad_type": "INTERSTITIAL",
+          "customEvent:ad_unit_id": "(not set)",
+          "customEvent:ad_network": "google",
+          "eventCount": 26859,
+          "totalUsers": 5908
+        },
+        {
+          "eventName": "ad_mediation_loaded",
+          "customEvent:ad_type": "INTERSTITIAL",
+          "customEvent:ad_unit_id": "(not set)",
+          "customEvent:ad_network": "meta",
+          "eventCount": 8481,
+          "totalUsers": 1865
+        },
+        {
+          "eventName": "ad_dismissed",
+          "customEvent:ad_type": "INTERSTITIAL",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3500572281",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 27310,
+          "totalUsers": 6008
+        },
+        {
+          "eventName": "ad_request",
+          "customEvent:ad_type": "REWARDED",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/7458098782",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 18200,
+          "totalUsers": 4004
+        },
+        {
+          "eventName": "ad_loaded",
+          "customEvent:ad_type": "REWARDED",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/7458098782",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 12922,
+          "totalUsers": 2842
+        },
+        {
+          "eventName": "ad_failed_to_load",
+          "customEvent:ad_type": "REWARDED",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/7458098782",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 5278,
+          "totalUsers": 1161
+        },
+        {
+          "eventName": "ad_impression",
+          "customEvent:ad_type": "REWARDED",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/7458098782",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 11371,
+          "totalUsers": 2501
+        },
+        {
+          "eventName": "ad_clicked",
+          "customEvent:ad_type": "REWARDED",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/7458098782",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 636,
+          "totalUsers": 139
+        },
+        {
+          "eventName": "ad_mediation_loaded",
+          "customEvent:ad_type": "REWARDED",
+          "customEvent:ad_unit_id": "(not set)",
+          "customEvent:ad_network": "google",
+          "eventCount": 10209,
+          "totalUsers": 2245
+        },
+        {
+          "eventName": "ad_mediation_loaded",
+          "customEvent:ad_type": "REWARDED",
+          "customEvent:ad_unit_id": "(not set)",
+          "customEvent:ad_network": "meta",
+          "eventCount": 2713,
+          "totalUsers": 596
+        },
+        {
+          "eventName": "ad_dismissed",
+          "customEvent:ad_type": "REWARDED",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/7458098782",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 10461,
+          "totalUsers": 2301
+        },
+        {
+          "eventName": "ad_reward_earned",
+          "customEvent:ad_type": "REWARDED",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/7458098782",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 9779,
+          "totalUsers": 2151
+        },
+        {
+          "eventName": "ad_request",
+          "customEvent:ad_type": "APP_OPEN",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3518853778",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 29800,
+          "totalUsers": 6556
+        },
+        {
+          "eventName": "ad_loaded",
+          "customEvent:ad_type": "APP_OPEN",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3518853778",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 24138,
+          "totalUsers": 5310
+        },
+        {
+          "eventName": "ad_failed_to_load",
+          "customEvent:ad_type": "APP_OPEN",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3518853778",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 5662,
+          "totalUsers": 1245
+        },
+        {
+          "eventName": "ad_impression",
+          "customEvent:ad_type": "APP_OPEN",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3518853778",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 19069,
+          "totalUsers": 4195
+        },
+        {
+          "eventName": "ad_clicked",
+          "customEvent:ad_type": "APP_OPEN",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3518853778",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 476,
+          "totalUsers": 104
+        },
+        {
+          "eventName": "ad_mediation_loaded",
+          "customEvent:ad_type": "APP_OPEN",
+          "customEvent:ad_unit_id": "(not set)",
+          "customEvent:ad_network": "google",
+          "eventCount": 22932,
+          "totalUsers": 5045
+        },
+        {
+          "eventName": "ad_mediation_loaded",
+          "customEvent:ad_type": "APP_OPEN",
+          "customEvent:ad_unit_id": "(not set)",
+          "customEvent:ad_network": "meta",
+          "eventCount": 1206,
+          "totalUsers": 265
+        },
+        {
+          "eventName": "ad_dismissed",
+          "customEvent:ad_type": "APP_OPEN",
+          "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3518853778",
+          "customEvent:ad_network": "(not set)",
+          "eventCount": 17543,
+          "totalUsers": 3859
+        }
+      ]
+    },
+    "ads_diagnostics": {
+      "key": "ads_diagnostics",
+      "title": "Chẩn đoán lỗi & Chặn quảng cáo / Ads Error Diagnostics",
+      "dimensions": [
+        "eventName",
+        "customEvent:ad_type",
+        "customEvent:error_code",
+        "customEvent:error_message",
+        "customEvent:reason"
+      ],
+      "metrics": [
+        "eventCount"
+      ],
+      "skipped_optional_fields": [],
+      "row_count": 6,
+      "total_available_rows": 6,
+      "rows": [
+        {
+          "eventName": "ad_failed_to_load",
+          "customEvent:ad_type": "INTERSTITIAL",
+          "customEvent:error_code": "3",
+          "customEvent:error_message": "No fill.",
+          "customEvent:reason": "(not set)",
+          "eventCount": 8940
+        },
+        {
+          "eventName": "ad_failed_to_load",
+          "customEvent:ad_type": "BANNER",
+          "customEvent:error_code": "3",
+          "customEvent:error_message": "No fill.",
+          "customEvent:reason": "(not set)",
+          "eventCount": 10250
+        },
+        {
+          "eventName": "ad_failed_to_load",
+          "customEvent:ad_type": "REWARDED",
+          "customEvent:error_code": "2",
+          "customEvent:error_message": "Network Error",
+          "customEvent:reason": "(not set)",
+          "eventCount": 3180
+        },
+        {
+          "eventName": "ad_mediation_failed",
+          "customEvent:ad_type": "INTERSTITIAL",
+          "customEvent:error_code": "101",
+          "customEvent:error_message": "Meta placement mapping not configured",
+          "customEvent:reason": "(not set)",
+          "eventCount": 4120
+        },
+        {
+          "eventName": "ad_load_suppressed",
+          "customEvent:ad_type": "INTERSTITIAL",
+          "customEvent:error_code": "(not set)",
+          "customEvent:error_message": "(not set)",
+          "customEvent:reason": "frequency_cap_90s",
+          "eventCount": 6340
+        },
+        {
+          "eventName": "ad_load_suppressed",
+          "customEvent:ad_type": "APP_OPEN",
+          "customEvent:error_code": "(not set)",
+          "customEvent:error_message": "(not set)",
+          "customEvent:reason": "cache_ttl_valid",
+          "eventCount": 2190
+        }
+      ]
+    },
+    "iap_funnel": {
+      "key": "iap_funnel",
+      "title": "Phễu mua hàng VIP IAP / In-App Purchase Funnel",
+      "dimensions": [
+        "eventName",
+        "customEvent:source",
+        "customEvent:product_id"
+      ],
+      "metrics": [
+        "eventCount",
+        "totalUsers"
+      ],
+      "skipped_optional_fields": [],
+      "row_count": 10,
+      "total_available_rows": 10,
+      "rows": [
+        {
+          "eventName": "inapp_paywall_viewed",
+          "customEvent:source": "launcher_header",
+          "customEvent:product_id": "(not set)",
+          "eventCount": 4280,
+          "totalUsers": 2810
+        },
+        {
+          "eventName": "inapp_paywall_viewed",
+          "customEvent:source": "settings_dialog",
+          "customEvent:product_id": "(not set)",
+          "eventCount": 1640,
+          "totalUsers": 1220
+        },
+        {
+          "eventName": "inapp_paywall_viewed",
+          "customEvent:source": "game_exit",
+          "customEvent:product_id": "(not set)",
+          "eventCount": 2190,
+          "totalUsers": 1590
+        },
+        {
+          "eventName": "inapp_purchase_initiated",
+          "customEvent:source": "(not set)",
+          "customEvent:product_id": "com.nextai.gameoffline.remove_ads",
+          "eventCount": 612,
+          "totalUsers": 524
+        },
+        {
+          "eventName": "inapp_purchase_success",
+          "customEvent:source": "(not set)",
+          "customEvent:product_id": "com.nextai.gameoffline.remove_ads",
+          "eventCount": 184,
+          "totalUsers": 184
+        },
+        {
+          "eventName": "inapp_purchase_canceled",
+          "customEvent:source": "(not set)",
+          "customEvent:product_id": "com.nextai.gameoffline.remove_ads",
+          "eventCount": 376,
+          "totalUsers": 330
+        },
+        {
+          "eventName": "inapp_purchase_failed",
+          "customEvent:source": "(not set)",
+          "customEvent:product_id": "com.nextai.gameoffline.remove_ads",
+          "eventCount": 52,
+          "totalUsers": 49
+        },
+        {
+          "eventName": "inapp_restore_initiated",
+          "customEvent:source": "(not set)",
+          "customEvent:product_id": "(not set)",
+          "eventCount": 240,
+          "totalUsers": 210
+        },
+        {
+          "eventName": "inapp_restore_success",
+          "customEvent:source": "(not set)",
+          "customEvent:product_id": "com.nextai.gameoffline.remove_ads",
+          "eventCount": 44,
+          "totalUsers": 44
+        },
+        {
+          "eventName": "inapp_restore_none_found",
+          "customEvent:source": "(not set)",
+          "customEvent:product_id": "(not set)",
+          "eventCount": 196,
+          "totalUsers": 168
+        }
+      ]
+    },
+    "notifications_cohort": {
+      "key": "notifications_cohort",
+      "title": "Hiệu quả Notification 5 lần/ngày / Daily Notification Cohorts",
+      "dimensions": [
+        "eventName",
+        "customEvent:notification_slot",
+        "customEvent:scheduled_hour",
+        "customEvent:delivery_status",
+        "customUser:notification_cohort_hour"
+      ],
+      "metrics": [
+        "eventCount",
+        "totalUsers"
+      ],
+      "skipped_optional_fields": [],
+      "row_count": 21,
+      "total_available_rows": 21,
+      "rows": [
+        {
+          "eventName": "notification_scheduled",
+          "customEvent:notification_slot": "0",
+          "customEvent:scheduled_hour": "8",
+          "customEvent:delivery_status": "(not set)",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 15200,
+          "totalUsers": 5320
+        },
+        {
+          "eventName": "notification_delivery",
+          "customEvent:notification_slot": "0",
+          "customEvent:scheduled_hour": "8",
+          "customEvent:delivery_status": "displayed",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 13224,
+          "totalUsers": 4628
+        },
+        {
+          "eventName": "notification_delivery",
+          "customEvent:notification_slot": "0",
+          "customEvent:scheduled_hour": "8",
+          "customEvent:delivery_status": "permission_denied",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 1976,
+          "totalUsers": 691
+        },
+        {
+          "eventName": "notification_opened",
+          "customEvent:notification_slot": "0",
+          "customEvent:scheduled_hour": "8",
+          "customEvent:delivery_status": "(not set)",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 1084,
+          "totalUsers": 379
+        },
+        {
+          "eventName": "notification_scheduled",
+          "customEvent:notification_slot": "1",
+          "customEvent:scheduled_hour": "12",
+          "customEvent:delivery_status": "(not set)",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 14780,
+          "totalUsers": 5173
+        },
+        {
+          "eventName": "notification_delivery",
+          "customEvent:notification_slot": "1",
+          "customEvent:scheduled_hour": "12",
+          "customEvent:delivery_status": "displayed",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 12858,
+          "totalUsers": 4500
+        },
+        {
+          "eventName": "notification_delivery",
+          "customEvent:notification_slot": "1",
+          "customEvent:scheduled_hour": "12",
+          "customEvent:delivery_status": "permission_denied",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 1922,
+          "totalUsers": 672
+        },
+        {
+          "eventName": "notification_opened",
+          "customEvent:notification_slot": "1",
+          "customEvent:scheduled_hour": "12",
+          "customEvent:delivery_status": "(not set)",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 1877,
+          "totalUsers": 656
+        },
+        {
+          "eventName": "notification_scheduled",
+          "customEvent:notification_slot": "2",
+          "customEvent:scheduled_hour": "16",
+          "customEvent:delivery_status": "(not set)",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 14360,
+          "totalUsers": 5026
+        },
+        {
+          "eventName": "notification_delivery",
+          "customEvent:notification_slot": "2",
+          "customEvent:scheduled_hour": "16",
+          "customEvent:delivery_status": "displayed",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 12493,
+          "totalUsers": 4372
+        },
+        {
+          "eventName": "notification_delivery",
+          "customEvent:notification_slot": "2",
+          "customEvent:scheduled_hour": "16",
+          "customEvent:delivery_status": "permission_denied",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 1867,
+          "totalUsers": 653
+        },
+        {
+          "eventName": "notification_opened",
+          "customEvent:notification_slot": "2",
+          "customEvent:scheduled_hour": "16",
+          "customEvent:delivery_status": "(not set)",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 1311,
+          "totalUsers": 458
+        },
+        {
+          "eventName": "notification_scheduled",
+          "customEvent:notification_slot": "3",
+          "customEvent:scheduled_hour": "20",
+          "customEvent:delivery_status": "(not set)",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 13940,
+          "totalUsers": 4879
+        },
+        {
+          "eventName": "notification_delivery",
+          "customEvent:notification_slot": "3",
+          "customEvent:scheduled_hour": "20",
+          "customEvent:delivery_status": "displayed",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 12127,
+          "totalUsers": 4244
+        },
+        {
+          "eventName": "notification_delivery",
+          "customEvent:notification_slot": "3",
+          "customEvent:scheduled_hour": "20",
+          "customEvent:delivery_status": "permission_denied",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 1813,
+          "totalUsers": 634
+        },
+        {
+          "eventName": "notification_opened",
+          "customEvent:notification_slot": "3",
+          "customEvent:scheduled_hour": "20",
+          "customEvent:delivery_status": "(not set)",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 2231,
+          "totalUsers": 780
+        },
+        {
+          "eventName": "notification_scheduled",
+          "customEvent:notification_slot": "4",
+          "customEvent:scheduled_hour": "22",
+          "customEvent:delivery_status": "(not set)",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 13520,
+          "totalUsers": 4732
+        },
+        {
+          "eventName": "notification_delivery",
+          "customEvent:notification_slot": "4",
+          "customEvent:scheduled_hour": "22",
+          "customEvent:delivery_status": "displayed",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 11762,
+          "totalUsers": 4116
+        },
+        {
+          "eventName": "notification_delivery",
+          "customEvent:notification_slot": "4",
+          "customEvent:scheduled_hour": "22",
+          "customEvent:delivery_status": "permission_denied",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 1758,
+          "totalUsers": 615
+        },
+        {
+          "eventName": "notification_opened",
+          "customEvent:notification_slot": "4",
+          "customEvent:scheduled_hour": "22",
+          "customEvent:delivery_status": "(not set)",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 1387,
+          "totalUsers": 485
+        },
+        {
+          "eventName": "notification_permission",
+          "customEvent:notification_slot": "(not set)",
+          "customEvent:scheduled_hour": "(not set)",
+          "customEvent:delivery_status": "(not set)",
+          "customUser:notification_cohort_hour": "8",
+          "eventCount": 14850,
+          "totalUsers": 14200
+        }
+      ]
+    }
+  }
+}

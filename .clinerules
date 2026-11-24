@@ -1,8 +1,10 @@
 # Cline & Roo Code Project Rules
-- Mandatory reading: AGENTS.md, Docs/rules.md, PROJECT_MEMORY.md.
-- Maintain bilingual comments (Vietnamese + English) on all functions, classes, and components.
-- Android Package Name: com.nextai.gameoffline (Publisher: NextAI Technology).
+- Mandatory reading before any edit: AGENTS.md (especially Section 2 Hard Engineering Rules), Docs/rules.md, PROJECT_MEMORY.md, and the latest Report/CODE_REVIEW_ARCHITECTURE_AUDIT_*.md.
+- HARD RULE — ANTI-VIBE-CODE & DEV-READABLE CODE: Write clean, idiomatic, human-readable code. NEVER cram multiple statements onto one line with `;`, keep lines <= 120 chars, keep files <= 350 lines and functions <= 50 lines (<= 3 nesting levels), and build UI/Dialogs in XML or Compose (not Kotlin code).
+- HARD RULE — ARCHITECTURE & REFACTOR REPORTING: Follow Clean MVVM (thin UI -> ViewModel -> Repository/Coordinator via constructor injection). Do NOT grow existing God classes (`AdManager.kt`, `GameListActivity.kt`, `GameActivity.kt`, `gameTester.ts`) or add new global mutable `object` singletons. Whenever architectural refactoring is needed beyond task scope, explicitly report it to the user with evidence and a plan.
+- HARD RULE — LOGIC, LIFECYCLE & SECURITY: Check `Lifecycle.State.RESUMED` before showing foreground UI/Ads after async delays, never run file I/O on Main Thread, validate/escape JS and HTML inputs, and never hardcode secrets.
+- Maintain bilingual comments (Vietnamese with full diacritics + English) explaining WHY; wrap debug logs in `BuildConfig.DEBUG`.
+- Android applicationId: `com.nextai.game.offline`, Kotlin namespace: `com.nextai.gameoffline` (App: Galaxy Game, Publisher: NextAI Technology, 419 HTML5 games: 100 bundled + 319 on-demand R2, Play Billing 9.1.0).
 - Backend runs on Port 6033 with Swagger documentation at /api-docs.
-- All 423 HTML5 games must be integrated smoothly into the Kotlin WebView shell.
 - File locks are governed by .ai/locks.json.
-- Always log activities into TASK_LOG.md.
+- Always run a strict Self-Review Gate and log activities cleanly into TASK_LOG.md and UPDATETODOS.md.

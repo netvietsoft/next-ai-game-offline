@@ -3386,6 +3386,12 @@ function share(action){
 
 function sendEvent(typeVar,valueVar){
     try {
+        // Chỉ nối vị trí cuối ván với bridge Android hiện có.
+        // Route only the end-of-round placement through the existing Android bridge.
+        if (typeVar === "showInterstitialInGame" && window.Android && typeof window.Android.showInterstitialInGame === "function") {
+            window.Android.showInterstitialInGame(valueVar);
+            return;
+        }
         var messageBody = {type: typeVar, value: valueVar}
         window.webkit.messageHandlers.ports.postMessage(messageBody);
     } catch (err) {

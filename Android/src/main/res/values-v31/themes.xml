@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Ẩn hoàn toàn biểu tượng Splash hệ thống Android 12+ để vào thẳng màn hình Loading Ads -->
+    <style name="Theme.NextAIGameOffline.Splash" parent="Theme.NextAIGameOffline">
+        <item name="android:windowBackground">@color/splash_art_background</item>
+        <item name="android:windowSplashScreenBackground">@color/splash_art_background</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_splash_transparent</item>
+        <item name="android:windowSplashScreenAnimationDuration">0</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+</resources>

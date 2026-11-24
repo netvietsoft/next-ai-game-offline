@@ -1,0 +1,11 @@
+{
+	"name": "archers_random",
+	"short_name": "archers_random",
+	"description": "10001 - add js event\n10011 - optimize audio\n10021 - disable blood",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [],
+	"screenshots": []
+}

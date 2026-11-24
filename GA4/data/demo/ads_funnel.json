@@ -1,0 +1,275 @@
+{
+  "key": "ads_funnel",
+  "title": "Phễu quảng cáo & Mediation / Ads & Mediation Funnel",
+  "dimensions": [
+    "eventName",
+    "customEvent:ad_type",
+    "customEvent:ad_unit_id",
+    "customEvent:ad_network"
+  ],
+  "metrics": [
+    "eventCount",
+    "totalUsers"
+  ],
+  "skipped_optional_fields": [],
+  "row_count": 32,
+  "total_available_rows": 32,
+  "rows": [
+    {
+      "eventName": "ad_request",
+      "customEvent:ad_type": "BANNER",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/4579664323",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 124000,
+      "totalUsers": 18500
+    },
+    {
+      "eventName": "ad_loaded",
+      "customEvent:ad_type": "BANNER",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/4579664323",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 110360,
+      "totalUsers": 18500
+    },
+    {
+      "eventName": "ad_failed_to_load",
+      "customEvent:ad_type": "BANNER",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/4579664323",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 13640,
+      "totalUsers": 3000
+    },
+    {
+      "eventName": "ad_impression",
+      "customEvent:ad_type": "BANNER",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/4579664323",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 103738,
+      "totalUsers": 18500
+    },
+    {
+      "eventName": "ad_clicked",
+      "customEvent:ad_type": "BANNER",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/4579664323",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 1452,
+      "totalUsers": 319
+    },
+    {
+      "eventName": "ad_mediation_loaded",
+      "customEvent:ad_type": "BANNER",
+      "customEvent:ad_unit_id": "(not set)",
+      "customEvent:ad_network": "google",
+      "eventCount": 90496,
+      "totalUsers": 18500
+    },
+    {
+      "eventName": "ad_mediation_loaded",
+      "customEvent:ad_type": "BANNER",
+      "customEvent:ad_unit_id": "(not set)",
+      "customEvent:ad_network": "meta",
+      "eventCount": 19864,
+      "totalUsers": 4370
+    },
+    {
+      "eventName": "ad_request",
+      "customEvent:ad_type": "INTERSTITIAL",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3500572281",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 46500,
+      "totalUsers": 10230
+    },
+    {
+      "eventName": "ad_loaded",
+      "customEvent:ad_type": "INTERSTITIAL",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3500572281",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 35340,
+      "totalUsers": 7774
+    },
+    {
+      "eventName": "ad_failed_to_load",
+      "customEvent:ad_type": "INTERSTITIAL",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3500572281",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 11160,
+      "totalUsers": 2455
+    },
+    {
+      "eventName": "ad_impression",
+      "customEvent:ad_type": "INTERSTITIAL",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3500572281",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 29685,
+      "totalUsers": 6530
+    },
+    {
+      "eventName": "ad_clicked",
+      "customEvent:ad_type": "INTERSTITIAL",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3500572281",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 1217,
+      "totalUsers": 267
+    },
+    {
+      "eventName": "ad_mediation_loaded",
+      "customEvent:ad_type": "INTERSTITIAL",
+      "customEvent:ad_unit_id": "(not set)",
+      "customEvent:ad_network": "google",
+      "eventCount": 26859,
+      "totalUsers": 5908
+    },
+    {
+      "eventName": "ad_mediation_loaded",
+      "customEvent:ad_type": "INTERSTITIAL",
+      "customEvent:ad_unit_id": "(not set)",
+      "customEvent:ad_network": "meta",
+      "eventCount": 8481,
+      "totalUsers": 1865
+    },
+    {
+      "eventName": "ad_dismissed",
+      "customEvent:ad_type": "INTERSTITIAL",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3500572281",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 27310,
+      "totalUsers": 6008
+    },
+    {
+      "eventName": "ad_request",
+      "customEvent:ad_type": "REWARDED",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/7458098782",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 18200,
+      "totalUsers": 4004
+    },
+    {
+      "eventName": "ad_loaded",
+      "customEvent:ad_type": "REWARDED",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/7458098782",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 12922,
+      "totalUsers": 2842
+    },
+    {
+      "eventName": "ad_failed_to_load",
+      "customEvent:ad_type": "REWARDED",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/7458098782",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 5278,
+      "totalUsers": 1161
+    },
+    {
+      "eventName": "ad_impression",
+      "customEvent:ad_type": "REWARDED",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/7458098782",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 11371,
+      "totalUsers": 2501
+    },
+    {
+      "eventName": "ad_clicked",
+      "customEvent:ad_type": "REWARDED",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/7458098782",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 636,
+      "totalUsers": 139
+    },
+    {
+      "eventName": "ad_mediation_loaded",
+      "customEvent:ad_type": "REWARDED",
+      "customEvent:ad_unit_id": "(not set)",
+      "customEvent:ad_network": "google",
+      "eventCount": 10209,
+      "totalUsers": 2245
+    },
+    {
+      "eventName": "ad_mediation_loaded",
+      "customEvent:ad_type": "REWARDED",
+      "customEvent:ad_unit_id": "(not set)",
+      "customEvent:ad_network": "meta",
+      "eventCount": 2713,
+      "totalUsers": 596
+    },
+    {
+      "eventName": "ad_dismissed",
+      "customEvent:ad_type": "REWARDED",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/7458098782",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 10461,
+      "totalUsers": 2301
+    },
+    {
+      "eventName": "ad_reward_earned",
+      "customEvent:ad_type": "REWARDED",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/7458098782",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 9779,
+      "totalUsers": 2151
+    },
+    {
+      "eventName": "ad_request",
+      "customEvent:ad_type": "APP_OPEN",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3518853778",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 29800,
+      "totalUsers": 6556
+    },
+    {
+      "eventName": "ad_loaded",
+      "customEvent:ad_type": "APP_OPEN",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3518853778",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 24138,
+      "totalUsers": 5310
+    },
+    {
+      "eventName": "ad_failed_to_load",
+      "customEvent:ad_type": "APP_OPEN",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3518853778",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 5662,
+      "totalUsers": 1245
+    },
+    {
+      "eventName": "ad_impression",
+      "customEvent:ad_type": "APP_OPEN",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3518853778",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 19069,
+      "totalUsers": 4195
+    },
+    {
+      "eventName": "ad_clicked",
+      "customEvent:ad_type": "APP_OPEN",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3518853778",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 476,
+      "totalUsers": 104
+    },
+    {
+      "eventName": "ad_mediation_loaded",
+      "customEvent:ad_type": "APP_OPEN",
+      "customEvent:ad_unit_id": "(not set)",
+      "customEvent:ad_network": "google",
+      "eventCount": 22932,
+      "totalUsers": 5045
+    },
+    {
+      "eventName": "ad_mediation_loaded",
+      "customEvent:ad_type": "APP_OPEN",
+      "customEvent:ad_unit_id": "(not set)",
+      "customEvent:ad_network": "meta",
+      "eventCount": 1206,
+      "totalUsers": 265
+    },
+    {
+      "eventName": "ad_dismissed",
+      "customEvent:ad_type": "APP_OPEN",
+      "customEvent:ad_unit_id": "ca-app-pub-4108090245719282/3518853778",
+      "customEvent:ad_network": "(not set)",
+      "eventCount": 17543,
+      "totalUsers": 3859
+    }
+  ]
+}

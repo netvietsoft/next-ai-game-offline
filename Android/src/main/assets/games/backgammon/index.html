@@ -81,6 +81,9 @@
                            if(getParamValue('ctl-arcade') === "true"){
                                parent.__ctlArcadeShowInterlevelAD();
                            }
+                           if (window.Android && window.Android.showInterstitialInGame) {
+                               window.Android.showInterstitialInGame("backgammon_interlevel");
+                           }
                     });
                     
                     $(oMain).on("share_event", function(evt, iScore) {

@@ -1,0 +1,22 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+
+const source = await readFile(new URL('../../main/assets/games/hexa_merge/scripts/nextai-c3-adapter.js', import.meta.url), 'utf8');
+const { installNextaiC3Interstitial } = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
+let requested = 0, suspended = 0, resumed = 0, completions = 0;
+const api = { suspendRuntime: () => suspended++, resumeRuntime: () => resumed++ };
+const host = { AndroidBridge: { requestC3Interstitial: id => { requested = id; } } };
+assert.equal(installNextaiC3Interstitial(api, host), true);
+await api.CreateInterstitialAdvert('unused', false, (error) => assert.equal(error, null));
+await api.ShowInterstitialAdvert((error) => { assert.equal(error, null); completions++; });
+assert.equal(requested, 1);
+assert.equal(suspended, 1);
+await api.ShowInterstitialAdvert((error) => assert.ok(error));
+host.__nextaiC3InterstitialDone(99);
+assert.equal(completions, 0);
+host.__nextaiC3InterstitialDone(1);
+host.__nextaiC3InterstitialDone(1);
+assert.equal(completions, 1);
+assert.equal(resumed, 1);
+assert.equal(installNextaiC3Interstitial({}, {}), false);
+console.log('Hexa Merge C3 adapter checks passed');

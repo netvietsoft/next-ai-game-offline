@@ -88,7 +88,9 @@
                            if(getParamValue('ctl-arcade') === "true"){
                                parent.__ctlArcadeRestartLevel({level:iLevel});
                            }
-                           //...ADD YOUR CODE HERE EVENTUALLY
+                           if (window.Android && window.Android.showInterstitialInGame) {
+                               window.Android.showInterstitialInGame("sudoku_restart");
+                           }
                     });
 
                     $(oMain).on("save_score", function(evt, iScore, iDifficultyMode, iTime, bNote, bSolve, bTime, iNumHint) {
@@ -114,7 +116,9 @@
                            if(getParamValue('ctl-arcade') === "true"){
                                parent.__ctlArcadeEndLevel({level:iLevel});
                            }
-                           //...ADD YOUR CODE HERE EVENTUALLY
+                           if (window.Android && window.Android.showInterstitialInGame) {
+                               window.Android.showInterstitialInGame("sudoku_end_level");
+                           }
                     });
 
                     $(oMain).on("show_interlevel_ad", function(evt) {

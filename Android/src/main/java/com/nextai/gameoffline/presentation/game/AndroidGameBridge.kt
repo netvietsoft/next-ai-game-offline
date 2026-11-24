@@ -7,6 +7,7 @@ import android.os.Vibrator
 import android.os.VibratorManager
 import android.util.Log
 import android.webkit.JavascriptInterface
+import com.nextai.gameoffline.BuildConfig
 
 /**
  * Cầu nối JavaScript hai chiều giữa Android Native và Game HTML5/WASM/Construct 3.
@@ -30,13 +31,20 @@ class AndroidGameBridge(
     private val context: Context,
     private val gameName: String,
     private val onScoreSubmitted: (Int) -> Unit,
-    private val onShowInterstitialAdRequested: () -> Unit,
-    private val onShowRewardedAdRequested: () -> Unit,
+    private val onLevelStarted: (Int) -> Unit,
+    private val onLevelCompleted: (Int, String?) -> Unit,
+    private val onLevelBreakAdRequested: () -> Unit,
+    private val onExplicitInterstitialAdRequested: () -> Unit,
+    private val onC3InterstitialRequested: (Int) -> Unit,
+    private val onShowRewardedAdRequested: (String?) -> Unit,
     private val onGameLoaded: () -> Unit
 ) {
 
     companion object {
         private const val TAG = "NextAIGameBridge"
+        private const val MIN_VIBRATION_MS = 1L
+        private const val MAX_VIBRATION_MS = 500L
+        private const val MAX_LOG_VALUE_LENGTH = 120
     }
 
     /**
@@ -45,7 +53,7 @@ class AndroidGameBridge(
      */
     @JavascriptInterface
     fun gameLoaded() {
-        Log.i(TAG, "[$gameName] gameLoaded()")
+        debugLog("[$gameName] gameLoaded()")
         onGameLoaded()
     }
 
@@ -55,11 +63,9 @@ class AndroidGameBridge(
      */
     @JavascriptInterface
     fun onGameReady() {
-        Log.i(TAG, "[$gameName] onGameReady()")
+        debugLog("[$gameName] onGameReady()")
         onGameLoaded()
     }
-
-    private val trackingRepo = com.nextai.gameoffline.data.local.GameTrackingRepository.getInstance(context)
 
     /**
      * JavaScript gọi khi bắt đầu màn chơi mới.
@@ -73,9 +79,8 @@ class AndroidGameBridge(
 
     @JavascriptInterface
     fun levelStartInGame(level: Int) {
-        Log.d(TAG, "[$gameName] levelStartInGame(level=$level)")
-        trackingRepo.incrementPlayCount(gameName)
-        trackingRepo.updateHighestLevel(gameName, level)
+        debugLog("[$gameName] levelStartInGame(level=$level)")
+        onLevelStarted(level)
         com.nextai.gameoffline.analytics.GameAnalyticsManager.logGameLevelStart(gameName, level)
     }
 
@@ -100,14 +105,11 @@ class AndroidGameBridge(
         levelCompleteInGame(level, extra)
     }
 
+    @JavascriptInterface
     fun levelCompleteInGame(level: Int, extra: String?) {
-        Log.i(TAG, "[$gameName] levelCompleteInGame(level=$level, extra=$extra)")
-        val nextLevel = level + 1
-        val newHighest = trackingRepo.updateHighestLevel(gameName, nextLevel)
-        val scoreExtra = extra?.toLongOrNull()
-        com.nextai.gameoffline.analytics.GameAnalyticsManager.logGameLevelComplete(gameName, level, scoreExtra)
-        com.nextai.gameoffline.analytics.GameAnalyticsManager.logGameLevelReached(gameName, newHighest)
-        onShowInterstitialAdRequested()
+        debugLog("[$gameName] levelCompleteInGame(level=$level, extra=$extra)")
+        onLevelCompleted(level, extra)
+        onLevelBreakAdRequested()
     }
 
     /**
@@ -131,9 +133,11 @@ class AndroidGameBridge(
         levelLoseInGame(level, extra)
     }
 
+    @JavascriptInterface
     fun levelLoseInGame(level: Int, extra: String?) {
-        Log.i(TAG, "[$gameName] levelLoseInGame(level=$level, extra=$extra)")
+        debugLog("[$gameName] levelLoseInGame(level=$level, extra=$extra)")
         com.nextai.gameoffline.analytics.GameAnalyticsManager.logGameLevelFailed(gameName, level, extra)
+        onLevelBreakAdRequested()
     }
 
     /**
@@ -148,8 +152,9 @@ class AndroidGameBridge(
 
     @JavascriptInterface
     fun levelRestartInGame(level: Int) {
-        Log.d(TAG, "[$gameName] levelRestartInGame(level=$level)")
+        debugLog("[$gameName] levelRestartInGame(level=$level)")
         com.nextai.gameoffline.analytics.GameAnalyticsManager.logGameLevelRestart(gameName, level)
+        onLevelBreakAdRequested()
     }
 
     /**
@@ -164,8 +169,11 @@ class AndroidGameBridge(
 
     @JavascriptInterface
     fun levelClick(level: Int) {
-        Log.d(TAG, "[$gameName] levelClick(level=$level)")
+        debugLog("[$gameName] levelClick(level=$level)")
         com.nextai.gameoffline.analytics.GameAnalyticsManager.logGameLevelReached(gameName, level)
+        if (InGameAdTriggerPolicy.shouldTriggerOnLevelClick(level)) {
+            onLevelBreakAdRequested()
+        }
     }
 
     /**
@@ -175,35 +183,43 @@ class AndroidGameBridge(
     @JavascriptInterface
     fun scoreInGame(scoreStr: String) {
         val score = scoreStr.toIntOrNull() ?: 0
-        Log.d(TAG, "[$gameName] scoreInGame(scoreStr=$scoreStr -> $score)")
+        debugLog("[$gameName] scoreInGame(scoreStr=$scoreStr -> $score)")
         onScoreSubmitted(score)
         com.nextai.gameoffline.analytics.GameAnalyticsManager.logGameScore(gameName, score)
     }
 
     @JavascriptInterface
     fun scoreInGame(score: Int) {
-        Log.d(TAG, "[$gameName] scoreInGame(score=$score)")
+        debugLog("[$gameName] scoreInGame(score=$score)")
         onScoreSubmitted(score)
         com.nextai.gameoffline.analytics.GameAnalyticsManager.logGameScore(gameName, score)
     }
 
     /**
-     * JavaScript gọi khi nộp điểm kỷ lục (submitScore).
-     * Called by JS when high score is submitted.
+     * JavaScript gọi khi nộp điểm kỷ lục cuối ván (submitScore).
+     * Chỉ kích hoạt điểm dừng quảng cáo cho nhóm Score-On-GameOver đã xác minh; tuyệt đối
+     * không gắn vào `scoreInGame` vốn bắn liên tục trong khi đang chơi.
+     * Called by JS on end-of-round score submission; triggers level break only for audited games.
      */
     @JavascriptInterface
     fun submitScore(score: Int) {
-        Log.i(TAG, "[$gameName] submitScore(score=$score)")
+        debugLog("[$gameName] submitScore(score=$score)")
         onScoreSubmitted(score)
         com.nextai.gameoffline.analytics.GameAnalyticsManager.logGameScore(gameName, score)
+        if (InGameAdTriggerPolicy.shouldTriggerOnSubmitScore(gameName)) {
+            onLevelBreakAdRequested()
+        }
     }
 
     @JavascriptInterface
     fun submitScore(scoreStr: String) {
         val score = scoreStr.toIntOrNull() ?: 0
-        Log.i(TAG, "[$gameName] submitScore(scoreStr=$scoreStr -> $score)")
+        debugLog("[$gameName] submitScore(scoreStr=$scoreStr -> $score)")
         onScoreSubmitted(score)
         com.nextai.gameoffline.analytics.GameAnalyticsManager.logGameScore(gameName, score)
+        if (InGameAdTriggerPolicy.shouldTriggerOnSubmitScore(gameName)) {
+            onLevelBreakAdRequested()
+        }
     }
 
     /**
@@ -212,14 +228,20 @@ class AndroidGameBridge(
      */
     @JavascriptInterface
     fun showInterstitialInGame(adPlace: String) {
-        Log.d(TAG, "[$gameName] showInterstitialInGame(adPlace=$adPlace)")
-        onShowInterstitialAdRequested()
+        debugLog("[$gameName] showInterstitialInGame(adPlace=$adPlace)")
+        onExplicitInterstitialAdRequested()
     }
 
     @JavascriptInterface
     fun requestInterstitialAd() {
-        Log.d(TAG, "[$gameName] requestInterstitialAd()")
-        onShowInterstitialAdRequested()
+        debugLog("[$gameName] requestInterstitialAd()")
+        onExplicitInterstitialAdRequested()
+    }
+
+    /** Cầu nối C3 riêng cho Hexa Merge / C3 bridge limited to Hexa Merge. */
+    @JavascriptInterface
+    fun requestC3Interstitial(requestId: Int) {
+        if (gameName == "hexa_merge" && requestId in 1..1_000_000) onC3InterstitialRequested(requestId)
     }
 
     /**
@@ -228,20 +250,20 @@ class AndroidGameBridge(
      */
     @JavascriptInterface
     fun showRewardedInGame(adPlace: String) {
-        Log.d(TAG, "[$gameName] showRewardedInGame(adPlace=$adPlace)")
-        onShowRewardedAdRequested()
+        debugLog("[$gameName] showRewardedInGame(adPlace=$adPlace)")
+        onShowRewardedAdRequested(null)
     }
 
     @JavascriptInterface
     fun showRewardedVideo(rewardType: String) {
-        Log.d(TAG, "[$gameName] showRewardedVideo(rewardType=$rewardType)")
-        onShowRewardedAdRequested()
+        debugLog("[$gameName] showRewardedVideo(rewardType=$rewardType)")
+        onShowRewardedAdRequested(rewardType)
     }
 
     @JavascriptInterface
     fun requestRewardedVideo() {
-        Log.d(TAG, "[$gameName] requestRewardedVideo()")
-        onShowRewardedAdRequested()
+        debugLog("[$gameName] requestRewardedVideo()")
+        onShowRewardedAdRequested(null)
     }
 
     /**
@@ -250,22 +272,22 @@ class AndroidGameBridge(
      */
     @JavascriptInterface
     fun gameOpenLink() {
-        Log.d(TAG, "[$gameName] gameOpenLink()")
+        debugLog("[$gameName] gameOpenLink()")
     }
 
     @JavascriptInterface
     fun gameCloseRedirectWindow() {
-        Log.d(TAG, "[$gameName] gameCloseRedirectWindow()")
+        debugLog("[$gameName] gameCloseRedirectWindow()")
     }
 
     @JavascriptInterface
     fun gameOpenRedirectWindow() {
-        Log.d(TAG, "[$gameName] gameOpenRedirectWindow()")
+        debugLog("[$gameName] gameOpenRedirectWindow()")
     }
 
     @JavascriptInterface
     fun gameProgressEvent(str: String) {
-        Log.d(TAG, "[$gameName] gameProgressEvent($str)")
+        debugLog("[$gameName] gameProgressEvent($str)")
     }
 
     /**
@@ -288,19 +310,32 @@ class AndroidGameBridge(
             return
         }
         try {
+            // Giới hạn bridge để nội dung game không thể giữ motor rung quá lâu.
+            // Bound the bridge so game content cannot hold the vibration motor for too long.
+            val safeDurationMs = milliseconds.coerceIn(MIN_VIBRATION_MS, MAX_VIBRATION_MS)
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                 val vibratorManager = context.getSystemService(Context.VIBRATOR_MANAGER_SERVICE) as? VibratorManager
                 val vibrator = vibratorManager?.defaultVibrator
-                vibrator?.vibrate(VibrationEffect.createOneShot(milliseconds, VibrationEffect.DEFAULT_AMPLITUDE))
+                vibrator?.vibrate(VibrationEffect.createOneShot(safeDurationMs, VibrationEffect.DEFAULT_AMPLITUDE))
             } else {
                 @Suppress("DEPRECATION")
                 val vibrator = context.getSystemService(Context.VIBRATOR_SERVICE) as? Vibrator
                 @Suppress("DEPRECATION")
-                vibrator?.vibrate(milliseconds)
+                vibrator?.vibrate(safeDurationMs)
             }
         } catch (e: Exception) {
-            Log.w(TAG, "Vibrate unavailable on this device: ${e.message}")
+            if (BuildConfig.DEBUG) Log.w(TAG, "Vibrate unavailable on this device")
         }
     }
+
+    /**
+     * Chỉ ghi dữ liệu bridge đã làm sạch ở debug để tránh log injection/rò dữ liệu production.
+     * Logs sanitized bridge data only in debug to prevent production leakage and log injection.
+     */
+    private fun debugLog(message: String) {
+        if (!BuildConfig.DEBUG) return
+        Log.d(TAG, message.replace('\n', ' ').replace('\r', ' ').take(MAX_LOG_VALUE_LENGTH))
+    }
+
 }
 

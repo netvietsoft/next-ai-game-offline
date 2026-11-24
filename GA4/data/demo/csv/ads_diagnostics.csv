@@ -1,0 +1,7 @@
+﻿eventName,customEvent:ad_type,customEvent:error_code,customEvent:error_message,customEvent:reason,eventCount
+ad_failed_to_load,INTERSTITIAL,3,No fill.,(not set),8940
+ad_failed_to_load,BANNER,3,No fill.,(not set),10250
+ad_failed_to_load,REWARDED,2,Network Error,(not set),3180
+ad_mediation_failed,INTERSTITIAL,101,Meta placement mapping not configured,(not set),4120
+ad_load_suppressed,INTERSTITIAL,(not set),(not set),frequency_cap_90s,6340
+ad_load_suppressed,APP_OPEN,(not set),(not set),cache_ttl_valid,2190

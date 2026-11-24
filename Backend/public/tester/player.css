@@ -1,0 +1,98 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif; }
+body, html { width: 100%; height: 100%; overflow: hidden; background: #000; color: #fff; display: flex; flex-direction: column; }
+
+/* Top Mini Control Bar */
+#topBar {
+    height: 44px;
+    background: #0f172a;
+    border-bottom: 1px solid #1e293b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    z-index: 1000;
+    flex-shrink: 0;
+}
+.title-group { display: flex; align-items: center; gap: 8px; }
+.back-btn {
+    background: #1e293b;
+    color: #94a3b8;
+    border: 1px solid #334155;
+    padding: 4px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.back-btn:hover { background: #3b82f6; color: #fff; }
+.game-title { font-size: 14px; font-weight: 700; color: #f8fafc; }
+.badge { font-size: 11px; padding: 2px 6px; border-radius: 4px; font-weight: 600; }
+.badge-portrait { background: #0284c7; color: #fff; }
+.badge-landscape { background: #7c3aed; color: #fff; }
+
+.controls { display: flex; align-items: center; gap: 8px; }
+.btn-toggle {
+    background: #1e293b;
+    color: #f8fafc;
+    border: 1px solid #334155;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.btn-toggle.active { background: #eab308; color: #000; border-color: #facc15; }
+
+/* Game Viewport Container */
+#gameWrapper {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+}
+#gameIframe {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+/* Banner Container (50px) */
+#bannerContainer {
+    height: 50px;
+    background: #000000;
+    border-top: 1px solid #222;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+    user-select: none;
+}
+#bannerContainer.visible { display: flex; }
+.banner-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 16px;
+    border: 1px dashed #444;
+    border-radius: 4px;
+    background: #111;
+}
+.banner-badge {
+    background: #4285f4;
+    color: #fff;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: bold;
+}

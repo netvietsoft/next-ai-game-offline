@@ -1,0 +1,203 @@
+{
+  "key": "events_summary",
+  "title": "Tổng hợp sự kiện / Events Summary",
+  "dimensions": [
+    "eventName"
+  ],
+  "metrics": [
+    "eventCount",
+    "totalUsers",
+    "eventCountPerUser"
+  ],
+  "skipped_optional_fields": [],
+  "row_count": 31,
+  "total_available_rows": 31,
+  "rows": [
+    {
+      "eventName": "game_level_start",
+      "eventCount": 270420,
+      "totalUsers": 19500,
+      "eventCountPerUser": 13.87
+    },
+    {
+      "eventName": "ad_request",
+      "eventCount": 218500,
+      "totalUsers": 19500,
+      "eventCountPerUser": 11.21
+    },
+    {
+      "eventName": "ad_loaded",
+      "eventCount": 182760,
+      "totalUsers": 19500,
+      "eventCountPerUser": 9.37
+    },
+    {
+      "eventName": "ad_mediation_loaded",
+      "eventCount": 182760,
+      "totalUsers": 19500,
+      "eventCountPerUser": 9.37
+    },
+    {
+      "eventName": "ad_impression",
+      "eventCount": 163863,
+      "totalUsers": 19500,
+      "eventCountPerUser": 8.4
+    },
+    {
+      "eventName": "game_level_complete",
+      "eventCount": 126319,
+      "totalUsers": 19500,
+      "eventCountPerUser": 6.48
+    },
+    {
+      "eventName": "game_open",
+      "eventCount": 108826,
+      "totalUsers": 19500,
+      "eventCountPerUser": 5.58
+    },
+    {
+      "eventName": "game_score_submitted",
+      "eventCount": 101048,
+      "totalUsers": 19500,
+      "eventCountPerUser": 5.18
+    },
+    {
+      "eventName": "game_start",
+      "eventCount": 95894,
+      "totalUsers": 19500,
+      "eventCountPerUser": 4.92
+    },
+    {
+      "eventName": "game_level_failed",
+      "eventCount": 94998,
+      "totalUsers": 19500,
+      "eventCountPerUser": 4.87
+    },
+    {
+      "eventName": "game_play_time",
+      "eventCount": 88109,
+      "totalUsers": 19500,
+      "eventCountPerUser": 4.52
+    },
+    {
+      "eventName": "notification_scheduled",
+      "eventCount": 71800,
+      "totalUsers": 19500,
+      "eventCountPerUser": 3.68
+    },
+    {
+      "eventName": "notification_delivery",
+      "eventCount": 71800,
+      "totalUsers": 19500,
+      "eventCountPerUser": 3.68
+    },
+    {
+      "eventName": "ad_dismissed",
+      "eventCount": 55314,
+      "totalUsers": 15487,
+      "eventCountPerUser": 3.57
+    },
+    {
+      "eventName": "game_level_restart",
+      "eventCount": 49574,
+      "totalUsers": 13880,
+      "eventCountPerUser": 3.57
+    },
+    {
+      "eventName": "ad_failed_to_load",
+      "eventCount": 35740,
+      "totalUsers": 10007,
+      "eventCountPerUser": 3.57
+    },
+    {
+      "eventName": "notification_permission",
+      "eventCount": 14850,
+      "totalUsers": 4158,
+      "eventCountPerUser": 3.57
+    },
+    {
+      "eventName": "game_download",
+      "eventCount": 13050,
+      "totalUsers": 3654,
+      "eventCountPerUser": 3.57
+    },
+    {
+      "eventName": "ad_reward_earned",
+      "eventCount": 9779,
+      "totalUsers": 2738,
+      "eventCountPerUser": 3.57
+    },
+    {
+      "eventName": "ad_load_suppressed",
+      "eventCount": 8530,
+      "totalUsers": 2388,
+      "eventCountPerUser": 3.57
+    },
+    {
+      "eventName": "inapp_paywall_viewed",
+      "eventCount": 8110,
+      "totalUsers": 2270,
+      "eventCountPerUser": 3.57
+    },
+    {
+      "eventName": "notification_opened",
+      "eventCount": 7890,
+      "totalUsers": 2209,
+      "eventCountPerUser": 3.57
+    },
+    {
+      "eventName": "ad_mediation_failed",
+      "eventCount": 4120,
+      "totalUsers": 1153,
+      "eventCountPerUser": 3.57
+    },
+    {
+      "eventName": "ad_clicked",
+      "eventCount": 3781,
+      "totalUsers": 1058,
+      "eventCountPerUser": 3.57
+    },
+    {
+      "eventName": "inapp_purchase_initiated",
+      "eventCount": 612,
+      "totalUsers": 171,
+      "eventCountPerUser": 3.58
+    },
+    {
+      "eventName": "inapp_purchase_canceled",
+      "eventCount": 376,
+      "totalUsers": 105,
+      "eventCountPerUser": 3.58
+    },
+    {
+      "eventName": "inapp_restore_initiated",
+      "eventCount": 240,
+      "totalUsers": 67,
+      "eventCountPerUser": 3.58
+    },
+    {
+      "eventName": "inapp_restore_none_found",
+      "eventCount": 196,
+      "totalUsers": 54,
+      "eventCountPerUser": 3.63
+    },
+    {
+      "eventName": "inapp_purchase_success",
+      "eventCount": 184,
+      "totalUsers": 51,
+      "eventCountPerUser": 3.61
+    },
+    {
+      "eventName": "inapp_purchase_failed",
+      "eventCount": 52,
+      "totalUsers": 14,
+      "eventCountPerUser": 3.71
+    },
+    {
+      "eventName": "inapp_restore_success",
+      "eventCount": 44,
+      "totalUsers": 12,
+      "eventCountPerUser": 3.67
+    }
+  ]
+}

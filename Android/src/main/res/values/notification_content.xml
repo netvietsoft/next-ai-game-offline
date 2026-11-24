@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_permission_title">Keep the games coming</string>
+    <string name="notification_permission_message">Allow Galaxy Game to send three daily game reminders around 8 AM, 12 PM and 8 PM in your local time. You can turn them off any time in Android settings.</string>
+    <string name="notification_permission_allow">Allow reminders</string>
+    <string name="notification_permission_not_now">Not now</string>
+
+    <string-array name="daily_notification_titles">
+        <item>Your next game is ready</item>
+        <item>Quick game break?</item>
+        <item>A fresh challenge awaits</item>
+        <item>Ready to beat your score?</item>
+        <item>Pick up and play</item>
+    </string-array>
+    <string-array name="daily_notification_messages">
+        <item>Open Galaxy Game and choose a game for your next break.</item>
+        <item>Hundreds of mini-games are one tap away.</item>
+        <item>Try a different puzzle, arcade, or classic game today.</item>
+        <item>Come back and set a new personal best.</item>
+        <item>Your offline game collection is ready whenever you are.</item>
+    </string-array>
+</resources>
+

@@ -17,6 +17,9 @@ function CButLang(iX,iY,iNumLang,iCurLang,oSpriteLang,oParentContainer){
         _aCbOwner =new Array();
         
         _oContainer = new createjs.Container();
+        // Ẩn lựa chọn ngôn ngữ; ứng dụng hiển thị tiếng Anh.
+        // Hide the language selector; the app displays English.
+        _oContainer.visible = false;
         _oContainer.x = iX;
         _oContainer.y = iY;
         _oListenerPress = _oContainer.on("mousedown",this._onPress,this);

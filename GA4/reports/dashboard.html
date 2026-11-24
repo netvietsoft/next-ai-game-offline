@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GA4 Analytics Dashboard — Game Gate Offline</title>
+  <style>
+    :root {
+      --bg: #f4f6fb;
+      --surface: #ffffff;
+      --surface-2: #eef2f9;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #dce3ef;
+      --accent: #2563eb;
+      --gold: #d97706;
+      --ok: #059669;
+      --warn: #dc2626;
+      --shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+    html[data-theme="dark"] {
+      --bg: #0b1120;
+      --surface: #111827;
+      --surface-2: #1e293b;
+      --text: #f3f4f6;
+      --muted: #94a3b8;
+      --border: #293548;
+      --accent: #3b82f6;
+      --gold: #f59e0b;
+      --ok: #10b981;
+      --warn: #ef4444;
+      --shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 20px 16px 48px;
+    }
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px 20px;
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+    }
+    .title-group h1 { margin: 0 0 4px; font-size: 1.28rem; }
+    .meta-sub { font-size: 0.86rem; color: var(--muted); }
+    .actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .badge {
+      display: inline-block;
+      padding: 5px 11px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+    .badge-live { background: rgba(16,185,129,0.16); color: var(--ok); border: 1px solid var(--ok); }
+    .badge-demo { background: rgba(245,158,11,0.16); color: var(--gold); border: 1px solid var(--gold); }
+    .btn-theme {
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: var(--surface-2);
+      color: var(--text);
+      padding: 8px 14px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px 18px;
+      box-shadow: var(--shadow);
+    }
+    .kpi-label { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+    .kpi-value { font-size: 1.65rem; font-weight: 800; margin: 4px 0; }
+    .kpi-sub { font-size: 0.82rem; color: var(--muted); }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 1.04rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .rec-list { margin: 0; padding-left: 20px; }
+    .rec-list li { margin-bottom: 8px; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    th, td { padding: 9px 8px; border-bottom: 1px solid var(--border); text-align: left; }
+    th { color: var(--muted); font-weight: 600; font-size: 0.8rem; }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    code { background: var(--surface-2); padding: 2px 6px; border-radius: 6px; font-size: 0.82rem; }
+    .chart-svg { width: 100%; height: auto; display: block; }
+    .svg-grid { stroke: var(--border); stroke-width: 1; }
+    .svg-axis { fill: var(--muted); font-size: 11px; }
+    .svg-val { fill: var(--text); font-size: 10px; font-weight: 600; }
+    .svg-bar { fill: rgba(59, 130, 246, 0.38); }
+    .svg-bar-gold { fill: var(--gold); }
+    .empty-note { color: var(--muted); font-size: 0.9rem; padding: 12px 0; }
+    .funnel-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 10px;
+      background: var(--surface-2);
+      border-radius: 10px;
+      margin-bottom: 8px;
+      font-size: 0.88rem;
+    }
+    @media (max-width: 600px) {
+      .kpi-value { font-size: 1.38rem; }
+      .topbar { padding: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="title-group">
+        <h1>Game Gate Offline — GA4 Analytics Dashboard</h1>
+        <div class="meta-sub">
+          Property: <strong>561301538</strong> &bull;
+          Kỳ báo cáo: <strong>2026-08-27 → 2026-11-24</strong> &bull;
+          Custom Schema: <strong>28/28</strong> dims
+        </div>
+      </div>
+      <div class="actions">
+        <span class="badge badge-live">LIVE GA4 DATA</span>
+        <button id="themeToggle" class="btn-theme" type="button">Đổi Sáng / Tối</button>
+      </div>
+    </header>
+
+    <section class="kpi-grid">
+      <article class="card">
+        <div class="kpi-label">DAU Trung Bình</div>
+        <div class="kpi-value">564.50</div>
+        <div class="kpi-sub">Đỉnh: 1,919 &bull; Xu hướng: 90.0%</div>
+      </article>
+      <article class="card">
+        <div class="kpi-label">Engagement Rate</div>
+        <div class="kpi-value">91.99%</div>
+        <div class="kpi-sub">TB 16.06 phút / DAU</div>
+      </article>
+      <article class="card">
+        <div class="kpi-label">Ad Fill Rate / CTR</div>
+        <div class="kpi-value">20.52%</div>
+        <div class="kpi-sub">Show: 178.75% &bull; CTR: 4.57%</div>
+      </article>
+      <article class="card">
+        <div class="kpi-label">IAP VIP Conversion</div>
+        <div class="kpi-value">0.0%</div>
+        <div class="kpi-sub">0 đơn / 191 Paywall</div>
+      </article>
+      <article class="card">
+        <div class="kpi-label">Notification Open Rate</div>
+        <div class="kpi-value">2.7%</div>
+        <div class="kpi-sub">70 mở / 2,592 hiển thị</div>
+      </article>
+      <article class="card">
+        <div class="kpi-label">Tải Game R2 Thành Công</div>
+        <div class="kpi-value">23.18%</div>
+        <div class="kpi-sub">3,498 xong / 11,591 lỗi</div>
+      </article>
+    </section>
+
+    <section class="grid-2">
+      <article class="card">
+        <h2>Xu Hướng DAU Theo Ngày</h2>
+        <svg viewBox="0 0 760 220" class="chart-svg" role="img" aria-label="DAU Daily Chart">
+  <line x1="44" y1="18" x2="44" y2="190" class="svg-grid"/>
+  <line x1="44" y1="190" x2="744" y2="190" class="svg-grid"/>
+  <text x="38" y="26" text-anchor="end" class="svg-axis">1,919</text>
+  <text x="38" y="190" text-anchor="end" class="svg-axis">0</text>
+  <rect x="35.2" y="189.8" width="17.5" height="2.0" rx="3" class="svg-bar"><title>2026-11-03: 2 DAU</title></rect><rect x="68.6" y="189.9" width="17.5" height="2.0" rx="3" class="svg-bar"><title>2026-11-04: 1 DAU</title></rect><rect x="101.9" y="189.9" width="17.5" height="2.0" rx="3" class="svg-bar"><title>2026-11-05: 1 DAU</title></rect><rect x="135.2" y="189.8" width="17.5" height="2.0" rx="3" class="svg-bar"><title>2026-11-06: 2 DAU</title></rect><rect x="168.6" y="189.9" width="17.5" height="2.0" rx="3" class="svg-bar"><title>2026-11-07: 1 DAU</title></rect><rect x="201.9" y="189.3" width="17.5" height="2.0" rx="3" class="svg-bar"><title>2026-11-08: 8 DAU</title></rect><rect x="235.2" y="179.2" width="17.5" height="10.8" rx="3" class="svg-bar"><title>2026-11-09: 121 DAU</title></rect><rect x="268.6" y="156.5" width="17.5" height="33.5" rx="3" class="svg-bar"><title>2026-11-10: 374 DAU</title></rect><rect x="301.9" y="101.0" width="17.5" height="89.0" rx="3" class="svg-bar"><title>2026-11-11: 993 DAU</title></rect><rect x="335.2" y="95.6" width="17.5" height="94.4" rx="3" class="svg-bar"><title>2026-11-12: 1,053 DAU</title></rect><rect x="368.6" y="35.3" width="17.5" height="154.7" rx="3" class="svg-bar"><title>2026-11-13: 1,726 DAU</title></rect><rect x="401.9" y="75.7" width="17.5" height="114.3" rx="3" class="svg-bar"><title>2026-11-14: 1,275 DAU</title></rect><rect x="435.2" y="117.2" width="17.5" height="72.8" rx="3" class="svg-bar"><title>2026-11-15: 812 DAU</title></rect><rect x="468.6" y="137.4" width="17.5" height="52.6" rx="3" class="svg-bar"><title>2026-11-16: 587 DAU</title></rect><rect x="501.9" y="141.6" width="17.5" height="48.4" rx="3" class="svg-bar"><title>2026-11-17: 540 DAU</title></rect><rect x="535.2" y="152.7" width="17.5" height="37.3" rx="3" class="svg-bar"><title>2026-11-18: 416 DAU</title></rect><rect x="568.6" y="155.4" width="17.5" height="34.6" rx="3" class="svg-bar"><title>2026-11-19: 386 DAU</title></rect><rect x="601.9" y="151.8" width="17.5" height="38.2" rx="3" class="svg-bar"><title>2026-11-20: 426 DAU</title></rect><rect x="635.2" y="18.0" width="17.5" height="172.0" rx="3" class="svg-bar"><title>2026-11-21: 1,919 DAU</title></rect><rect x="668.6" y="98.4" width="17.5" height="91.6" rx="3" class="svg-bar"><title>2026-11-22: 1,022 DAU</title></rect><rect x="701.9" y="133.3" width="17.5" height="56.7" rx="3" class="svg-bar"><title>2026-11-23: 633 DAU</title></rect><rect x="735.2" y="179.2" width="17.5" height="10.8" rx="3" class="svg-bar"><title>2026-11-24: 120 DAU</title></rect>
+  <polyline fill="none" stroke="var(--accent)" stroke-width="2.5" points="44.0,189.8 77.3,189.9 110.7,189.9 144.0,189.8 177.3,189.9 210.7,189.3 244.0,179.2 277.3,156.5 310.7,101.0 344.0,95.6 377.3,35.3 410.7,75.7 444.0,117.2 477.3,137.4 510.7,141.6 544.0,152.7 577.3,155.4 610.7,151.8 644.0,18.0 677.3,98.4 710.7,133.3 744.0,179.2"/>
+  <text x="44.0" y="212" text-anchor="middle" class="svg-axis">11-03</text><text x="410.7" y="212" text-anchor="middle" class="svg-axis">11-14</text><text x="744.0" y="212" text-anchor="middle" class="svg-axis">11-24</text>
+</svg>
+      </article>
+      <article class="card">
+        <h2>Khuyến Nghị Hành Động Tự Động</h2>
+        <ol class="rec-list"><li>Tỉ lệ Fill Rate quảng cáo hiện đạt 20.52% (&lt; 75%). Ưu tiên hoàn thiện Meta Audience Network Bidding trên AdMob Mediation (TASK-045) để tăng cạnh tranh giá thầu.</li><li>CẢNH BÁO CHÍNH SÁCH ADMOB: CTR Banner đang vượt ngưỡng 3.5%. Kiểm tra lại khoảng cách dải phân cách xanh 3dp phía trên Banner trên các thiết bị màn hình nhỏ.</li><li>Tỉ lệ tải thành công gói game R2 đạt 23.18% (&lt; 90%). Kiểm tra cấu hình DNS `pub-r2.nextai.games` và tăng cơ chế retry cho các game có lượt failed cao.</li><li>Game &#x27;geometry_rash&#x27; có tỉ lệ qua màn thấp (0.0%). Cân nhắc gắn gợi ý xem Rewarded Video để nhận trợ giúp hoặc cân bằng lại độ khó các màn đầu.</li><li>Tỉ lệ chuyển đổi Paywall -&gt; Mua VIP đạt 0.0%. Thử A/B testing điểm đặt Paywall ngay sau lần hiện Interstitial thứ 2 hoặc tối ưu copy ưu đãi.</li><li>HIỆU QUẢ CHI TIÊU ADS (ROAS): Blended ROAS hiện đạt 6.43% (Chi $157.38 / Thu $10.12, Paid CPI $0.028 vs eCPM TB $0.173). Cần loại trừ các quốc gia Tier-3 có eCPM &lt; $0.10 khỏi chiến dịch Install Volume và chuyển Google Ads sang đấu thầu Target ROAS (Ad Revenue).</li><li>Khung giờ vàng mở Notification cao nhất: 12:00 (3.11%), 08:00 (2.52%), 20:00 (2.47%). Ưu tiên đẩy thông điệp game mới / streak thưởng vào các khung giờ này.</li></ol>
+      </article>
+    </section>
+
+    <section class="grid-2">
+      <article class="card">
+        <h2>Top Mini-Game Mở Nhiều Nhất</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>#</th><th>Game</th><th>Thể loại</th><th class="num">Mở</th><th class="num">Thời lượng</th><th class="num">Win Rate</th></tr></thead>
+            <tbody><tr><td>1</td><td><code>amaze_ball_quest</code></td><td>Casual</td><td class='num'>2,060</td><td class='num'>4,672p</td><td class='num'>100.0%</td></tr><tr><td>2</td><td><code>burger_run</code></td><td>Arcade</td><td class='num'>1,344</td><td class='num'>2,266.30p</td><td class='num'>12.57%</td></tr><tr><td>3</td><td><code>apple_worm</code></td><td>Casual</td><td class='num'>1,063</td><td class='num'>2,964.60p</td><td class='num'>40.64%</td></tr><tr><td>4</td><td><code>tic_tac_toe</code></td><td>2 Players</td><td class='num'>817</td><td class='num'>1,502.40p</td><td class='num'>0.0%</td></tr><tr><td>5</td><td><code>ludo</code></td><td>2 Players</td><td class='num'>814</td><td class='num'>7,076.70p</td><td class='num'>0.0%</td></tr><tr><td>6</td><td><code>ball_escape</code></td><td>Casual</td><td class='num'>737</td><td class='num'>1,168.90p</td><td class='num'>44.38%</td></tr><tr><td>7</td><td><code>sea_battle</code></td><td>2 Players</td><td class='num'>608</td><td class='num'>1,214.80p</td><td class='num'>0.0%</td></tr><tr><td>8</td><td><code>balloons_creator</code></td><td>Casual</td><td class='num'>594</td><td class='num'>2,019.20p</td><td class='num'>75.0%</td></tr><tr><td>9</td><td><code>pool_8_pro</code></td><td>2 Players</td><td class='num'>571</td><td class='num'>2,116.70p</td><td class='num'>0.0%</td></tr><tr><td>10</td><td><code>block_blast</code></td><td>Puzzle</td><td class='num'>533</td><td class='num'>1,609.50p</td><td class='num'>0.0%</td></tr></tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Hiệu Suất Quảng Cáo Theo Định Dạng</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Loại</th><th class="num">Requests</th><th class="num">Fill</th><th class="num">Imps</th><th class="num">Show</th><th class="num">CTR</th></tr></thead>
+            <tbody><tr><td><code>APP_OPEN</code></td><td class='num'>5,466</td><td class='num'>23.45%</td><td class='num'>46</td><td class='num'>3.59%</td><td class='num'>39.13%</td></tr><tr><td><code>BANNER</code></td><td class='num'>27,589</td><td class='num'>21.02%</td><td class='num'>7,405</td><td class='num'>127.72%</td><td class='num'>5.63%</td></tr><tr><td><code>INTERSTITIAL</code></td><td class='num'>17,181</td><td class='num'>18.71%</td><td class='num'>1,750</td><td class='num'>54.45%</td><td class='num'>30.06%</td></tr><tr><td><code>NATIVE</code></td><td class='num'>12,885</td><td class='num'>49.55%</td><td class='num'>2,863</td><td class='num'>44.84%</td><td class='num'>8.28%</td></tr><tr><td><code>REWARDED</code></td><td class='num'>7,366</td><td class='num'>16.2%</td><td class='num'>41</td><td class='num'>3.44%</td><td class='num'>9.76%</td></tr></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section class="grid-2">
+      <article class="card">
+        <h2>Open Rate Notification Theo Giờ (5 Slot/Ngày)</h2>
+        <svg viewBox="0 0 520 200" class="chart-svg" role="img" aria-label="Notification Open Rate Chart">
+  <line x1="40" y1="168" x2="506" y2="168" class="svg-grid"/>
+  <rect x="98.7" y="46.5" width="38.0" height="121.5" rx="4" class="svg-bar"><title>08:00 — Open Rate: 2.52%</title></rect><text x="117.7" y="41.5" text-anchor="middle" class="svg-val">2.5%</text><text x="117.7" y="190" text-anchor="middle" class="svg-axis">08:00</text><rect x="254.0" y="18.0" width="38.0" height="150.0" rx="4" class="svg-bar-gold"><title>12:00 — Open Rate: 3.11%</title></rect><text x="273.0" y="13.0" text-anchor="middle" class="svg-val">3.1%</text><text x="273.0" y="190" text-anchor="middle" class="svg-axis">12:00</text><rect x="409.3" y="48.9" width="38.0" height="119.1" rx="4" class="svg-bar"><title>20:00 — Open Rate: 2.47%</title></rect><text x="428.3" y="43.9" text-anchor="middle" class="svg-val">2.5%</text><text x="428.3" y="190" text-anchor="middle" class="svg-axis">20:00</text>
+</svg>
+      </article>
+
+      <article class="card">
+        <h2>Phễu IAP VIP & Quốc Gia Top Đầu</h2>
+        <div class="funnel-row"><span>1. Xem Paywall</span><strong>191</strong></div>
+        <div class="funnel-row"><span>2. Bấm Mua Google Play</span><strong>2 (1.05%)</strong></div>
+        <div class="funnel-row"><span>3. Thanh Toán Thành Công</span><strong>0 (0.0%)</strong></div>
+        <div class="table-wrap" style="margin-top:12px;">
+          <table>
+            <thead><tr><th>Quốc Gia</th><th class="num">Active Users</th><th class="num">Sessions</th><th class="num">Engaged</th></tr></thead>
+            <tbody><tr><td>India</td><td class='num'>1,072</td><td class='num'>3,543</td><td class='num'>92.77%</td></tr><tr><td>Algeria</td><td class='num'>608</td><td class='num'>2,239</td><td class='num'>93.3%</td></tr><tr><td>Pakistan</td><td class='num'>409</td><td class='num'>1,426</td><td class='num'>94.53%</td></tr><tr><td>Bangladesh</td><td class='num'>392</td><td class='num'>1,105</td><td class='num'>91.67%</td></tr><tr><td>Egypt</td><td class='num'>293</td><td class='num'>1,180</td><td class='num'>92.29%</td></tr><tr><td>Iraq</td><td class='num'>262</td><td class='num'>616</td><td class='num'>90.1%</td></tr><tr><td>Venezuela</td><td class='num'>244</td><td class='num'>718</td><td class='num'>92.62%</td></tr><tr><td>Nepal</td><td class='num'>229</td><td class='num'>658</td><td class='num'>92.25%</td></tr></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+    
+    <section class="kpi-grid">
+      <article class="card">
+        <div class="kpi-label">Chi Phí Google Ads (UA)</div>
+        <div class="kpi-value">$157.38</div>
+        <div class="kpi-sub">
+          Paid CPI: $0.028 &bull; CPC: $0.0062
+        </div>
+      </article>
+      <article class="card">
+        <div class="kpi-label">Tổng Doanh Thu (AdMob + IAP)</div>
+        <div class="kpi-value">$10.12</div>
+        <div class="kpi-sub">
+          AdMob: $10.12 &bull; IAP: $0.00
+        </div>
+      </article>
+      <article class="card">
+        <div class="kpi-label">Blended ROAS / Lãi Lỗ</div>
+        <div class="kpi-value">6.43%</div>
+        <div class="kpi-sub">
+          Net P&amp;L: -$147.26 &bull; eCPM: $0.173
+        </div>
+      </article>
+    </section>
+
+    <section class="grid-2">
+      <article class="card">
+        <h2>Chi Phí &amp; CPI Theo Chiến Dịch Google Ads</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Chiến dịch</th><th class="num">Chi phí</th><th class="num">New Users</th><th class="num">CPI</th><th class="num">Thu trực tiếp</th></tr></thead>
+            <tbody><tr><td><code>Global</code></td><td class='num'>$101.74</td><td class='num'>635</td><td class='num'>$0.160</td><td class='num'>$1.005</td></tr><tr><td><code>Global2</code></td><td class='num'>$32.23</td><td class='num'>1,119</td><td class='num'>$0.029</td><td class='num'>$1.559</td></tr><tr><td><code>US</code></td><td class='num'>$11.30</td><td class='num'>28</td><td class='num'>$0.404</td><td class='num'>$0.688</td></tr><tr><td><code>Global ROAS</code></td><td class='num'>$6.47</td><td class='num'>82</td><td class='num'>$0.079</td><td class='num'>$0.547</td></tr><tr><td><code>Brazil</code></td><td class='num'>$5.56</td><td class='num'>159</td><td class='num'>$0.035</td><td class='num'>$0.663</td></tr><tr><td><code>Nam Phi</code></td><td class='num'>$0.04</td><td class='num'>1</td><td class='num'>$0.040</td><td class='num'>$0.000</td></tr><tr><td><code>Argentina</code></td><td class='num'>$0.04</td><td class='num'>1</td><td class='num'>$0.037</td><td class='num'>$0.006</td></tr></tbody>
+          </table>
+        </div>
+      </article>
+      <article class="card">
+        <h2>Doanh Thu &amp; eCPM Theo Phiên Bản / Định Dạng</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Bản</th><th>Định dạng</th><th class="num">Doanh thu</th><th class="num">Imps</th><th class="num">eCPM</th></tr></thead>
+            <tbody><tr><td><code>v1.4.1</code></td><td>Interstitial</td><td class='num'>$0.004</td><td class='num'>2</td><td class='num'>$1.875</td></tr><tr><td><code>v1.4.1</code></td><td>Banner</td><td class='num'>$0.000</td><td class='num'>1</td><td class='num'>$0.027</td></tr><tr><td><code>v1.4.0</code></td><td>Interstitial</td><td class='num'>$0.155</td><td class='num'>127</td><td class='num'>$1.221</td></tr><tr><td><code>v1.4.0</code></td><td>Native advanced</td><td class='num'>$0.023</td><td class='num'>90</td><td class='num'>$0.257</td></tr><tr><td><code>v1.4.0</code></td><td>Rewarded</td><td class='num'>$0.016</td><td class='num'>9</td><td class='num'>$1.737</td></tr><tr><td><code>v1.4.0</code></td><td>Banner</td><td class='num'>$0.008</td><td class='num'>47</td><td class='num'>$0.179</td></tr><tr><td><code>v1.4.0</code></td><td>App open</td><td class='num'>$0.000</td><td class='num'>1</td><td class='num'>$0.132</td></tr></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+  </div>
+
+  <script>
+    window.__GA4_SUMMARY__ = {"meta": {"data_source": "LIVE_GA4", "property_id": "561301538", "start_date": "2026-08-27", "end_date": "2026-11-24", "timezone": "Asia/Ho_Chi_Minh", "extracted_at_utc": "2026-11-24T01:32:03.351946+00:00", "schema_status": {"total_expected_dimensions": 28, "registered_dimensions": ["game_name", "level_label", "game_title", "game_category", "status", "search_term", "ad_type", "ad_unit_id", "ad_network", "adapter", "error_code", "error_domain", "error_message", "waterfall", "reason", "screen_name", "reward_type", "source", "product_id", "notification_id", "notification_slot", "scheduled_hour", "delivery_status", "permission_status", "scheduled_hour_label", "content_day_label", "notification_phase", "notification_cohort_hour"], "missing_dimensions": [], "total_expected_metrics": 6, "registered_metrics": ["session_duration_sec", "load_duration_ms", "load_latency_ms", "delivery_delay_sec", "result_count", "streak_days"], "missing_metrics": []}}, "overview": {"days_count": 22, "avg_dau": 564.5, "max_dau": 1919, "total_new_users": 6176, "total_sessions": 21425, "total_engaged_sessions": 19709, "engagement_rate_pct": 91.99, "avg_engagement_min_per_dau": 16.06, "total_screen_views": 171243, "total_events": 2081214, "trend_dau_pct": 90.0, "realtime_active_users_30m": 8, "realtime_countries": [{"country": "Ecuador", "activeUsers": 2}, {"country": "Venezuela", "activeUsers": 2}, {"country": "Brazil", "activeUsers": 1}, {"country": "India", "activeUsers": 1}, {"country": "Iraq", "activeUsers": 1}, {"country": "Vietnam", "activeUsers": 1}]}, "ads": {"requests": 159192, "loaded": 32661, "impressions": 58380, "clicks": 2668, "failed_to_load": 130956, "failed_to_show": 7, "rewards_earned": 60, "mediation_loaded": 15229, "mediation_failed": 24760, "suppressed": 101860, "fill_rate_pct": 20.52, "show_rate_pct": 178.75, "effective_imp_rate_pct": 36.67, "ctr_pct": 4.57, "banner_policy_warning": true, "by_ad_type": [{"ad_type": "APP_OPEN", "requests": 5466, "loaded": 1282, "failed_to_load": 3994, "impressions": 46, "clicks": 18, "rewards": 0, "fill_rate_pct": 23.45, "show_rate_pct": 3.59, "ctr_pct": 39.13}, {"ad_type": "BANNER", "requests": 27589, "loaded": 5798, "failed_to_load": 23654, "impressions": 7405, "clicks": 417, "rewards": 0, "fill_rate_pct": 21.02, "show_rate_pct": 127.72, "ctr_pct": 5.63}, {"ad_type": "INTERSTITIAL", "requests": 17181, "loaded": 3214, "failed_to_load": 13603, "impressions": 1750, "clicks": 526, "rewards": 0, "fill_rate_pct": 18.71, "show_rate_pct": 54.45, "ctr_pct": 30.06}, {"ad_type": "NATIVE", "requests": 12885, "loaded": 6385, "failed_to_load": 6160, "impressions": 2863, "clicks": 237, "rewards": 0, "fill_rate_pct": 49.55, "show_rate_pct": 44.84, "ctr_pct": 8.28}, {"ad_type": "REWARDED", "requests": 7366, "loaded": 1193, "failed_to_load": 5907, "impressions": 41, "clicks": 4, "rewards": 0, "fill_rate_pct": 16.2, "show_rate_pct": 3.44, "ctr_pct": 9.76}], "mediation_breakdown": [{"network": "google", "wins": 15229, "share_pct": 100.0}], "suppression_reasons": [{"ad_type": "NATIVE", "reason": "retry_cooldown", "count": 26850}, {"ad_type": "INTERSTITIAL", "reason": "retry_cooldown", "count": 22109}, {"ad_type": "INTERSTITIAL", "reason": "consent_not_ready", "count": 17275}, {"ad_type": "INTERSTITIAL", "reason": "cache_miss", "count": 13172}, {"ad_type": "APP_OPEN", "reason": "retry_cooldown", "count": 8495}, {"ad_type": "REWARDED", "reason": "retry_cooldown", "count": 7308}, {"ad_type": "INTERSTITIAL", "reason": "insufficient_user_actions", "count": 2083}, {"ad_type": "INTERSTITIAL", "reason": "preload_delay_3s", "count": 1640}, {"ad_type": "INTERSTITIAL", "reason": "frequency_cap", "count": 1478}, {"ad_type": "APP_OPEN", "reason": "consent_not_ready", "count": 677}]}, "iap": {"paywall_viewed": 191, "purchase_initiated": 2, "purchase_success": 0, "purchase_failed": 1, "purchase_canceled": 1, "restore_initiated": 27, "restore_success": 0, "restore_none_found": 25, "paywall_to_init_pct": 1.05, "init_to_success_pct": 0.0, "paywall_to_success_pct": 0.0, "by_source": [{"source": "launcher", "views": 94, "share_pct": 49.21}]}};
+    (function () {
+      var root = document.documentElement;
+      var saved = localStorage.getItem('nextai-ga4-theme');
+      if (saved === 'light' || saved === 'dark') {
+        root.setAttribute('data-theme', saved);
+      }
+      var btn = document.getElementById('themeToggle');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          localStorage.setItem('nextai-ga4-theme', next);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

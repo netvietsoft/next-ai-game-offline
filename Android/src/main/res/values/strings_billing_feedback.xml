@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="billing_vip_unlocked">Premium is active.</string>
+    <string name="billing_payment_incomplete">Payment was not completed: %1$s</string>
+    <string name="billing_purchase_pending">Your purchase is awaiting confirmation from Google Play.</string>
+    <string name="billing_checking_purchases">Checking your Google Play purchases…</string>
+</resources>

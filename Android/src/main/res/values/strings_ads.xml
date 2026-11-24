@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ad_splash_title">GALAXY GAME</string>
+    <string name="ad_splash_subtitle">OFFLINE MINI-GAMES</string>
+    <string name="ad_splash_loading">Getting your games ready…</string>
+    <string name="ad_splash_loading_base">Getting your games ready</string>
+    <string name="ad_loading_interstitial">Loading Ad…</string>
+    <string name="ad_badge_label">Ad</string>
+    <string name="exit_dialog_title">Exit Galaxy Game?</string>
+    <string name="exit_dialog_message">Your game progress is saved locally. Do you want to leave now?</string>
+    <string name="exit_dialog_stay">Stay</string>
+    <string name="exit_dialog_confirm">Exit</string>
+</resources>

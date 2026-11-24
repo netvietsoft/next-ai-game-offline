@@ -1,0 +1,51 @@
+{
+  "key": "app_versions",
+  "title": "Phiên bản ứng dụng & Hệ điều hành / App Versions & OS",
+  "dimensions": [
+    "appVersion",
+    "operatingSystemVersion"
+  ],
+  "metrics": [
+    "activeUsers",
+    "newUsers",
+    "sessions",
+    "userEngagementDuration"
+  ],
+  "skipped_optional_fields": [],
+  "row_count": 4,
+  "total_available_rows": 4,
+  "rows": [
+    {
+      "appVersion": "1.3",
+      "operatingSystemVersion": "Android 16",
+      "activeUsers": 8420,
+      "newUsers": 2910,
+      "sessions": 19340,
+      "userEngagementDuration": 5420100
+    },
+    {
+      "appVersion": "1.3",
+      "operatingSystemVersion": "Android 15",
+      "activeUsers": 6150,
+      "newUsers": 1820,
+      "sessions": 13920,
+      "userEngagementDuration": 3890400
+    },
+    {
+      "appVersion": "1.2",
+      "operatingSystemVersion": "Android 14",
+      "activeUsers": 3480,
+      "newUsers": 740,
+      "sessions": 7210,
+      "userEngagementDuration": 1920300
+    },
+    {
+      "appVersion": "1.2",
+      "operatingSystemVersion": "Android 13",
+      "activeUsers": 1890,
+      "newUsers": 310,
+      "sessions": 3620,
+      "userEngagementDuration": 910200
+    }
+  ]
+}

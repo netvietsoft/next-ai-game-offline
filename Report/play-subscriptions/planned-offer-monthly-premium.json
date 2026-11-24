@@ -1,0 +1,1421 @@
+{
+  "packageName": "com.nextai.game.offline",
+  "productId": "game_premium_monthly",
+  "basePlanId": "monthly",
+  "offerId": "monthly-premium",
+  "phases": [
+    {
+      "duration": "P5D",
+      "recurrenceCount": 1,
+      "regionalConfigs": [
+        {
+          "regionCode": "AE",
+          "free": {}
+        },
+        {
+          "regionCode": "AR",
+          "free": {}
+        },
+        {
+          "regionCode": "AT",
+          "free": {}
+        },
+        {
+          "regionCode": "AU",
+          "free": {}
+        },
+        {
+          "regionCode": "AZ",
+          "free": {}
+        },
+        {
+          "regionCode": "BD",
+          "free": {}
+        },
+        {
+          "regionCode": "BE",
+          "free": {}
+        },
+        {
+          "regionCode": "BG",
+          "free": {}
+        },
+        {
+          "regionCode": "BH",
+          "free": {}
+        },
+        {
+          "regionCode": "BM",
+          "free": {}
+        },
+        {
+          "regionCode": "BO",
+          "free": {}
+        },
+        {
+          "regionCode": "BR",
+          "free": {}
+        },
+        {
+          "regionCode": "CA",
+          "free": {}
+        },
+        {
+          "regionCode": "CH",
+          "free": {}
+        },
+        {
+          "regionCode": "CI",
+          "free": {}
+        },
+        {
+          "regionCode": "CL",
+          "free": {}
+        },
+        {
+          "regionCode": "CM",
+          "free": {}
+        },
+        {
+          "regionCode": "CO",
+          "free": {}
+        },
+        {
+          "regionCode": "CR",
+          "free": {}
+        },
+        {
+          "regionCode": "CY",
+          "free": {}
+        },
+        {
+          "regionCode": "CZ",
+          "free": {}
+        },
+        {
+          "regionCode": "DE",
+          "free": {}
+        },
+        {
+          "regionCode": "DK",
+          "free": {}
+        },
+        {
+          "regionCode": "DZ",
+          "free": {}
+        },
+        {
+          "regionCode": "EC",
+          "free": {}
+        },
+        {
+          "regionCode": "EE",
+          "free": {}
+        },
+        {
+          "regionCode": "EG",
+          "free": {}
+        },
+        {
+          "regionCode": "ES",
+          "free": {}
+        },
+        {
+          "regionCode": "ET",
+          "free": {}
+        },
+        {
+          "regionCode": "FI",
+          "free": {}
+        },
+        {
+          "regionCode": "FM",
+          "free": {}
+        },
+        {
+          "regionCode": "FR",
+          "free": {}
+        },
+        {
+          "regionCode": "GB",
+          "free": {}
+        },
+        {
+          "regionCode": "GE",
+          "free": {}
+        },
+        {
+          "regionCode": "GH",
+          "free": {}
+        },
+        {
+          "regionCode": "GI",
+          "free": {}
+        },
+        {
+          "regionCode": "GR",
+          "free": {}
+        },
+        {
+          "regionCode": "HK",
+          "free": {}
+        },
+        {
+          "regionCode": "HR",
+          "free": {}
+        },
+        {
+          "regionCode": "HU",
+          "free": {}
+        },
+        {
+          "regionCode": "ID",
+          "free": {}
+        },
+        {
+          "regionCode": "IE",
+          "free": {}
+        },
+        {
+          "regionCode": "IL",
+          "free": {}
+        },
+        {
+          "regionCode": "IN",
+          "free": {}
+        },
+        {
+          "regionCode": "IQ",
+          "free": {}
+        },
+        {
+          "regionCode": "IT",
+          "free": {}
+        },
+        {
+          "regionCode": "JO",
+          "free": {}
+        },
+        {
+          "regionCode": "JP",
+          "free": {}
+        },
+        {
+          "regionCode": "KE",
+          "free": {}
+        },
+        {
+          "regionCode": "KH",
+          "free": {}
+        },
+        {
+          "regionCode": "KR",
+          "free": {}
+        },
+        {
+          "regionCode": "KW",
+          "free": {}
+        },
+        {
+          "regionCode": "KY",
+          "free": {}
+        },
+        {
+          "regionCode": "KZ",
+          "free": {}
+        },
+        {
+          "regionCode": "LI",
+          "free": {}
+        },
+        {
+          "regionCode": "LK",
+          "free": {}
+        },
+        {
+          "regionCode": "LT",
+          "free": {}
+        },
+        {
+          "regionCode": "LU",
+          "free": {}
+        },
+        {
+          "regionCode": "LV",
+          "free": {}
+        },
+        {
+          "regionCode": "MA",
+          "free": {}
+        },
+        {
+          "regionCode": "MC",
+          "free": {}
+        },
+        {
+          "regionCode": "MM",
+          "free": {}
+        },
+        {
+          "regionCode": "MN",
+          "free": {}
+        },
+        {
+          "regionCode": "MO",
+          "free": {}
+        },
+        {
+          "regionCode": "MX",
+          "free": {}
+        },
+        {
+          "regionCode": "MY",
+          "free": {}
+        },
+        {
+          "regionCode": "NG",
+          "free": {}
+        },
+        {
+          "regionCode": "NL",
+          "free": {}
+        },
+        {
+          "regionCode": "NO",
+          "free": {}
+        },
+        {
+          "regionCode": "NZ",
+          "free": {}
+        },
+        {
+          "regionCode": "OM",
+          "free": {}
+        },
+        {
+          "regionCode": "PA",
+          "free": {}
+        },
+        {
+          "regionCode": "PE",
+          "free": {}
+        },
+        {
+          "regionCode": "PH",
+          "free": {}
+        },
+        {
+          "regionCode": "PK",
+          "free": {}
+        },
+        {
+          "regionCode": "PL",
+          "free": {}
+        },
+        {
+          "regionCode": "PT",
+          "free": {}
+        },
+        {
+          "regionCode": "PY",
+          "free": {}
+        },
+        {
+          "regionCode": "QA",
+          "free": {}
+        },
+        {
+          "regionCode": "RO",
+          "free": {}
+        },
+        {
+          "regionCode": "RS",
+          "free": {}
+        },
+        {
+          "regionCode": "RU",
+          "free": {}
+        },
+        {
+          "regionCode": "SA",
+          "free": {}
+        },
+        {
+          "regionCode": "SE",
+          "free": {}
+        },
+        {
+          "regionCode": "SG",
+          "free": {}
+        },
+        {
+          "regionCode": "SI",
+          "free": {}
+        },
+        {
+          "regionCode": "SK",
+          "free": {}
+        },
+        {
+          "regionCode": "SM",
+          "free": {}
+        },
+        {
+          "regionCode": "SN",
+          "free": {}
+        },
+        {
+          "regionCode": "SV",
+          "free": {}
+        },
+        {
+          "regionCode": "TC",
+          "free": {}
+        },
+        {
+          "regionCode": "TH",
+          "free": {}
+        },
+        {
+          "regionCode": "TR",
+          "free": {}
+        },
+        {
+          "regionCode": "TW",
+          "free": {}
+        },
+        {
+          "regionCode": "TZ",
+          "free": {}
+        },
+        {
+          "regionCode": "UA",
+          "free": {}
+        },
+        {
+          "regionCode": "US",
+          "free": {}
+        },
+        {
+          "regionCode": "UZ",
+          "free": {}
+        },
+        {
+          "regionCode": "VA",
+          "free": {}
+        },
+        {
+          "regionCode": "VG",
+          "free": {}
+        },
+        {
+          "regionCode": "VN",
+          "free": {}
+        },
+        {
+          "regionCode": "ZA",
+          "free": {}
+        },
+        {
+          "regionCode": "AG",
+          "free": {}
+        },
+        {
+          "regionCode": "AL",
+          "free": {}
+        },
+        {
+          "regionCode": "AM",
+          "free": {}
+        },
+        {
+          "regionCode": "AO",
+          "free": {}
+        },
+        {
+          "regionCode": "AW",
+          "free": {}
+        },
+        {
+          "regionCode": "BA",
+          "free": {}
+        },
+        {
+          "regionCode": "BF",
+          "free": {}
+        },
+        {
+          "regionCode": "BJ",
+          "free": {}
+        },
+        {
+          "regionCode": "BS",
+          "free": {}
+        },
+        {
+          "regionCode": "BW",
+          "free": {}
+        },
+        {
+          "regionCode": "BY",
+          "free": {}
+        },
+        {
+          "regionCode": "BZ",
+          "free": {}
+        },
+        {
+          "regionCode": "CD",
+          "free": {}
+        },
+        {
+          "regionCode": "CF",
+          "free": {}
+        },
+        {
+          "regionCode": "CG",
+          "free": {}
+        },
+        {
+          "regionCode": "CV",
+          "free": {}
+        },
+        {
+          "regionCode": "DJ",
+          "free": {}
+        },
+        {
+          "regionCode": "DM",
+          "free": {}
+        },
+        {
+          "regionCode": "DO",
+          "free": {}
+        },
+        {
+          "regionCode": "ER",
+          "free": {}
+        },
+        {
+          "regionCode": "FJ",
+          "free": {}
+        },
+        {
+          "regionCode": "GA",
+          "free": {}
+        },
+        {
+          "regionCode": "GD",
+          "free": {}
+        },
+        {
+          "regionCode": "GM",
+          "free": {}
+        },
+        {
+          "regionCode": "GN",
+          "free": {}
+        },
+        {
+          "regionCode": "GT",
+          "free": {}
+        },
+        {
+          "regionCode": "GW",
+          "free": {}
+        },
+        {
+          "regionCode": "HN",
+          "free": {}
+        },
+        {
+          "regionCode": "HT",
+          "free": {}
+        },
+        {
+          "regionCode": "IS",
+          "free": {}
+        },
+        {
+          "regionCode": "JM",
+          "free": {}
+        },
+        {
+          "regionCode": "KG",
+          "free": {}
+        },
+        {
+          "regionCode": "KM",
+          "free": {}
+        },
+        {
+          "regionCode": "KN",
+          "free": {}
+        },
+        {
+          "regionCode": "LA",
+          "free": {}
+        },
+        {
+          "regionCode": "LB",
+          "free": {}
+        },
+        {
+          "regionCode": "LC",
+          "free": {}
+        },
+        {
+          "regionCode": "LR",
+          "free": {}
+        },
+        {
+          "regionCode": "LY",
+          "free": {}
+        },
+        {
+          "regionCode": "MD",
+          "free": {}
+        },
+        {
+          "regionCode": "MK",
+          "free": {}
+        },
+        {
+          "regionCode": "ML",
+          "free": {}
+        },
+        {
+          "regionCode": "MT",
+          "free": {}
+        },
+        {
+          "regionCode": "MU",
+          "free": {}
+        },
+        {
+          "regionCode": "MV",
+          "free": {}
+        },
+        {
+          "regionCode": "MZ",
+          "free": {}
+        },
+        {
+          "regionCode": "NA",
+          "free": {}
+        },
+        {
+          "regionCode": "NE",
+          "free": {}
+        },
+        {
+          "regionCode": "NI",
+          "free": {}
+        },
+        {
+          "regionCode": "NP",
+          "free": {}
+        },
+        {
+          "regionCode": "PG",
+          "free": {}
+        },
+        {
+          "regionCode": "RW",
+          "free": {}
+        },
+        {
+          "regionCode": "SB",
+          "free": {}
+        },
+        {
+          "regionCode": "SC",
+          "free": {}
+        },
+        {
+          "regionCode": "SL",
+          "free": {}
+        },
+        {
+          "regionCode": "SO",
+          "free": {}
+        },
+        {
+          "regionCode": "SR",
+          "free": {}
+        },
+        {
+          "regionCode": "TD",
+          "free": {}
+        },
+        {
+          "regionCode": "TG",
+          "free": {}
+        },
+        {
+          "regionCode": "TJ",
+          "free": {}
+        },
+        {
+          "regionCode": "TM",
+          "free": {}
+        },
+        {
+          "regionCode": "TN",
+          "free": {}
+        },
+        {
+          "regionCode": "TO",
+          "free": {}
+        },
+        {
+          "regionCode": "TT",
+          "free": {}
+        },
+        {
+          "regionCode": "UG",
+          "free": {}
+        },
+        {
+          "regionCode": "UY",
+          "free": {}
+        },
+        {
+          "regionCode": "VE",
+          "free": {}
+        },
+        {
+          "regionCode": "VU",
+          "free": {}
+        },
+        {
+          "regionCode": "WS",
+          "free": {}
+        },
+        {
+          "regionCode": "YE",
+          "free": {}
+        },
+        {
+          "regionCode": "ZM",
+          "free": {}
+        },
+        {
+          "regionCode": "ZW",
+          "free": {}
+        }
+      ],
+      "otherRegionsConfig": {
+        "free": {}
+      }
+    }
+  ],
+  "regionalConfigs": [
+    {
+      "regionCode": "AE",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "AR",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "AT",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "AU",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "AZ",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "BD",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "BE",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "BG",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "BH",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "BM",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "BO",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "BR",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "CA",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "CH",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "CI",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "CL",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "CM",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "CO",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "CR",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "CY",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "CZ",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "DE",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "DK",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "DZ",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "EC",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "EE",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "EG",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "ES",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "ET",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "FI",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "FM",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "FR",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "GB",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "GE",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "GH",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "GI",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "GR",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "HK",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "HR",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "HU",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "ID",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "IE",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "IL",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "IN",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "IQ",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "IT",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "JO",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "JP",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "KE",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "KH",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "KR",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "KW",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "KY",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "KZ",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "LI",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "LK",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "LT",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "LU",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "LV",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "MA",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "MC",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "MM",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "MN",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "MO",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "MX",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "MY",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "NG",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "NL",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "NO",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "NZ",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "OM",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "PA",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "PE",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "PH",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "PK",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "PL",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "PT",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "PY",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "QA",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "RO",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "RS",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "RU",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "SA",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "SE",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "SG",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "SI",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "SK",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "SM",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "SN",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "SV",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "TC",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "TH",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "TR",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "TW",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "TZ",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "UA",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "US",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "UZ",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "VA",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "VG",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "VN",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "ZA",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "AG",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "AL",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "AM",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "AO",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "AW",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "BA",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "BF",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "BJ",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "BS",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "BW",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "BY",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "BZ",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "CD",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "CF",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "CG",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "CV",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "DJ",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "DM",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "DO",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "ER",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "FJ",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "GA",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "GD",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "GM",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "GN",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "GT",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "GW",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "HN",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "HT",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "IS",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "JM",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "KG",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "KM",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "KN",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "LA",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "LB",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "LC",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "LR",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "LY",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "MD",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "MK",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "ML",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "MT",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "MU",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "MV",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "MZ",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "NA",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "NE",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "NI",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "NP",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "PG",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "RW",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "SB",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "SC",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "SL",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "SO",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "SR",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "TD",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "TG",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "TJ",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "TM",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "TN",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "TO",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "TT",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "UG",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "UY",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "VE",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "VU",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "WS",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "YE",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "ZM",
+      "newSubscriberAvailability": true
+    },
+    {
+      "regionCode": "ZW",
+      "newSubscriberAvailability": true
+    }
+  ],
+  "targeting": {
+    "acquisitionRule": {
+      "scope": {
+        "thisSubscription": {}
+      }
+    }
+  },
+  "otherRegionsConfig": {
+    "otherRegionsNewSubscriberAvailability": true
+  }
+}

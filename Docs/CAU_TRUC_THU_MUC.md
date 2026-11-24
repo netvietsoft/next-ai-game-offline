@@ -8,7 +8,7 @@ PROJECT_ROOT/
 │   └── src/main/
 │       ├── AndroidManifest.xml                 # Manifest đã tối ưu hóa, bảo mật
 │       ├── assets/
-│       │   └── games/                          # 423 mini-game HTML5 / WASM
+│       │   └── games/                          # 100 game bundled + shared assets
 │       ├── java/com/nextai/gameoffline/        # Mã nguồn Kotlin chuẩn
 │       │   ├── GameApplication.kt             # Khởi tạo App, Hilt, Notification
 │       │   ├── data/
@@ -31,7 +31,7 @@ PROJECT_ROOT/
 │       │   │   ├── BillingActivity.kt          # Màn hình Paywall
 │       │   │   └── BillingConstants.kt
 │       │   └── ads/
-│       │       ├── AdManager.kt                # Quản lý AdMob / AppLovin MAX
+│       │       ├── AdManager.kt                # AdMob + Meta mediation lifecycle
 │       │       ├── AdConstants.kt
 │       │       └── offlineads/                 # Quảng cáo video offline khi không có mạng
 │       │           ├── OfflineAdDownloadService.kt
@@ -59,7 +59,7 @@ PROJECT_ROOT/
 │   │       └── db.ts                           # Kết nối SQLite / PostgreSQL
 │   └── tests/                                  # Backend API & Playwright Web UI tests
 │
-├── GAME HTML/                                  # 423 Mini-Game HTML5/WASM gốc
+├── GAME HTML/                                  # Nguồn catalog 419 Mini-Game HTML5/WASM
 ├── Demo Data/                                  # Dữ liệu mẫu CSV, SQLite Database, SQL queries
 ├── Redesign/                                   # Tokens, XML Layouts, Colors, Strings
 ├── Report/                                     # Toàn bộ 12 Báo cáo chuyên sâu

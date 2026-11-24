@@ -842,6 +842,9 @@ class Game extends Phaser.Scene {
 			self.add.text(320, 500+8, bestscore, {fontFamily: 'LilitaOne', fontSize: 45, align: 'left',color: '#ffffff'}).setOrigin(0, 0.5);
 			let b_restart = createButton(360, 640, 'restart', self);
 			let b_menu = createButton(360, 760, 'menu', self);
+			if (window.Android && window.Android.showInterstitialInGame) {
+				window.Android.showInterstitialInGame('block_blast_game_over');
+			}
 		}
 
 		function paused(){

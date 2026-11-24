@@ -1,0 +1,22 @@
+﻿eventName,customEvent:notification_slot,customEvent:scheduled_hour,customEvent:delivery_status,customUser:notification_cohort_hour,eventCount,totalUsers
+notification_scheduled,0,8,(not set),8,15200,5320
+notification_delivery,0,8,displayed,8,13224,4628
+notification_delivery,0,8,permission_denied,8,1976,691
+notification_opened,0,8,(not set),8,1084,379
+notification_scheduled,1,12,(not set),8,14780,5173
+notification_delivery,1,12,displayed,8,12858,4500
+notification_delivery,1,12,permission_denied,8,1922,672
+notification_opened,1,12,(not set),8,1877,656
+notification_scheduled,2,16,(not set),8,14360,5026
+notification_delivery,2,16,displayed,8,12493,4372
+notification_delivery,2,16,permission_denied,8,1867,653
+notification_opened,2,16,(not set),8,1311,458
+notification_scheduled,3,20,(not set),8,13940,4879
+notification_delivery,3,20,displayed,8,12127,4244
+notification_delivery,3,20,permission_denied,8,1813,634
+notification_opened,3,20,(not set),8,2231,780
+notification_scheduled,4,22,(not set),8,13520,4732
+notification_delivery,4,22,displayed,8,11762,4116
+notification_delivery,4,22,permission_denied,8,1758,615
+notification_opened,4,22,(not set),8,1387,485
+notification_permission,(not set),(not set),(not set),8,14850,14200

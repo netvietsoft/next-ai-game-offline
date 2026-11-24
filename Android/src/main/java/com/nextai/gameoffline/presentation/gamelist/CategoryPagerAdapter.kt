@@ -11,13 +11,8 @@ import com.nextai.gameoffline.data.local.entity.GameEntity
 
 /**
  * Adapter cho ViewPager2 hỗ trợ vuốt ngang chuyển danh mục trò chơi (Horizontal Category Swiper).
- * Adapter for ViewPager2 enabling smooth horizontal swiping across game categories.
- *
- * Mỗi trang đại diện cho một danh mục (Tất cả, 2 Người, Giải đố, Cổ điển, Arcade, Phổ thông)
- * với lưới RecyclerView 2 cột hiển thị các mini-game.
- *
- * Each page represents a category (All, 2 Players, Puzzle, Classic, Arcade, Casual)
- * containing a 2-column GridLayout RecyclerView of games.
+ * Mỗi trang là lưới 2 cột hiển thị kệ chơi tiếp gần đây, Mini-Game và Native Ad In-Feed.
+ * ViewPager2 adapter rendering category 2-column grids with Recents, games, and Native Ads.
  */
 class CategoryPagerAdapter(
     private val categories: List<String>,
@@ -25,12 +20,12 @@ class CategoryPagerAdapter(
     private val onFavoriteClicked: (GameEntity) -> Unit
 ) : RecyclerView.Adapter<CategoryPagerAdapter.CategoryPageViewHolder>() {
 
-    // Lưu trữ danh sách game cho từng danh mục / Cache game lists per category
-    private val categoryGamesMap = mutableMapOf<String, List<GameEntity>>()
-
-    // Giữ tham chiếu các ViewHolder đang hiển thị để cập nhật tức thì khi lọc hoặc tìm kiếm
-    // Set of active ViewHolders currently attached for instant reactive updates
+    private val categoryFeedMap = mutableMapOf<String, List<GameFeedItem>>()
     private val activeHolders = mutableSetOf<CategoryPageViewHolder>()
+    private var latestAllGames: List<GameEntity> = emptyList()
+    private var latestRecentGames: List<GameEntity> = emptyList()
+    private var latestSearchQuery: String = ""
+    private var adsEnabled: Boolean = false
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryPageViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_category_page, parent, false)
@@ -40,53 +35,104 @@ class CategoryPagerAdapter(
     override fun onBindViewHolder(holder: CategoryPageViewHolder, position: Int) {
         val category = categories[position]
         holder.currentCategory = category
-        holder.bind(categoryGamesMap[category] ?: emptyList())
+        holder.bind(categoryFeedMap[category] ?: emptyList())
         activeHolders.add(holder)
     }
 
     override fun onViewRecycled(holder: CategoryPageViewHolder) {
         super.onViewRecycled(holder)
+        holder.gameAdapter.releaseAllNativeAds()
         activeHolders.remove(holder)
     }
 
     override fun getItemCount(): Int = categories.size
 
     /**
-     * Cập nhật danh sách game cho một danh mục cụ thể.
-     * Update the game list for a specific category.
+     * Bật/tắt chèn thẻ Native Ad In-Feed theo trạng thái VIP và UMP consent; tự làm mới danh sách.
+     * Toggles In-Feed Native Ad slots when entitlement or consent changes, releasing old ads on off.
      */
-    fun updateCategoryGames(category: String, games: List<GameEntity>) {
-        categoryGamesMap[category] = games
+    fun setAdsEnabled(enabled: Boolean) {
+        if (adsEnabled == enabled) {
+            return
+        }
+        adsEnabled = enabled
+        if (!enabled) {
+            releaseAllNativeAds()
+        }
+        if (latestAllGames.isNotEmpty()) {
+            updateAllGames(latestAllGames, latestSearchQuery, latestRecentGames)
+        }
+    }
+
+    /** Giải phóng toàn bộ Native Ad trên mọi trang danh mục đang mở. */
+    fun releaseAllNativeAds() {
         for (holder in activeHolders) {
-            if (holder.currentCategory == category) {
-                holder.bind(games)
-            }
+            holder.gameAdapter.releaseAllNativeAds()
         }
     }
 
     /**
-     * Cập nhật toàn bộ các danh mục dựa trên danh sách game tổng hợp.
-     * Update all category pages from the complete master game list.
+     * Cập nhật toàn bộ các danh mục dựa trên danh sách game tổng hợp, từ khóa tìm kiếm và kệ gần đây.
+     * Trả về số game khớp trong tab All phục vụ telemetry `game_search`.
+     * Recomputes category feeds and returns total matching game count for search telemetry.
      */
-    fun updateAllGames(allGames: List<GameEntity>, searchQuery: String = "") {
+    fun updateAllGames(
+        allGames: List<GameEntity>,
+        searchQuery: String = "",
+        recentGames: List<GameEntity> = latestRecentGames
+    ): Int {
+        latestAllGames = allGames
+        latestRecentGames = recentGames
+        latestSearchQuery = searchQuery
+        val isSearching = searchQuery.isNotBlank()
+        var allCategoryMatchCount = allGames.size
+
         for (category in categories) {
-            val filtered = if (searchQuery.isNotEmpty()) {
-                val q = searchQuery.lowercase()
-                allGames.filter { game ->
-                    (category == "All" || game.category.equals(category, ignoreCase = true)) &&
-                            (game.title.lowercase().contains(q) ||
-                                    game.name.lowercase().contains(q) ||
-                                    game.position.toString().contains(q) ||
-                                    "#${game.position}".contains(q))
-                }
-            } else {
-                if (category == "All") {
-                    allGames
-                } else {
-                    allGames.filter { it.category.equals(category, ignoreCase = true) }
-                }
+            val filtered = filterGamesForCategory(allGames, category, searchQuery)
+            if (category == "All") {
+                allCategoryMatchCount = filtered.size
             }
-            updateCategoryGames(category, filtered)
+            val feedItems = GameFeedMerger.merge(
+                games = filtered,
+                categoryKey = category,
+                adsEnabled = adsEnabled,
+                isSearching = isSearching,
+                recentGames = recentGames
+            )
+            updateCategoryFeed(category, feedItems)
+        }
+        return allCategoryMatchCount
+    }
+
+    private fun updateCategoryFeed(category: String, items: List<GameFeedItem>) {
+        categoryFeedMap[category] = items
+        for (holder in activeHolders) {
+            if (holder.currentCategory == category) {
+                holder.bind(items)
+            }
+        }
+    }
+
+    private fun filterGamesForCategory(
+        allGames: List<GameEntity>,
+        category: String,
+        searchQuery: String
+    ): List<GameEntity> {
+        if (searchQuery.isEmpty()) {
+            return if (category == "All") {
+                allGames
+            } else {
+                allGames.filter { it.category.equals(category, ignoreCase = true) }
+            }
+        }
+        val queryLower = searchQuery.lowercase()
+        return allGames.filter { game ->
+            val categoryMatch = category == "All" || game.category.equals(category, ignoreCase = true)
+            val queryMatch = game.title.lowercase().contains(queryLower) ||
+                game.name.lowercase().contains(queryLower) ||
+                game.position.toString().contains(queryLower) ||
+                "#${game.position}".contains(queryLower)
+            categoryMatch && queryMatch
         }
     }
 
@@ -101,14 +147,27 @@ class CategoryPagerAdapter(
         )
 
         init {
-            rvCategoryGames.layoutManager = GridLayoutManager(itemView.context, 2)
+            val gridLayoutManager = GridLayoutManager(itemView.context, GRID_SPAN_COUNT)
+            gridLayoutManager.spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
+                override fun getSpanSize(position: Int): Int {
+                    val viewType = gameAdapter.getItemViewType(position)
+                    val isFullWidth = viewType == GameAdapter.VIEW_TYPE_NATIVE_AD ||
+                        viewType == GameAdapter.VIEW_TYPE_RECENT_ROW
+                    return if (isFullWidth) GRID_SPAN_COUNT else 1
+                }
+            }
+            rvCategoryGames.layoutManager = gridLayoutManager
             rvCategoryGames.adapter = gameAdapter
             rvCategoryGames.setHasFixedSize(true)
         }
 
-        fun bind(games: List<GameEntity>) {
-            gameAdapter.submitList(ArrayList(games))
-            tvEmptyGames.visibility = if (games.isEmpty()) View.VISIBLE else View.GONE
+        fun bind(items: List<GameFeedItem>) {
+            gameAdapter.submitList(ArrayList(items))
+            tvEmptyGames.visibility = if (items.isEmpty()) View.VISIBLE else View.GONE
         }
+    }
+
+    private companion object {
+        const val GRID_SPAN_COUNT = 2
     }
 }

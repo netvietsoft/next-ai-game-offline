@@ -1,0 +1,12 @@
+{
+    "c2dictionary": true,
+    "data": {
+        "enVariety0": "[[10,\"mg\"],[9,\"shotgun\"],[7,\"minigun\"],[3,\"cannon\"]]",
+        "enVariety1": "[[10,\"shotgun\"],[9,\"minigun\"],[9,\"cannon\"],[2,\"flame\"],[1,\"phaser\"],[1,\"grenades\"],[1,\"mg\"]]",
+        "enVariety2": "[[9,\"shotgun\"],[10,\"minigun\"],[10,\"cannon\"],[6,\"flame\"],[6,\"phaser\"],[4,\"rocket\"],[4,\"grenades\"],[4,\"shock\"]]",
+        "aidEmergency1": "[[10,\"aid\"],[3,\"shield\"],[1,\"ammo\"]]",
+        "aidMixed1": "[[10,\"ammo\"],[4,\"shield\"],[2,\"aid\"]]",
+        "aidEmergency0": "[[10,\"aid\"],[3,\"shield\"]]",
+        "aidMixed0": "[[10,\"shield\"],[3,\"aid\"]]"
+    }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{INITIAL_TITLE}} - NextAI Game Testing Studio &amp; AdMob Inspector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/tester/static/studio.css">
+</head>
+<body>
+
+    <!-- SIDEBAR: GAME CATALOG -->
+    <aside id="sidebar">
+        <div class="studio-header">
+            <div class="brand-title">
+                <h2>🎮 NextAI Tester Studio</h2>
+                <span class="badge-total">{{TOTAL_COUNT}} Games</span>
+            </div>
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" placeholder="Tìm theo tên, ID hoặc danh mục..." oninput="filterGames()">
+            </div>
+            <div class="filter-tabs">
+                <button class="tab-btn active" onclick="setFilter('all', this)">Tất cả ({{TOTAL_COUNT}})</button>
+                <button class="tab-btn" onclick="setFilter('portrait', this)">📱 Dọc ({{PORTRAIT_COUNT}})</button>
+                <button class="tab-btn" onclick="setFilter('landscape', this)">🎮 Ngang ({{LANDSCAPE_COUNT}})</button>
+            </div>
+        </div>
+
+        <div id="gameList">
+            <!-- Rendered by studio.js -->
+        </div>
+    </aside>
+
+    <!-- WORKSPACE: SIMULATOR -->
+    <main id="workspace">
+        <div class="workspace-bar">
+            <div class="current-game-display">
+                <img id="curIcon" src="{{INITIAL_ICON_SRC}}" style="width: 32px; height: 32px; border-radius: 6px;" onerror="this.src='/icons/abalone.png'">
+                <div>
+                    <h3 id="curTitle">{{INITIAL_TITLE}}</h3>
+                    <div class="subtitle" id="curName">ID: {{INITIAL_NAME}} • {{INITIAL_CATEGORY}} • {{INITIAL_ORIENTATION_LABEL}}</div>
+                </div>
+            </div>
+
+            <div class="workspace-actions">
+                <button class="btn-action" onclick="runAutomatedTest()">🚀 Tự Động Test Hàng Loạt</button>
+                <button class="btn-action" onclick="copyDirectLink()">📋 Copy Link</button>
+                <button class="btn-action" onclick="openDirectPlay()">↗ Tab Mới</button>
+                <button class="btn-action" onclick="reloadCurrentGame()">🔄 Tải Lại</button>
+            </div>
+        </div>
+
+        <!-- STAGE -->
+        <div class="simulator-stage">
+            <div class="phone-frame fullscreen" id="phoneContainer">
+                <div class="phone-notch">
+                    <span class="phone-notch-time">09:41</span>
+                    <div class="phone-camera"></div>
+                    <span class="phone-notch-icons">5G 100%</span>
+                </div>
+
+                <div class="phone-screen" id="screenContainer">
+                    <iframe id="gameIframe" class="game-iframe-element" src="{{INITIAL_IFRAME_SRC}}" allow="autoplay; fullscreen; accelerometer; gyroscope"></iframe>
+
+                    <!-- Simulated AdMob Banner (50px) -->
+                    <div class="simulated-admob-banner" id="simBanner">
+                        <div class="admob-pill">
+                            <span class="admob-badge">AdMob</span>
+                            <span>Google AdMob Test Banner • 320x50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- RIGHT INSPECTOR & CONSOLE -->
+    <aside id="inspector">
+        <div class="inspector-header">
+            <h3>🛠️ Bảng Điều Khiển &amp; AdMob</h3>
+        </div>
+
+        <!-- Controls: Orientation & Screen -->
+        <div class="control-group">
+            <div class="control-group-title">Mô Phỏng Màn Hình</div>
+            <div style="margin-bottom: 8px;">
+                <button class="btn-action active" id="btnFullscreen" style="width: 100%;" onclick="setOrientation('fullscreen')">
+                    🖥️ Toàn Màn Hình Trình Duyệt (Mặc định)
+                </button>
+            </div>
+            <div class="btn-grid">
+                <button class="btn-action" id="btnPortrait" onclick="setOrientation('portrait')">📱 Dọc (360x740)</button>
+                <button class="btn-action" id="btnLandscape" onclick="setOrientation('landscape')">🎮 Ngang (740x360)</button>
+            </div>
+        </div>
+
+        <!-- Controls: AdMob Banner Simulator -->
+        <div class="control-group">
+            <div class="control-group-title">Mô Phỏng AdMob Banner (50px)</div>
+            <button class="btn-action btn-banner-toggle" id="btnBannerToggle" onclick="toggleBannerSimulation()">
+                🔥 Banner AdMob 50px: ĐANG TẮT
+            </button>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px;">
+                <button class="btn-action active" id="btnModeLinearLayout" onclick="setBannerMode('linearlayout')">
+                    📐 Thu Hẹp Game (Chuẩn App)
+                </button>
+                <button class="btn-action" id="btnModeOverlay" onclick="setBannerMode('overlay')">
+                    📌 Đè Lên Canvas (Overlay)
+                </button>
+            </div>
+
+            <div class="banner-rule-box" id="bannerRuleNotice">
+                💡 <b>Nguyên lý AdMob trong App:</b> Banner đặt ở dưới cùng với chiều cao 50dp. Khi ở chế độ <b>Thu Hẹp Game</b>, khung game tự co lại để không bị banner che khuất menu. Khi ở chế độ <b>Game Ngang</b>, Banner được tự động ẩn hoàn toàn!
+            </div>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div class="control-group">
+            <div class="control-group-title">Điều Hướng Nhanh</div>
+            <div class="btn-grid">
+                <button class="btn-action" onclick="selectPreviousGame()">⬅ Game Trước</button>
+                <button class="btn-action" onclick="selectNextGame()">Game Tiếp Theo ➡</button>
+            </div>
+            <div style="margin-top: 8px; font-size: 11px; color: var(--text-sub); text-align: center;">
+                📱 Test trên điện thoại qua Wi-Fi: <b>http://192.168.1.14:6033/tester</b>
+            </div>
+        </div>
+
+        <!-- Live Terminal Event Stream -->
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <span>📡 Nhật Ký Sự Kiện (Live Bridge Stream)</span>
+                <button style="background: none; border: none; color: #64748b; cursor: pointer; font-size: 11px;" onclick="clearLogs()">Xóa</button>
+            </div>
+            <div class="terminal-logs" id="terminalLogs">
+                <div class="log-entry">
+                    <span class="log-time">[00:00:00]</span>
+                    <span class="log-msg success">Tester Studio đã sẵn sàng. Chọn một game để bắt đầu.</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- AUTOMATED BATCH SMOKE TEST MODAL -->
+    <div id="smokeTestModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 style="font-size: 16px; font-weight: 700; color: #fff;">🚀 Chạy Kiểm Thử Tự Động Hàng Loạt (Batch Smoke Test)</h3>
+                <button onclick="closeSmokeTestModal()" style="background: none; border: none; color: #fff; font-size: 20px; cursor: pointer;">✕</button>
+            </div>
+            <div class="modal-body">
+                <div style="display: flex; gap: 12px; margin-bottom: 16px; align-items: center;">
+                    <span style="font-size: 13px;">Số lượng game cần test:</span>
+                    <button class="btn-action active" onclick="startBatchTest(10)">Test 10 Games</button>
+                    <button class="btn-action" onclick="startBatchTest(30)">Test 30 Games</button>
+                    <button class="btn-action" onclick="startBatchTest(100)">Test 100 Games</button>
+                    <button class="btn-action" onclick="stopBatchTest()" style="background: var(--accent-red); color: #fff;">Dừng</button>
+                </div>
+                <div id="batchProgress" style="font-size: 13px; font-weight: 600; margin-bottom: 10px; color: #38bdf8;">Chưa bắt đầu</div>
+                <table style="width: 100%; border-collapse: collapse; font-size: 12px; text-align: left;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid var(--border); color: var(--text-sub);">
+                            <th style="padding: 8px;">#</th>
+                            <th style="padding: 8px;">Tên Game</th>
+                            <th style="padding: 8px;">Hướng</th>
+                            <th style="padding: 8px;">Tín hiệu gameLoaded</th>
+                            <th style="padding: 8px;">Lỗi JS</th>
+                            <th style="padding: 8px;">Trạng Thái</th>
+                        </tr>
+                    </thead>
+                    <tbody id="batchTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.__TESTER_BOOTSTRAP__ = {{BOOTSTRAP_JSON}};
+    </script>
+    <script src="/tester/static/studio.js"></script>
+</body>
+</html>

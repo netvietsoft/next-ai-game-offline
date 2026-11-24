@@ -12,10 +12,12 @@ var s_bFocus = true;
 
 $(window).resize(function() {
 	sizeHandler();
-        if(s_oGame){
+        if(typeof s_oGame !== "undefined" && s_oGame){
             s_oGame.showPausePanel(false);        
         }
-        s_oMain.startUpdate();
+        if(typeof s_oMain !== "undefined" && s_oMain){
+            s_oMain.startUpdate();
+        }
 	sizeHandler();
 });
 
@@ -24,10 +26,12 @@ $(window).blur(function() {
         return;
     }
     
-    if(s_oGame){
+    if(typeof s_oGame !== "undefined" && s_oGame){
         s_oGame.showPausePanel(true);
     }    
-    s_oMain.stopUpdate();
+    if(typeof s_oMain !== "undefined" && s_oMain){
+        s_oMain.stopUpdate();
+    }
 });
 
 $(window).focus(function() {
@@ -35,10 +39,12 @@ $(window).focus(function() {
         return;
     }
     
-    if(s_oGame){
+    if(typeof s_oGame !== "undefined" && s_oGame){
         s_oGame.showPausePanel(false);        
     }
-    s_oMain.startUpdate();
+    if(typeof s_oMain !== "undefined" && s_oMain){
+        s_oMain.startUpdate();
+    }
 });
 
 

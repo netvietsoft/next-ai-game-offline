@@ -1,0 +1,12 @@
+{
+	"name": "Among Us online",
+	"short_name": "Among Us online",
+	"description": "s",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+
+	]
+}

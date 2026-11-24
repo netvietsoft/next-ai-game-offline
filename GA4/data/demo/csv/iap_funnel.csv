@@ -1,0 +1,11 @@
+﻿eventName,customEvent:source,customEvent:product_id,eventCount,totalUsers
+inapp_paywall_viewed,launcher_header,(not set),4280,2810
+inapp_paywall_viewed,settings_dialog,(not set),1640,1220
+inapp_paywall_viewed,game_exit,(not set),2190,1590
+inapp_purchase_initiated,(not set),com.nextai.gameoffline.remove_ads,612,524
+inapp_purchase_success,(not set),com.nextai.gameoffline.remove_ads,184,184
+inapp_purchase_canceled,(not set),com.nextai.gameoffline.remove_ads,376,330
+inapp_purchase_failed,(not set),com.nextai.gameoffline.remove_ads,52,49
+inapp_restore_initiated,(not set),(not set),240,210
+inapp_restore_success,(not set),com.nextai.gameoffline.remove_ads,44,44
+inapp_restore_none_found,(not set),(not set),196,168

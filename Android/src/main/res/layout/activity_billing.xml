@@ -1,367 +1,312 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rootBillingLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_main">
+    android:background="@drawable/bg_paywall_screen">
 
-    <!-- Top Action Bar with Close Button -->
-    <FrameLayout
+    <LinearLayout
         android:id="@+id/topBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="56dp"
-        android:paddingHorizontal="16dp"
-        android:paddingVertical="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="24dp"
         app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical"
+            android:letterSpacing="0.12"
+            android:text="@string/paywall_brand"
+            android:textColor="@color/paywall_text_secondary"
+            android:textSize="12sp" />
 
         <ImageButton
             android:id="@+id/btnClose"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="end|center_vertical"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/close"
+            android:padding="14dp"
             android:src="@drawable/ic_close"
-            app:tint="@color/text_secondary" />
-    </FrameLayout>
+            app:tint="@color/paywall_text_secondary" />
+    </LinearLayout>
 
-    <!-- Scrollable Paywall Content -->
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:fillViewport="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        app:layout_constraintBottom_toTopOf="@id/purchaseFooter"
         app:layout_constraintTop_toBottomOf="@id/topBar">
 
         <LinearLayout
+            android:id="@+id/paywallBody"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:paddingHorizontal="24dp"
-            android:paddingBottom="32dp">
+            android:paddingHorizontal="@dimen/paywall_page_padding"
+            android:paddingBottom="12dp">
 
-            <!-- VIP Crown Icon with Gold Glow -->
-            <ImageView
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_marginTop="4dp"
-                android:contentDescription="@null"
-                android:src="@drawable/ic_crown_large" />
-
-            <!-- VIP Badge Tag -->
+            <!-- Tiêu đề chính PREMIUM cỡ lớn (đã bỏ icon game và dòng Play without interruptions) -->
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/tvPaywallHeroPremium"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:background="@drawable/bg_badge_discount"
-                android:paddingHorizontal="12dp"
-                android:paddingVertical="4dp"
-                android:text="@string/paywall_badge_vip"
-                android:textColor="@android:color/white"
-                android:textSize="11sp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.06"
+                android:text="@string/paywall_premium_badge"
+                android:textAllCaps="true"
+                android:textColor="@color/paywall_gold"
+                android:textSize="32sp"
                 android:textStyle="bold" />
 
-            <!-- Paywall Title -->
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:gravity="center"
-                android:text="@string/paywall_title"
-                android:textColor="@color/text_primary"
-                android:textSize="22sp"
-                android:textStyle="bold" />
+                android:layout_marginTop="8dp"
+                android:text="@string/paywall_hero_description"
+                android:textColor="@color/paywall_text_secondary"
+                android:textSize="14sp" />
 
-            <!-- Paywall Subtitle -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:gravity="center"
-                android:text="@string/paywall_subtitle"
-                android:textColor="@color/text_secondary"
-                android:textSize="13sp" />
-
-            <!-- VIP Value Proposition Checklist Card -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/bg_dialog_rounded"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <!-- Feature 1: No Ads -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/ic_check_circle_gold" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:layout_weight="1"
-                        android:text="@string/paywall_feature_no_ads"
-                        android:textColor="@color/text_primary"
-                        android:textSize="13sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <!-- Feature 2: 423 Games -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/ic_check_circle_gold" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:layout_weight="1"
-                        android:text="@string/paywall_feature_all_games"
-                        android:textColor="@color/text_primary"
-                        android:textSize="13sp" />
-                </LinearLayout>
-
-                <!-- Feature 3: Speed & 60 FPS -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/ic_check_circle_gold" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:layout_weight="1"
-                        android:text="@string/paywall_feature_speed"
-                        android:textColor="@color/text_primary"
-                        android:textSize="13sp" />
-                </LinearLayout>
-
-                <!-- Feature 4: Offline Anywhere -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/ic_check_circle_gold" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:layout_weight="1"
-                        android:text="@string/paywall_feature_offline"
-                        android:textColor="@color/text_primary"
-                        android:textSize="13sp" />
-                </LinearLayout>
-
-                <!-- Feature 5: VIP Perks -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/ic_check_circle_gold" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:layout_weight="1"
-                        android:text="@string/paywall_feature_support"
-                        android:textColor="@color/text_primary"
-                        android:textSize="13sp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <!-- Pricing Card with Gold Border -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
-                android:background="@drawable/bg_card_vip_gold"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <!-- Discount Tag -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_badge_discount"
-                    android:paddingHorizontal="10dp"
-                    android:paddingVertical="3dp"
-                    android:text="@string/paywall_badge_discount"
-                    android:textColor="@android:color/white"
-                    android:textSize="10sp"
-                    android:textStyle="bold" />
-
-                <!-- Plan Name -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="@string/paywall_plan_name"
-                    android:textColor="@color/gold_crown"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-                <!-- Price Row -->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:gravity="bottom"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/tvOriginalPrice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="10dp"
-                        android:text="@string/paywall_original_price"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="15sp" />
-
-                    <TextView
-                        android:id="@+id/tvPriceLifetime"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/paywall_price_lifetime"
-                        android:textColor="@color/text_primary"
-                        android:textSize="28sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <!-- One Time Payment Subtext -->
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="@string/paywall_one_time"
-                    android:textColor="@color/text_secondary"
-                    android:textSize="11sp" />
-            </LinearLayout>
-
-            <!-- Main CTA Button -->
-            <Button
-                android:id="@+id/btnBuyRemoveAds"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/bg_btn_gold"
-                android:elevation="4dp"
-                android:stateListAnimator="@null"
-                android:text="@string/paywall_btn_buy"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <!-- Restore Purchases Button -->
-            <TextView
-                android:id="@+id/btnRestorePurchases"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14dp"
-                android:background="?attr/selectableItemBackground"
-                android:clickable="true"
-                android:focusable="true"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="8dp"
-                android:text="@string/paywall_btn_restore"
-                android:textColor="@color/accent_primary"
-                android:textSize="13sp" />
-
-            <!-- Google Play Secure Guarantee -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/paywall_secure_note"
-                android:textColor="@color/text_secondary"
-                android:textSize="11sp" />
-
-            <!-- Privacy Policy & Terms Links -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/tvPaywallPrivacy"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:padding="4dp"
-                    android:text="@string/paywall_privacy_link"
-                    android:textColor="@color/text_secondary"
-                    android:textSize="11sp" />
+                    android:layout_weight="1"
+                    android:drawablePadding="6dp"
+                    android:text="@string/paywall_benefit_no_ads"
+                    android:textColor="@color/paywall_text"
+                    android:textSize="12sp"
+                    app:drawableStartCompat="@drawable/ic_paywall_check" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:paddingHorizontal="6dp"
-                    android:text="•"
-                    android:textColor="@color/text_secondary"
-                    android:textSize="11sp" />
-
-                <TextView
-                    android:id="@+id/tvPaywallTerms"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="?attr/selectableItemBackground"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:padding="4dp"
-                    android:text="@string/paywall_terms_link"
-                    android:textColor="@color/text_secondary"
-                    android:textSize="11sp" />
+                    android:layout_weight="1"
+                    android:drawablePadding="6dp"
+                    android:text="@string/paywall_benefit_cancel"
+                    android:textColor="@color/paywall_text"
+                    android:textSize="12sp"
+                    app:drawableStartCompat="@drawable/ic_paywall_check" />
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/planSectionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/paywall_select_heading"
+                android:textColor="@color/paywall_text_secondary"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/subscriptionPlans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/billingStatePanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/bg_paywall_plan"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ProgressBar
+                    android:id="@+id/billingProgress"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginBottom="12dp"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/paywall_accent" />
+
+                <TextView
+                    android:id="@+id/billingStateTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="@string/paywall_loading_title"
+                    android:textColor="@color/paywall_text"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tvBillingStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:accessibilityLiveRegion="polite"
+                    android:gravity="center"
+                    android:text="@string/paywall_loading_body"
+                    android:textColor="@color/paywall_text_secondary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/btnRetryOwnership"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:paddingHorizontal="16dp"
+                    android:text="@string/paywall_retry_short"
+                    android:textColor="@color/paywall_accent"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!-- Thẻ đổi Vé Sạch Quảng Cáo 20 phút bằng 2 Rewarded Video cho người dùng chưa mua VIP -->
+            <LinearLayout
+                android:id="@+id/cardAdFreePass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_paywall_plan"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_paywall_badge"
+                        android:fontFamily="sans-serif-bold"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="3dp"
+                        android:text="@string/ad_free_pass_badge"
+                        android:textColor="@color/paywall_gold"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvPaywallAdFreeTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-bold"
+                        android:text="@string/ad_free_pass_title"
+                        android:textColor="@color/paywall_text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvPaywallAdFreeStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/ad_free_pass_subtitle"
+                    android:textColor="@color/paywall_text_secondary"
+                    android:textSize="12sp" />
+            </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
+    <LinearLayout
+        android:id="@+id/purchaseFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/paywall_footer"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/paywall_page_padding"
+        android:paddingTop="14dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/selectedOfferTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="@string/paywall_account_pricing"
+            android:textColor="@color/paywall_text_secondary"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnContinueSubscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_paywall_action"
+            android:enabled="false"
+            android:fontFamily="sans-serif-medium"
+            android:minHeight="56dp"
+            android:paddingVertical="14dp"
+            android:text="@string/paywall_cta_loading"
+            android:textAllCaps="false"
+            android:textColor="@color/paywall_text"
+            android:textSize="16sp"
+            app:backgroundTint="@null" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/paywall_secure_checkout"
+            android:textColor="@color/paywall_text_muted"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPaywallPrivacy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingHorizontal="14dp"
+                android:text="@string/paywall_privacy_short"
+                android:textColor="@color/paywall_text_secondary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvPaywallTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingHorizontal="14dp"
+                android:text="@string/paywall_terms_short"
+                android:textColor="@color/paywall_text_secondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

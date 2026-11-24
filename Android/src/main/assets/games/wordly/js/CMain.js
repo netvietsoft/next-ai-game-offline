@@ -275,7 +275,7 @@ function CMain(oData){
     
     s_bAudioActive = oData.audio_enable_on_startup;
     
-    var iLang = navigator.language.split("-")[0];
+    var iLang = "en";
     if(LANG_CODES[iLang] === undefined){
         iLang = "en";
     }

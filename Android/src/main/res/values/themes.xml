@@ -6,6 +6,7 @@
     </style>
 
     <style name="Theme.NextAIGameOffline.Splash" parent="Theme.NextAIGameOffline">
+        <item name="android:windowBackground">@color/splash_art_background</item>
         <item name="android:windowFullscreen">false</item>
     </style>
 
@@ -17,5 +18,13 @@
     <style name="Theme.NextAIGameOffline.Dialog" parent="Theme.MaterialComponents.DayNight.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="Theme.NextAIGameOffline.FullWidthDialog" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.65</item>
     </style>
 </resources>

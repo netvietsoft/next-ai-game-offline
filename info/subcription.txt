@@ -1,0 +1,21 @@
+
+product ID: game_premium
+Name: Game Premium Weekly
+base Plan: weekly
+Free trial: 3day
+Price: 9.99$
+
+
+product ID: game_premium_monthly
+Name: Game Premium Monthly
+
+base Plan: monthly
+Free trial: 5day
+Price: 29.99$
+
+product ID: game_premium_yearly
+Name: Game Premium Yearly
+
+base Plan: yearly
+Free trial: 14day
+Price: 99.99$

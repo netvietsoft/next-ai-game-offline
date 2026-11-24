@@ -1,9 +1,12 @@
 # CLAUDE.md - Rules for Claude Code & AI Assistants
-- Follow all directives in [AGENTS.md](file:///e:/DECOMPILER/Game/com.media720.games2020/AGENTS.md) and [Docs/rules.md](file:///e:/DECOMPILER/Game/com.media720.games2020/Docs/rules.md).
-- Do not write code directly without task assignment from Agent 0 (Orchestrator).
+- Follow all directives in [AGENTS.md](file:///e:/DECOMPILER/Game/com.media720.games2020/AGENTS.md) and [Docs/rules.md](file:///e:/DECOMPILER/Game/com.media720.games2020/Docs/rules.md), especially **Section 2 (Hard Engineering Rules — Anti-Vibe-Code, Human-Readable Dev Code & Architecture Control)**.
+- **NO VIBE CODE (HARD RULE):** Write clean, idiomatic, human-readable Senior-level code. Strictly prohibit semicolon-crammed multi-statement lines (`a = 1; b = 2`), lines > 120 chars, compressed single-line methods, programmatic Kotlin Dialog/View hierarchies (use XML/Compose), and copy-pasted state machines.
+- **SIZE & ARCHITECTURE GUARDRAILS (HARD RULE):** Keep files ≤ 350 lines and functions ≤ 50 lines (≤ 3 nesting levels). Do NOT add new responsibilities to oversized God classes (`AdManager.kt`, `GameListActivity.kt`, `GameActivity.kt`, `gameTester.ts`) or create new global mutable `object` singletons / `GameApplication.instance` call sites. New features must follow Clean MVVM (`UI → ViewModel → Repository/Coordinator` with constructor injection).
+- **MANDATORY ARCHITECTURE AUDIT & ESCALATION:** Whenever working on code with architectural debt, explicitly report required architectural refactors (location, root cause, proposed plan) to the user instead of silently stacking workarounds.
+- **LIFECYCLE, THREADING & SECURITY:** Verify `!isFinishing && !isDestroyed` AND `Lifecycle.State.RESUMED` before foreground UI/Ads after async delays; never run disk I/O or `deleteRecursively` on the Main Thread; escape all dynamic values injected into JS/HTML; never hardcode JWT/API secrets.
 - Check [.ai/locks.json](file:///e:/DECOMPILER/Game/com.media720.games2020/.ai/locks.json) before modifying any files.
-- Package name must be `com.nextai.gameoffline` (Company: NextAI Technology / NextSolution).
-- All source files must contain bilingual comments (Tiếng Việt + English).
+- Android `applicationId` is `com.nextai.game.offline`, Kotlin namespace is `com.nextai.gameoffline` (App label: **Galaxy Game**, Company: NextAI Technology / NextSolution, 419 games: 100 bundled + 319 R2 on-demand, Google Play Billing 9.1.0).
+- All source files must contain bilingual comments with proper Vietnamese diacritics + English (explain WHY, no noise comments on empty overrides).
 - Backend server must run on **Port 6033**.
 - Do not change tests merely to make them pass.
-- Log task completions in [TASK_LOG.md](file:///e:/DECOMPILER/Game/com.media720.games2020/TASK_LOG.md) and [UPDATETODOS.md](file:///e:/DECOMPILER/Game/com.media720.games2020/UPDATETODOS.md).
+- Log task completions cleanly (proper Vietnamese with spaces and diacritics) in [TASK_LOG.md](file:///e:/DECOMPILER/Game/com.media720.games2020/TASK_LOG.md) and [UPDATETODOS.md](file:///e:/DECOMPILER/Game/com.media720.games2020/UPDATETODOS.md).

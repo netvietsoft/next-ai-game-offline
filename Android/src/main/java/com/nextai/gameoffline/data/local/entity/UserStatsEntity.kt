@@ -6,8 +6,9 @@ import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 
 /**
- * Thực thể lưu trữ thống kê, kỷ lục điểm số và yêu thích của người chơi.
- * Entity storing user game statistics, high scores and favorites.
+ * Thực thể lưu trữ toàn bộ thống kê người chơi theo từng trò chơi (điểm cao, số lần mở,
+ * số ván chơi, màn chơi cao nhất, tổng thời gian chơi và yêu thích).
+ * Room entity storing all per-game player progress, session totals, high scores, and favorites.
  */
 @Entity(
     tableName = "user_game_stats",
@@ -23,20 +24,26 @@ import androidx.room.PrimaryKey
 data class UserStatsEntity(
     @PrimaryKey
     @ColumnInfo(name = "game_name")
-    val gameName: String, // Tên định danh của game
+    val gameName: String,
 
     @ColumnInfo(name = "high_score", defaultValue = "0")
-    val highScore: Int = 0, // Điểm số cao nhất người chơi đạt được
+    val highScore: Int = 0,
 
     @ColumnInfo(name = "games_played", defaultValue = "0")
-    val gamesPlayed: Int = 0, // Tổng số ván đã chơi
+    val gamesPlayed: Int = 0,
 
     @ColumnInfo(name = "total_time_spent_sec", defaultValue = "0")
-    val totalTimeSpentSec: Int = 0, // Tổng thời gian đã chơi (giây)
+    val totalTimeSpentSec: Long = 0L,
 
     @ColumnInfo(name = "is_favorite", defaultValue = "0")
-    val isFavorite: Int = 0, // 1: Yêu thích (Đánh dấu trái tim), 0: Không
+    val isFavorite: Int = 0,
 
     @ColumnInfo(name = "last_played")
-    val lastPlayed: Long = System.currentTimeMillis() // Thời điểm chơi gần nhất (Epoch timestamp)
+    val lastPlayed: Long = System.currentTimeMillis(),
+
+    @ColumnInfo(name = "open_count", defaultValue = "0")
+    val openCount: Int = 0,
+
+    @ColumnInfo(name = "highest_level", defaultValue = "1")
+    val highestLevel: Int = 1
 )

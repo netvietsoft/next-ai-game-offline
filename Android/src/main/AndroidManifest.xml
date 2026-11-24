@@ -4,10 +4,9 @@
     <!-- Quyền truy cập cơ bản / Basic Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     
     <!-- Quyền Google Play In-App Purchase & Ad ID -->
     <uses-permission android:name="com.android.vending.BILLING" />
@@ -15,7 +14,17 @@
     
     <!-- Loại bỏ triệt để FOREGROUND_SERVICE bị thư viện thứ 3 (work-runtime / ads) kéo vào -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" tools:node="remove" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" tools:node="remove" />
+
+    <!-- Đánh dấu hướng màn hình & Wi-Fi là tùy chọn để không bị Google Play chặn trên Tablet, PC và XR -->
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
 
     <application
         android:name=".GameApplication"
@@ -35,21 +44,41 @@
             android:name="androidx.work.impl.foreground.SystemForegroundService"
             tools:node="remove" />
 
-        <!-- Giải quyết xung đột Privacy Sandbox AdServices giữa AdMob và Firebase Analytics -->
-        <property
-            android:name="android.adservices.AD_SERVICES_CONFIG"
-            android:resource="@xml/gma_ad_services_config"
-            tools:replace="android:resource" />
-
         <!-- Google AdMob App ID (Khóa chính thức từ tài khoản AdMob Production) -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-4108090245719282~4299594158" />
 
-        <!-- Màn hình chính (Home Launcher) -->
+        <!-- Khởi tạo Meta có kiểm tra cấu hình, không tự thu thập ID quảng cáo/metadata.
+             Initialize Meta only when configured, without automatic advertising-ID/metadata collection. -->
+        <provider android:name="com.facebook.internal.FacebookInitProvider" tools:node="remove" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token" />
+        <meta-data android:name="com.facebook.sdk.AutoInitEnabled" android:value="false" />
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="false" />
+        <meta-data android:name="com.facebook.sdk.AutoLogMetaDataEnabled" android:value="false" />
+        <meta-data android:name="com.facebook.sdk.AutoLogProductImprovementEnabled" android:value="false" />
+        <meta-data android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled" android:value="false" />
+
+        <!-- Phát và đo click notification cục bộ / Deliver and measure local notification engagement -->
+        <receiver
+            android:name=".notifications.DailyNotificationReceiver"
+            android:exported="false" />
+        <receiver
+            android:name=".notifications.NotificationRescheduleReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Splash khởi tạo mediation trước khi vào launcher / Mediation warm-up splash -->
         <activity
-            android:name=".presentation.gamelist.GameListActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:name=".presentation.splash.SplashAdActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.NextAIGameOffline.Splash">
@@ -59,11 +88,19 @@
             </intent-filter>
         </activity>
 
+        <!-- Màn hình chính (Home Launcher) -->
+        <activity
+            android:name=".presentation.gamelist.GameListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NextAIGameOffline" />
+
         <!-- Màn hình chơi Game (WebView Container) -->
         <activity
             android:name=".presentation.game.GameActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
-            android:exported="true"
+            android:exported="false"
             android:theme="@style/Theme.NextAIGameOffline.Fullscreen" />
 
         <!-- Màn hình Payment Wall (In-App Purchase) -->

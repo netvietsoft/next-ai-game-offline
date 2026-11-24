@@ -1,0 +1,2936 @@
+{
+  "meta": {
+    "data_source": "LIVE_GA4",
+    "property_id": "561301538",
+    "start_date": "2026-08-27",
+    "end_date": "2026-11-24",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "extracted_at_utc": "2026-11-24T01:32:03.351946+00:00",
+    "schema_status": {
+      "total_expected_dimensions": 28,
+      "registered_dimensions": [
+        "game_name",
+        "level_label",
+        "game_title",
+        "game_category",
+        "status",
+        "search_term",
+        "ad_type",
+        "ad_unit_id",
+        "ad_network",
+        "adapter",
+        "error_code",
+        "error_domain",
+        "error_message",
+        "waterfall",
+        "reason",
+        "screen_name",
+        "reward_type",
+        "source",
+        "product_id",
+        "notification_id",
+        "notification_slot",
+        "scheduled_hour",
+        "delivery_status",
+        "permission_status",
+        "scheduled_hour_label",
+        "content_day_label",
+        "notification_phase",
+        "notification_cohort_hour"
+      ],
+      "missing_dimensions": [],
+      "total_expected_metrics": 6,
+      "registered_metrics": [
+        "session_duration_sec",
+        "load_duration_ms",
+        "load_latency_ms",
+        "delivery_delay_sec",
+        "result_count",
+        "streak_days"
+      ],
+      "missing_metrics": []
+    }
+  },
+  "overview": {
+    "days_count": 22,
+    "avg_dau": 564.5,
+    "max_dau": 1919,
+    "total_new_users": 6176,
+    "total_sessions": 21425,
+    "total_engaged_sessions": 19709,
+    "engagement_rate_pct": 91.99,
+    "avg_engagement_min_per_dau": 16.06,
+    "total_screen_views": 171243,
+    "total_events": 2081214,
+    "trend_dau_pct": 90.0,
+    "realtime_active_users_30m": 8,
+    "realtime_countries": [
+      {
+        "country": "Ecuador",
+        "activeUsers": 2
+      },
+      {
+        "country": "Venezuela",
+        "activeUsers": 2
+      },
+      {
+        "country": "Brazil",
+        "activeUsers": 1
+      },
+      {
+        "country": "India",
+        "activeUsers": 1
+      },
+      {
+        "country": "Iraq",
+        "activeUsers": 1
+      },
+      {
+        "country": "Vietnam",
+        "activeUsers": 1
+      }
+    ],
+    "daily_series": [
+      {
+        "date": "2026-11-03",
+        "activeUsers": 2,
+        "newUsers": 2,
+        "sessions": 2,
+        "engagedSessions": 2,
+        "engagementRatePct": 100.0,
+        "avgSessionMin": 0.86,
+        "eventCount": 53
+      },
+      {
+        "date": "2026-11-04",
+        "activeUsers": 1,
+        "newUsers": 1,
+        "sessions": 3,
+        "engagedSessions": 3,
+        "engagementRatePct": 100.0,
+        "avgSessionMin": 1.57,
+        "eventCount": 86
+      },
+      {
+        "date": "2026-11-05",
+        "activeUsers": 1,
+        "newUsers": 0,
+        "sessions": 2,
+        "engagedSessions": 2,
+        "engagementRatePct": 100.0,
+        "avgSessionMin": 6.22,
+        "eventCount": 55
+      },
+      {
+        "date": "2026-11-06",
+        "activeUsers": 2,
+        "newUsers": 2,
+        "sessions": 2,
+        "engagedSessions": 1,
+        "engagementRatePct": 50.0,
+        "avgSessionMin": 0.15,
+        "eventCount": 8
+      },
+      {
+        "date": "2026-11-07",
+        "activeUsers": 1,
+        "newUsers": 1,
+        "sessions": 1,
+        "engagedSessions": 0,
+        "engagementRatePct": 0.0,
+        "avgSessionMin": 0.0,
+        "eventCount": 2
+      },
+      {
+        "date": "2026-11-08",
+        "activeUsers": 8,
+        "newUsers": 8,
+        "sessions": 11,
+        "engagedSessions": 11,
+        "engagementRatePct": 100.0,
+        "avgSessionMin": 23.18,
+        "eventCount": 1042
+      },
+      {
+        "date": "2026-11-09",
+        "activeUsers": 121,
+        "newUsers": 118,
+        "sessions": 148,
+        "engagedSessions": 142,
+        "engagementRatePct": 95.95,
+        "avgSessionMin": 5.09,
+        "eventCount": 7114
+      },
+      {
+        "date": "2026-11-10",
+        "activeUsers": 374,
+        "newUsers": 341,
+        "sessions": 519,
+        "engagedSessions": 491,
+        "engagementRatePct": 94.61,
+        "avgSessionMin": 7.56,
+        "eventCount": 34127
+      },
+      {
+        "date": "2026-11-11",
+        "activeUsers": 993,
+        "newUsers": 872,
+        "sessions": 1628,
+        "engagedSessions": 1530,
+        "engagementRatePct": 93.98,
+        "avgSessionMin": 13.48,
+        "eventCount": 136527
+      },
+      {
+        "date": "2026-11-12",
+        "activeUsers": 1053,
+        "newUsers": 678,
+        "sessions": 1801,
+        "engagedSessions": 1683,
+        "engagementRatePct": 93.45,
+        "avgSessionMin": 16.18,
+        "eventCount": 159774
+      },
+      {
+        "date": "2026-11-13",
+        "activeUsers": 1726,
+        "newUsers": 1222,
+        "sessions": 2926,
+        "engagedSessions": 2745,
+        "engagementRatePct": 93.81,
+        "avgSessionMin": 16.49,
+        "eventCount": 272237
+      },
+      {
+        "date": "2026-11-14",
+        "activeUsers": 1275,
+        "newUsers": 491,
+        "sessions": 2452,
+        "engagedSessions": 2257,
+        "engagementRatePct": 92.05,
+        "avgSessionMin": 20.66,
+        "eventCount": 221626
+      },
+      {
+        "date": "2026-11-15",
+        "activeUsers": 812,
+        "newUsers": 146,
+        "sessions": 1589,
+        "engagedSessions": 1444,
+        "engagementRatePct": 90.87,
+        "avgSessionMin": 20.27,
+        "eventCount": 132901
+      },
+      {
+        "date": "2026-11-16",
+        "activeUsers": 587,
+        "newUsers": 81,
+        "sessions": 1102,
+        "engagedSessions": 998,
+        "engagementRatePct": 90.56,
+        "avgSessionMin": 21.8,
+        "eventCount": 88371
+      },
+      {
+        "date": "2026-11-17",
+        "activeUsers": 540,
+        "newUsers": 37,
+        "sessions": 964,
+        "engagedSessions": 862,
+        "engagementRatePct": 89.42,
+        "avgSessionMin": 20.26,
+        "eventCount": 85731
+      },
+      {
+        "date": "2026-11-18",
+        "activeUsers": 416,
+        "newUsers": 38,
+        "sessions": 786,
+        "engagedSessions": 688,
+        "engagementRatePct": 87.53,
+        "avgSessionMin": 18.65,
+        "eventCount": 60839
+      },
+      {
+        "date": "2026-11-19",
+        "activeUsers": 386,
+        "newUsers": 27,
+        "sessions": 732,
+        "engagedSessions": 647,
+        "engagementRatePct": 88.39,
+        "avgSessionMin": 21.85,
+        "eventCount": 62324
+      },
+      {
+        "date": "2026-11-20",
+        "activeUsers": 426,
+        "newUsers": 78,
+        "sessions": 737,
+        "engagedSessions": 652,
+        "engagementRatePct": 88.47,
+        "avgSessionMin": 18.84,
+        "eventCount": 66689
+      },
+      {
+        "date": "2026-11-21",
+        "activeUsers": 1919,
+        "newUsers": 1545,
+        "sessions": 3095,
+        "engagedSessions": 2926,
+        "engagementRatePct": 94.54,
+        "avgSessionMin": 11.45,
+        "eventCount": 368390
+      },
+      {
+        "date": "2026-11-22",
+        "activeUsers": 1022,
+        "newUsers": 334,
+        "sessions": 1783,
+        "engagedSessions": 1636,
+        "engagementRatePct": 91.76,
+        "avgSessionMin": 14.12,
+        "eventCount": 230811
+      },
+      {
+        "date": "2026-11-23",
+        "activeUsers": 633,
+        "newUsers": 138,
+        "sessions": 995,
+        "engagedSessions": 859,
+        "engagementRatePct": 86.33,
+        "avgSessionMin": 13.76,
+        "eventCount": 131253
+      },
+      {
+        "date": "2026-11-24",
+        "activeUsers": 120,
+        "newUsers": 16,
+        "sessions": 147,
+        "engagedSessions": 130,
+        "engagementRatePct": 88.44,
+        "avgSessionMin": 8.74,
+        "eventCount": 21254
+      }
+    ]
+  },
+  "versions_geo": {
+    "top_countries": [
+      {
+        "country": "India",
+        "activeUsers": 1072,
+        "sessions": 3543,
+        "engagementRatePct": 92.77
+      },
+      {
+        "country": "Algeria",
+        "activeUsers": 608,
+        "sessions": 2239,
+        "engagementRatePct": 93.3
+      },
+      {
+        "country": "Pakistan",
+        "activeUsers": 409,
+        "sessions": 1426,
+        "engagementRatePct": 94.53
+      },
+      {
+        "country": "Bangladesh",
+        "activeUsers": 392,
+        "sessions": 1105,
+        "engagementRatePct": 91.67
+      },
+      {
+        "country": "Egypt",
+        "activeUsers": 293,
+        "sessions": 1180,
+        "engagementRatePct": 92.29
+      },
+      {
+        "country": "Iraq",
+        "activeUsers": 262,
+        "sessions": 616,
+        "engagementRatePct": 90.1
+      },
+      {
+        "country": "Venezuela",
+        "activeUsers": 244,
+        "sessions": 718,
+        "engagementRatePct": 92.62
+      },
+      {
+        "country": "Nepal",
+        "activeUsers": 229,
+        "sessions": 658,
+        "engagementRatePct": 92.25
+      },
+      {
+        "country": "Brazil",
+        "activeUsers": 194,
+        "sessions": 297,
+        "engagementRatePct": 94.28
+      },
+      {
+        "country": "Morocco",
+        "activeUsers": 183,
+        "sessions": 547,
+        "engagementRatePct": 92.14
+      },
+      {
+        "country": "Iran",
+        "activeUsers": 156,
+        "sessions": 462,
+        "engagementRatePct": 92.42
+      },
+      {
+        "country": "Indonesia",
+        "activeUsers": 148,
+        "sessions": 347,
+        "engagementRatePct": 94.81
+      },
+      {
+        "country": "Libya",
+        "activeUsers": 147,
+        "sessions": 624,
+        "engagementRatePct": 94.55
+      },
+      {
+        "country": "Cuba",
+        "activeUsers": 111,
+        "sessions": 563,
+        "engagementRatePct": 93.07
+      },
+      {
+        "country": "Myanmar (Burma)",
+        "activeUsers": 101,
+        "sessions": 326,
+        "engagementRatePct": 93.87
+      }
+    ],
+    "top_devices": [
+      {
+        "country": "Algeria",
+        "deviceCategory": "mobile",
+        "mobileDeviceModel": "(not set)",
+        "activeUsers": 26,
+        "sessions": 97
+      },
+      {
+        "country": "Algeria",
+        "deviceCategory": "mobile",
+        "mobileDeviceModel": "M2006C3LG",
+        "activeUsers": 17,
+        "sessions": 86
+      },
+      {
+        "country": "Kenya",
+        "deviceCategory": "mobile",
+        "mobileDeviceModel": "(not set)",
+        "activeUsers": 16,
+        "sessions": 61
+      },
+      {
+        "country": "Pakistan",
+        "deviceCategory": "mobile",
+        "mobileDeviceModel": "(not set)",
+        "activeUsers": 16,
+        "sessions": 43
+      },
+      {
+        "country": "India",
+        "deviceCategory": "mobile",
+        "mobileDeviceModel": "25028RN03I",
+        "activeUsers": 14,
+        "sessions": 40
+      },
+      {
+        "country": "Venezuela",
+        "deviceCategory": "mobile",
+        "mobileDeviceModel": "ELA-LX3",
+        "activeUsers": 14,
+        "sessions": 28
+      },
+      {
+        "country": "(not set)",
+        "deviceCategory": "mobile",
+        "mobileDeviceModel": "IN2025",
+        "activeUsers": 13,
+        "sessions": 13
+      },
+      {
+        "country": "Algeria",
+        "deviceCategory": "mobile",
+        "mobileDeviceModel": "SM-A055F",
+        "activeUsers": 13,
+        "sessions": 66
+      },
+      {
+        "country": "Algeria",
+        "deviceCategory": "tablet",
+        "mobileDeviceModel": "SM-X115",
+        "activeUsers": 13,
+        "sessions": 40
+      },
+      {
+        "country": "Cuba",
+        "deviceCategory": "mobile",
+        "mobileDeviceModel": "M2006C3LG",
+        "activeUsers": 11,
+        "sessions": 39
+      },
+      {
+        "country": "Libya",
+        "deviceCategory": "mobile",
+        "mobileDeviceModel": "SM-A065F",
+        "activeUsers": 11,
+        "sessions": 88
+      },
+      {
+        "country": "Venezuela",
+        "deviceCategory": "mobile",
+        "mobileDeviceModel": "(not set)",
+        "activeUsers": 11,
+        "sessions": 34
+      },
+      {
+        "country": "Algeria",
+        "deviceCategory": "mobile",
+        "mobileDeviceModel": "SM-A165F",
+        "activeUsers": 10,
+        "sessions": 19
+      },
+      {
+        "country": "India",
+        "deviceCategory": "mobile",
+        "mobileDeviceModel": "23124RN87I",
+        "activeUsers": 10,
+        "sessions": 29
+      },
+      {
+        "country": "India",
+        "deviceCategory": "mobile",
+        "mobileDeviceModel": "RMX3231",
+        "activeUsers": 10,
+        "sessions": 40
+      }
+    ],
+    "app_versions": [
+      {
+        "appVersion": "1.2",
+        "osVersion": "16",
+        "activeUsers": 713,
+        "newUsers": 709,
+        "sessions": 2119
+      },
+      {
+        "appVersion": "1.2",
+        "osVersion": "15",
+        "activeUsers": 704,
+        "newUsers": 695,
+        "sessions": 2424
+      },
+      {
+        "appVersion": "1.2",
+        "osVersion": "14",
+        "activeUsers": 615,
+        "newUsers": 605,
+        "sessions": 2217
+      },
+      {
+        "appVersion": "1.2",
+        "osVersion": "13",
+        "activeUsers": 494,
+        "newUsers": 488,
+        "sessions": 1925
+      },
+      {
+        "appVersion": "1.2",
+        "osVersion": "11",
+        "activeUsers": 491,
+        "newUsers": 481,
+        "sessions": 2131
+      },
+      {
+        "appVersion": "1.2",
+        "osVersion": "12",
+        "activeUsers": 421,
+        "newUsers": 420,
+        "sessions": 1525
+      },
+      {
+        "appVersion": "1.2",
+        "osVersion": "10",
+        "activeUsers": 321,
+        "newUsers": 313,
+        "sessions": 1465
+      },
+      {
+        "appVersion": "1.3",
+        "osVersion": "15",
+        "activeUsers": 246,
+        "newUsers": 242,
+        "sessions": 547
+      },
+      {
+        "appVersion": "1.3",
+        "osVersion": "14",
+        "activeUsers": 234,
+        "newUsers": 229,
+        "sessions": 492
+      },
+      {
+        "appVersion": "1.3",
+        "osVersion": "16",
+        "activeUsers": 230,
+        "newUsers": 220,
+        "sessions": 454
+      },
+      {
+        "appVersion": "1.3",
+        "osVersion": "13",
+        "activeUsers": 198,
+        "newUsers": 194,
+        "sessions": 416
+      },
+      {
+        "appVersion": "1.3",
+        "osVersion": "11",
+        "activeUsers": 181,
+        "newUsers": 172,
+        "sessions": 448
+      },
+      {
+        "appVersion": "1.2",
+        "osVersion": "8.1.0",
+        "activeUsers": 164,
+        "newUsers": 154,
+        "sessions": 719
+      },
+      {
+        "appVersion": "1.2",
+        "osVersion": "9",
+        "activeUsers": 163,
+        "newUsers": 156,
+        "sessions": 702
+      },
+      {
+        "appVersion": "1.3",
+        "osVersion": "12",
+        "activeUsers": 146,
+        "newUsers": 137,
+        "sessions": 320
+      }
+    ],
+    "hourly_traffic": [
+      {
+        "hour": "(other)",
+        "activeUsers": 2127,
+        "sessions": 3662,
+        "eventCount": 55921
+      },
+      {
+        "hour": "00",
+        "activeUsers": 1249,
+        "sessions": 1649,
+        "eventCount": 134494
+      },
+      {
+        "hour": "01",
+        "activeUsers": 1050,
+        "sessions": 1327,
+        "eventCount": 100143
+      },
+      {
+        "hour": "02",
+        "activeUsers": 895,
+        "sessions": 1072,
+        "eventCount": 87152
+      },
+      {
+        "hour": "03",
+        "activeUsers": 756,
+        "sessions": 921,
+        "eventCount": 69788
+      },
+      {
+        "hour": "04",
+        "activeUsers": 610,
+        "sessions": 699,
+        "eventCount": 51185
+      },
+      {
+        "hour": "05",
+        "activeUsers": 519,
+        "sessions": 577,
+        "eventCount": 43646
+      },
+      {
+        "hour": "06",
+        "activeUsers": 547,
+        "sessions": 557,
+        "eventCount": 40528
+      },
+      {
+        "hour": "07",
+        "activeUsers": 583,
+        "sessions": 636,
+        "eventCount": 50523
+      },
+      {
+        "hour": "08",
+        "activeUsers": 687,
+        "sessions": 738,
+        "eventCount": 57824
+      },
+      {
+        "hour": "09",
+        "activeUsers": 762,
+        "sessions": 792,
+        "eventCount": 60165
+      },
+      {
+        "hour": "10",
+        "activeUsers": 705,
+        "sessions": 780,
+        "eventCount": 58570
+      },
+      {
+        "hour": "11",
+        "activeUsers": 742,
+        "sessions": 778,
+        "eventCount": 61643
+      },
+      {
+        "hour": "12",
+        "activeUsers": 823,
+        "sessions": 837,
+        "eventCount": 61562
+      },
+      {
+        "hour": "13",
+        "activeUsers": 994,
+        "sessions": 1016,
+        "eventCount": 75755
+      },
+      {
+        "hour": "14",
+        "activeUsers": 940,
+        "sessions": 1050,
+        "eventCount": 74813
+      },
+      {
+        "hour": "15",
+        "activeUsers": 1003,
+        "sessions": 1132,
+        "eventCount": 86487
+      },
+      {
+        "hour": "16",
+        "activeUsers": 1054,
+        "sessions": 1221,
+        "eventCount": 91268
+      },
+      {
+        "hour": "17",
+        "activeUsers": 1173,
+        "sessions": 1359,
+        "eventCount": 99439
+      },
+      {
+        "hour": "18",
+        "activeUsers": 1328,
+        "sessions": 1488,
+        "eventCount": 114092
+      },
+      {
+        "hour": "19",
+        "activeUsers": 1310,
+        "sessions": 1517,
+        "eventCount": 118198
+      },
+      {
+        "hour": "20",
+        "activeUsers": 1318,
+        "sessions": 1566,
+        "eventCount": 119044
+      },
+      {
+        "hour": "21",
+        "activeUsers": 1451,
+        "sessions": 1621,
+        "eventCount": 133616
+      },
+      {
+        "hour": "22",
+        "activeUsers": 1376,
+        "sessions": 1620,
+        "eventCount": 120663
+      },
+      {
+        "hour": "23",
+        "activeUsers": 1357,
+        "sessions": 1636,
+        "eventCount": 114695
+      }
+    ]
+  },
+  "gameplay": {
+    "total_game_opens": 74722,
+    "total_game_starts": 0,
+    "total_level_complete": 153077,
+    "total_level_failed": 156436,
+    "overall_level_win_rate_pct": 49.46,
+    "unique_games_observed": 419,
+    "top_games": [
+      {
+        "game_name": "amaze_ball_quest",
+        "category": "Casual",
+        "opens": 2060,
+        "starts": 0,
+        "users": 1133,
+        "level_start": 26945,
+        "level_complete": 24842,
+        "level_failed": 0,
+        "level_restart": 0,
+        "play_time_sec": 280318.0,
+        "play_time_min": 4672.0,
+        "win_rate_pct": 100.0,
+        "level_outcomes": 24842
+      },
+      {
+        "game_name": "burger_run",
+        "category": "Arcade",
+        "opens": 1344,
+        "starts": 0,
+        "users": 867,
+        "level_start": 10927,
+        "level_complete": 3137,
+        "level_failed": 21821,
+        "level_restart": 6938,
+        "play_time_sec": 135981.0,
+        "play_time_min": 2266.3,
+        "win_rate_pct": 12.57,
+        "level_outcomes": 24958
+      },
+      {
+        "game_name": "apple_worm",
+        "category": "Casual",
+        "opens": 1063,
+        "starts": 0,
+        "users": 656,
+        "level_start": 8509,
+        "level_complete": 2209,
+        "level_failed": 3226,
+        "level_restart": 5109,
+        "play_time_sec": 177877.0,
+        "play_time_min": 2964.6,
+        "win_rate_pct": 40.64,
+        "level_outcomes": 5435
+      },
+      {
+        "game_name": "tic_tac_toe",
+        "category": "2 Players",
+        "opens": 817,
+        "starts": 0,
+        "users": 451,
+        "level_start": 0,
+        "level_complete": 0,
+        "level_failed": 0,
+        "level_restart": 0,
+        "play_time_sec": 90146.0,
+        "play_time_min": 1502.4,
+        "win_rate_pct": 0.0,
+        "level_outcomes": 0
+      },
+      {
+        "game_name": "ludo",
+        "category": "2 Players",
+        "opens": 814,
+        "starts": 0,
+        "users": 429,
+        "level_start": 0,
+        "level_complete": 0,
+        "level_failed": 0,
+        "level_restart": 0,
+        "play_time_sec": 424604.0,
+        "play_time_min": 7076.7,
+        "win_rate_pct": 0.0,
+        "level_outcomes": 0
+      },
+      {
+        "game_name": "ball_escape",
+        "category": "Casual",
+        "opens": 737,
+        "starts": 0,
+        "users": 534,
+        "level_start": 2297,
+        "level_complete": 509,
+        "level_failed": 638,
+        "level_restart": 624,
+        "play_time_sec": 70132.0,
+        "play_time_min": 1168.9,
+        "win_rate_pct": 44.38,
+        "level_outcomes": 1147
+      },
+      {
+        "game_name": "sea_battle",
+        "category": "2 Players",
+        "opens": 608,
+        "starts": 0,
+        "users": 439,
+        "level_start": 0,
+        "level_complete": 0,
+        "level_failed": 0,
+        "level_restart": 0,
+        "play_time_sec": 72889.0,
+        "play_time_min": 1214.8,
+        "win_rate_pct": 0.0,
+        "level_outcomes": 0
+      },
+      {
+        "game_name": "balloons_creator",
+        "category": "Casual",
+        "opens": 594,
+        "starts": 0,
+        "users": 343,
+        "level_start": 25,
+        "level_complete": 18,
+        "level_failed": 6,
+        "level_restart": 6,
+        "play_time_sec": 121152.0,
+        "play_time_min": 2019.2,
+        "win_rate_pct": 75.0,
+        "level_outcomes": 24
+      },
+      {
+        "game_name": "pool_8_pro",
+        "category": "2 Players",
+        "opens": 571,
+        "starts": 0,
+        "users": 362,
+        "level_start": 0,
+        "level_complete": 0,
+        "level_failed": 0,
+        "level_restart": 0,
+        "play_time_sec": 127002.0,
+        "play_time_min": 2116.7,
+        "win_rate_pct": 0.0,
+        "level_outcomes": 0
+      },
+      {
+        "game_name": "block_blast",
+        "category": "Puzzle",
+        "opens": 533,
+        "starts": 0,
+        "users": 398,
+        "level_start": 0,
+        "level_complete": 0,
+        "level_failed": 0,
+        "level_restart": 0,
+        "play_time_sec": 96572.0,
+        "play_time_min": 1609.5,
+        "win_rate_pct": 0.0,
+        "level_outcomes": 0
+      },
+      {
+        "game_name": "checkers",
+        "category": "2 Players",
+        "opens": 517,
+        "starts": 0,
+        "users": 335,
+        "level_start": 0,
+        "level_complete": 0,
+        "level_failed": 0,
+        "level_restart": 0,
+        "play_time_sec": 83621.0,
+        "play_time_min": 1393.7,
+        "win_rate_pct": 0.0,
+        "level_outcomes": 0
+      },
+      {
+        "game_name": "bee",
+        "category": "Casual",
+        "opens": 473,
+        "starts": 0,
+        "users": 334,
+        "level_start": 0,
+        "level_complete": 0,
+        "level_failed": 0,
+        "level_restart": 0,
+        "play_time_sec": 57996.0,
+        "play_time_min": 966.6,
+        "win_rate_pct": 0.0,
+        "level_outcomes": 0
+      },
+      {
+        "game_name": "uno_vertical",
+        "category": "2 Players",
+        "opens": 467,
+        "starts": 0,
+        "users": 299,
+        "level_start": 0,
+        "level_complete": 0,
+        "level_failed": 0,
+        "level_restart": 0,
+        "play_time_sec": 113982.0,
+        "play_time_min": 1899.7,
+        "win_rate_pct": 0.0,
+        "level_outcomes": 0
+      },
+      {
+        "game_name": "pipe_rush",
+        "category": "Arcade",
+        "opens": 460,
+        "starts": 0,
+        "users": 323,
+        "level_start": 5753,
+        "level_complete": 1941,
+        "level_failed": 3638,
+        "level_restart": 3446,
+        "play_time_sec": 40966.0,
+        "play_time_min": 682.8,
+        "win_rate_pct": 34.79,
+        "level_outcomes": 5579
+      },
+      {
+        "game_name": "knife_hit",
+        "category": "Arcade",
+        "opens": 388,
+        "starts": 0,
+        "users": 241,
+        "level_start": 3733,
+        "level_complete": 2841,
+        "level_failed": 665,
+        "level_restart": 0,
+        "play_time_sec": 43711.0,
+        "play_time_min": 728.5,
+        "win_rate_pct": 81.03,
+        "level_outcomes": 3506
+      },
+      {
+        "game_name": "block_fit_puzzle",
+        "category": "Puzzle",
+        "opens": 384,
+        "starts": 0,
+        "users": 268,
+        "level_start": 4226,
+        "level_complete": 1766,
+        "level_failed": 1527,
+        "level_restart": 666,
+        "play_time_sec": 153825.0,
+        "play_time_min": 2563.8,
+        "win_rate_pct": 53.63,
+        "level_outcomes": 3293
+      },
+      {
+        "game_name": "draw_parking",
+        "category": "Casual",
+        "opens": 382,
+        "starts": 0,
+        "users": 241,
+        "level_start": 3651,
+        "level_complete": 750,
+        "level_failed": 1273,
+        "level_restart": 3205,
+        "play_time_sec": 79560.0,
+        "play_time_min": 1326.0,
+        "win_rate_pct": 37.07,
+        "level_outcomes": 2023
+      },
+      {
+        "game_name": "knife_hit_2",
+        "category": "Arcade",
+        "opens": 376,
+        "starts": 0,
+        "users": 194,
+        "level_start": 4018,
+        "level_complete": 3123,
+        "level_failed": 691,
+        "level_restart": 0,
+        "play_time_sec": 46336.0,
+        "play_time_min": 772.3,
+        "win_rate_pct": 81.88,
+        "level_outcomes": 3814
+      },
+      {
+        "game_name": "chess",
+        "category": "2 Players",
+        "opens": 372,
+        "starts": 0,
+        "users": 270,
+        "level_start": 0,
+        "level_complete": 0,
+        "level_failed": 0,
+        "level_restart": 0,
+        "play_time_sec": 89022.0,
+        "play_time_min": 1483.7,
+        "win_rate_pct": 0.0,
+        "level_outcomes": 0
+      },
+      {
+        "game_name": "goods_puzzle",
+        "category": "Puzzle",
+        "opens": 371,
+        "starts": 0,
+        "users": 221,
+        "level_start": 333,
+        "level_complete": 134,
+        "level_failed": 87,
+        "level_restart": 0,
+        "play_time_sec": 31147.0,
+        "play_time_min": 519.1,
+        "win_rate_pct": 60.63,
+        "level_outcomes": 221
+      }
+    ],
+    "hardest_games": [
+      {
+        "game_name": "geometry_rash",
+        "category": "Casual",
+        "opens": 8,
+        "starts": 0,
+        "users": 17,
+        "level_start": 54,
+        "level_complete": 0,
+        "level_failed": 45,
+        "level_restart": 0,
+        "play_time_sec": 390.0,
+        "play_time_min": 6.5,
+        "win_rate_pct": 0.0,
+        "level_outcomes": 45
+      },
+      {
+        "game_name": "geometry_world",
+        "category": "Casual",
+        "opens": 6,
+        "starts": 0,
+        "users": 9,
+        "level_start": 34,
+        "level_complete": 0,
+        "level_failed": 31,
+        "level_restart": 0,
+        "play_time_sec": 192.0,
+        "play_time_min": 3.2,
+        "win_rate_pct": 0.0,
+        "level_outcomes": 31
+      },
+      {
+        "game_name": "zig_zag_warp",
+        "category": "Arcade",
+        "opens": 16,
+        "starts": 0,
+        "users": 53,
+        "level_start": 105,
+        "level_complete": 3,
+        "level_failed": 74,
+        "level_restart": 50,
+        "play_time_sec": 1517.0,
+        "play_time_min": 25.3,
+        "win_rate_pct": 3.9,
+        "level_outcomes": 77
+      },
+      {
+        "game_name": "white_dot",
+        "category": "Arcade",
+        "opens": 196,
+        "starts": 0,
+        "users": 149,
+        "level_start": 1955,
+        "level_complete": 161,
+        "level_failed": 1625,
+        "level_restart": 1620,
+        "play_time_sec": 35859.0,
+        "play_time_min": 597.6,
+        "win_rate_pct": 9.01,
+        "level_outcomes": 1786
+      },
+      {
+        "game_name": "cowboy_shoot",
+        "category": "Arcade",
+        "opens": 6,
+        "starts": 0,
+        "users": 46,
+        "level_start": 53,
+        "level_complete": 5,
+        "level_failed": 47,
+        "level_restart": 45,
+        "play_time_sec": 794.0,
+        "play_time_min": 13.2,
+        "win_rate_pct": 9.62,
+        "level_outcomes": 52
+      },
+      {
+        "game_name": "green_prickle",
+        "category": "Casual",
+        "opens": 134,
+        "starts": 0,
+        "users": 94,
+        "level_start": 1917,
+        "level_complete": 185,
+        "level_failed": 1712,
+        "level_restart": 1602,
+        "play_time_sec": 13196.0,
+        "play_time_min": 219.9,
+        "win_rate_pct": 9.75,
+        "level_outcomes": 1897
+      },
+      {
+        "game_name": "trap_path",
+        "category": "Casual",
+        "opens": 205,
+        "starts": 0,
+        "users": 105,
+        "level_start": 8363,
+        "level_complete": 801,
+        "level_failed": 7297,
+        "level_restart": 0,
+        "play_time_sec": 60066.0,
+        "play_time_min": 1001.1,
+        "win_rate_pct": 9.89,
+        "level_outcomes": 8098
+      },
+      {
+        "game_name": "skater_boys_journey",
+        "category": "Casual",
+        "opens": 2,
+        "starts": 0,
+        "users": 14,
+        "level_start": 54,
+        "level_complete": 6,
+        "level_failed": 48,
+        "level_restart": 46,
+        "play_time_sec": 534.0,
+        "play_time_min": 8.9,
+        "win_rate_pct": 11.11,
+        "level_outcomes": 54
+      },
+      {
+        "game_name": "burger_run",
+        "category": "Arcade",
+        "opens": 1344,
+        "starts": 0,
+        "users": 867,
+        "level_start": 10927,
+        "level_complete": 3137,
+        "level_failed": 21821,
+        "level_restart": 6938,
+        "play_time_sec": 135981.0,
+        "play_time_min": 2266.3,
+        "win_rate_pct": 12.57,
+        "level_outcomes": 24958
+      },
+      {
+        "game_name": "filled_glass_3",
+        "category": "Puzzle",
+        "opens": 1,
+        "starts": 0,
+        "users": 12,
+        "level_start": 46,
+        "level_complete": 6,
+        "level_failed": 40,
+        "level_restart": 39,
+        "play_time_sec": 487.0,
+        "play_time_min": 8.1,
+        "win_rate_pct": 13.04,
+        "level_outcomes": 46
+      }
+    ],
+    "r2_downloads": {
+      "started": 15159,
+      "completed": 3498,
+      "failed": 11591,
+      "offline": 2381,
+      "success_rate_pct": 23.18,
+      "top_failed_games": [
+        {
+          "game_name": "among_us",
+          "started": 1182,
+          "completed": 223,
+          "failed": 947,
+          "success_rate_pct": 19.06
+        },
+        {
+          "game_name": "archers_random",
+          "started": 717,
+          "completed": 114,
+          "failed": 597,
+          "success_rate_pct": 16.03
+        },
+        {
+          "game_name": "abalone",
+          "started": 644,
+          "completed": 108,
+          "failed": 531,
+          "success_rate_pct": 16.9
+        },
+        {
+          "game_name": "angry_heroes",
+          "started": 539,
+          "completed": 62,
+          "failed": 468,
+          "success_rate_pct": 11.7
+        },
+        {
+          "game_name": "animal_clicker",
+          "started": 514,
+          "completed": 83,
+          "failed": 423,
+          "success_rate_pct": 16.4
+        },
+        {
+          "game_name": "block_pictures",
+          "started": 469,
+          "completed": 59,
+          "failed": 403,
+          "success_rate_pct": 12.77
+        },
+        {
+          "game_name": "ball_8_pool",
+          "started": 336,
+          "completed": 44,
+          "failed": 288,
+          "success_rate_pct": 13.25
+        },
+        {
+          "game_name": "tanks_battle",
+          "started": 254,
+          "completed": 31,
+          "failed": 222,
+          "success_rate_pct": 12.25
+        },
+        {
+          "game_name": "arcane_blocks",
+          "started": 248,
+          "completed": 42,
+          "failed": 204,
+          "success_rate_pct": 17.07
+        },
+        {
+          "game_name": "arrow_shooter",
+          "started": 241,
+          "completed": 37,
+          "failed": 200,
+          "success_rate_pct": 15.61
+        }
+      ],
+      "top_errors": [
+        {
+          "error_message": "UnknownHostException",
+          "count": 9410
+        },
+        {
+          "error_message": "bx1",
+          "count": 581
+        },
+        {
+          "error_message": "SocketException",
+          "count": 497
+        },
+        {
+          "error_message": "ConnectException",
+          "count": 472
+        },
+        {
+          "error_message": "SocketTimeoutException",
+          "count": 286
+        },
+        {
+          "error_message": "SSLHandshakeException",
+          "count": 159
+        },
+        {
+          "error_message": "ix1",
+          "count": 100
+        },
+        {
+          "error_message": "IllegalArgumentException",
+          "count": 53
+        },
+        {
+          "error_message": "SSLException",
+          "count": 22
+        },
+        {
+          "error_message": "FileNotFoundException",
+          "count": 7
+        }
+      ]
+    }
+  },
+  "ads": {
+    "requests": 159192,
+    "loaded": 32661,
+    "impressions": 58380,
+    "clicks": 2668,
+    "failed_to_load": 130956,
+    "failed_to_show": 7,
+    "rewards_earned": 60,
+    "mediation_loaded": 15229,
+    "mediation_failed": 24760,
+    "suppressed": 101860,
+    "fill_rate_pct": 20.52,
+    "show_rate_pct": 178.75,
+    "effective_imp_rate_pct": 36.67,
+    "ctr_pct": 4.57,
+    "banner_policy_warning": true,
+    "by_ad_type": [
+      {
+        "ad_type": "APP_OPEN",
+        "requests": 5466,
+        "loaded": 1282,
+        "failed_to_load": 3994,
+        "impressions": 46,
+        "clicks": 18,
+        "rewards": 0,
+        "fill_rate_pct": 23.45,
+        "show_rate_pct": 3.59,
+        "ctr_pct": 39.13
+      },
+      {
+        "ad_type": "BANNER",
+        "requests": 27589,
+        "loaded": 5798,
+        "failed_to_load": 23654,
+        "impressions": 7405,
+        "clicks": 417,
+        "rewards": 0,
+        "fill_rate_pct": 21.02,
+        "show_rate_pct": 127.72,
+        "ctr_pct": 5.63
+      },
+      {
+        "ad_type": "INTERSTITIAL",
+        "requests": 17181,
+        "loaded": 3214,
+        "failed_to_load": 13603,
+        "impressions": 1750,
+        "clicks": 526,
+        "rewards": 0,
+        "fill_rate_pct": 18.71,
+        "show_rate_pct": 54.45,
+        "ctr_pct": 30.06
+      },
+      {
+        "ad_type": "NATIVE",
+        "requests": 12885,
+        "loaded": 6385,
+        "failed_to_load": 6160,
+        "impressions": 2863,
+        "clicks": 237,
+        "rewards": 0,
+        "fill_rate_pct": 49.55,
+        "show_rate_pct": 44.84,
+        "ctr_pct": 8.28
+      },
+      {
+        "ad_type": "REWARDED",
+        "requests": 7366,
+        "loaded": 1193,
+        "failed_to_load": 5907,
+        "impressions": 41,
+        "clicks": 4,
+        "rewards": 0,
+        "fill_rate_pct": 16.2,
+        "show_rate_pct": 3.44,
+        "ctr_pct": 9.76
+      }
+    ],
+    "mediation_breakdown": [
+      {
+        "network": "google",
+        "wins": 15229,
+        "share_pct": 100.0
+      }
+    ],
+    "top_errors": [
+      {
+        "event": "ad_failed_to_load",
+        "ad_type": "(not set)",
+        "error_code": "(not set)",
+        "error_message": "(not set)",
+        "count": 77638
+      },
+      {
+        "event": "ad_failed_to_load",
+        "ad_type": "BANNER",
+        "error_code": "(not set)",
+        "error_message": "Unable to obtain a JavascriptEngine.",
+        "count": 13301
+      },
+      {
+        "event": "ad_failed_to_load",
+        "ad_type": "INTERSTITIAL",
+        "error_code": "(not set)",
+        "error_message": "Unable to obtain a JavascriptEngine.",
+        "count": 6794
+      },
+      {
+        "event": "ad_failed_to_load",
+        "ad_type": "BANNER",
+        "error_code": "(not set)",
+        "error_message": "(not set)",
+        "count": 4571
+      },
+      {
+        "event": "ad_failed_to_load",
+        "ad_type": "INTERSTITIAL",
+        "error_code": "(not set)",
+        "error_message": "(not set)",
+        "count": 3288
+      },
+      {
+        "event": "ad_failed_to_load",
+        "ad_type": "REWARDED",
+        "error_code": "(not set)",
+        "error_message": "Unable to obtain a JavascriptEngine.",
+        "count": 2555
+      },
+      {
+        "event": "ad_failed_to_load",
+        "ad_type": "BANNER",
+        "error_code": "",
+        "error_message": "Unable to obtain a JavascriptEngine.",
+        "count": 2086
+      },
+      {
+        "event": "ad_mediation_failed",
+        "ad_type": "BANNER",
+        "error_code": "(not set)",
+        "error_message": "Unable to obtain a JavascriptEngine.",
+        "count": 1537
+      },
+      {
+        "event": "ad_failed_to_load",
+        "ad_type": "NATIVE",
+        "error_code": "(not set)",
+        "error_message": "(not set)",
+        "count": 1533
+      },
+      {
+        "event": "ad_failed_to_load",
+        "ad_type": "REWARDED",
+        "error_code": "(not set)",
+        "error_message": "(not set)",
+        "count": 1490
+      },
+      {
+        "event": "ad_failed_to_load",
+        "ad_type": "INTERSTITIAL",
+        "error_code": "",
+        "error_message": "Unable to obtain a JavascriptEngine.",
+        "count": 1417
+      },
+      {
+        "event": "ad_mediation_failed",
+        "ad_type": "INTERSTITIAL",
+        "error_code": "(not set)",
+        "error_message": "Unable to obtain a JavascriptEngine.",
+        "count": 1404
+      }
+    ],
+    "suppression_reasons": [
+      {
+        "ad_type": "NATIVE",
+        "reason": "retry_cooldown",
+        "count": 26850
+      },
+      {
+        "ad_type": "INTERSTITIAL",
+        "reason": "retry_cooldown",
+        "count": 22109
+      },
+      {
+        "ad_type": "INTERSTITIAL",
+        "reason": "consent_not_ready",
+        "count": 17275
+      },
+      {
+        "ad_type": "INTERSTITIAL",
+        "reason": "cache_miss",
+        "count": 13172
+      },
+      {
+        "ad_type": "APP_OPEN",
+        "reason": "retry_cooldown",
+        "count": 8495
+      },
+      {
+        "ad_type": "REWARDED",
+        "reason": "retry_cooldown",
+        "count": 7308
+      },
+      {
+        "ad_type": "INTERSTITIAL",
+        "reason": "insufficient_user_actions",
+        "count": 2083
+      },
+      {
+        "ad_type": "INTERSTITIAL",
+        "reason": "preload_delay_3s",
+        "count": 1640
+      },
+      {
+        "ad_type": "INTERSTITIAL",
+        "reason": "frequency_cap",
+        "count": 1478
+      },
+      {
+        "ad_type": "APP_OPEN",
+        "reason": "consent_not_ready",
+        "count": 677
+      }
+    ]
+  },
+  "iap": {
+    "paywall_viewed": 191,
+    "purchase_initiated": 2,
+    "purchase_success": 0,
+    "purchase_failed": 1,
+    "purchase_canceled": 1,
+    "restore_initiated": 27,
+    "restore_success": 0,
+    "restore_none_found": 25,
+    "paywall_to_init_pct": 1.05,
+    "init_to_success_pct": 0.0,
+    "paywall_to_success_pct": 0.0,
+    "by_source": [
+      {
+        "source": "launcher",
+        "views": 94,
+        "share_pct": 49.21
+      }
+    ]
+  },
+  "notifications": {
+    "scheduled": 89441,
+    "delivered": 2592,
+    "suppressed": 4159,
+    "opened": 70,
+    "permission_events": 3380,
+    "delivery_rate_pct": 2.9,
+    "open_rate_pct": 2.7,
+    "by_hour": [
+      {
+        "hour": 8,
+        "hour_label": "08:00",
+        "scheduled": 30316,
+        "delivered": 834,
+        "suppressed": 1341,
+        "opened": 21,
+        "delivery_rate_pct": 2.75,
+        "open_rate_pct": 2.52
+      },
+      {
+        "hour": 12,
+        "hour_label": "12:00",
+        "scheduled": 29774,
+        "delivered": 869,
+        "suppressed": 1381,
+        "opened": 27,
+        "delivery_rate_pct": 2.92,
+        "open_rate_pct": 3.11
+      },
+      {
+        "hour": 20,
+        "hour_label": "20:00",
+        "scheduled": 29351,
+        "delivered": 889,
+        "suppressed": 1437,
+        "opened": 22,
+        "delivery_rate_pct": 3.03,
+        "open_rate_pct": 2.47
+      }
+    ],
+    "golden_hours": [
+      {
+        "hour": 12,
+        "hour_label": "12:00",
+        "scheduled": 29774,
+        "delivered": 869,
+        "suppressed": 1381,
+        "opened": 27,
+        "delivery_rate_pct": 2.92,
+        "open_rate_pct": 3.11
+      },
+      {
+        "hour": 8,
+        "hour_label": "08:00",
+        "scheduled": 30316,
+        "delivered": 834,
+        "suppressed": 1341,
+        "opened": 21,
+        "delivery_rate_pct": 2.75,
+        "open_rate_pct": 2.52
+      },
+      {
+        "hour": 20,
+        "hour_label": "20:00",
+        "scheduled": 29351,
+        "delivered": 889,
+        "suppressed": 1437,
+        "opened": 22,
+        "delivery_rate_pct": 3.03,
+        "open_rate_pct": 2.47
+      }
+    ],
+    "by_slot": []
+  },
+  "roas": {
+    "currency": "USD",
+    "ad_spend_usd": 157.3819,
+    "ua_impressions": 705027,
+    "ua_clicks": 25389,
+    "cpc_usd": 0.0062,
+    "ua_ctr_pct": 3.6,
+    "total_new_users": 6176,
+    "paid_cpc_new_users": 5673,
+    "blended_cpi_usd": 0.0255,
+    "paid_cpi_usd": 0.0277,
+    "ad_revenue_usd": 10.1196,
+    "iap_revenue_usd": 0.0,
+    "total_revenue_usd": 10.1196,
+    "net_profit_usd": -147.2623,
+    "blended_roas_pct": 6.43,
+    "publisher_impressions": 58379,
+    "publisher_clicks": 2163,
+    "overall_ecpm_usd": 0.173,
+    "daily_pnl": [
+      {
+        "date": "2026-11-03",
+        "dau": 2,
+        "new_users": 2,
+        "paid_cpc_new_users": 0,
+        "spend_usd": 0.0,
+        "ua_clicks": 0,
+        "ua_impressions": 0,
+        "ad_revenue_usd": 0.0004,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.0004,
+        "net_profit_usd": 0.0004,
+        "blended_roas_pct": 0.0,
+        "publisher_impressions": 12,
+        "publisher_clicks": 0,
+        "ecpm_usd": 0.037
+      },
+      {
+        "date": "2026-11-04",
+        "dau": 1,
+        "new_users": 1,
+        "paid_cpc_new_users": 0,
+        "spend_usd": 0.0,
+        "ua_clicks": 0,
+        "ua_impressions": 3,
+        "ad_revenue_usd": 0.0007,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.0007,
+        "net_profit_usd": 0.0007,
+        "blended_roas_pct": 0.0,
+        "publisher_impressions": 2,
+        "publisher_clicks": 0,
+        "ecpm_usd": 0.336
+      },
+      {
+        "date": "2026-11-05",
+        "dau": 1,
+        "new_users": 0,
+        "paid_cpc_new_users": 0,
+        "spend_usd": 0.0,
+        "ua_clicks": 0,
+        "ua_impressions": 5,
+        "ad_revenue_usd": 0.0006,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.0006,
+        "net_profit_usd": 0.0006,
+        "blended_roas_pct": 0.0,
+        "publisher_impressions": 8,
+        "publisher_clicks": 0,
+        "ecpm_usd": 0.071
+      },
+      {
+        "date": "2026-11-06",
+        "dau": 2,
+        "new_users": 2,
+        "paid_cpc_new_users": 0,
+        "spend_usd": 0.0,
+        "ua_clicks": 0,
+        "ua_impressions": 30,
+        "ad_revenue_usd": 0.0,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.0,
+        "net_profit_usd": 0.0,
+        "blended_roas_pct": 0.0,
+        "publisher_impressions": 0,
+        "publisher_clicks": 0,
+        "ecpm_usd": 0.0
+      },
+      {
+        "date": "2026-11-07",
+        "dau": 1,
+        "new_users": 1,
+        "paid_cpc_new_users": 0,
+        "spend_usd": 0.1207,
+        "ua_clicks": 12,
+        "ua_impressions": 203,
+        "ad_revenue_usd": 0.0,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.0,
+        "net_profit_usd": -0.1207,
+        "blended_roas_pct": 0.0,
+        "publisher_impressions": 0,
+        "publisher_clicks": 0,
+        "ecpm_usd": 0.0
+      },
+      {
+        "date": "2026-11-08",
+        "dau": 8,
+        "new_users": 8,
+        "paid_cpc_new_users": 8,
+        "spend_usd": 0.3886,
+        "ua_clicks": 33,
+        "ua_impressions": 1186,
+        "ad_revenue_usd": 0.019,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.019,
+        "net_profit_usd": -0.3695,
+        "blended_roas_pct": 4.9,
+        "publisher_impressions": 71,
+        "publisher_clicks": 31,
+        "ecpm_usd": 0.268
+      },
+      {
+        "date": "2026-11-09",
+        "dau": 121,
+        "new_users": 118,
+        "paid_cpc_new_users": 109,
+        "spend_usd": 11.7797,
+        "ua_clicks": 711,
+        "ua_impressions": 22738,
+        "ad_revenue_usd": 0.1434,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.1434,
+        "net_profit_usd": -11.6363,
+        "blended_roas_pct": 1.22,
+        "publisher_impressions": 792,
+        "publisher_clicks": 31,
+        "ecpm_usd": 0.181
+      },
+      {
+        "date": "2026-11-10",
+        "dau": 374,
+        "new_users": 341,
+        "paid_cpc_new_users": 322,
+        "spend_usd": 14.4584,
+        "ua_clicks": 1365,
+        "ua_impressions": 45495,
+        "ad_revenue_usd": 0.3145,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.3145,
+        "net_profit_usd": -14.144,
+        "blended_roas_pct": 2.17,
+        "publisher_impressions": 2688,
+        "publisher_clicks": 103,
+        "ecpm_usd": 0.117
+      },
+      {
+        "date": "2026-11-11",
+        "dau": 993,
+        "new_users": 872,
+        "paid_cpc_new_users": 815,
+        "spend_usd": 20.6406,
+        "ua_clicks": 3232,
+        "ua_impressions": 93102,
+        "ad_revenue_usd": 0.7733,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.7733,
+        "net_profit_usd": -19.8673,
+        "blended_roas_pct": 3.75,
+        "publisher_impressions": 6558,
+        "publisher_clicks": 198,
+        "ecpm_usd": 0.118
+      },
+      {
+        "date": "2026-11-12",
+        "dau": 1053,
+        "new_users": 678,
+        "paid_cpc_new_users": 625,
+        "spend_usd": 20.8752,
+        "ua_clicks": 2916,
+        "ua_impressions": 100014,
+        "ad_revenue_usd": 0.7593,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.7593,
+        "net_profit_usd": -20.1159,
+        "blended_roas_pct": 3.64,
+        "publisher_impressions": 6989,
+        "publisher_clicks": 198,
+        "ecpm_usd": 0.109
+      },
+      {
+        "date": "2026-11-13",
+        "dau": 1726,
+        "new_users": 1222,
+        "paid_cpc_new_users": 1127,
+        "spend_usd": 27.516,
+        "ua_clicks": 5216,
+        "ua_impressions": 137541,
+        "ad_revenue_usd": 1.0261,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 1.0261,
+        "net_profit_usd": -26.4898,
+        "blended_roas_pct": 3.73,
+        "publisher_impressions": 9769,
+        "publisher_clicks": 314,
+        "ecpm_usd": 0.105
+      },
+      {
+        "date": "2026-11-14",
+        "dau": 1275,
+        "new_users": 491,
+        "paid_cpc_new_users": 451,
+        "spend_usd": 7.0063,
+        "ua_clicks": 1366,
+        "ua_impressions": 39884,
+        "ad_revenue_usd": 0.647,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.647,
+        "net_profit_usd": -6.3592,
+        "blended_roas_pct": 9.23,
+        "publisher_impressions": 5478,
+        "publisher_clicks": 157,
+        "ecpm_usd": 0.118
+      },
+      {
+        "date": "2026-11-15",
+        "dau": 812,
+        "new_users": 146,
+        "paid_cpc_new_users": 126,
+        "spend_usd": 0.739,
+        "ua_clicks": 105,
+        "ua_impressions": 3607,
+        "ad_revenue_usd": 0.3712,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.3712,
+        "net_profit_usd": -0.3678,
+        "blended_roas_pct": 50.23,
+        "publisher_impressions": 2599,
+        "publisher_clicks": 72,
+        "ecpm_usd": 0.143
+      },
+      {
+        "date": "2026-11-16",
+        "dau": 587,
+        "new_users": 81,
+        "paid_cpc_new_users": 75,
+        "spend_usd": 0.703,
+        "ua_clicks": 96,
+        "ua_impressions": 2460,
+        "ad_revenue_usd": 0.1699,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.1699,
+        "net_profit_usd": -0.5332,
+        "blended_roas_pct": 24.16,
+        "publisher_impressions": 1801,
+        "publisher_clicks": 70,
+        "ecpm_usd": 0.094
+      },
+      {
+        "date": "2026-11-17",
+        "dau": 540,
+        "new_users": 37,
+        "paid_cpc_new_users": 35,
+        "spend_usd": 0.1919,
+        "ua_clicks": 28,
+        "ua_impressions": 1009,
+        "ad_revenue_usd": 0.1592,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.1592,
+        "net_profit_usd": -0.0327,
+        "blended_roas_pct": 82.95,
+        "publisher_impressions": 1554,
+        "publisher_clicks": 43,
+        "ecpm_usd": 0.102
+      },
+      {
+        "date": "2026-11-18",
+        "dau": 416,
+        "new_users": 38,
+        "paid_cpc_new_users": 36,
+        "spend_usd": 0.1443,
+        "ua_clicks": 27,
+        "ua_impressions": 738,
+        "ad_revenue_usd": 0.1893,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.1893,
+        "net_profit_usd": 0.045,
+        "blended_roas_pct": 131.22,
+        "publisher_impressions": 1164,
+        "publisher_clicks": 22,
+        "ecpm_usd": 0.163
+      },
+      {
+        "date": "2026-11-19",
+        "dau": 386,
+        "new_users": 27,
+        "paid_cpc_new_users": 25,
+        "spend_usd": 0.0966,
+        "ua_clicks": 18,
+        "ua_impressions": 699,
+        "ad_revenue_usd": 0.0834,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.0834,
+        "net_profit_usd": -0.0131,
+        "blended_roas_pct": 86.42,
+        "publisher_impressions": 1233,
+        "publisher_clicks": 27,
+        "ecpm_usd": 0.068
+      },
+      {
+        "date": "2026-11-20",
+        "dau": 426,
+        "new_users": 78,
+        "paid_cpc_new_users": 63,
+        "spend_usd": 0.143,
+        "ua_clicks": 25,
+        "ua_impressions": 739,
+        "ad_revenue_usd": 0.1782,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.1782,
+        "net_profit_usd": 0.0353,
+        "blended_roas_pct": 124.69,
+        "publisher_impressions": 1490,
+        "publisher_clicks": 42,
+        "ecpm_usd": 0.12
+      },
+      {
+        "date": "2026-11-21",
+        "dau": 1919,
+        "new_users": 1545,
+        "paid_cpc_new_users": 1443,
+        "spend_usd": 44.413,
+        "ua_clicks": 8527,
+        "ua_impressions": 216492,
+        "ad_revenue_usd": 3.1055,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 3.1055,
+        "net_profit_usd": -41.3075,
+        "blended_roas_pct": 6.99,
+        "publisher_impressions": 10047,
+        "publisher_clicks": 525,
+        "ecpm_usd": 0.309
+      },
+      {
+        "date": "2026-11-22",
+        "dau": 1022,
+        "new_users": 334,
+        "paid_cpc_new_users": 292,
+        "spend_usd": 6.1325,
+        "ua_clicks": 1278,
+        "ua_impressions": 29869,
+        "ad_revenue_usd": 1.1775,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 1.1775,
+        "net_profit_usd": -4.9551,
+        "blended_roas_pct": 19.2,
+        "publisher_impressions": 3971,
+        "publisher_clicks": 239,
+        "ecpm_usd": 0.297
+      },
+      {
+        "date": "2026-11-23",
+        "dau": 633,
+        "new_users": 138,
+        "paid_cpc_new_users": 107,
+        "spend_usd": 1.2055,
+        "ua_clicks": 231,
+        "ua_impressions": 5277,
+        "ad_revenue_usd": 0.8109,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.8109,
+        "net_profit_usd": -0.3947,
+        "blended_roas_pct": 67.26,
+        "publisher_impressions": 1790,
+        "publisher_clicks": 71,
+        "ecpm_usd": 0.453
+      },
+      {
+        "date": "2026-11-24",
+        "dau": 120,
+        "new_users": 16,
+        "paid_cpc_new_users": 14,
+        "spend_usd": 0.8276,
+        "ua_clicks": 203,
+        "ua_impressions": 3936,
+        "ad_revenue_usd": 0.1902,
+        "iap_revenue_usd": 0.0,
+        "total_revenue_usd": 0.1902,
+        "net_profit_usd": -0.6374,
+        "blended_roas_pct": 22.98,
+        "publisher_impressions": 363,
+        "publisher_clicks": 20,
+        "ecpm_usd": 0.524
+      }
+    ],
+    "campaigns": [
+      {
+        "campaign_name": "Global",
+        "source_medium": "google / cpc",
+        "spend_usd": 101.7426,
+        "ua_impressions": 457011,
+        "ua_clicks": 15667,
+        "cpc_usd": 0.0065,
+        "new_users": 635,
+        "cpi_usd": 0.1602,
+        "attributed_revenue_usd": 1.0046,
+        "direct_roas_pct": 0.99
+      },
+      {
+        "campaign_name": "Global2",
+        "source_medium": "google / cpc",
+        "spend_usd": 32.2274,
+        "ua_impressions": 224326,
+        "ua_clicks": 8578,
+        "cpc_usd": 0.0038,
+        "new_users": 1119,
+        "cpi_usd": 0.0288,
+        "attributed_revenue_usd": 1.5589,
+        "direct_roas_pct": 4.84
+      },
+      {
+        "campaign_name": "US",
+        "source_medium": "google / cpc",
+        "spend_usd": 11.2997,
+        "ua_impressions": 3914,
+        "ua_clicks": 164,
+        "cpc_usd": 0.0689,
+        "new_users": 28,
+        "cpi_usd": 0.4036,
+        "attributed_revenue_usd": 0.6883,
+        "direct_roas_pct": 6.09
+      },
+      {
+        "campaign_name": "Global ROAS",
+        "source_medium": "google / cpc",
+        "spend_usd": 6.4654,
+        "ua_impressions": 7823,
+        "ua_clicks": 451,
+        "cpc_usd": 0.0143,
+        "new_users": 82,
+        "cpi_usd": 0.0788,
+        "attributed_revenue_usd": 0.5467,
+        "direct_roas_pct": 8.46
+      },
+      {
+        "campaign_name": "Brazil",
+        "source_medium": "google / cpc",
+        "spend_usd": 5.5574,
+        "ua_impressions": 11714,
+        "ua_clicks": 516,
+        "cpc_usd": 0.0108,
+        "new_users": 159,
+        "cpi_usd": 0.035,
+        "attributed_revenue_usd": 0.6635,
+        "direct_roas_pct": 11.94
+      },
+      {
+        "campaign_name": "Nam Phi",
+        "source_medium": "google / cpc",
+        "spend_usd": 0.0396,
+        "ua_impressions": 121,
+        "ua_clicks": 8,
+        "cpc_usd": 0.0049,
+        "new_users": 1,
+        "cpi_usd": 0.0396,
+        "attributed_revenue_usd": 0.0,
+        "direct_roas_pct": 0.0
+      },
+      {
+        "campaign_name": "Argentina",
+        "source_medium": "google / cpc",
+        "spend_usd": 0.0368,
+        "ua_impressions": 59,
+        "ua_clicks": 3,
+        "cpc_usd": 0.0123,
+        "new_users": 1,
+        "cpi_usd": 0.0368,
+        "attributed_revenue_usd": 0.0064,
+        "direct_roas_pct": 17.26
+      },
+      {
+        "campaign_name": "Mexico",
+        "source_medium": "google / cpc",
+        "spend_usd": 0.0125,
+        "ua_impressions": 39,
+        "ua_clicks": 2,
+        "cpc_usd": 0.0062,
+        "new_users": 0,
+        "cpi_usd": 0.0,
+        "attributed_revenue_usd": 0.0,
+        "direct_roas_pct": 0.0
+      },
+      {
+        "campaign_name": "Japan",
+        "source_medium": "google / cpc",
+        "spend_usd": 0.0004,
+        "ua_impressions": 15,
+        "ua_clicks": 0,
+        "cpc_usd": 0.0,
+        "new_users": 0,
+        "cpi_usd": 0.0,
+        "attributed_revenue_usd": 0.0,
+        "direct_roas_pct": 0.0
+      },
+      {
+        "campaign_name": "(not set)",
+        "source_medium": "google / cpc",
+        "spend_usd": 0.0,
+        "ua_impressions": 0,
+        "ua_clicks": 0,
+        "cpc_usd": 0.0,
+        "new_users": 3648,
+        "cpi_usd": 0.0,
+        "attributed_revenue_usd": 4.2033,
+        "direct_roas_pct": 0.0
+      },
+      {
+        "campaign_name": "(not set)",
+        "source_medium": "(not set)",
+        "spend_usd": 0.0,
+        "ua_impressions": 0,
+        "ua_clicks": 0,
+        "cpc_usd": 0.0,
+        "new_users": 58,
+        "cpi_usd": 0.0,
+        "attributed_revenue_usd": 0.8744,
+        "direct_roas_pct": 0.0
+      },
+      {
+        "campaign_name": "(not set)",
+        "source_medium": "google-play / organic",
+        "spend_usd": 0.0,
+        "ua_impressions": 0,
+        "ua_clicks": 0,
+        "cpc_usd": 0.0,
+        "new_users": 292,
+        "cpi_usd": 0.0,
+        "attributed_revenue_usd": 0.4096,
+        "direct_roas_pct": 0.0
+      },
+      {
+        "campaign_name": "(direct)",
+        "source_medium": "google / cpc",
+        "spend_usd": 0.0,
+        "ua_impressions": 0,
+        "ua_clicks": 0,
+        "cpc_usd": 0.0,
+        "new_users": 0,
+        "cpi_usd": 0.0,
+        "attributed_revenue_usd": 0.0946,
+        "direct_roas_pct": 0.0
+      },
+      {
+        "campaign_name": "(direct)",
+        "source_medium": "(direct) / (none)",
+        "spend_usd": 0.0,
+        "ua_impressions": 0,
+        "ua_clicks": 0,
+        "cpc_usd": 0.0,
+        "new_users": 152,
+        "cpi_usd": 0.0,
+        "attributed_revenue_usd": 0.0631,
+        "direct_roas_pct": 0.0
+      },
+      {
+        "campaign_name": "(direct)",
+        "source_medium": "google-play / organic",
+        "spend_usd": 0.0,
+        "ua_impressions": 0,
+        "ua_clicks": 0,
+        "cpc_usd": 0.0,
+        "new_users": 0,
+        "cpi_usd": 0.0,
+        "attributed_revenue_usd": 0.0065,
+        "direct_roas_pct": 0.0
+      }
+    ],
+    "format_ecpm": [
+      {
+        "app_version": "1.4.1",
+        "ad_format": "Interstitial",
+        "revenue_usd": 0.0037,
+        "impressions": 2,
+        "clicks": 3,
+        "ctr_pct": 150.0,
+        "ecpm_usd": 1.875
+      },
+      {
+        "app_version": "1.4.1",
+        "ad_format": "Banner",
+        "revenue_usd": 0.0,
+        "impressions": 1,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "ecpm_usd": 0.027
+      },
+      {
+        "app_version": "1.4.0",
+        "ad_format": "Interstitial",
+        "revenue_usd": 0.1551,
+        "impressions": 127,
+        "clicks": 28,
+        "ctr_pct": 22.05,
+        "ecpm_usd": 1.221
+      },
+      {
+        "app_version": "1.4.0",
+        "ad_format": "Native advanced",
+        "revenue_usd": 0.0232,
+        "impressions": 90,
+        "clicks": 3,
+        "ctr_pct": 3.33,
+        "ecpm_usd": 0.257
+      },
+      {
+        "app_version": "1.4.0",
+        "ad_format": "Rewarded",
+        "revenue_usd": 0.0156,
+        "impressions": 9,
+        "clicks": 1,
+        "ctr_pct": 11.11,
+        "ecpm_usd": 1.737
+      },
+      {
+        "app_version": "1.4.0",
+        "ad_format": "Banner",
+        "revenue_usd": 0.0084,
+        "impressions": 47,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "ecpm_usd": 0.179
+      },
+      {
+        "app_version": "1.4.0",
+        "ad_format": "App open",
+        "revenue_usd": 0.0001,
+        "impressions": 1,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "ecpm_usd": 0.132
+      },
+      {
+        "app_version": "1.3.1",
+        "ad_format": "Interstitial",
+        "revenue_usd": 1.0654,
+        "impressions": 415,
+        "clicks": 165,
+        "ctr_pct": 39.76,
+        "ecpm_usd": 2.567
+      },
+      {
+        "app_version": "1.3.1",
+        "ad_format": "Banner",
+        "revenue_usd": 0.7048,
+        "impressions": 1169,
+        "clicks": 76,
+        "ctr_pct": 6.5,
+        "ecpm_usd": 0.603
+      },
+      {
+        "app_version": "1.3.1",
+        "ad_format": "Native advanced",
+        "revenue_usd": 0.5181,
+        "impressions": 1014,
+        "clicks": 56,
+        "ctr_pct": 5.52,
+        "ecpm_usd": 0.511
+      },
+      {
+        "app_version": "1.3.1",
+        "ad_format": "Rewarded",
+        "revenue_usd": 0.0392,
+        "impressions": 23,
+        "clicks": 1,
+        "ctr_pct": 4.35,
+        "ecpm_usd": 1.706
+      },
+      {
+        "app_version": "1.3.1",
+        "ad_format": "App open",
+        "revenue_usd": 0.0252,
+        "impressions": 10,
+        "clicks": 4,
+        "ctr_pct": 40.0,
+        "ecpm_usd": 2.515
+      },
+      {
+        "app_version": "1.3",
+        "ad_format": "Interstitial",
+        "revenue_usd": 1.3303,
+        "impressions": 816,
+        "clicks": 206,
+        "ctr_pct": 25.25,
+        "ecpm_usd": 1.63
+      },
+      {
+        "app_version": "1.3",
+        "ad_format": "Banner",
+        "revenue_usd": 0.7574,
+        "impressions": 1935,
+        "clicks": 157,
+        "ctr_pct": 8.11,
+        "ecpm_usd": 0.391
+      },
+      {
+        "app_version": "1.3",
+        "ad_format": "Native advanced",
+        "revenue_usd": 0.5298,
+        "impressions": 1575,
+        "clicks": 129,
+        "ctr_pct": 8.19,
+        "ecpm_usd": 0.336
+      },
+      {
+        "app_version": "1.3",
+        "ad_format": "App open",
+        "revenue_usd": 0.0255,
+        "impressions": 25,
+        "clicks": 3,
+        "ctr_pct": 12.0,
+        "ecpm_usd": 1.019
+      },
+      {
+        "app_version": "1.3",
+        "ad_format": "Rewarded",
+        "revenue_usd": 0.0178,
+        "impressions": 23,
+        "clicks": 2,
+        "ctr_pct": 8.7,
+        "ecpm_usd": 0.774
+      },
+      {
+        "app_version": "1.2",
+        "ad_format": "Banner",
+        "revenue_usd": 2.835,
+        "impressions": 12554,
+        "clicks": 686,
+        "ctr_pct": 5.46,
+        "ecpm_usd": 0.226
+      },
+      {
+        "app_version": "1.2",
+        "ad_format": "Interstitial",
+        "revenue_usd": 1.9097,
+        "impressions": 2011,
+        "clicks": 630,
+        "ctr_pct": 31.33,
+        "ecpm_usd": 0.95
+      },
+      {
+        "app_version": "1.2",
+        "ad_format": "Rewarded",
+        "revenue_usd": 0.1554,
+        "impressions": 183,
+        "clicks": 14,
+        "ctr_pct": 7.65,
+        "ecpm_usd": 0.849
+      },
+      {
+        "app_version": "1.1",
+        "ad_format": "Banner",
+        "revenue_usd": 0.0004,
+        "impressions": 4,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "ecpm_usd": 0.112
+      }
+    ],
+    "top_countries_revenue": [
+      {
+        "country": "United States",
+        "active_users": 65,
+        "new_users": 52,
+        "revenue_usd": 1.4848,
+        "impressions": 631,
+        "ecpm_usd": 2.353,
+        "arpu_per_1k_usd": 22.84
+      },
+      {
+        "country": "India",
+        "active_users": 1071,
+        "new_users": 1067,
+        "revenue_usd": 1.2435,
+        "impressions": 12727,
+        "ecpm_usd": 0.098,
+        "arpu_per_1k_usd": 1.16
+      },
+      {
+        "country": "Brazil",
+        "active_users": 194,
+        "new_users": 191,
+        "revenue_usd": 0.7718,
+        "impressions": 2155,
+        "ecpm_usd": 0.358,
+        "arpu_per_1k_usd": 3.98
+      },
+      {
+        "country": "Algeria",
+        "active_users": 605,
+        "new_users": 596,
+        "revenue_usd": 0.7614,
+        "impressions": 6397,
+        "ecpm_usd": 0.119,
+        "arpu_per_1k_usd": 1.26
+      },
+      {
+        "country": "Bangladesh",
+        "active_users": 392,
+        "new_users": 386,
+        "revenue_usd": 0.5572,
+        "impressions": 4167,
+        "ecpm_usd": 0.134,
+        "arpu_per_1k_usd": 1.42
+      },
+      {
+        "country": "Iraq",
+        "active_users": 261,
+        "new_users": 256,
+        "revenue_usd": 0.4034,
+        "impressions": 2364,
+        "ecpm_usd": 0.171,
+        "arpu_per_1k_usd": 1.55
+      },
+      {
+        "country": "Pakistan",
+        "active_users": 408,
+        "new_users": 406,
+        "revenue_usd": 0.368,
+        "impressions": 3889,
+        "ecpm_usd": 0.095,
+        "arpu_per_1k_usd": 0.9
+      },
+      {
+        "country": "Egypt",
+        "active_users": 293,
+        "new_users": 284,
+        "revenue_usd": 0.3042,
+        "impressions": 2918,
+        "ecpm_usd": 0.104,
+        "arpu_per_1k_usd": 1.04
+      },
+      {
+        "country": "Venezuela",
+        "active_users": 242,
+        "new_users": 238,
+        "revenue_usd": 0.2861,
+        "impressions": 2105,
+        "ecpm_usd": 0.136,
+        "arpu_per_1k_usd": 1.18
+      },
+      {
+        "country": "Morocco",
+        "active_users": 183,
+        "new_users": 177,
+        "revenue_usd": 0.2444,
+        "impressions": 1536,
+        "ecpm_usd": 0.159,
+        "arpu_per_1k_usd": 1.34
+      },
+      {
+        "country": "Uzbekistan",
+        "active_users": 98,
+        "new_users": 97,
+        "revenue_usd": 0.233,
+        "impressions": 1041,
+        "ecpm_usd": 0.224,
+        "arpu_per_1k_usd": 2.38
+      },
+      {
+        "country": "Indonesia",
+        "active_users": 148,
+        "new_users": 139,
+        "revenue_usd": 0.2303,
+        "impressions": 1086,
+        "ecpm_usd": 0.212,
+        "arpu_per_1k_usd": 1.56
+      }
+    ]
+  },
+  "events_map": {
+    "game_level_start": {
+      "eventCount": 303270,
+      "totalUsers": 4182,
+      "eventCountPerUser": 72.52
+    },
+    "screen_view": {
+      "eventCount": 171243,
+      "totalUsers": 6146,
+      "eventCountPerUser": 27.86
+    },
+    "ad_request": {
+      "eventCount": 159192,
+      "totalUsers": 5444,
+      "eventCountPerUser": 29.26
+    },
+    "game_level_failed": {
+      "eventCount": 156431,
+      "totalUsers": 2976,
+      "eventCountPerUser": 52.58
+    },
+    "game_level_reached": {
+      "eventCount": 153111,
+      "totalUsers": 3969,
+      "eventCountPerUser": 38.58
+    },
+    "game_level_complete": {
+      "eventCount": 153076,
+      "totalUsers": 3970,
+      "eventCountPerUser": 38.57
+    },
+    "ad_failed_to_load": {
+      "eventCount": 130956,
+      "totalUsers": 4088,
+      "eventCountPerUser": 32.09
+    },
+    "ad_load_suppressed": {
+      "eventCount": 101860,
+      "totalUsers": 1664,
+      "eventCountPerUser": 61.21
+    },
+    "game_play_time": {
+      "eventCount": 94820,
+      "totalUsers": 5142,
+      "eventCountPerUser": 18.44
+    },
+    "notification_scheduled": {
+      "eventCount": 89441,
+      "totalUsers": 2433,
+      "eventCountPerUser": 40.33
+    },
+    "game_level_restart": {
+      "eventCount": 88732,
+      "totalUsers": 2879,
+      "eventCountPerUser": 30.83
+    },
+    "game_open": {
+      "eventCount": 74722,
+      "totalUsers": 5171,
+      "eventCountPerUser": 14.45
+    },
+    "game_score_submitted": {
+      "eventCount": 74691,
+      "totalUsers": 1017,
+      "eventCountPerUser": 73.44
+    },
+    "ad_impression": {
+      "eventCount": 58379,
+      "totalUsers": 3347,
+      "eventCountPerUser": 17.47
+    },
+    "user_engagement": {
+      "eventCount": 45752,
+      "totalUsers": 5964,
+      "eventCountPerUser": 7.67
+    },
+    "ad_loaded": {
+      "eventCount": 32661,
+      "totalUsers": 3479,
+      "eventCountPerUser": 9.41
+    },
+    "game_download": {
+      "eventCount": 32626,
+      "totalUsers": 1524,
+      "eventCountPerUser": 21.41
+    },
+    "ad_mediation_failed": {
+      "eventCount": 24760,
+      "totalUsers": 912,
+      "eventCountPerUser": 27.21
+    },
+    "session_start": {
+      "eventCount": 20146,
+      "totalUsers": 6197,
+      "eventCountPerUser": 3.25
+    },
+    "ad_mediation_loaded": {
+      "eventCount": 15229,
+      "totalUsers": 1164,
+      "eventCountPerUser": 13.12
+    },
+    "interstitial_load": {
+      "eventCount": 8328,
+      "totalUsers": 1418,
+      "eventCountPerUser": 5.89
+    },
+    "banner_load": {
+      "eventCount": 7884,
+      "totalUsers": 1336,
+      "eventCountPerUser": 5.9
+    },
+    "notification_delivery": {
+      "eventCount": 6731,
+      "totalUsers": 1633,
+      "eventCountPerUser": 5.69
+    },
+    "first_open": {
+      "eventCount": 6168,
+      "totalUsers": 6145,
+      "eventCountPerUser": 1.0
+    },
+    "app_open_load": {
+      "eventCount": 5464,
+      "totalUsers": 975,
+      "eventCountPerUser": 5.61
+    },
+    "banner_load_fail": {
+      "eventCount": 5446,
+      "totalUsers": 684,
+      "eventCountPerUser": 7.97
+    },
+    "reward_load": {
+      "eventCount": 5296,
+      "totalUsers": 1015,
+      "eventCountPerUser": 5.22
+    },
+    "interstitial_load_fail": {
+      "eventCount": 5243,
+      "totalUsers": 598,
+      "eventCountPerUser": 8.81
+    },
+    "native_load": {
+      "eventCount": 4280,
+      "totalUsers": 584,
+      "eventCountPerUser": 7.37
+    },
+    "app_open_load_fail": {
+      "eventCount": 3993,
+      "totalUsers": 435,
+      "eventCountPerUser": 9.2
+    },
+    "reward_load_fail": {
+      "eventCount": 3920,
+      "totalUsers": 469,
+      "eventCountPerUser": 8.38
+    },
+    "banner_loaded": {
+      "eventCount": 3622,
+      "totalUsers": 1030,
+      "eventCountPerUser": 3.52
+    },
+    "notification_permission": {
+      "eventCount": 3373,
+      "totalUsers": 2076,
+      "eventCountPerUser": 1.62
+    },
+    "banner_showed": {
+      "eventCount": 3244,
+      "totalUsers": 983,
+      "eventCountPerUser": 3.3
+    },
+    "app_remove": {
+      "eventCount": 3048,
+      "totalUsers": 3042,
+      "eventCountPerUser": 1.57
+    },
+    "ad_dismissed": {
+      "eventCount": 2794,
+      "totalUsers": 891,
+      "eventCountPerUser": 3.14
+    },
+    "interstitial_loaded": {
+      "eventCount": 2786,
+      "totalUsers": 1124,
+      "eventCountPerUser": 2.48
+    },
+    "ad_clicked": {
+      "eventCount": 2665,
+      "totalUsers": 1046,
+      "eventCountPerUser": 2.55
+    },
+    "native_loaded": {
+      "eventCount": 2586,
+      "totalUsers": 431,
+      "eventCountPerUser": 6.04
+    },
+    "ad_click": {
+      "eventCount": 2163,
+      "totalUsers": 968,
+      "eventCountPerUser": 2.24
+    },
+    "native_load_fail": {
+      "eventCount": 1605,
+      "totalUsers": 297,
+      "eventCountPerUser": 5.42
+    },
+    "interstitial_showed": {
+      "eventCount": 1464,
+      "totalUsers": 506,
+      "eventCountPerUser": 2.89
+    },
+    "app_open_loaded": {
+      "eventCount": 1276,
+      "totalUsers": 756,
+      "eventCountPerUser": 1.69
+    },
+    "native_showed": {
+      "eventCount": 1164,
+      "totalUsers": 284,
+      "eventCountPerUser": 4.1
+    },
+    "reward_loaded": {
+      "eventCount": 1153,
+      "totalUsers": 742,
+      "eventCountPerUser": 1.56
+    },
+    "notifycation_time_20h": {
+      "eventCount": 867,
+      "totalUsers": 519,
+      "eventCountPerUser": 2.61
+    },
+    "notifycation_time_12h": {
+      "eventCount": 844,
+      "totalUsers": 524,
+      "eventCountPerUser": 2.34
+    },
+    "notifycation_time_8h": {
+      "eventCount": 811,
+      "totalUsers": 511,
+      "eventCountPerUser": 2.24
+    },
+    "interstitial_click": {
+      "eventCount": 460,
+      "totalUsers": 154,
+      "eventCountPerUser": 2.99
+    },
+    "app_update": {
+      "eventCount": 326,
+      "totalUsers": 269,
+      "eventCountPerUser": 6.04
+    },
+    "banner_click": {
+      "eventCount": 297,
+      "totalUsers": 213,
+      "eventCountPerUser": 1.39
+    },
+    "inapp_paywall_viewed": {
+      "eventCount": 191,
+      "totalUsers": 142,
+      "eventCountPerUser": 1.35
+    },
+    "(other)": {
+      "eventCount": 146,
+      "totalUsers": 175,
+      "eventCountPerUser": 0.88
+    },
+    "native_click": {
+      "eventCount": 76,
+      "totalUsers": 50,
+      "eventCountPerUser": 1.52
+    },
+    "notification_opened": {
+      "eventCount": 70,
+      "totalUsers": 47,
+      "eventCountPerUser": 1.59
+    },
+    "ad_reward": {
+      "eventCount": 60,
+      "totalUsers": 48,
+      "eventCountPerUser": 1.25
+    },
+    "ad_reward_earned": {
+      "eventCount": 60,
+      "totalUsers": 48,
+      "eventCountPerUser": 1.25
+    },
+    "app_open_showed": {
+      "eventCount": 46,
+      "totalUsers": 32,
+      "eventCountPerUser": 1.44
+    },
+    "reward_showed": {
+      "eventCount": 32,
+      "totalUsers": 29,
+      "eventCountPerUser": 1.1
+    },
+    "inapp_restore_initiated": {
+      "eventCount": 27,
+      "totalUsers": 9,
+      "eventCountPerUser": 3.0
+    },
+    "game_search": {
+      "eventCount": 26,
+      "totalUsers": 11,
+      "eventCountPerUser": 2.36
+    },
+    "inapp_restore_none_found": {
+      "eventCount": 25,
+      "totalUsers": 7,
+      "eventCountPerUser": 3.57
+    },
+    "app_open_click": {
+      "eventCount": 18,
+      "totalUsers": 8,
+      "eventCountPerUser": 2.25
+    },
+    "os_update": {
+      "eventCount": 14,
+      "totalUsers": 14,
+      "eventCountPerUser": 2.33
+    },
+    "app_clear_data": {
+      "eventCount": 8,
+      "totalUsers": 8,
+      "eventCountPerUser": 1.0
+    },
+    "ad_failed_to_show": {
+      "eventCount": 7,
+      "totalUsers": 7,
+      "eventCountPerUser": 1.0
+    },
+    "reward_click": {
+      "eventCount": 4,
+      "totalUsers": 4,
+      "eventCountPerUser": 1.0
+    },
+    "inapp_purchase_initiated": {
+      "eventCount": 2,
+      "totalUsers": 2,
+      "eventCountPerUser": 1.0
+    },
+    "app_exception": {
+      "eventCount": 1,
+      "totalUsers": 1,
+      "eventCountPerUser": 1.0
+    },
+    "inapp_purchase_canceled": {
+      "eventCount": 1,
+      "totalUsers": 1,
+      "eventCountPerUser": 1.0
+    },
+    "inapp_purchase_failed": {
+      "eventCount": 1,
+      "totalUsers": 1,
+      "eventCountPerUser": 1.0
+    },
+    "(not set)": {
+      "eventCount": 0,
+      "totalUsers": 5856,
+      "eventCountPerUser": 0.0
+    }
+  },
+  "schema_audit": {
+    "missing_dimensions": [],
+    "missing_metrics": [],
+    "registered_dimensions_count": 28,
+    "total_expected_dimensions": 28,
+    "registered_metrics_count": 6,
+    "total_expected_metrics": 6,
+    "skipped_by_report": {}
+  },
+  "recommendations": [
+    "Tỉ lệ Fill Rate quảng cáo hiện đạt 20.52% (< 75%). Ưu tiên hoàn thiện Meta Audience Network Bidding trên AdMob Mediation (TASK-045) để tăng cạnh tranh giá thầu.",
+    "CẢNH BÁO CHÍNH SÁCH ADMOB: CTR Banner đang vượt ngưỡng 3.5%. Kiểm tra lại khoảng cách dải phân cách xanh 3dp phía trên Banner trên các thiết bị màn hình nhỏ.",
+    "Tỉ lệ tải thành công gói game R2 đạt 23.18% (< 90%). Kiểm tra cấu hình DNS `pub-r2.nextai.games` và tăng cơ chế retry cho các game có lượt failed cao.",
+    "Game 'geometry_rash' có tỉ lệ qua màn thấp (0.0%). Cân nhắc gắn gợi ý xem Rewarded Video để nhận trợ giúp hoặc cân bằng lại độ khó các màn đầu.",
+    "Tỉ lệ chuyển đổi Paywall -> Mua VIP đạt 0.0%. Thử A/B testing điểm đặt Paywall ngay sau lần hiện Interstitial thứ 2 hoặc tối ưu copy ưu đãi.",
+    "HIỆU QUẢ CHI TIÊU ADS (ROAS): Blended ROAS hiện đạt 6.43% (Chi $157.38 / Thu $10.12, Paid CPI $0.028 vs eCPM TB $0.173). Cần loại trừ các quốc gia Tier-3 có eCPM < $0.10 khỏi chiến dịch Install Volume và chuyển Google Ads sang đấu thầu Target ROAS (Ad Revenue).",
+    "Khung giờ vàng mở Notification cao nhất: 12:00 (3.11%), 08:00 (2.52%), 20:00 (2.47%). Ưu tiên đẩy thông điệp game mới / streak thưởng vào các khung giờ này."
+  ]
+}

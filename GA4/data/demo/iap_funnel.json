@@ -1,0 +1,88 @@
+{
+  "key": "iap_funnel",
+  "title": "Phễu mua hàng VIP IAP / In-App Purchase Funnel",
+  "dimensions": [
+    "eventName",
+    "customEvent:source",
+    "customEvent:product_id"
+  ],
+  "metrics": [
+    "eventCount",
+    "totalUsers"
+  ],
+  "skipped_optional_fields": [],
+  "row_count": 10,
+  "total_available_rows": 10,
+  "rows": [
+    {
+      "eventName": "inapp_paywall_viewed",
+      "customEvent:source": "launcher_header",
+      "customEvent:product_id": "(not set)",
+      "eventCount": 4280,
+      "totalUsers": 2810
+    },
+    {
+      "eventName": "inapp_paywall_viewed",
+      "customEvent:source": "settings_dialog",
+      "customEvent:product_id": "(not set)",
+      "eventCount": 1640,
+      "totalUsers": 1220
+    },
+    {
+      "eventName": "inapp_paywall_viewed",
+      "customEvent:source": "game_exit",
+      "customEvent:product_id": "(not set)",
+      "eventCount": 2190,
+      "totalUsers": 1590
+    },
+    {
+      "eventName": "inapp_purchase_initiated",
+      "customEvent:source": "(not set)",
+      "customEvent:product_id": "com.nextai.gameoffline.remove_ads",
+      "eventCount": 612,
+      "totalUsers": 524
+    },
+    {
+      "eventName": "inapp_purchase_success",
+      "customEvent:source": "(not set)",
+      "customEvent:product_id": "com.nextai.gameoffline.remove_ads",
+      "eventCount": 184,
+      "totalUsers": 184
+    },
+    {
+      "eventName": "inapp_purchase_canceled",
+      "customEvent:source": "(not set)",
+      "customEvent:product_id": "com.nextai.gameoffline.remove_ads",
+      "eventCount": 376,
+      "totalUsers": 330
+    },
+    {
+      "eventName": "inapp_purchase_failed",
+      "customEvent:source": "(not set)",
+      "customEvent:product_id": "com.nextai.gameoffline.remove_ads",
+      "eventCount": 52,
+      "totalUsers": 49
+    },
+    {
+      "eventName": "inapp_restore_initiated",
+      "customEvent:source": "(not set)",
+      "customEvent:product_id": "(not set)",
+      "eventCount": 240,
+      "totalUsers": 210
+    },
+    {
+      "eventName": "inapp_restore_success",
+      "customEvent:source": "(not set)",
+      "customEvent:product_id": "com.nextai.gameoffline.remove_ads",
+      "eventCount": 44,
+      "totalUsers": 44
+    },
+    {
+      "eventName": "inapp_restore_none_found",
+      "customEvent:source": "(not set)",
+      "customEvent:product_id": "(not set)",
+      "eventCount": 196,
+      "totalUsers": 168
+    }
+  ]
+}

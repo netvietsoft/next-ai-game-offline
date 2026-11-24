@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="paywall_background">#0B1020</color>
+    <color name="paywall_header_glow">#1B2344</color>
+    <color name="paywall_surface">#141D31</color>
+    <color name="paywall_surface_selected">#202E50</color>
+    <color name="paywall_border">#2A354F</color>
+    <color name="paywall_accent">#91A9FF</color>
+    <color name="paywall_primary_start">#7462F5</color>
+    <color name="paywall_primary_end">#3979EE</color>
+    <color name="paywall_text">#F5F7FF</color>
+    <color name="paywall_text_secondary">#AFBBD1</color>
+    <color name="paywall_text_muted">#8391AD</color>
+    <color name="paywall_gold">#EACB8A</color>
+    <color name="paywall_footer">#10182B</color>
+    <color name="paywall_trial_surface">#283752</color>
+    <color name="paywall_disabled">#344460</color>
+    <dimen name="paywall_page_padding">22dp</dimen>
+    <dimen name="paywall_card_padding">14dp</dimen>
+    <dimen name="paywall_card_gap">8dp</dimen>
+    <dimen name="paywall_corner">16dp</dimen>
+    <dimen name="paywall_plan_min_height">66dp</dimen>
+</resources>

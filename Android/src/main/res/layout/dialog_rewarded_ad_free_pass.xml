@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_paywall_plan"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_paywall_badge"
+        android:fontFamily="sans-serif-bold"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="4dp"
+        android:text="@string/ad_free_pass_badge"
+        android:textColor="@color/paywall_gold"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tvDialogAdFreeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-bold"
+        android:text="@string/ad_free_pass_title"
+        android:textColor="@color/paywall_text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvDialogAdFreeSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/ad_free_pass_subtitle"
+        android:textColor="@color/paywall_text_secondary"
+        android:textSize="13sp" />
+
+    <ProgressBar
+        android:id="@+id/pbAdFreeSteps"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="14dp"
+        android:max="2"
+        android:progress="0"
+        android:progressTint="@color/paywall_gold" />
+
+    <TextView
+        android:id="@+id/tvDialogAdFreeStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/ad_free_pass_progress"
+        android:textColor="@color/paywall_gold"
+        android:textSize="13sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDialogWatchAdFree"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_paywall_action"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/ad_free_pass_cta_watch"
+        android:textAllCaps="false"
+        android:textColor="@color/paywall_text"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/btnDialogDismissAdFree"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="6dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/ad_free_pass_dialog_close"
+        android:textColor="@color/paywall_text_secondary"
+        android:textSize="13sp" />
+</LinearLayout>

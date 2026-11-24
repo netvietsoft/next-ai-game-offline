@@ -1,0 +1,422 @@
+================================================================================
+TÀI LIỆU ĐẶC TẢ KỸ THUẬT & BÀN GIAO SỬA LỖI / TỐI ƯU HÓA CHO ĐỘI DEV
+DỰ ÁN: GALAXY GAME / NEXTAI GAME OFFLINE (com.nextai.game.offline)
+NGÀY LẬP AUDIT: 22/11/2026
+PHIÊN BẢN HIỆN TẠI: versionCode = 11 (versionName = "1.3.1")
+PHIÊN BẢN MỤC TIÊU KẾ TIẾP: versionCode = 12 (versionName = "1.3.2") & v1.4
+CĂN CỨ DỮ LIỆU: Báo cáo GA4 Live 20 ngày (5,731 New Users | 1,694,217 Events)
+================================================================================
+
+
+0. QUY TẮC BẮT BUỘC ĐỘI DEV PHẢI TUÂN THỦ TRƯỚC KHI CODE (THEO AGENTS.md MỤC 2)
+--------------------------------------------------------------------------------
+1. Không viết "Vibe Code":
+   - CẤM nén nhiều câu lệnh trên 1 dòng bằng dấu `;`.
+   - Độ dài mỗi dòng tối đa <= 120 ký tự.
+   - Kích thước mỗi tệp Kotlin/TS bắt buộc <= 350 dòng (LƯU Ý: `GameActivity.kt`
+     hiện đã 347 dòng, `GameListActivity.kt` 346 dòng -> TUYỆT ĐỐI KHÔNG viết
+     thêm logic trực tiếp vào 2 file này mà phải tách Coordinator/Helper riêng).
+   - Mỗi hàm mục tiêu <= 40-50 dòng, lồng tối đa 3 cấp, ưu tiên early return.
+2. Tách biệt UI & Nghiệp vụ:
+   - CẤM dựng View/Dialog bằng code Kotlin cứng (`LinearLayout`, `Color.parseColor`,
+     phép nhân `dp` thủ công). Toàn bộ UI mới phải đặt trong `res/layout/*.xml`,
+     dùng `@color`, `@dimen`, `@string`, `@style`.
+3. Comment & Log:
+   - Mọi class và hàm nghiệp vụ mới BẮT BUỘC có comment song ngữ Tiếng Việt có
+     dấu đầy đủ + Tiếng Anh giải thích TẠI SAO (Why).
+   - Mọi `Log.d / Log.i / Log.v` bắt buộc bọc trong `if (BuildConfig.DEBUG)`.
+4. An toàn Lifecycle & Threading:
+   - Trước khi hiện quảng cáo hoặc cập nhật UI từ callback bất đồng bộ / timer,
+     bắt buộc kiểm tra `ActivityLifecycleGuard.isForegroundResumed(activity)`
+     hoặc `!isFinishing && !isDestroyed`.
+   - Mọi `Handler` / `Runnable` / `Job` gắn với Activity phải hủy sạch trong
+     `onStop()` / `onDestroy()`.
+   - Truy vấn Room DB và đọc file JSON bắt buộc chạy trên `Dispatchers.IO`.
+
+
+================================================================================
+1. BẢNG TỔNG HỢP NHANH CÁC FILE CẦN SỬA & CẦN TẠO MỚI (FILE CHANGE MANIFEST)
+================================================================================
+
+[A] NHÓM SỬA LỖI P0 (BẮT BUỘC TRONG BẢN v1.3.2 / versionCode = 12):
+  1. Android/src/main/java/com/nextai/gameoffline/ads/BannerAdController.kt
+     -> Bổ sung cơ chế tự động retry theo backoff (15s -> 30s -> 60s) khi Banner
+        load lỗi (`No fill` / `Unable to obtain a JavascriptEngine`) và hàm hủy
+        an toàn hẹn giờ retry.
+  2. Android/src/main/java/com/nextai/gameoffline/ads/AdOptimizationPolicy.kt
+     -> Tắt `collapsible = "bottom"` mặc định ở cả Trang chủ (kéo CTR từ 5.72%
+        về < 3.0% an toàn chính sách AdMob); thêm hằng số delay nạp Banner 800ms
+        sau khi mở game và cấu hình retry Banner.
+  3. Android/src/main/java/com/nextai/gameoffline/presentation/game/GameActivity.kt
+     -> (Đang 347 dòng - chỉ sửa gọn, không làm vượt 350 dòng): Trì hoãn gọi
+        `setupBannerAd()` tới khi `onGameLoaded` (hoặc sau 800ms) để không tranh
+        chấp tiến trình Chromium với WebView game; reset `bannerAdView = null`
+        khi lỗi cuối để không kẹt chết Banner cả phiên chơi.
+  4. Android/src/main/java/com/nextai/gameoffline/presentation/gamelist/GameListActivity.kt
+     -> Đồng bộ retry Banner trang chủ tương tự `BannerAdController` (giữ <= 350 dòng).
+  5. Android/src/main/java/com/nextai/gameoffline/ads/InterstitialAdCoordinator.kt
+     -> Đổi callback `show(..., onFinished: ((shown: Boolean) -> Unit)?)` trả về
+        `true` CHỈ KHI `onAdShowedFullScreenContent` thực sự nổ, trả về `false`
+        khi bị chặn bởi cooldown / cache_miss / không đủ user actions.
+  6. Android/src/main/java/com/nextai/gameoffline/ads/AdManager.kt
+     -> Cập nhật chữ ký `showInterstitialAd` truyền tiếp `shown: Boolean` (giữ
+        overload tương thích ngược nếu cần).
+  7. Android/src/main/java/com/nextai/gameoffline/presentation/game/GameAdSessionController.kt
+     -> SỬA BUG XÓA OAN BỘ ĐẾM MÀN: Không gán `breakCount = 0` trước khi gọi
+        `AdManager.showInterstitialAd`; chỉ đặt `breakCount = 0` bên trong
+        callback khi `shown == true`!
+  8. Android/src/main/java/com/nextai/gameoffline/ads/FullScreenAdGate.kt
+     -> Hạ `DEFAULT_MIN_INTERSTITIAL_INTERVAL_MS` từ `90_000L` (90s) xuống
+        `60_000L` (60s) để khớp nhịp ván chơi mini-game 15-25 giây/màn.
+  9. Android/src/main/java/com/nextai/gameoffline/presentation/game/InGameAdTriggerPolicy.kt
+     -> Hạ `DEFAULT_BREAK_THRESHOLD` từ `3` xuống `2` điểm dừng tự nhiên; hạ
+        `MIN_EXIT_INTERSTITIAL_PLAY_SEC` từ `60L` xuống `45L`.
+  10. Android/src/main/java/com/nextai/gameoffline/presentation/game/AndroidGameBridge.kt
+      -> Nối `levelClick` (khi người chơi chuyển sang màn mới > 1) và `submitScore`
+         (chỉ ở hàm nộp kỷ lục cuối ván, TUYỆT ĐỐI KHÔNG nối vào `scoreInGame`
+         nhảy điểm liên tục) vào `onLevelBreakAdRequested()`.
+  11. Android/src/main/assets/games/<top_zero_hook_games>/... (10 game Bundled):
+      -> Gắn hook `window.Android && window.Android.showInterstitialInGame("game_over")`
+         tại đúng điểm kết thúc ván / bấm Play Again cho các game Bundled đông
+         người chơi nhất đang có `Breaks(W/L/R) = 0`:
+         - `block_blast`, `sea_battle`, `checkers`, `chess`, `balloons_creator`,
+           `backgammon`, `christmas`, `screaming_chicken`, `lines98`, `sudoku`.
+
+[B] NHÓM TỐI ƯU RETENTION & XẾP HẠNG TRANG CHỦ (BẢN v1.3.2 / versionCode = 12):
+  12. Android/src/main/assets/games_catalog_full_419_r2.json
+      -> Sắp xếp lại trường `position` (1..419) theo Bảng Xếp Hạng GA4 thực tế
+         thay vì thứ tự bảng chữ cái A-Z hiện tại; đưa 30 game Bundled ăn khách
+         nhất (`ludo`, `amaze_ball_quest`, `block_blast`, `pool_8_pro`,
+         `apple_worm`, `tic_tac_toe`, `burger_run`...) lên vị trí #1 -> #30;
+         đồng bộ `eachNLevels = 2` cho nhóm game ván dài.
+  13. Android/src/main/java/com/nextai/gameoffline/data/local/dao/UserStatsDao.kt
+      -> Thêm truy vấn `observeRecentGames(limit: Int = 10): Flow<List<UserStatsEntity>>`
+         (`WHERE open_count > 0 ORDER BY last_played DESC LIMIT :limit`).
+  14. Android/src/main/java/com/nextai/gameoffline/domain/repository/GameStatsRepository.kt
+      & data/repository/RoomGameStatsRepository.kt
+      -> Expose `observeRecentGameNames(limit: Int): Flow<List<String>>`.
+  15. Android/src/main/java/com/nextai/gameoffline/presentation/gamelist/GameListViewModel.kt
+      -> Bổ sung `recentGames: List<GameEntity>` và trạng thái `isOffline: Boolean`
+         vào `GameListUiState`; khi thiết bị đang offline, ưu tiên đẩy các game
+         `isDownloaded == 1` lên trước để người dùng không bấm nhầm game chưa tải.
+  16. Android/src/main/java/com/nextai/gameoffline/presentation/gamelist/GameFeedMerger.kt
+      & GameAdapter.kt & res/layout/item_recent_games_row.xml (tạo mới)
+      & res/layout/item_game_card.xml
+      -> Hiển thị kệ ngang "Continue Playing" (Chơi tiếp gần đây) ở đầu tab All
+         và gắn nhãn huy hiệu "HOT" cho Top 15 game đầu bảng.
+  17. Android/src/main/java/com/nextai/gameoffline/analytics/GameAnalyticsManager.kt
+      -> Bổ sung sự kiện `game_search` (debounce 800ms sau khi ngừng gõ >= 2 ký tự)
+         để GA4 thống kê chính xác từ khóa người chơi tìm kiếm.
+  18. Android/build.gradle.kts & Android/src/main/res/values/strings.xml
+      -> Tăng `versionCode = 12`, `versionName = "1.3.2"` (nhờ `CatalogSeedMarker`,
+         khi nâng `versionCode` thì `AppDatabase.populateGamesCatalogDirect` sẽ
+         tự động `@Upsert` thứ tự `position` mới cho cả user cũ mà vẫn bảo toàn
+         100% điểm số, yêu thích và các game R2 đã tải).
+
+[C] NHÓM MỞ RỘNG KIẾM TIỀN & USP GIỮ CHÂN (GIAI ĐOẠN 2 - BẢN v1.4):
+  19. Android/src/main/java/com/nextai/gameoffline/ads/WaterfallAdUnitChain.kt (mới)
+      & AdConstants.kt & InterstitialAdCoordinator.kt & RewardedAdCoordinator.kt
+      -> Triển khai thác nước 3 tầng AdMob (`High Floor -> Medium Floor -> All Prices`).
+  20. Android/build.gradle.kts & AndroidManifest.xml & AdsConsentManager.kt
+      -> Tích hợp thêm Mediation Adapters chuẩn Real-Time Bidding (Mintegral,
+         AppLovin, Unity Ads, Pangle; Meta Audience Network đã có sẵn SDK).
+  21. Android/src/main/java/com/nextai/gameoffline/billing/AdFreePassManager.kt (mới)
+      & BillingEntitlements.kt & res/layout/dialog_rewarded_ad_free_pass.xml (mới)
+      -> Tính năng "Xem 2 Video Thưởng = 20 Phút Không Quảng Cáo Tự Động".
+  22. Android/src/main/java/com/nextai/gameoffline/domain/quest/DailyQuestManager.kt (mới)
+      -> Hệ thống Nhiệm vụ 3 game/ngày + Chuỗi Streak 7 ngày nối với Notification 12h.
+
+
+================================================================================
+2. MÔ TẢ CHI TIẾT TỪNG VẤN ĐỀ KỸ THUẬT & HƯỚNG DẪN SỬA CHO DEV
+================================================================================
+
+--------------------------------------------------------------------------------
+VẤN ĐỀ 1 [P0]: MỘT SỐ GAME KHÔNG HIỂN THỊ BANNER
+--------------------------------------------------------------------------------
+1. Hiện tượng khi test & Bằng chứng GA4:
+   - Mở một số game không thấy Banner ở đáy màn hình trong suốt cả ván chơi.
+   - GA4 ghi nhận > 15,000 sự kiện `ad_failed_to_load` của `BANNER` với thông báo
+     `"Unable to obtain a JavascriptEngine"` và 831 lượt `"No fill"`.
+
+2. Nguyên nhân gốc rễ (Root Cause):
+   - (a) Theo thiết kế đúng (KHÔNG PHẢI LỖI): 48/419 game màn hình Ngang
+     (`isHorizontal == 1`, ví dụ `pool_8_pro`, `among_us`, `archers_random`,
+     `ball_8_pool`, `uno`, `mahjong_deluxe`, `trap_path`, `backgammon`...) chủ
+     động gọi `clearBannerView()` tại `GameActivity.kt` dòng 173-177 & 249-254
+     vì chiều cao màn ngang chỉ ~360dp, gắn Banner sẽ che nút bấm và vi phạm
+     chính sách AdMob "Ad Overlapping Content". GIỮ NGUYÊN quy tắc này.
+   - (b) BUG CODE TRỰC TIẾP trên 371 game màn hình Dọc (`GameActivity.kt` dòng
+     246-271):
+     + Ngay lúc `handleGameReady()` gọi `webView.loadUrl(...)`, WebView game đang
+       khởi tạo tiến trình Chromium/WASM rất nặng. Cùng mili-giây đó,
+       `setupBannerAd()` khởi tạo `AdView` (cũng dùng WebView bên dưới) -> 2 bên
+       tranh chấp tài nguyên làm AdMob ném lỗi `Unable to obtain a JavascriptEngine`.
+     + Nghiêm trọng hơn: tại dòng 260, `bannerAdView` đã được gán khác `null`.
+       Khi rơi vào `onFailed` (dòng 266-269), code chỉ đặt
+       `bannerContainer.visibility = View.GONE` nhưng KHÔNG gọi `bannerAdView?.destroy()`,
+       KHÔNG reset `bannerAdView = null`, và KHÔNG lên lịch retry!
+       Do đó ở mọi lần `onResume()` sau đó, dòng 255:
+       `if (currentGame == null || bannerAdView != null) return`
+       chặn đứng vĩnh viễn, khiến game đó mất Banner suốt cả phiên chơi!
+
+3. Cách sửa chi tiết cho Dev:
+   - File `AdOptimizationPolicy.kt`:
+     + Thêm `const val GAMEPLAY_BANNER_INITIAL_DELAY_MS = 800L`.
+     + Thêm danh sách backoff cho Banner: `15_000L`, `30_000L`, `60_000L` (tối đa
+       3 lần retry tự động).
+     + Sửa `shouldUseCollapsibleBanner(...) = false` cho cả Trang chủ để kéo CTR
+       Banner từ 5.72% về < 3.0% tuyệt đối an toàn chính sách AdMob.
+   - File `BannerAdController.kt`:
+     + Bổ sung quản lý retry hẹn giờ gắn với `container` (dùng `AdScheduler` hoặc
+       `container.postDelayed` có kiểm tra `ActivityLifecycleGuard.isForegroundResumed`
+       và tự hủy trong `destroyBanner(container)`).
+     + Khi `onAdFailedToLoad` nổ và số lần lỗi <= 3: dọn `adView.destroy()` cũ và
+       hẹn giờ nạp lại sau 15s / 30s / 60s.
+   - File `GameActivity.kt` (giữ tổng số dòng <= 350!):
+     + Không gọi `setupBannerAd()` ngay đồng bộ trước `webView.loadUrl`; trì hoãn
+       `800ms` bằng `mainHandler` (hoặc kích hoạt ngay trong callback `onGameLoaded`
+       của `AndroidGameBridge`, hủy callback chờ trong `onDestroy()`).
+     + Nếu hết số lần retry vẫn lỗi thì đặt `bannerAdView = null` để lần `onResume`
+       tiếp theo vẫn có cơ hội nạp lại.
+
+
+--------------------------------------------------------------------------------
+VẤN ĐỀ 2 [P0]: CHƠI QUA TỚI 5 MÀN VẪN KHÔNG CÓ QUẢNG CÁO FULL (INTERSTITIAL)
+--------------------------------------------------------------------------------
+1. Hiện tượng khi test & Bằng chứng GA4:
+   - Nhiều game chơi liên tục qua 4-5 màn (thậm chí cả ván dài) không thấy hiện
+     quảng cáo Interstitial xen kẽ.
+   - GA4 ghi nhận 49,704 lượt `ad_load_suppressed` và có tới ~45 game phổ biến
+     ghi nhận `game_level_complete + game_level_failed + game_level_restart = 0`.
+
+2. Nguyên nhân gốc rễ (Root Cause):
+   - (a) BUG XÓA OAN BỘ ĐẾM `breakCount` (`GameAdSessionController.kt` dòng 28-35):
+         ```kotlin
+         breakCount++
+         if (InGameAdTriggerPolicy.shouldTriggerOnLevelBreak(breakCount, thresholdProvider())) {
+             breakCount = 0 // <-- LỖI Ở ĐÂY!
+             AdManager.showInterstitialAd(activity, gameName)
+         }
+         ```
+         Khi người chơi vừa bấm mở game từ Trang chủ, 1 Interstitial đầu game đã
+         hiển thị và bật khóa cooldown 90 giây (`FullScreenAdGate.kt` dòng 61).
+         Người chơi qua Màn 1 (20s) -> Màn 2 (45s) -> Màn 3 (70s): tại Màn 3,
+         `breakCount` đủ 3 nên bị reset ngay về `0`, sau đó `showInterstitialAd`
+         bị từ chối ngầm vì `70s < 90s` (hoặc vì mạng chưa preload xong `cache_miss`).
+         Sang Màn 4 (95s - đã hết cooldown) thì `breakCount` lại đếm lại từ `1`,
+         Màn 5 là `2` -> hết 5 màn vẫn không có quảng cáo, phải hết Màn 6 mới hiện!
+   - (b) Ngưỡng `90 giây` + `3 màn` đang quá thưa đối với game hyper-casual/puzzle.
+   - (c) Nhóm ~45 game Bundled đông người chơi KHÔNG gọi `levelCompleteInGame` /
+         `levelLoseInGame`:
+         + Một số game (như `bee`, hoặc menu chọn màn C3) chỉ gọi `levelClick(level)`
+           hoặc chỉ gọi `submitScore(score)` khi Game Over (`AndroidGameBridge.kt`
+           dòng 170 & 200 hiện chỉ log Analytics, chưa gọi `onLevelBreakAdRequested()`).
+         + Một số game hoàn toàn không gọi bridge khi hết ván (`block_blast`,
+           `sea_battle`, `checkers`, `chess`, `balloons_creator`, `backgammon`,
+           `christmas`, `screaming_chicken`, `lines98`, `sudoku`).
+
+3. Cách sửa chi tiết cho Dev:
+   - Bước 2.1 - Trả trạng thái hiển thị thật từ `InterstitialAdCoordinator.kt`:
+     + Đổi `onFinished: (() -> Unit)? = null` thành
+       `onFinished: ((shown: Boolean) -> Unit)? = null` (hoặc thêm tham số mặc định).
+     + Dùng `var didShow = false`, đặt `didShow = true` bên trong
+       `onAdShowedFullScreenContent()`, và truyền `finish(didShow)` khi đóng hoặc
+       khi thoát sớm do bị chặn (`finish(false)`).
+   - Bước 2.2 - Giữ nguyên `breakCount` nếu quảng cáo chưa hiện (`GameAdSessionController.kt`):
+     + Chỉ thực hiện `breakCount = 0` khi callback báo `shown == true`!
+     + Nếu `shown == false` (vướng cooldown hoặc cache_miss), giữ `breakCount` ở
+       mức ngưỡng để ngay khi hoàn thành màn kế tiếp (Màn 4) mà hết cooldown là
+       hiển thị ngay lập tức.
+   - Bước 2.3 - Tinh chỉnh tần suất chuẩn ngành (`FullScreenAdGate.kt` &
+     `InGameAdTriggerPolicy.kt`):
+     + Hạ `DEFAULT_MIN_INTERSTITIAL_INTERVAL_MS` từ `90_000L` xuống `60_000L` (60s).
+     + Hạ `DEFAULT_BREAK_THRESHOLD` từ `3` xuống `2` (cập nhật cả `eachNLevels`
+       trong `games_catalog_full_419_r2.json` từ `3` -> `2`).
+     + Hạ `MIN_EXIT_INTERSTITIAL_PLAY_SEC` (khi bấm Back thoát game) từ `60L` -> `45L`.
+   - Bước 2.4 - Mở rộng cầu nối `AndroidGameBridge.kt`:
+     + Trong `levelClick(level: Int)`: nếu `level > 1`, gọi thêm `onLevelBreakAdRequested()`.
+     + Trong `submitScore(...)` (CHÚ Ý: chỉ `submitScore`, TUYỆT ĐỐI KHÔNG gắn vào
+       `scoreInGame` vì `scoreInGame` nổ mỗi lần ăn điểm giữa ván!): gọi thêm
+       `onLevelBreakAdRequested()` cho các game thuộc danh sách Score-On-GameOver
+       (`lines98`, `merge_dice`, `drop_n_merge`, `magic_candy`, `twenty48`).
+   - Bước 2.5 - Nối điểm kết ván cho Top 10 game Bundled Zero-Hook:
+     + Tương tự cách đã nối cho `ludo`, `pool_8_pro`, `dominoes`, `mahjong_deluxe`,
+       `uno` ở TASK-066 (kèm unit test Node.js trong `Android/src/test/js/bundled-ad-hooks.test.mjs`),
+       bổ sung lệnh gọi `window.Android && window.Android.showInterstitialInGame("game_over")`
+       tại đúng hàm kết thúc ván cho: `block_blast`, `sea_battle`, `checkers`,
+       `chess`, `christmas`, `screaming_chicken`, `backgammon`, `sudoku`.
+     + CẢNH BÁO: Chỉ gắn ở màn kết thúc ván (Game Over / Victory / Restart),
+       tuyệt đối không gắn vào thao tác đánh cờ/đặt gạch giữa ván.
+
+
+--------------------------------------------------------------------------------
+VẤN ĐỀ 3 [P0]: SẮP XẾP LẠI TRANG CHỦ THEO DỮ LIỆU GA4 & TỐI ƯU RETENTION UX
+--------------------------------------------------------------------------------
+1. Hiện tượng & Nghịch lý dữ liệu hiện tại:
+   - `games_catalog_full_419_r2.json` hiện đang xếp theo bảng chữ cái A -> Z:
+     + 6 trong 9 game đầu tiên trên màn hình chính (`#1 Abalone`, `#3 Amaze Number`,
+       `#4 Among Us`, `#5 Angry Heroes`, `#6 Animal Clicker`, `#9 Archers Random`)
+       là game đám mây R2 CHƯA TẢI (`isDownloaded = 0`)! Người dùng tải app
+       "Offline Games" đang tắt mạng bấm vào hàng đầu bị chặn tải -> gỡ app!
+     + Trong khi đó, các game Bundled có sẵn giữ chân khủng nhất lại bị chôn ở
+       cuối danh sách (người chơi phải tự gõ Search mới thấy):
+       * `ludo` (5,813 phút chơi - Top 1 toàn app): đang ở vị trí #213!
+       * `pool_8_pro` (1,489 phút, 408 lượt mở): đang ở vị trí #290!
+       * `sea_battle` (805 phút, 419 lượt mở): đang ở vị trí #320!
+       * `tic_tac_toe` (1,043 phút, 576 lượt mở): đang ở vị trí #374!
+       * `uno` & `uno_vertical` (1,868 phút gộp): đang ở vị trí #392 & #393!
+
+2. Cách sửa chi tiết cho Dev:
+   - Bước 3.1 - Sắp xếp lại `position` trong `games_catalog_full_419_r2.json`:
+     + Vị trí `#1 -> #30` BẮT BUỘC 100% là game Bundled (`isDownloaded = 1`) có
+       chỉ số Mở + Thời gian chơi cao nhất trên GA4 theo thứ tự ưu tiên:
+       1. `ludo`                11. `checkers`          21. `knife_hit`
+       2. `amaze_ball_quest`    12. `sea_battle`        22. `knife_hit_2`
+       3. `block_blast`         13. `block_tetris`      23. `dominoes`
+       4. `pool_8_pro`          14. `find_number`       24. `pipe_rush`
+       5. `apple_worm`          15. `ball_escape`       25. `uno`
+       6. `tic_tac_toe`         16. `draw_parking`      26. `mahjong_deluxe`
+       7. `burger_run`          17. `cryptogram`        27. `solitaire_spider`
+       8. `block_fit_puzzle`    18. `cut_for_cat`       28. `sudoku`
+       9. `uno_vertical`        19. `trap_path`         29. `water_sort`
+       10. `chess`              20. `bee`               30. `twenty48`
+     + Vị trí `#31 -> #50`: xen kẽ các game Bundled còn lại với Top game R2 có
+       lượt bấm tải cao nhất (`among_us`, `archers_random`, `abalone`,
+       `block_pictures`, `ball_8_pool`, `tanks_battle`, `animal_clicker`,
+       `angry_heroes`).
+     + (Khuyến nghị mạnh nếu đóng gói lại assets): Đưa 6-8 game R2 hot nhất nhẹ
+       dung lượng (`among_us`, `archers_random`, `ball_8_pool`, `tanks_battle`...)
+       vào thẳng `assets/games/` (Bundled) và chuyển số lượng tương đương các
+       game Bundled ít người chơi nhất sang R2 để tổng dung lượng AAB giữ nguyên
+       ~127 MB (< 150 MB).
+   - Bước 3.2 - Kệ ngang "Continue Playing" (Chơi tiếp gần đây) & Huy hiệu HOT:
+     + `UserStatsDao.kt`: thêm `observeRecentGames(limit: Int = 10)` lấy các game
+       có `open_count > 0` sắp xếp `last_played DESC`.
+     + `GameFeedMerger.kt` & `GameAdapter.kt`: thêm viewType `TYPE_RECENT_ROW`
+       (RecyclerView ngang ở hàng đầu tiên của tab `All` khi `searchQuery` rỗng
+       và `recentGames.isNotEmpty()`).
+     + `item_game_card.xml`: thêm badge nhỏ góc trái trên `HOT` cho các game có
+       `position <= 15`.
+   - Bước 3.3 - Chế độ thông minh khi máy đang Offline:
+     + Trong `GameListViewModel.kt`: kiểm tra `NetworkConnectivityChecker`; nếu
+       thiết bị không có mạng khi mở app, sắp xếp ưu tiên toàn bộ game
+       `isDownloaded == 1` (gồm 100 game Bundled + các game R2 đã tải về máy)
+       lên trước nhóm `isDownloaded == 0` để người chơi offline bấm đâu cũng chạy.
+   - Bước 3.4 - Đo lường từ khóa tìm kiếm trên GA4:
+     + `GameAnalyticsManager.kt`: thêm `logGameSearch(query: String, resultCount: Int)`
+       (chỉ gửi sau khi người dùng dừng gõ 800ms và độ dài chuỗi >= 2 ký tự, cắt
+       tối đa 40 ký tự, chuyển chữ thường, không chứa PII).
+
+
+--------------------------------------------------------------------------------
+VẤN ĐỀ 4 [P1 - GIAI ĐOẠN v1.4]: THÁC NƯỚC 3 TẦNG ADMOB & ĐẤU GIÁ MEDIATION
+--------------------------------------------------------------------------------
+1. Đặt giá thầu AdMob dạng Thác nước (3-Tier eCPM Floor Waterfall):
+   - LƯU Ý: Không đặt High Floor đơn lẻ trên 1 Ad Unit duy nhất vì sẽ làm sập
+     Fill Rate xuống < 10%. Phải nạp tuần tự 3 mã đơn vị quảng cáo:
+     + `INTERSTITIAL_HIGH_FLOOR_ID` (Sàn cao theo quốc gia trên AdMob Console)
+       -> nếu `onAdFailedToLoad` (No fill) -> gọi ngay:
+     + `INTERSTITIAL_MED_FLOOR_ID` (Sàn trung bình)
+       -> nếu `onAdFailedToLoad` (No fill) -> gọi ngay:
+     + `INTERSTITIAL_AD_UNIT_ID` hiện tại (`ca-app-pub-4108090245719282/3500572281`
+       đặt chế độ `All prices` làm lưới vét cuối phễu giữ Fill Rate > 85%).
+   - Thiết kế code: Tạo class độc lập `WaterfallAdUnitChain.kt` (<= 120 dòng)
+     truyền vào `InterstitialAdCoordinator` và `RewardedAdCoordinator`, giữ nguyên
+     state machine `FullScreenAdSlot<T>` (chỉ báo failed ra ngoài khi cả 3 tầng
+     đều trượt).
+
+2. Tích hợp Đa mạng Quảng cáo (Ad Mediation Real-Time Bidding):
+   - Mục tiêu: Cho nhiều mạng đấu giá thời gian thực cùng Google, mạng nào trả
+     CPM cao nhất được quyền hiển thị.
+   - Thứ tự tích hợp vào `Android/build.gradle.kts` & `proguard-rules.pro`:
+     1. Meta Audience Network (`com.google.ads.mediation:facebook:6.22.0.1` ->
+        ĐÃ CÓ SẴN TRONG APP, chỉ cần cấu hình Placement trên Console).
+     2. Mintegral Bidding (`com.google.ads.mediation:mintegral:...`).
+     3. AppLovin Bidding (`com.google.ads.mediation:applovin:...` -> BẮT BUỘC
+        dùng bản mới nhất đã hỗ trợ chuẩn Google Play 16 KB ELF Page Size, kiểm
+        tra lại bằng lệnh `zipalign -c -P 16` và đọc ELF header `PT_LOAD=0x4000`,
+        tránh lỗi thư viện cũ từng gỡ ở TASK-013).
+     4. Unity Ads (`com.google.ads.mediation:unity:...`) & Liftoff/Vungle.
+     5. Pangle (`com.google.ads.mediation:pangle:...` -> rất mạnh tại Brazil/LATAM
+        và Đông Nam Á).
+   - Cập nhật `AdsConsentManager.kt` & Privacy Policy trong `LegalPolicyHelper.kt`
+     đồng bộ danh sách đối tác quảng cáo trong UMP GDPR/US-State consent.
+
+
+--------------------------------------------------------------------------------
+VẤN ĐỀ 5 [P2 - GIAI ĐOẠN v1.4]: TÍNH NĂNG KHÁC BIỆT (USP) TĂNG RETENTION & DOANH THU
+--------------------------------------------------------------------------------
+1. Tính năng "Xem 2 Video Thưởng = 20 Phút Không Quảng Cáo Tự Động":
+   - Tạo `AdFreePassManager.kt` lưu mốc hết hạn `ad_free_until_epoch_ms` (dùng
+     `SystemClock.elapsedRealtime()` kết hợp epoch chống chỉnh giờ giả).
+   - Trong `BillingEntitlements.isPremium(context)` (hoặc hàm mới
+     `shouldSuppressAutomaticAds(context)`): trả về `true` khi còn trong thời
+     gian hiệu lực 20 phút -> tự động ẩn Banner, Interstitial, App Open, Native.
+   - Đặt nút nhận vé tại hộp thoại nhỏ trên Trang chủ hoặc trên màn Paywall cho
+     nhóm người dùng không mua gói trả phí -> tăng mạnh lượt xem Rewarded Video
+     (eCPM $1.43 - $2.50).
+
+2. Chuỗi Nhiệm Vụ Hàng Ngày (Daily 3-Game Quest + Streak 7 ngày):
+   - Tạo `DailyQuestManager.kt` chọn xác định (deterministic theo ngày local)
+     3 nhiệm vụ mỗi ngày từ danh sách game Bundled (ví dụ: chơi 1 ván `ludo`,
+     vượt 2 màn `apple_worm`, đạt điểm trong `block_blast`).
+   - Đồng bộ thông điệp nhắc giữ chuỗi Streak với Notification khung 12:00 trưa
+     (khung giờ có Open Rate cao nhất 2.79% trên GA4).
+
+3. Lối tắt nổi bật "2 Players (Chơi 2 Người Trên 1 Máy)":
+   - 8/16 game có tổng giờ chơi lớn nhất toàn app là game 2 người (`ludo`,
+     `pool_8_pro`, `tic_tac_toe`, `uno_vertical`, `checkers`, `chess`,
+     `sea_battle`, `dominoes`). Đặt chip/thẻ nổi bật ngay đầu Trang chủ dẫn thẳng
+     tới tab `2 Players`.
+
+
+================================================================================
+3. VIỆC CẦN LÀM SONG SONG TRÊN CONSOLE (KHÔNG THUỘC MÃ NGUỒN ANDROID)
+================================================================================
+1. Website & AdMob Console:
+   - Đăng tệp `app-ads.txt` lên domain gốc khai báo trên Google Play Store:
+     `google.com, pub-4108090245719282, DIRECT, f08c47fec0942fa0`
+     (kèm các dòng `app-ads.txt` của Meta, Mintegral, AppLovin, Unity, Pangle).
+   - Vào AdMob -> `Privacy & messaging` -> Publish form GDPR & US-State.
+   - Đặt tốc độ làm mới tự động (Automatic Refresh) cho Banner Unit ở mức 45-60s.
+2. Google Ads (`277-909-0739`):
+   - Loại trừ nhóm quốc gia eCPM < $0.10 (`India`, `Pakistan`, `Bangladesh`,
+     `Nepal`, `Egypt`, `Algeria`) khỏi các chiến dịch trả giá theo lượt cài.
+   - Dồn ngân sách vào `Brazil` (+ mở rộng LATAM/Tier-2 có eCPM >= $0.30) và
+     chiến dịch đấu thầu `Target ROAS (Ad Revenue)` lấy giá trị `ad_impression`.
+3. Google Play Console:
+   - Giảm giá khu vực (Regional Pricing) cho các nước Tier-2 / Tier-3 (Brazil,
+     Mexico, Indonesia, Việt Nam, Ấn Độ...) về mức ~$0.79 - $0.99/tuần để kích
+     hoạt doanh thu gói VIP (`purchaseRevenue` hiện đang $0).
+
+
+================================================================================
+4. CỔNG KIỂM TRA CHẤT LƯỢNG BẮT BUỘC TRƯỚC KHI BÀN GIAO (QUALITY GATE)
+================================================================================
+Đội Dev chỉ được báo hoàn thành bản build `versionCode = 12` (`1.3.2`) khi TẤT CẢ
+các kiểm tra sau đều PASS 100%:
+
+1. Style Gate chống Vibe Code (0 vi phạm, mọi file <= 350 dòng, <= 120 ký tự):
+   `python scripts/check_code_style.py Android/src/main/java`
+2. Unit Tests JVM (bao gồm viết thêm test mới cho: Banner retry, `breakCount`
+   không bị reset khi Interstitial bị chặn cooldown, sắp xếp Catalog & Recent):
+   `cd Android && .\gradlew.bat testDebugUnitTest`
+3. Kiểm tra JS Hooks cho các game Bundled mới nối Interstitial kết ván:
+   `node Android/src/test/js/bundled-ad-hooks.test.mjs`
+4. Kiểm tra Android Lint (0 lỗi):
+   `cd Android && .\gradlew.bat lintDebug lintVitalRelease`
+5. Build Release AAB/APK & Kiểm tra tuân thủ Google Play (API 36 + 16 KB Page Size):
+   - `cd Android && .\gradlew.bat bundleRelease assembleRelease`
+   - `aapt2 dump badging` xác nhận `versionCode='12'`, `targetSdkVersion:'36'`,
+     không phát sinh quyền `FOREGROUND_SERVICE`.
+   - `zipalign -c -P 16` PASS và toàn bộ thư viện `.so` đạt `PT_LOAD = 0x4000`.
+6. Kiểm thử thực tế trên thiết bị vật lý (QA Smoke Test):
+   - Mở 5 game màn hình dọc liên tiếp (kể cả tắt/bật mạng lại): Banner hiển thị
+     đầy đủ và tự phục hồi khi có mạng lại.
+   - Mở game giải đố ngắn, chơi liên tiếp 4-5 màn qua mốc 60 giây: Interstitial
+     hiển thị đúng tại điểm dừng kết màn (không nuốt bộ đếm, có đệm `Loading Ad…`
+     700ms).
+   - Mở Trang chủ lần đầu khi tắt Wi-Fi/4G: 30 ô đầu tiên đều vào chơi ngay lập
+     tức không đòi tải mạng; chơi xong 2 game quay ra thấy kệ "Continue Playing".
+================================================================================

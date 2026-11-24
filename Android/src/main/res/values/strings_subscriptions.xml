@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="subscription_title">Game Premium</string>
+    <string name="subscription_benefit">Remove banner, interstitial and app-open ads while Premium is active. Optional rewarded ads remain available.</string>
+    <string name="subscription_loading">Checking Google Play prices and purchases…</string>
+    <string name="subscription_ready">Choose your plan</string>
+    <string name="subscription_active">Premium is active. Existing lifetime purchases remain supported.</string>
+    <string name="subscription_unavailable">Prices or purchase status are unavailable. Retry to refresh Google Play.</string>
+    <string name="subscription_retry">Refresh Google Play</string>
+    <string name="subscription_manage">Manage subscriptions in Google Play</string>
+    <string name="subscription_choose">Continue with %1$s</string>
+    <string name="subscription_renewal_note">Payment is charged through Google Play. Any eligible free trial, introductory pricing and renewal price are shown above from your Google Play account. Subscriptions renew automatically unless canceled. Manage or cancel in Google Play before the next renewal. Existing lifetime purchases can be restored.</string>
+</resources>

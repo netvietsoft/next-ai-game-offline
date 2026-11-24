@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="72dp"
+    android:height="72dp"
+    android:viewportWidth="72"
+    android:viewportHeight="72">
+
+    <!-- Vòng phát sáng cyan mờ ngoài cùng / Soft outer cyan glow ring -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M36,10 A26,26 0 1,1 35.99,10 Z"
+        android:strokeAlpha="0.28"
+        android:strokeColor="#22D3EE"
+        android:strokeWidth="6.5" />
+
+    <!-- Vòng chính sắc nét neon cyan / Crisp primary neon cyan ring -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M36,10 A26,26 0 1,1 35.99,10 Z"
+        android:strokeColor="#67E8F9"
+        android:strokeWidth="2.6" />
+
+    <!-- Cung sáng nhấn tạo cảm giác chuyển động rõ rệt khi xoay / Highlight arc for rotation motion -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M36,10 A26,26 0 0,1 62,36"
+        android:strokeColor="#ECFEFF"
+        android:strokeLineCap="round"
+        android:strokeWidth="3.4" />
+
+    <!-- 4 mấu ghép puzzle đối xứng lấy cảm hứng từ vòng loading gốc / 4 glowing puzzle tabs -->
+    <path
+        android:fillColor="#67E8F9"
+        android:pathData="M36,4.5 C38.5,4.5 40.3,6.4 40.3,8.5 C40.3,9.7 39.6,10.7 38.6,11.3 L33.4,11.3 C32.4,10.7 31.7,9.7 31.7,8.5 C31.7,6.4 33.5,4.5 36,4.5 Z" />
+
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M67.5,36 C67.5,38.5 65.6,40.3 63.5,40.3 C62.3,40.3 61.3,39.6 60.7,38.6 L60.7,33.4 C61.3,32.4 62.3,31.7 63.5,31.7 C65.6,31.7 67.5,33.5 67.5,36 Z" />
+
+    <path
+        android:fillColor="#22D3EE"
+        android:pathData="M36,67.5 C33.5,67.5 31.7,65.6 31.7,63.5 C31.7,62.3 32.4,61.3 33.4,60.7 L38.6,60.7 C39.6,61.3 40.3,62.3 40.3,63.5 C40.3,65.6 38.5,67.5 36,67.5 Z" />
+
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M4.5,36 C4.5,33.5 6.4,31.7 8.5,31.7 C9.7,31.7 10.7,32.4 11.3,33.4 L11.3,38.6 C10.7,39.6 9.7,40.3 8.5,40.3 C6.4,40.3 4.5,38.5 4.5,36 Z" />
+</vector>

@@ -65,7 +65,9 @@
                            if(getParamValue('ctl-arcade') === "true"){
                                parent.__ctlArcadeShowInterlevelAD();
                            }
-                           //...ADD YOUR CODE HERE EVENTUALLY
+                           if (window.Android && typeof window.Android.showInterstitialInGame === "function") {
+                               window.Android.showInterstitialInGame("uno_interlevel");
+                           }
                     });
                     
                     $(oMain).on("share_event", function(evt, iScore) {

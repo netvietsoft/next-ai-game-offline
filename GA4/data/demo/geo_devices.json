@@ -1,0 +1,74 @@
+{
+  "key": "geo_devices",
+  "title": "Quốc gia & Thiết bị / Geography & Devices",
+  "dimensions": [
+    "country",
+    "deviceCategory",
+    "mobileDeviceModel"
+  ],
+  "metrics": [
+    "activeUsers",
+    "sessions",
+    "engagedSessions",
+    "userEngagementDuration"
+  ],
+  "skipped_optional_fields": [],
+  "row_count": 6,
+  "total_available_rows": 6,
+  "rows": [
+    {
+      "country": "Vietnam",
+      "deviceCategory": "mobile",
+      "mobileDeviceModel": "SM-A075F",
+      "activeUsers": 5420,
+      "sessions": 13450,
+      "engagedSessions": 9420,
+      "userEngagementDuration": 3620000
+    },
+    {
+      "country": "Indonesia",
+      "deviceCategory": "mobile",
+      "mobileDeviceModel": "Redmi 13C",
+      "activeUsers": 3890,
+      "sessions": 9210,
+      "engagedSessions": 6210,
+      "userEngagementDuration": 2410000
+    },
+    {
+      "country": "India",
+      "deviceCategory": "mobile",
+      "mobileDeviceModel": "SM-A155F",
+      "activeUsers": 3410,
+      "sessions": 7820,
+      "engagedSessions": 5190,
+      "userEngagementDuration": 1980000
+    },
+    {
+      "country": "Philippines",
+      "deviceCategory": "mobile",
+      "mobileDeviceModel": "Infinix Smart 8",
+      "activeUsers": 2240,
+      "sessions": 5140,
+      "engagedSessions": 3420,
+      "userEngagementDuration": 1320000
+    },
+    {
+      "country": "Brazil",
+      "deviceCategory": "mobile",
+      "mobileDeviceModel": "Moto G24",
+      "activeUsers": 1860,
+      "sessions": 4210,
+      "engagedSessions": 2740,
+      "userEngagementDuration": 1090000
+    },
+    {
+      "country": "United States",
+      "deviceCategory": "mobile",
+      "mobileDeviceModel": "Pixel 8a",
+      "activeUsers": 980,
+      "sessions": 2190,
+      "engagedSessions": 1540,
+      "userEngagementDuration": 690000
+    }
+  ]
+}

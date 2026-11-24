@@ -982,7 +982,11 @@ Game.prototype = {
 	onGameOver: function(a) {
 		this.showAdwert()
 	},
-	showAdwert: function() {},
+	showAdwert: function() {
+		if (window.Android && typeof window.Android.showInterstitialInGame === "function") {
+			window.Android.showInterstitialInGame("ludo_game_over");
+		}
+	},
 	turnDone: function(a) {
 		if (a)
 			for (var b = 0; b < main.game.maxPlayers - 1; b++)
@@ -1469,7 +1473,7 @@ Preloader.prototype = {
 	loadingFinished: function() {
 		var a, b;
 		for (b in main.audio) main.audio.hasOwnProperty(b) && (a = main.audio[b], "music" == a.type ? main.managers.audio.addMusic(b, a.volume, a.loop) : main.managers.audio.addSound(b, a.volume, a.loop));
-		a = navigator.userLanguage || navigator.language;
+		a = "en";
 		main.managers.language.load();
 		main.managers.language.setLanguage(a.substring(0, 2));
 		
